@@ -1,0 +1,352 @@
+% =====================================================================
+%  CAE VIỆT NAM — CHUYÊN ĐỀ 1: TẬP HỢP (集合)
+%  Biên dịch bằng XeLaTeX
+% =====================================================================
+\documentclass[12pt, a4paper]{report}
+
+% ---------- NGÔN NGỮ & PHÔNG CHỮ ----------
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{vietnamese}
+\setotherlanguage{english}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\cjkfont{SimSun}[Scale=0.95]   % dùng cho thuật ngữ Hán
+\newcommand{\cjk}[1]{{\cjkfont #1}}
+
+% ---------- TOÁN HỌC ----------
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage{unicode-math}
+
+% ---------- BỐ CỤC TRANG ----------
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.8cm, right=2.2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{booktabs, array, longtable}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[colorlinks=true, linkcolor=cae_blue, citecolor=cae_blue, urlcolor=cae_blue]{hyperref}
+
+% ---------- BẢNG MÀU THƯƠNG HIỆU ----------
+\definecolor{cae_blue}{RGB}{0, 51, 102}
+\definecolor{cae_gold}{RGB}{196, 149, 60}
+\definecolor{box_bg}{RGB}{245, 247, 250}
+\definecolor{box_line}{RGB}{0, 51, 102}
+
+% ---------- TIÊU ĐỀ CHƯƠNG / MỤC ----------
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{cae_blue}}
+  {\Large\MakeUppercase{\chaptertitlename} \thechapter}
+  {6pt}
+  {\Huge}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{cae_blue}}{\thesection}{0.6em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{cae_blue!80!black}}{\thesubsection}{0.6em}{}
+
+% ---------- ĐẦU / CHÂN TRANG ----------
+\pagestyle{fancy}
+\setlength{\headheight}{15pt}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.2pt}
+\fancyhead[L]{\small\color{cae_blue}\leftmark}
+\fancyhead[R]{\small\color{cae_blue}CAE VIỆT NAM — Luyện thi CSCA}
+\fancyfoot[C]{\small\thepage}
+
+% ---------- MÔI TRƯỜNG ĐỊNH LÝ / VÍ DỤ ----------
+\newtcolorbox{dinhnghia}[1][]{
+  colback=box_bg, colframe=box_line, boxrule=0.6pt, arc=1pt,
+  fonttitle=\bfseries, title={Định nghĩa #1}, breakable}
+\newtcolorbox{dinhly}[1][]{
+  colback=box_bg, colframe=cae_gold, boxrule=0.6pt, arc=1pt,
+  fonttitle=\bfseries, title={Định lý / Tính chất #1}, breakable}
+\newtcolorbox{vidu}[1][]{
+  colback=white, colframe=black!40, boxrule=0.4pt, arc=1pt,
+  fonttitle=\bfseries, title={Ví dụ #1}, breakable}
+\newtcolorbox{chuy}[1][]{
+  colback=cae_gold!10, colframe=cae_gold!70!black, boxrule=0.4pt, arc=1pt,
+  fonttitle=\bfseries, title={Chú ý #1}, breakable}
+\newtcolorbox{baitap}[1][]{
+  colback=white, colframe=cae_blue!50, boxrule=0.4pt, arc=1pt,
+  fonttitle=\bfseries, title={Bài tập tự luyện #1}, breakable}
+
+% ---------- MỤC LỤC ----------
+\renewcommand{\cftchapfont}{\bfseries\color{cae_blue}}
+\renewcommand{\cftsecfont}{\color{black}}
+
+% =====================================================================
+\begin{document}
+
+\setcounter{chapter}{1}
+
+% ---------------------- TRANG BÌA ----------------------
+\begin{titlepage}
+  \centering
+  \vspace*{1.5cm}
+  {\Large\bfseries\color{cae_blue} CAE VIỆT NAM}\\[0.3cm]
+  {\small Tài liệu luyện thi CSCA — Môn Toán}\\[2.5cm]
+
+  {\color{cae_gold}\rule{0.5\linewidth}{0.8pt}}\\[0.8cm]
+  {\Huge\bfseries\color{cae_blue} CHUYÊN ĐỀ~\thechapter}\\[0.4cm]
+  {\LARGE\bfseries Tập hợp \cjk{（集合）}}\\[0.6cm]
+  {\large Module: \emph{Tập hợp \& Bất đẳng thức} \quad—\quad Tỉ trọng: \emph{17\%}}\\[0.8cm]
+  {\color{cae_gold}\rule{0.5\linewidth}{0.8pt}}\\[2.5cm]
+
+  {\normalsize Biên soạn: Hoàng Dương — CAE Việt Nam}\\
+  {\small info@caevietnam.vn}\\[0.3cm]
+  {\small \today}
+
+  \vfill
+  {\footnotesize © CAE Việt Nam. Tài liệu lưu hành nội bộ, không sao chép dưới mọi hình thức khi chưa được phép.}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+% =====================================================================
+\chapter{Tập hợp \cjk{（集合）}}
+\label{ch:tap-hop}
+
+\section{Tổng quát}
+
+Tập hợp là khái niệm nền tảng của Toán học hiện đại, xuất hiện trong hầu hết các lĩnh vực từ số học, đại số đến giải tích và xác suất. Trong khuôn khổ kỳ thi CSCA, Tập hợp thuộc \textbf{Module 1 — Tập hợp \& Bất đẳng thức}, chiếm khoảng \textbf{4 câu hỏi (\(\sim\)8\% tổng đề thi)}.
+
+\textbf{Kiến thức trọng tâm} gồm ba trụ cột chính:
+
+\begin{enumerate}
+  \item \textbf{Khái niệm cơ bản:} tập hợp, phần tử, tập con, tập rỗng, hai tập hợp bằng nhau. Phân biệt được ký hiệu \(\in\) (thuộc) và \(\subset\) (tập con). Nắm vững cách biểu diễn tập hợp: liệt kê phần tử và mô tả tính chất đặc trưng.
+
+  \item \textbf{Các phép toán trên tập hợp:} phép hợp \(\cup\), phép giao \(\cap\), phép hiệu \(\setminus\), phép lấy phần bù \(C_U A\). Thành thạo các tính chất: giao hoán, kết hợp, phân phối, luật De Morgan. Kỹ năng sử dụng biểu đồ Venn để minh họa và giải quyết bài toán tập hợp là yêu cầu bắt buộc.
+
+  \item \textbf{Tập hợp số:} nhận biết và phân biệt các tập số \(\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}\). Biểu diễn tập hợp trên trục số thực, đặc biệt là các tập dạng khoảng, đoạn, nửa khoảng — kỹ năng này là cầu nối trực tiếp sang chuyên đề \textbf{Bất đẳng thức}.
+\end{enumerate}
+
+\textbf{Trong đề thi CSCA}, các câu hỏi về Tập hợp thường ở mức độ \textbf{Dễ đến Trung bình}, tập trung vào phép toán tập hợp cơ bản và bài toán đếm phần tử bằng biểu đồ Venn. Học sinh cần làm nhanh và chính xác, dành thời gian cho các module khó hơn.
+
+\section{Từ vựng quan trọng}
+
+\begin{center}
+\small
+\begin{tabular}{@{}c l l l@{}}
+  \toprule
+  \textbf{\#} & \textbf{Thuật ngữ Tiếng Việt} & \textbf{Tiếng Trung} & \textbf{Pinyin} \\
+  \midrule
+  1  & Tập hợp            & 集合          & jíhé          \\
+  2  & Phần tử            & 元素          & yuánsù        \\
+  3  & Thuộc (về)         & 属于          & shǔyú         \\
+  4  & Tập con            & 子集          & zǐjí          \\
+  5  & Tập con thực sự    & 真子集        & zhēnzǐjí      \\
+  6  & Tập rỗng           & 空集          & kōngjí        \\
+  7  & Hợp                & 并集          & bìngjí        \\
+  8  & Giao               & 交集          & jiāojí        \\
+  9  & Hiệu               & 差集          & chājí         \\
+  10 & Phần bù            & 补集          & bǔjí          \\
+  11 & Tập vũ trụ         & 全集          & quánjí        \\
+  12 & Biểu đồ Venn       & 文氏图        & wénshìtú      \\
+  13 & Lực lượng          & 基数          & jīshù         \\
+  14 & Tập hữu hạn        & 有限集        & yǒuxiànjí     \\
+  15 & Tập vô hạn         & 无限集        & wúxiànjí      \\
+  16 & Tích Descartes     & 笛卡尔积      & díkǎ'ěr jī    \\
+  17 & Số tự nhiên        & 自然数        & zìránshù      \\
+  18 & Số nguyên          & 整数          & zhěngshù      \\
+  19 & Số hữu tỉ          & 有理数        & yǒulǐshù      \\
+  20 & Số thực            & 实数          & shíshù        \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\section{Kiến thức và bài tập ví dụ}
+
+\subsection{Định nghĩa}
+
+\begin{dinhnghia}[1 — Tập hợp]
+  Tập hợp là một khái niệm cơ bản, không định nghĩa chính thức, dùng để chỉ một nhóm các đối tượng xác định. Mỗi đối tượng trong tập hợp được gọi là một \emph{phần tử} (element).
+
+  \medskip
+  Ký hiệu: \(a \in A\) nghĩa là ``\(a\) thuộc tập \(A\)''; \(a \notin A\) nghĩa là ``\(a\) không thuộc tập \(A\)''.
+
+  \medskip
+  Hai cách biểu diễn tập hợp:
+  \begin{itemize}
+    \item \textbf{Liệt kê:} \(A = \{1, 2, 3, 4, 5\}\)
+    \item \textbf{Mô tả tính chất:} \(A = \{x \in \mathbb{N} \mid x \leq 5\}\)
+  \end{itemize}
+\end{dinhnghia}
+
+\begin{dinhnghia}[2 — Tập con]
+  Tập \(A\) được gọi là \emph{tập con} của tập \(B\), ký hiệu \(A \subset B\), nếu mọi phần tử của \(A\) đều là phần tử của \(B\):
+  \[
+    A \subset B \iff (\forall x \in A \Rightarrow x \in B)
+  \]
+  Nếu \(A \subset B\) và \(A \neq B\), ta nói \(A\) là \emph{tập con thực sự} (proper subset) của \(B\), ký hiệu \(A \subsetneq B\).
+\end{dinhnghia}
+
+\begin{dinhnghia}[3 — Tập rỗng]
+  Tập rỗng, ký hiệu \(\varnothing\), là tập hợp không chứa phần tử nào. Tập rỗng là tập con của mọi tập hợp.
+\end{dinhnghia}
+
+\subsection{Các phép toán trên tập hợp}
+
+Cho hai tập hợp \(A\) và \(B\) trong tập vũ trụ \(U\):
+
+\begin{center}
+\begin{tabular}{@{}c c l@{}}
+  \toprule
+  \textbf{Phép toán} & \textbf{Ký hiệu} & \textbf{Định nghĩa} \\
+  \midrule
+  Hợp (Union)           & \(A \cup B\)      & \(A \cup B = \{x \mid x \in A \text{ hoặc } x \in B\}\) \\
+  Giao (Intersection)   & \(A \cap B\)      & \(A \cap B = \{x \mid x \in A \text{ và } x \in B\}\) \\
+  Hiệu (Difference)     & \(A \setminus B\) & \(A \setminus B = \{x \mid x \in A \text{ và } x \notin B\}\) \\
+  Phần bù (Complement)  & \(C_U A\)         & \(C_U A = U \setminus A = \{x \in U \mid x \notin A\}\) \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Tính chất của các phép toán}
+
+\begin{dinhly}[1 — Giao hoán]
+  \[
+    A \cup B = B \cup A; \qquad A \cap B = B \cap A
+  \]
+\end{dinhly}
+
+\begin{dinhly}[2 — Kết hợp]
+  \[
+    (A \cup B) \cup C = A \cup (B \cup C); \qquad (A \cap B) \cap C = A \cap (B \cap C)
+  \]
+\end{dinhly}
+
+\begin{dinhly}[3 — Phân phối]
+  \[
+    A \cap (B \cup C) = (A \cap B) \cup (A \cap C); \qquad
+    A \cup (B \cap C) = (A \cup B) \cap (A \cup C)
+  \]
+\end{dinhly}
+
+\begin{dinhly}[4 — Luật De Morgan]
+  \[
+    C_U(A \cup B) = C_U A \cap C_U B; \qquad
+    C_U(A \cap B) = C_U A \cup C_U B
+  \]
+\end{dinhly}
+
+\begin{dinhly}[5 — Công thức đếm phần tử]
+  Với tập hữu hạn \(A, B\), ký hiệu \(n(A)\) là số phần tử của \(A\):
+  \[
+    n(A \cup B) = n(A) + n(B) - n(A \cap B)
+  \]
+  \[
+    n(A \cup B \cup C) = n(A) + n(B) + n(C) - n(A \cap B) - n(B \cap C) - n(C \cap A) + n(A \cap B \cap C)
+  \]
+\end{dinhly}
+
+\subsection{Ví dụ minh họa}
+
+\begin{vidu}[1]
+  \textbf{Đề bài.} Cho tập vũ trụ \(U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}\) và hai tập con:
+  \(A = \{1, 2, 3, 4, 5\}\), \(B = \{4, 5, 6, 7\}\).
+
+  Hãy xác định:
+  \begin{enumerate}[label=\alph*)]
+    \item \(A \cup B\), \(A \cap B\), \(A \setminus B\), \(B \setminus A\)
+    \item \(C_U A\), \(C_U B\)
+    \item Kiểm tra luật De Morgan: \(C_U(A \cup B) = C_U A \cap C_U B\)
+  \end{enumerate}
+
+  \medskip
+  \textbf{Lời giải.}
+  \begin{enumerate}[label=\alph*)]
+    \item
+    \(A \cup B = \{1, 2, 3, 4, 5, 6, 7\}\);
+    \(A \cap B = \{4, 5\}\);
+    \(A \setminus B = \{1, 2, 3\}\);
+    \(B \setminus A = \{6, 7\}\).
+
+    \item
+    \(C_U A = U \setminus A = \{6, 7, 8, 9, 10\}\);
+    \(C_U B = U \setminus B = \{1, 2, 3, 8, 9, 10\}\).
+
+    \item
+    \(C_U(A \cup B) = U \setminus \{1, 2, 3, 4, 5, 6, 7\} = \{8, 9, 10\}\);
+    \(C_U A \cap C_U B = \{6, 7, 8, 9, 10\} \cap \{1, 2, 3, 8, 9, 10\} = \{8, 9, 10\}\).
+
+    Vậy \(C_U(A \cup B) = C_U A \cap C_U B\) (đúng).
+  \end{enumerate}
+\end{vidu}
+
+\begin{vidu}[2]
+  \textbf{Đề bài.} Trong một lớp học có 40 học sinh, có 25 học sinh giỏi Toán, 20 học sinh giỏi Văn, và 12 học sinh giỏi cả hai môn. Hỏi:
+  \begin{enumerate}[label=\alph*)]
+    \item Có bao nhiêu học sinh giỏi ít nhất một môn?
+    \item Có bao nhiêu học sinh không giỏi môn nào?
+  \end{enumerate}
+
+  \medskip
+  \textbf{Lời giải.}
+
+  Gọi \(T\) là tập hợp học sinh giỏi Toán, \(V\) là tập hợp học sinh giỏi Văn.
+
+  Ta có: \(n(T) = 25\), \(n(V) = 20\), \(n(T \cap V) = 12\), \(n(U) = 40\).
+
+  \begin{enumerate}[label=\alph*)]
+    \item Số học sinh giỏi ít nhất một môn:
+    \[
+      n(T \cup V) = n(T) + n(V) - n(T \cap V) = 25 + 20 - 12 = 33
+    \]
+    \item Số học sinh không giỏi môn nào:
+    \[
+      n(U) - n(T \cup V) = 40 - 33 = 7
+    \]
+  \end{enumerate}
+\end{vidu}
+
+\section{Bài tập tự luyện}
+
+\begin{baitap}
+  \begin{enumerate}[label=\textbf{Câu \arabic*.}, leftmargin=*, itemindent=0pt]
+    \item Cho hai tập hợp \(A = \{x \in \mathbb{N} \mid 2 \leq x < 7\}\) và \(B = \{x \in \mathbb{N} \mid x \text{ là ước của } 12\}\). Tập hợp \(A \cap B\) là:
+    \begin{enumerate}[label=\Alph*.]
+      \item \(\{2, 3, 4, 6\}\)
+      \item \(\{1, 2, 3, 4, 6\}\)
+      \item \(\{2, 3, 6\}\)
+      \item \(\{3, 4, 6\}\)
+    \end{enumerate}
+
+    \item Cho tập \(A = \{x \in \mathbb{R} \mid -3 \leq x < 5\}\) và \(B = \{x \in \mathbb{R} \mid x > 1\}\). Tập hợp \(A \setminus B\) là:
+    \begin{enumerate}[label=\Alph*.]
+      \item \([-3; 1]\)
+      \item \([-3; 1)\)
+      \item \((-3; 1]\)
+      \item \((1; 5)\)
+    \end{enumerate}
+
+    \item Một lớp có 50 học sinh, trong đó 30 học sinh thích bóng đá, 25 học sinh thích cầu lông, và 10 học sinh không thích cả hai môn. Số học sinh thích cả hai môn là:
+    \begin{enumerate}[label=\Alph*.]
+      \item 5
+      \item 10
+      \item 15
+      \item 20
+    \end{enumerate}
+
+    \item Cho ba tập hợp \(A = \{1, 2, 3, 4\}\), \(B = \{3, 4, 5, 6\}\), \(C = \{1, 3, 5, 7\}\). Tập hợp \((A \cap B) \cup C\) là:
+    \begin{enumerate}[label=\Alph*.]
+      \item \(\{1, 3, 5, 7\}\)
+      \item \(\{1, 3, 4, 5, 7\}\)
+      \item \(\{1, 3, 5\}\)
+      \item \(\{3, 4, 5, 7\}\)
+    \end{enumerate}
+
+    \item Cho \(A = \{x \in \mathbb{Z} \mid |x| \leq 2\}\) và \(B = \{x \in \mathbb{N} \mid x^2 - 3x + 2 = 0\}\). Khẳng định nào sau đây đúng?
+    \begin{enumerate}[label=\Alph*.]
+      \item \(A \subset B\)
+      \item \(B \subset A\)
+      \item \(A = B\)
+      \item \(A \cap B = \varnothing\)
+    \end{enumerate}
+  \end{enumerate}
+\end{baitap}
+
+\end{document}
