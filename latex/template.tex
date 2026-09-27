@@ -11,13 +11,15 @@
 \usepackage{polyglossia}
 \setmainlanguage{vietnamese}
 \setotherlanguage{english}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\cjkfont{SimSun}[Scale=0.95]   % dùng cho thuật ngữ Hán
+\setmainfont{Libertinus Serif}
+\setsansfont{Segoe UI}
+\newfontfamily\cjkfont{Microsoft YaHei}[Scale=0.95]   % dùng cho thuật ngữ Hán
 \newcommand{\cjk}[1]{{\cjkfont #1}}
 
 % ---------- TOÁN HỌC ----------
 \usepackage{amsmath, amssymb, amsthm, mathtools}
 \usepackage{unicode-math}
+\setmathfont{Libertinus Math}
 
 % ---------- BỐ CỤC TRANG ----------
 \usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.8cm, right=2.2cm]{geometry}
@@ -39,14 +41,14 @@
 
 % ---------- TIÊU ĐỀ CHƯƠNG / MỤC ----------
 \titleformat{\chapter}[display]
-  {\normalfont\bfseries\color{cae_blue}}
+  {\normalfont\bfseries\sffamily\color{cae_blue}}
   {\Large\MakeUppercase{\chaptertitlename} \thechapter}
   {6pt}
   {\Huge}
 \titleformat{\section}
-  {\normalfont\Large\bfseries\color{cae_blue}}{\thesection}{0.6em}{}
+  {\normalfont\Large\bfseries\sffamily\color{cae_blue}}{\thesection}{0.6em}{}
 \titleformat{\subsection}
-  {\normalfont\large\bfseries\color{cae_blue!80!black}}{\thesubsection}{0.6em}{}
+  {\normalfont\large\bfseries\sffamily\color{cae_blue!80!black}}{\thesubsection}{0.6em}{}
 
 % ---------- ĐẦU / CHÂN TRANG ----------
 \pagestyle{fancy}
@@ -68,12 +70,12 @@
 \newtcolorbox{vidu}[1][]{
   colback=white, colframe=black!40, boxrule=0.4pt, arc=1pt,
   fonttitle=\bfseries, title={Ví dụ #1}, breakable}
-\newtcolorbox{chuy}[1][]{
-  colback=cae_gold!10, colframe=cae_gold!70!black, boxrule=0.4pt, arc=1pt,
-  fonttitle=\bfseries, title={Chú ý #1}, breakable}
 \newtcolorbox{baitap}[1][]{
   colback=white, colframe=cae_blue!50, boxrule=0.4pt, arc=1pt,
   fonttitle=\bfseries, title={Bài tập tự luyện #1}, breakable}
+
+% ---------- TÊN CHỨNG MINH (đặt ngoài viền định lý) ----------
+\renewcommand{\proofname}{\normalfont\bfseries Chứng minh}
 
 % ---------- MỤC LỤC ----------
 \renewcommand{\cftchapfont}{\bfseries\color{cae_blue}}
@@ -113,21 +115,23 @@
 \section{Kiến thức trọng tâm}
 % NỘI DUNG CHUYÊN ĐỀ — thay bằng kiến thức thật
 
-\begin{dinhnghia}
+\begin{dinhnghia}[1 — Tập hợp]
   Phát biểu định nghĩa. Ký hiệu toán học đặt trong dấu đô-la, ví dụ \(A \cup B\), \(A \cap B\).
 \end{dinhnghia}
 
-\begin{dinhly}
-  Phát biểu định lý / tính chất, có thể kèm chứng minh ngắn hoặc chỉ dẫn chứng minh.
+\begin{dinhly}[1 — Tính chất]
+  Phát biểu định lý / tính chất.
 \end{dinhly}
 
-\begin{chuy}
-  Lưu ý, lỗi thường gặp, hoặc mẹo giải nhanh.
-\end{chuy}
+\begin{proof}
+  Chứng minh chi tiết được viết \emph{bên dưới} định lý và \emph{ngoài} viền của khung \texttt{dinhly}. Dấu $\blacksquare$ được chèn tự động.
+\end{proof}
+
+\textbf{Chú ý.} Lưu ý, lỗi thường gặp, hoặc mẹo giải nhanh — viết thẳng thành đoạn văn, \emph{không} cần khung.
 
 \section{Ví dụ minh họa}
 
-\begin{vidu}
+\begin{vidu}[1]
   \textbf{Đề bài.} Nội dung ví dụ.
 
   \textbf{Lời giải.} Trình bày lời giải từng bước, có căn chỉnh công thức bằng \texttt{align}.
@@ -138,11 +142,12 @@
 
 \section{Bài tập tự luyện}
 
-\begin{baitap}
-  \begin{enumerate}[label=\textbf{Câu \arabic*.}, leftmargin=*, itemindent=0pt]
-    \item Đề bài câu 1.
-    \item Đề bài câu 2.
-  \end{enumerate}
+\begin{baitap}[Câu 1]
+  Đề bài câu 1.
+\end{baitap}
+
+\begin{baitap}[Câu 2]
+  Đề bài câu 2.
 \end{baitap}
 
 % ---- BẢNG PHÂN LOẠI CÂU HỎI THEO ĐỘ KHÓ (tùy chọn, đặt cuối chuyên đề) ----

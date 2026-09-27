@@ -37,7 +37,7 @@ Bạn là trợ lý biên tập LaTeX chuyên ngành Toán. Nhiệm vụ: chuy�
 ## Cấu trúc mỗi file `.tex` đầu ra
 
 1. Sao chép phần mở đầu (preamble) từ `template.tex` **không sửa đổi**.
-2. Điền `titlepage`: số chuyên đề (`\thechapter` tương ứng số thứ tự trong `tableofcontent.md`), tên tiếng Việt + tên Hán trong `\cjk{}`, module đề thi và tỉ trọng (tra từ `overview.md`).
+2. Điền `titlepage`: số chuyên đề (`\thechapter` tương ứng số thứ tự trong `docs/tableofcontent.md`), tên tiếng Việt + tên Hán trong `\cjk{}`, module đề thi và tỉ trọng (tra từ `docs/overview.md`).
 3. `\tableofcontents`.
 4. Một `\chapter{...}` duy nhất cho toàn chuyên đề, các `\section` theo đúng thứ tự trong file `.md` nguồn: **Kiến thức trọng tâm → Ví dụ minh họa → Bài tập tự luyện → Phân bố độ khó trong đề thi** (nếu `.md` nguồn có dữ liệu độ khó).
 5. Kết thúc bằng `\end{document}`.
@@ -53,5 +53,5 @@ Bạn là trợ lý biên tập LaTeX chuyên ngành Toán. Nhiệm vụ: chuy�
 
 - [ ] Biên dịch XeLaTeX không lỗi (2 lần để mục lục cập nhật đúng).
 - [ ] Không còn placeholder mẫu (`Tên chuyên đề`, `XX`, `Đề bài câu 1`...) sót lại từ template.
-- [ ] Số liệu module/tỉ trọng/số câu khớp với `overview.md` và `tableofcontent.md`.
+- [ ] Số liệu module/tỉ trọng/số câu khớp với `docs/overview.md` và `docs/tableofcontent.md`.
 - [ ] Tên file: `latex/<số-thứ-tự>-<ten-khong-dau>.tex`, ví dụ `latex/01-tap-hop.tex`.

@@ -11,5 +11,8 @@
 basic-miktex-*.exe
 scoped_dir*/
 
-# Keep PDFs only in classready/
+# PDF biên dịch — chỉ giữ bản hoàn thiện trong classready/
 latex/*.pdf
+
+# macOS
+.DS_Store
