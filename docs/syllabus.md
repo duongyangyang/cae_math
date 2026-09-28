@@ -11,7 +11,7 @@
 | Tên khóa học | Luyện thi CSCA — môn Toán |
 | Mã khóa học | [CẦN BỔ SUNG] |
 | Đơn vị biên soạn | CAE SHANGHAI |
-| Phiên bản tài liệu | 1.1.0 cập nhật ngày 28.09.2026 |
+| Phiên bản tài liệu | 1.2.0 cập nhật ngày 28.09.2026 |
 | Ngày ban hành | [CẦN BỔ SUNG] |
 | Số buổi học trực tuyến | 20 buổi |
 | Số buổi kiểm tra | 3 buổi (2 giữa kỳ, 1 cuối kỳ), tổ chức trực tuyến trên hệ thống |
@@ -94,7 +94,7 @@ Chương trình tập trung vào việc củng cố và làm chắc các dạng 
 | Thành phần | Tỉ trọng | Hình thức | Thời điểm |
 |---|---|---|---|
 | Bài tập về nhà | **20%** | Chấm theo mức độ hoàn thành và kết quả | Xuyên suốt khóa học |
-| Kiểm tra cuối chuyên đề | **10%** | 4 bài, giao về nhà | BTVN buổi 5, 6, 12, 15 |
+| Kiểm tra cuối chuyên đề | **10%** | 4 bài, trực tuyến trên hệ thống có tính giờ | BTVN buổi 5, 6, 12, 15 |
 | Kiểm tra giữa kỳ 1 | **15%** | Trực tuyến trên hệ thống | Sau buổi 7 |
 | Kiểm tra giữa kỳ 2 | **15%** | Trực tuyến trên hệ thống | Sau buổi 13 |
 | Kiểm tra cuối kỳ | **40%** | Trực tuyến trên hệ thống | Sau buổi 20 |
@@ -126,12 +126,73 @@ Trọng số phần bắt buộc theo nguồn bài:
 
 ### 5.3. Cấu trúc đề kiểm tra
 
-| Bài kiểm tra | Phạm vi | Cấu trúc |
-|---|---|---|
-| Kiểm tra cuối chuyên đề | Theo nhóm nội dung tương ứng | [CẦN BỔ SUNG] |
-| Kiểm tra giữa kỳ 1 | Tập hợp và bất đẳng thức, Hàm số, Lượng giác, Dãy số | [CẦN BỔ SUNG] |
-| Kiểm tra giữa kỳ 2 | Hình học phẳng, Đường thẳng và đường tròn, Conic, Vector và số phức | [CẦN BỔ SUNG] |
-| Kiểm tra cuối kỳ | Toàn bộ chương trình | Mô phỏng đề thi CSCA: 48 câu, 60 phút |
+**Quy mô và độ khó**
+
+| Bài kiểm tra | Số câu | Thời gian | Dễ | Trung bình | Khó |
+|---|---|---|---|---|---|
+| Kiểm tra cuối chuyên đề | 24 | 35 phút | 10 | 7 | 7 |
+| Kiểm tra giữa kỳ | 36 | 50 phút | 14 | 11 | 11 |
+| Kiểm tra cuối kỳ | 48 | 60 phút | 20 | 15 | 13 |
+
+Tỉ lệ độ khó xấp xỉ 40/30/30, tương ứng với tỉ lệ của đề thi CSCA. Do số câu của bài kiểm tra cuối chuyên đề và giữa kỳ không chia hết cho tỉ lệ này, số câu mỗi mức được làm tròn. Riêng bài kiểm tra cuối chuyên đề Xác suất và Thống kê có tỉ lệ nghiêng dễ hơn (60/30/10) do nhóm nội dung này chỉ chiếm 1–2 câu trong đề thi thật.
+
+**Nguồn câu hỏi:** kho đề hiện có, đề thi CSCA chính thức, và câu hỏi do LLM sinh thêm cho các phần còn thiếu. Toàn bộ câu hỏi đều được giáo viên duyệt từng câu về đáp án, độ khó và phạm vi trước khi đưa vào đề.
+
+**Ma trận phân bổ câu hỏi**
+
+*Kiểm tra cuối chuyên đề 1 — Lượng giác (buổi 5)*
+
+| Nội dung | Số câu |
+|---|---|
+| Giá trị và công thức biến đổi lượng giác (buổi 4) | 12 |
+| Hàm số và phương trình lượng giác (buổi 5) | 12 |
+
+*Kiểm tra cuối chuyên đề 2 — Hàm số và Dãy số (buổi 6)*
+
+| Nội dung | Số câu |
+|---|---|
+| Tính chất hàm số (buổi 2) | 6 |
+| Bậc hai, mũ, logarit, đạo hàm (buổi 3) | 10 |
+| Dãy số (buổi 6) | 8 |
+
+*Kiểm tra cuối chuyên đề 3 — Hình học và Đại số (buổi 12)*
+
+| Nội dung | Số câu |
+|---|---|
+| Hình học phẳng (buổi 8) | 4 |
+| Đường thẳng và đường tròn (buổi 9) | 8 |
+| Conic (buổi 10) | 8 |
+| Vector và số phức (buổi 12) | 4 |
+
+*Kiểm tra cuối chuyên đề 4 — Xác suất và Thống kê (buổi 15)*
+
+| Nội dung | Số câu |
+|---|---|
+| Xác suất (buổi 14) | 12 |
+| Thống kê (buổi 15) | 12 |
+
+*Kiểm tra giữa kỳ 1 (sau buổi 7)*
+
+| Nội dung | Số câu |
+|---|---|
+| Lượng giác | 11 |
+| Hàm số — tính chất | 7 |
+| Dãy số | 7 |
+| Tập hợp và bất đẳng thức | 6 |
+| Bậc hai, mũ, logarit | 5 |
+
+*Kiểm tra giữa kỳ 2 (sau buổi 13)*
+
+| Nội dung | Số câu |
+|---|---|
+| Conic | 13 |
+| Đường thẳng và đường tròn | 9 |
+| Vector và số phức | 7 |
+| Hình học phẳng | 7 |
+
+*Kiểm tra cuối kỳ (sau buổi 20)*
+
+Mô phỏng đề thi CSCA: 48 câu, 60 phút, phân bổ theo đúng trọng số các nhóm nội dung trong đề thi thật.
 
 ---
 
@@ -195,7 +256,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước buổi chữa, d�
 
 **Bài tập về nhà.** BTVN là thành phần bắt buộc và chiếm 20% điểm số. Học sinh làm bài và nộp qua hệ thống học trực tuyến theo hạn quy định. [CẦN BỔ SUNG: quy định cụ thể về hạn nộp và xử lý nộp muộn]
 
-**Kiểm tra.** Ba bài kiểm tra định kỳ được tổ chức trực tuyến trên hệ thống. Học sinh tự chọn thời điểm làm bài trong ngày thi quy định; hệ thống tính giờ từ lúc học sinh bắt đầu và tự thu bài khi hết giờ. Học sinh vắng mặt không có lý do chính đáng sẽ nhận điểm 0 cho bài kiểm tra đó. [CẦN BỔ SUNG: quy định về kiểm tra bù]
+**Kiểm tra.** Bốn bài kiểm tra cuối chuyên đề và ba bài kiểm tra định kỳ đều được tổ chức trực tuyến trên hệ thống có tính giờ. Học sinh tự chọn thời điểm làm bài trong ngày thi quy định; hệ thống tính giờ từ lúc học sinh bắt đầu và tự thu bài khi hết giờ. Học sinh vắng mặt không có lý do chính đáng sẽ nhận điểm 0 cho bài kiểm tra đó. [CẦN BỔ SUNG: quy định về kiểm tra bù]
 
 **Liêm chính học thuật.** Mọi hành vi gian lận trong kiểm tra — sử dụng tài liệu trái phép, trao đổi bài, nhờ người làm hộ — đều bị xử lý theo quy định của trung tâm. [CẦN BỔ SUNG: hình thức xử lý cụ thể]
 
