@@ -459,7 +459,7 @@ D. 集合 $\{x\mid x^2+5x+6=0\}$ 与集合 $\{x^2+5x+6=0\}$ 是同一个集合
 
 **Bài tập Câu 7.** `CAE-M-CD1-LX2-H-039`
 
-已知全集为 $\mathbb{R}$，集合 $A=\{x\mid -2<x<1\}$，集合 $B=\{x\mid -x^2+x<0\}$，则 $A\cup(\complement_\mathbb{R}B)=$（ ）
+已知全集为 $\mathbb{R}$，集合 $A=\{x\mid -2<x<1\}$，集合 $B=\{x\mid -x^2+x<0\}$，则 $A\cup(\complement_{\mathbb{R}}B)=$（ ）
 
 A. $(-2,1]$
 

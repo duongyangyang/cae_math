@@ -17,9 +17,18 @@
 \setmainfont{TeX Gyre Termes}
 \setsansfont{TeX Gyre Heros}
 
-% Chữ Hán: Source Han Serif SC (思源宋体) — chuẩn học thuật Trung Quốc.
-% Cần cài font này trước khi biên dịch (miễn phí, có trên mọi hệ điều hành).
-\newfontfamily\cjkfont{Source Han Serif SC}[Scale=0.95]
+% Chữ Hán: ưu tiên Source Han Serif SC (思源宋体) — chuẩn học thuật Trung Quốc.
+% Nếu máy chưa cài, tự động dùng Songti SC (宋体, có sẵn trên macOS).
+% Cả hai đều là họ 宋体 — không đổi diện mạo tài liệu.
+\IfFontExistsTF{Source Han Serif SC}{
+  \newfontfamily\cjkfont{Source Han Serif SC}[Scale=0.95]
+}{
+  \IfFontExistsTF{Songti SC}{
+    \newfontfamily\cjkfont{Songti SC}[Scale=0.95]
+  }{
+    \newfontfamily\cjkfont{Noto Serif CJK SC}[Scale=0.95]
+  }
+}
 \newcommand{\cjk}[1]{{\cjkfont #1}}
 
 % ---------- TOÁN HỌC ----------
