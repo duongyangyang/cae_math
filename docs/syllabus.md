@@ -11,12 +11,12 @@
 | Tên khóa học | Luyện thi CSCA — môn Toán |
 | Mã khóa học | [CẦN BỔ SUNG] |
 | Đơn vị biên soạn | CAE SHANGHAI |
-| Phiên bản tài liệu | 1.0.0 cập nhật ngày 28.09.2026 |
+| Phiên bản tài liệu | 1.1.0 cập nhật ngày 28.09.2026 |
 | Ngày ban hành | [CẦN BỔ SUNG] |
-| Số buổi học trên lớp | 20 buổi |
-| Số buổi kiểm tra | 3 buổi (2 giữa kỳ, 1 cuối kỳ), tổ chức ngoài giờ học |
+| Số buổi học trực tuyến | 20 buổi |
+| Số buổi kiểm tra | 3 buổi (2 giữa kỳ, 1 cuối kỳ), tổ chức trực tuyến trên hệ thống |
 | Thời lượng mỗi buổi | 90 phút (40+10+40) |
-| Tổng thời lượng | 30 giờ học trên lớp + 3 buổi kiểm tra |
+| Tổng thời lượng | 30 giờ học trực tuyến + 3 buổi kiểm tra |
 | Thời gian hoàn thành dự kiến | [CẦN BỔ SUNG] |
 | Lịch học dự kiến | [CẦN BỔ SUNG] |
 | Hình thức | Lớp học trực tuyến |
@@ -45,7 +45,7 @@ Trọng số thực tế các nhóm nội dung trong đề thi:
 | Xác suất & thống kê | 1–2 | ~3% |
 | Đạo hàm | hiếm khi xuất hiện | — |
 
-Hai nhóm Lượng giác và Hình học giải tích chiếm gần 40% số câu và là trọng tâm của chương trình. Chương trình được thiết kế theo định hướng **kế thừa kiến thức nền mà học sinh đã học ở bậc phổ thông**, dành trọn thời gian trên lớp cho kỹ năng đọc đề, nhận dạng dạng bài và vận dụng. Kiến thức trọng tâm của mỗi chuyên đề được hệ thống hóa thành một khối ngắn gọn gồm công thức cần nhớ và từ khóa nhận dạng đề.
+Hai nhóm Lượng giác và Hình học giải tích chiếm gần 40% số câu và là trọng tâm của chương trình. Chương trình được thiết kế theo định hướng **kế thừa kiến thức nền mà học sinh đã học ở bậc phổ thông**, dành trọn thời gian học cho kỹ năng đọc đề, nhận dạng dạng bài và vận dụng. Kiến thức trọng tâm của mỗi chuyên đề được hệ thống hóa thành một khối ngắn gọn gồm công thức cần nhớ và từ khóa nhận dạng đề.
 
 Đề thi được tổ chức theo 4 module kiến thức; ký hiệu module được dùng xuyên suốt tài liệu:
 
@@ -95,14 +95,14 @@ Chương trình tập trung vào việc củng cố và làm chắc các dạng 
 |---|---|---|---|
 | Bài tập về nhà | **20%** | Chấm theo mức độ hoàn thành và kết quả | Xuyên suốt khóa học |
 | Kiểm tra cuối chuyên đề | **10%** | 4 bài, giao về nhà | BTVN buổi 5, 6, 12, 15 |
-| Kiểm tra giữa kỳ 1 | **15%** | Ngoài giờ, trợ giảng trông | Sau buổi 7 |
-| Kiểm tra giữa kỳ 2 | **15%** | Ngoài giờ, trợ giảng trông | Sau buổi 13 |
-| Kiểm tra cuối kỳ | **40%** | Ngoài giờ, trợ giảng trông | Sau buổi 20 |
+| Kiểm tra giữa kỳ 1 | **15%** | Trực tuyến trên hệ thống | Sau buổi 7 |
+| Kiểm tra giữa kỳ 2 | **15%** | Trực tuyến trên hệ thống | Sau buổi 13 |
+| Kiểm tra cuối kỳ | **40%** | Trực tuyến trên hệ thống | Sau buổi 20 |
 | **Tổng** | **100%** | | |
 
 ### 5.2. Cấu trúc bài tập về nhà
 
-BTVN có khối lượng lớn và đóng vai trò chính trong việc nâng điểm — kết quả của học sinh phụ thuộc chủ yếu vào việc tự làm bài và tự kiểm tra lại ở nhà. BTVN gồm hai phần:
+BTVN có khối lượng lớn và đóng vai trò chính trong việc nâng điểm — kết quả của học sinh phụ thuộc chủ yếu vào việc tự làm bài và tự kiểm tra lại. BTVN gồm hai phần:
 
 - **Bắt buộc** — vừa luyện bài mới, vừa duy trì kiến thức các bài trước. Trọng số giảm dần theo khoảng cách.
 - **Tự chọn** — chỉ luyện nội dung của buổi hôm đó, dành cho học sinh muốn đào sâu.
@@ -183,9 +183,9 @@ Mỗi buổi có 5–6 dạng bài, tương đương khoảng 7 phút cho mỗi 
 | Chữa kỹ câu nhiều học sinh sai | 45% | 36 phút |
 | Hệ thống dạng bài lặp lại và kỹ thuật xử lý nhanh | 20% | 16 phút |
 
-Học sinh làm đề trước ở nhà. Trên lớp, giáo viên chữa toàn bộ đề theo phương thức phân tầng: khoảng 30 câu cả lớp làm đúng chỉ khái quát đáp án và cách nhận dạng, khoảng 18 câu nhiều học sinh sai được chữa kỹ. Cách này dành được thời gian cho việc phân tích nguyên nhân sai — vốn là phần quan trọng nhất.
+Học sinh làm đề trước buổi học. Trong buổi học, giáo viên chữa toàn bộ đề theo phương thức phân tầng: khoảng 30 câu cả lớp làm đúng chỉ khái quát đáp án và cách nhận dạng, khoảng 18 câu nhiều học sinh sai được chữa kỹ. Cách này dành được thời gian cho việc phân tích nguyên nhân sai — vốn là phần quan trọng nhất.
 
-Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, dựa trên bài làm học sinh nộp.
+Giáo viên phân loại câu đúng/sai thủ công trước buổi chữa, dựa trên bài làm học sinh nộp qua hệ thống.
 
 ---
 
@@ -193,13 +193,13 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Dự lớp.** Học sinh cần tham dự đầy đủ các buổi học. Trường hợp vắng mặt, học sinh có trách nhiệm tự học lại nội dung và bổ sung bài tập của buổi đã vắng.
 
-**Bài tập về nhà.** BTVN là thành phần bắt buộc và chiếm 20% điểm số. Học sinh nộp bài theo hạn quy định. [CẦN BỔ SUNG: quy định cụ thể về hạn nộp và xử lý nộp muộn]
+**Bài tập về nhà.** BTVN là thành phần bắt buộc và chiếm 20% điểm số. Học sinh làm bài và nộp qua hệ thống học trực tuyến theo hạn quy định. [CẦN BỔ SUNG: quy định cụ thể về hạn nộp và xử lý nộp muộn]
 
-**Kiểm tra.** Ba bài kiểm tra định kỳ được tổ chức ngoài giờ học, có trợ giảng trông. Học sinh vắng mặt không có lý do chính đáng sẽ nhận điểm 0 cho bài kiểm tra đó. [CẦN BỔ SUNG: quy định về kiểm tra bù]
+**Kiểm tra.** Ba bài kiểm tra định kỳ được tổ chức trực tuyến trên hệ thống. Học sinh tự chọn thời điểm làm bài trong ngày thi quy định; hệ thống tính giờ từ lúc học sinh bắt đầu và tự thu bài khi hết giờ. Học sinh vắng mặt không có lý do chính đáng sẽ nhận điểm 0 cho bài kiểm tra đó. [CẦN BỔ SUNG: quy định về kiểm tra bù]
 
 **Liêm chính học thuật.** Mọi hành vi gian lận trong kiểm tra — sử dụng tài liệu trái phép, trao đổi bài, nhờ người làm hộ — đều bị xử lý theo quy định của trung tâm. [CẦN BỔ SUNG: hình thức xử lý cụ thể]
 
-**Hỗ trợ ngoài giờ.** Trợ giảng có giờ trực hàng ngày để hỗ trợ học sinh làm BTVN. Học sinh gặp khó khăn nên chủ động đăng ký. [CẦN BỔ SUNG: khung giờ trực]
+**Hỗ trợ học tập.** Trợ giảng hỗ trợ học sinh giải đáp thắc mắc qua nhóm chat của lớp. Học sinh gặp khó khăn nên chủ động đặt câu hỏi trong nhóm.
 
 ---
 
@@ -208,11 +208,11 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 | Nội dung | Thông tin |
 |---|---|
 | Giáo viên phụ trách nội dung | [CẦN BỔ SUNG] |
-| Trợ giảng phụ trách BTVN | [CẦN BỔ SUNG] |
-| Giờ tiếp học sinh | [CẦN BỔ SUNG] |
+| Trợ giảng | [CẦN BỔ SUNG] |
+| Kênh hỗ trợ học sinh | Nhóm chat của lớp |
 | Kênh liên hệ | [CẦN BỔ SUNG] |
 
-**Phân công.** Giáo viên phụ trách giảng dạy nội dung trên lớp, thiết kế và chấm đề kiểm tra. Trợ giảng phụ trách hỗ trợ học sinh làm BTVN ngoài giờ và coi các buổi kiểm tra.
+**Phân công.** Giáo viên phụ trách giảng dạy nội dung, thiết kế và chấm đề kiểm tra. Trợ giảng phụ trách hỗ trợ học sinh giải đáp thắc mắc qua nhóm chat và quản lý lớp trên hệ thống học trực tuyến.
 
 ---
 
@@ -341,7 +341,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
   - Tìm khoảng đơn điệu của hàm số lượng giác.
 
 **Bài tập về nhà**
-- **Kiểm tra cuối chuyên đề Lượng giác** — học sinh tự làm ở nhà, gồm cả hai buổi 4 và 5.
+- **Kiểm tra cuối chuyên đề Lượng giác** — học sinh tự làm, gồm cả hai buổi 4 và 5.
 - **Tự chọn:** 100% hàm số và phương trình lượng giác.
 
 ---
@@ -367,7 +367,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
   - Bài toán thực tế vận dụng cấp số cộng và cấp số nhân.
 
 **Bài tập về nhà**
-- **Kiểm tra cuối chuyên đề Hàm số và Dãy số** — học sinh tự làm ở nhà, gồm các buổi 2, 3 và 6.
+- **Kiểm tra cuối chuyên đề Hàm số và Dãy số** — học sinh tự làm, gồm các buổi 2, 3 và 6.
 - **Tự chọn:** 100% dãy số.
 
 ---
@@ -376,7 +376,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Phạm vi:** Tập hợp và bất đẳng thức, Hàm số, Lượng giác, Dãy số
 
-**Hình thức:** học sinh làm đề trước ở nhà. Trên lớp, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
+**Hình thức:** học sinh làm đề trước buổi học. Trong buổi học, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
 
 **Nội dung buổi**
 - Phân tích nguyên nhân sai: không đọc được đề, nhận dạng sai dạng bài, hay tính toán nhầm.
@@ -386,7 +386,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Bài tập về nhà:** đề luyện tập cho buổi chữa tiếp theo.
 
-> **Kiểm tra giữa kỳ 1** được tổ chức ngoài giờ học sau buổi này.
+> **Kiểm tra giữa kỳ 1** được tổ chức trực tuyến trên hệ thống sau buổi này.
 
 ---
 
@@ -469,7 +469,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Phạm vi:** Hình học phẳng, Đường thẳng và đường tròn, Conic
 
-**Hình thức:** học sinh làm đề trước ở nhà. Trên lớp, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
+**Hình thức:** học sinh làm đề trước buổi học. Trong buổi học, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
 
 **Nội dung buổi**
 - Phân tích nguyên nhân sai ở nhóm hình học — đọc sai đề, nhầm công thức, hay dựng hình sai.
@@ -503,7 +503,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
   - Tính môđun của số phức và lũy thừa của đơn vị ảo.
 
 **Bài tập về nhà**
-- **Kiểm tra cuối chuyên đề Hình học và Đại số** — học sinh tự làm ở nhà, gồm các buổi 8, 9, 10 và 12.
+- **Kiểm tra cuối chuyên đề Hình học và Đại số** — học sinh tự làm, gồm các buổi 8, 9, 10 và 12.
 - **Tự chọn:** 100% vector và số phức.
 
 ---
@@ -512,7 +512,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Phạm vi:** Vector và số phức, kết hợp ôn lại toàn bộ M3
 
-**Hình thức:** học sinh làm đề trước ở nhà. Trên lớp, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
+**Hình thức:** học sinh làm đề trước buổi học. Trong buổi học, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
 
 **Nội dung buổi**
 - Chữa các câu khó về vector và số phức.
@@ -521,7 +521,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Bài tập về nhà:** đề luyện tập cho buổi chữa tiếp theo.
 
-> **Kiểm tra giữa kỳ 2** được tổ chức ngoài giờ học sau buổi này.
+> **Kiểm tra giữa kỳ 2** được tổ chức trực tuyến trên hệ thống sau buổi này.
 
 ---
 
@@ -568,7 +568,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
   - So sánh mức độ phân tán giữa hai tập dữ liệu qua độ lệch chuẩn.
 
 **Bài tập về nhà**
-- **Kiểm tra cuối chuyên đề Xác suất và Thống kê** — học sinh tự làm ở nhà, gồm cả hai buổi 14 và 15.
+- **Kiểm tra cuối chuyên đề Xác suất và Thống kê** — học sinh tự làm, gồm cả hai buổi 14 và 15.
 - **Tự chọn:** 100% thống kê.
 
 ---
@@ -577,7 +577,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Phạm vi:** Xác suất và Thống kê
 
-**Hình thức:** học sinh làm đề trước ở nhà. Trên lớp, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
+**Hình thức:** học sinh làm đề trước buổi học. Trong buổi học, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
 
 **Nội dung buổi**
 - Chữa các câu về xác suất và thống kê.
@@ -594,14 +594,14 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Chuẩn bị bài trước buổi học**
 1. Ôn lại bảng công thức của các chuyên đề đã học.
-2. Làm một đề tổng hợp có bấm giờ ở nhà, ghi lại thời gian làm từng câu.
+2. Làm một đề tổng hợp có bấm giờ, ghi lại thời gian làm từng câu.
 
 **Nội dung buổi**
 - **Tính nhẩm và ước lượng:** kỹ thuật tính nhanh không dùng máy tính; ước lượng kết quả để loại trừ đáp án; xử lý các phép tính lũy thừa, căn, logarit thủ công.
 - **Đọc đề nhanh:** nhận diện từ khóa quyết định trong đề tiếng Trung; phân biệt yêu cầu chính và dữ kiện nhiễu.
 - **Kỹ thuật trắc nghiệm:** thay đáp án vào đề; loại trừ theo tính chất; kiểm tra bằng giá trị đặc biệt; xử lý khi không giải được.
 - **Quản lý thời gian:** phân bổ 60 phút cho 48 câu; chiến lược làm nhiều lượt; khi nào nên bỏ qua câu khó.
-- **Thực hành:** làm một đề rút gọn có bấm giờ ngay tại lớp.
+- **Thực hành:** làm một đề rút gọn có bấm giờ ngay trong buổi học.
 
 **Bài tập về nhà:** đề tổng hợp cho buổi chữa tiếp theo.
 
@@ -611,13 +611,13 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Phạm vi:** toàn bộ chương trình
 
-**Hình thức:** học sinh làm đề đầy đủ theo cấu trúc 48 câu trong 60 phút ở nhà. Trên lớp, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
+**Hình thức:** học sinh làm đề đầy đủ theo cấu trúc 48 câu trong 60 phút trước buổi học. Trong buổi học, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
 
 **Nội dung buổi**
 - Chữa đề, tập trung vào các câu sai ở nhiều học sinh.
 - Phân tích lỗi theo từng nhóm nội dung để xác định phần còn yếu.
 - Luyện lại các dạng bài học sinh làm sai nhiều nhất.
-- Rà soát kỹ năng quản lý thời gian qua kết quả làm bài ở nhà.
+- Rà soát kỹ năng quản lý thời gian qua kết quả làm bài.
 
 **Bài tập về nhà:** đề tổng hợp cho buổi chữa tiếp theo.
 
@@ -627,7 +627,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 
 **Phạm vi:** toàn bộ chương trình
 
-**Hình thức:** học sinh làm đề đầy đủ theo cấu trúc 48 câu trong 60 phút ở nhà. Trên lớp, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
+**Hình thức:** học sinh làm đề đầy đủ theo cấu trúc 48 câu trong 60 phút trước buổi học. Trong buổi học, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
 
 **Nội dung buổi**
 - Chữa đề, tập trung vào các câu sai ở nhiều học sinh.
@@ -650,12 +650,12 @@ Giáo viên phân loại câu đúng/sai thủ công trước khi lên lớp, d�
 **Nội dung buổi**
 - Hệ thống hóa công thức và từ khóa nhận dạng đề theo từng nhóm nội dung.
 - Hệ thống các dạng bài trọng tâm và các lỗi thường gặp.
-- Luyện đề rút gọn có bấm giờ, chữa và phân tích lỗi tại lớp.
-- Hướng dẫn phân bổ thời gian và giữ tâm lý ổn định khi vào phòng thi.
+- Luyện đề rút gọn có bấm giờ, chữa và phân tích lỗi trong buổi học.
+- Hướng dẫn phân bổ thời gian và giữ tâm lý ổn định khi bước vào kỳ thi.
 
 **Bài tập về nhà:** không giao.
 
-> **Kiểm tra cuối kỳ** được tổ chức ngoài giờ học sau buổi này.
+> **Kiểm tra cuối kỳ** được tổ chức trực tuyến trên hệ thống sau buổi này.
 
 ---
 
