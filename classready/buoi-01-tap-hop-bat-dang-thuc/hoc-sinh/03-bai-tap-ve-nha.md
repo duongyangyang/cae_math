@@ -9,9 +9,7 @@
 
 ## PHẦN BẮT BUỘC — 25 CÂU
 
-Buổi 1 là buổi đầu chương trình, chưa có nội dung các buổi trước để ôn tập, nên toàn bộ phần bắt buộc tập trung vào chuyên đề hôm nay. Từ buổi 2 trở đi, phần bắt buộc sẽ có thêm các câu ôn tập lùi theo trọng số giảm dần.
-
-**Phân bổ:** 12 câu tập hợp · 13 câu bất đẳng thức · độ khó 12 dễ / 8 trung bình / 5 khó
+Làm toàn bộ 25 câu. Đây là phần tính vào điểm BTVN.
 
 ---
 
@@ -371,9 +369,7 @@ D. $\{a\mid a\le\frac{23}{5}\}$
 
 ## PHẦN TỰ CHỌN — 15 CÂU
 
-Phần tự chọn luyện đúng nội dung buổi hôm nay nhưng ở mức khó hơn rõ rệt so với phần bắt buộc. Chỉ làm sau khi đã hoàn thành 25 câu bắt buộc.
-
-**Phân bổ:** 7 câu tập hợp · 8 câu bất đẳng thức · độ khó 2 dễ / 8 trung bình / 5 khó
+Phần này luyện cùng nội dung nhưng ở mức khó hơn rõ rệt. Chỉ làm sau khi đã hoàn thành 25 câu bắt buộc. Không tính vào điểm BTVN.
 
 ---
 
@@ -597,4 +593,4 @@ D. 4个
 
 ---
 
-*Đáp án và lời giải chi tiết: `04-dap-an.md`. Chỉ mở sau khi đã làm xong toàn bộ bài.*
+*Đáp án để tự chấm: `05-dap-an-bai-tap-ve-nha.md` — chỉ mở sau khi đã làm xong toàn bộ 40 câu. Lời giải chi tiết giáo viên chữa trên lớp.*

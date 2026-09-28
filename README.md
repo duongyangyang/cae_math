@@ -15,11 +15,11 @@ Kho tài liệu biên soạn bởi **CAE SHANGHAI**, phục vụ công tác gi�
 | `docs/` | Tài liệu chương trình: syllabus, tổng quan, phân tích đề cương |
 | `source/` | Tài liệu giảng dạy dạng `.md` theo từng chuyên đề, kèm hình ảnh, bảng biểu minh họa (nếu có) |
 | `latex/` | Template LaTeX chuẩn giáo trình, system prompt để chuyển đổi `.md → .tex`, và các file `.tex` đã biên soạn |
-| `classready/` | Tài liệu hoàn thiện ở dạng `.pdf`, sẵn sàng in ấn/sử dụng trên lớp |
+| `classready/` | Tài liệu giảng dạy hoàn chỉnh theo từng buổi, tách riêng bản học sinh và bản giáo viên |
 | `question-bank/` | Kho đề markdown chuẩn hóa, phân theo 9 chuyên đề |
 | `references/` | Đề thi chính thức và đề luyện tập dùng làm nguồn biên soạn |
 
-**Quy trình biên soạn:** `source/*.md` → (áp dụng `latex/system_prompt.md`) → `latex/*.tex` → biên dịch → `classready/*.pdf`
+**Quy trình biên soạn:** `classready/*.md` (nguồn) → (áp dụng `latex/system_prompt.md`) → `latex/*.tex` → biên dịch XeLaTeX → PDF bàn giao
 
 ## Tài liệu chương trình (`docs/`)
 

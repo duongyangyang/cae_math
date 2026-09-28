@@ -53,9 +53,11 @@ Tra nghĩa các thuật ngữ dưới đây và điền vào cột **Nghĩa**. �
 
 ## PHẦN B — HOÀN THIỆN BẢN DỊCH
 
-Dịch ba đề bài sau sang tiếng Việt. Viết ra giấy trước khi tra từ điển — mục đích là luyện phản xạ đọc đề, không phải luyện dịch thuật.
+**Câu 1 đã có bản dịch mẫu** — đọc để nắm cách xử lý. Nhiệm vụ của em là dịch **Câu 2 và Câu 3**.
 
-**Câu 1.**
+Viết ra giấy trước khi tra từ điển. Mục đích là luyện phản xạ đọc đề, không phải luyện dịch thuật.
+
+**Câu 1 — mẫu.**
 
 已知集合 $A=\{x\mid -1\le x<10\}$，集合 $B=\{x\mid x\ge2\}$，则 $A\cap B$ 等于（ ）
 
@@ -77,7 +79,7 @@ Dịch ba đề bài sau sang tiếng Việt. Viết ra giấy trước khi tra 
 
 ## PHẦN C — BÀI TẬP CHUẨN BỊ
 
-Làm 10 câu dưới đây **trước buổi học**. Tỉ lệ độ khó 6 dễ – 3 trung bình – 1 khó. Câu 1–6 chỉ cần đọc hiểu thuật ngữ là làm được; câu 9–10 đòi hỏi biến đổi.
+Làm 10 câu dưới đây **trước buổi học**. Sáu câu đầu chỉ cần đọc hiểu thuật ngữ là làm được; các câu cuối đòi hỏi biến đổi, nếu chưa làm được thì ghi lại chỗ vướng mắc để hỏi trên lớp.
 
 ### Mức dễ
 
@@ -225,4 +227,4 @@ D. $\{-1,0,2\}$
 
 ---
 
-*Nộp bài trước buổi học qua hệ thống. Đáp án và lời giải chi tiết: `04-dap-an.md`.*
+*Nộp bài trước buổi học qua hệ thống. Đáp án và lời giải: `04-dap-an-chuan-bi.md` — mở sau khi đã tự làm xong.*

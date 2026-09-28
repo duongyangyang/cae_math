@@ -1,53 +1,98 @@
 # TÀI LIỆU GIẢNG DẠY — CHƯƠNG TRÌNH LUYỆN THI CSCA TOÁN
 
-Thư mục chứa tài liệu hoàn chỉnh của từng buổi học, sẵn sàng đưa vào giảng dạy. Mỗi buổi là một thư mục riêng, tổ chức theo loại hoạt động.
-
-Nội dung biên soạn theo `docs/syllabus.md` và tham chiếu `references/[0.2]CSCA数学备考指南.pdf`.
+Thư mục chứa tài liệu hoàn chỉnh của từng buổi học, sẵn sàng đưa vào giảng dạy. Nội dung biên soạn theo `docs/syllabus.md` và tham chiếu `references/[0.2]CSCA数学备考指南.pdf`.
 
 ---
 
-## Cấu trúc thư mục
+## Nguyên tắc tổ chức: tách theo người đọc
 
-Mỗi loại buổi có một bộ file riêng, phản ánh đúng hoạt động của buổi đó.
+Mỗi buổi có **hai thư mục con**, phân biệt rõ tài liệu nào phát cho học sinh và tài liệu nào giáo viên giữ riêng. Khi giao bài, chỉ cần đưa cả thư mục `hoc-sinh/` — không sợ lộ file giáo viên.
+
+```
+buoi-XX-ten-buoi/
+├── hoc-sinh/          ← phát cho học sinh
+└── giao-vien/         ← chỉ giáo viên
+```
+
+### Quy tắc phân loại
+
+| Nội dung | Thuộc về | Lý do |
+|:---------|:---------|:------|
+| Bảng từ vựng, đề dịch, bài tập chuẩn bị | `hoc-sinh/` | Học sinh làm trước buổi |
+| Từ khóa nhận dạng, công thức, dạng bài, ví dụ | `hoc-sinh/` | Học sinh tra cứu khi làm bài |
+| Đề bài tập về nhà | `hoc-sinh/` | Học sinh làm |
+| Đáp án bài tập chuẩn bị | `hoc-sinh/` | Học sinh tự chấm trước buổi |
+| Bảng đáp án bài tập về nhà | `hoc-sinh/` | Học sinh tự chấm sau khi làm xong |
+| Lời giải chi tiết bài tập về nhà | `giao-vien/` | Giáo viên chữa trên lớp |
+| Bảng lỗi thường gặp | `giao-vien/` | Công cụ chẩn đoán của giáo viên |
+| Phân bổ thời gian, kịch bản giảng dạy | `giao-vien/` | Học sinh không cần biết |
+| Mục tiêu sư phạm từng khối | `giao-vien/` | — |
+| Danh sách câu luyện tại chỗ, thứ tự ưu tiên dạng bài | `giao-vien/` | — |
+| Độ khó, phân bổ số câu, mã câu hỏi | `giao-vien/` | Thông tin vận hành |
+
+### Vì sao tách đáp án làm hai file
+
+Đáp án phần chuẩn bị và đáp án bài tập về nhà được mở ở **hai thời điểm khác nhau**: chuẩn bị làm trước buổi học, bài tập về nhà làm sau buổi và nộp trước buổi kế tiếp. Nếu gộp chung, học sinh mở file tra từ vựng sẽ nhìn thấy luôn lời giải 40 câu chưa làm.
+
+Đáp án bài tập về nhà tách tiếp làm hai mức: học sinh nhận **bảng đáp án** để tự chấm, giáo viên giữ **lời giải chi tiết** để chữa bài.
+
+---
+
+## Cấu trúc theo loại buổi
 
 ### Buổi nội dung (1, 2, 3, 4, 6, 8, 9, 10, 12, 14, 15)
 
 ```
 buoi-XX-ten-buoi/
-├── 01-chuan-bi-bai.md      Học sinh làm TRƯỚC buổi học
-├── 02-noi-dung-buoi.md     Tài liệu giảng dạy trên lớp
-├── 03-bai-tap-ve-nha.md    BTVN sau buổi học
-└── 04-dap-an.md            Đáp án + lời giải chi tiết
+├── hoc-sinh/
+│   ├── 01-chuan-bi-bai.md          Học sinh làm TRƯỚC buổi học
+│   ├── 02-tai-lieu-buoi-hoc.md     Từ khóa, công thức, dạng bài, ví dụ
+│   ├── 03-bai-tap-ve-nha.md        BTVN sau buổi học
+│   ├── 04-dap-an-chuan-bi.md       Đáp án prep — mở trước buổi
+│   └── 05-dap-an-bai-tap-ve-nha.md Bảng đáp án BTVN — mở sau khi làm xong
+└── giao-vien/
+    ├── 01-ke-hoach-giang-day.md    Phân bổ giờ, kịch bản, lưu ý sư phạm
+    └── 02-loi-giai-bai-tap-ve-nha.md  Lời giải chi tiết + bảng lỗi
 ```
 
 ### Buổi nội dung có kiểm tra cuối chuyên đề (5, 6, 12, 15)
 
 ```
 buoi-XX-ten-buoi/
-├── 01-chuan-bi-bai.md
-├── 02-noi-dung-buoi.md
-├── 03-bai-tap-ve-nha.md
-├── 04-dap-an.md
-├── 05-de-kiem-tra.md       Đề kiểm tra cuối chuyên đề
-└── 06-dap-an-kiem-tra.md   Đáp án đề kiểm tra
+├── hoc-sinh/
+│   ├── 01-chuan-bi-bai.md
+│   ├── 02-tai-lieu-buoi-hoc.md
+│   ├── 03-bai-tap-ve-nha.md
+│   ├── 04-dap-an-chuan-bi.md
+│   ├── 05-dap-an-bai-tap-ve-nha.md
+│   └── 06-de-kiem-tra.md         Đề kiểm tra
+└── giao-vien/
+    ├── 01-ke-hoach-giang-day.md
+    ├── 02-loi-giai-bai-tap-ve-nha.md
+    └── 03-dap-an-kiem-tra.md     Đáp án + ma trận + hướng dẫn chấm
 ```
 
 ### Buổi chữa đề (7, 11, 13, 16, 18, 19)
 
 ```
 buoi-XX-chua-de-N/
-├── 01-de-bai.md            Đề học sinh làm trước buổi
-├── 02-noi-dung-buoi.md     Kịch bản chữa đề theo phương thức phân tầng
-└── 03-dap-an.md            Đáp án + lời giải
+├── hoc-sinh/
+│   ├── 01-de-bai.md              Đề học sinh làm trước buổi
+│   └── 02-dap-an.md              Đáp án
+└── giao-vien/
+    └── 01-ke-hoach-chua-de.md    Kịch bản chữa theo phương thức phân tầng
 ```
 
 ### Buổi kỹ năng thi (17) và ôn tập (20)
 
 ```
 buoi-XX-ten-buoi/
-├── 01-chuan-bi-bai.md
-├── 02-noi-dung-buoi.md
-└── 03-bai-tap-ve-nha.md
+├── hoc-sinh/
+│   ├── 01-chuan-bi-bai.md
+│   ├── 02-tai-lieu-buoi-hoc.md
+│   └── 03-bai-tap-ve-nha.md
+└── giao-vien/
+    └── 01-ke-hoach-giang-day.md
 ```
 
 ---
@@ -81,7 +126,9 @@ Phần tự chọn khó hơn rõ rệt so với phần bắt buộc. Mỗi buổ
 
 ### Nguồn câu hỏi
 
-Câu hỏi lấy từ `question-bank/`, giữ nguyên mã câu (`CAE-M-CD{n}-{source}-{L}-{NNN}`) để truy vết. Câu do giáo viên tự soạn ghi mã `CAE-M-CD{n}-GV-{L}-{NNN}`.
+Câu hỏi lấy từ `question-bank/`. Mã câu (`CAE-M-CD{n}-{source}-{L}-{NNN}`) **chỉ ghi trong thư mục `giao-vien/`** — mã chứa nhãn độ khó, không nên cho học sinh thấy.
+
+Câu do giáo viên tự soạn ghi mã `CAE-M-CD{n}-GV-{L}-{NNN}`.
 
 **Toàn bộ đáp án phải được kiểm chứng trước khi đưa vào tài liệu.** Kho đề có câu sai đáp án và câu có nhiều hơn một đáp án đúng — đã phát hiện và loại bỏ trong quá trình biên soạn.
 

@@ -11,7 +11,7 @@
 | Tên khóa học | Luyện thi CSCA — môn Toán |
 | Mã khóa học | [CẦN BỔ SUNG] |
 | Đơn vị biên soạn | CAE SHANGHAI |
-| Phiên bản tài liệu | 1.2.0 cập nhật ngày 28.09.2026 |
+| Phiên bản tài liệu | 1.3.0 cập nhật ngày 28.09.2026 |
 | Ngày ban hành | [CẦN BỔ SUNG] |
 | Số buổi học trực tuyến | 20 buổi |
 | Số buổi kiểm tra | 3 buổi (2 giữa kỳ, 1 cuối kỳ), tổ chức trực tuyến trên hệ thống |
@@ -159,7 +159,7 @@ Tỉ lệ độ khó xấp xỉ 40/30/30, tương ứng với tỉ lệ của đ
 
 | Nội dung | Số câu |
 |---|---|
-| Hình học phẳng (buổi 8) | 4 |
+| Hình học phẳng và không gian (buổi 8) | 4 |
 | Đường thẳng và đường tròn (buổi 9) | 8 |
 | Conic (buổi 10) | 8 |
 | Vector và số phức (buổi 12) | 4 |
@@ -188,7 +188,7 @@ Tỉ lệ độ khó xấp xỉ 40/30/30, tương ứng với tỉ lệ của đ
 | Conic | 13 |
 | Đường thẳng và đường tròn | 9 |
 | Vector và số phức | 7 |
-| Hình học phẳng | 7 |
+| Hình học phẳng và không gian | 7 |
 
 *Kiểm tra cuối kỳ (sau buổi 20)*
 
@@ -209,7 +209,7 @@ Mỗi buổi kéo dài 90 phút, chia thành hai phần 40 phút, nghỉ giải 
 | 5 | Lượng giác — hàm số và phương trình (三角函数的图像与方程) | Nội dung | M2 |
 | 6 | Dãy số (数列) | Nội dung | M2 |
 | 7 | Chữa đề 1 — Tập hợp, hàm số, lượng giác, dãy số | Chữa đề | — |
-| 8 | Hình học phẳng (平面几何) | Nội dung | M3 |
+| 8 | Hình học phẳng và không gian (平面几何与空间几何) | Nội dung | M3 |
 | 9 | Đường thẳng và đường tròn (直线与圆) | Nội dung | M3 |
 | 10 | Conic (圆锥曲线) | Nội dung | M3 |
 | 11 | Chữa đề 2 — Hình học | Chữa đề | — |
@@ -451,7 +451,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước buổi chữa, d�
 
 ---
 
-### BUỔI 8 — Hình học phẳng (平面几何)
+### BUỔI 8 — Hình học phẳng và không gian (平面几何与空间几何)
 
 *Module M3 · Tỉ trọng đề thi ~19% (cùng với hình học giải tích) · Khoảng 8–10 câu*
 
@@ -461,17 +461,19 @@ Giáo viên phân loại câu đúng/sai thủ công trước buổi chữa, d�
 3. Làm bài tập chuẩn bị.
 
 **Nội dung buổi**
-- **Hệ thống hóa kiến thức trọng tâm:** công thức diện tích và chu vi của tam giác, đường tròn, đa giác; định lý Pythagoras; quan hệ cạnh và góc trong tam giác; tổng góc trong của đa giác; từ khóa đề bài — 三角形, 圆, 多边形, 周长, 面积, 相似, 全等, 内角.
+- **Hệ thống hóa kiến thức trọng tâm:** công thức diện tích và chu vi của tam giác, đường tròn, đa giác; định lý Pythagoras; quan hệ cạnh và góc trong tam giác; tổng góc trong của đa giác; công thức diện tích mặt và thể tích của hình hộp, hình lập phương, hình trụ, hình nón, hình cầu; từ khóa đề bài — 三角形, 圆, 多边形, 周长, 面积, 相似, 全等, 内角, 表面积, 体积.
 - **Các dạng bài:**
   - Tính diện tích và chu vi của tam giác, đường tròn, đa giác.
   - Bài toán tam giác đồng dạng — tìm độ dài cạnh chưa biết.
   - Bài toán tam giác vuông kết hợp định lý Pythagoras.
   - Bài toán đường tròn — quan hệ dây cung, tiếp tuyến, góc nội tiếp.
   - Bài toán đa giác — tổng góc trong, đa giác đều.
+  - Tính thể tích và diện tích mặt của hình hộp, hình lập phương.
+  - Tính thể tích và diện tích mặt của hình trụ, hình nón, hình cầu.
 
 **Bài tập về nhà**
-- **Bắt buộc:** 50% hình học phẳng (buổi này) / 25% dãy số / 15% lượng giác / 10% ôn tích lũy.
-- **Tự chọn:** 100% hình học phẳng.
+- **Bắt buộc:** 50% hình học phẳng và không gian (buổi này) / 25% dãy số / 15% lượng giác / 10% ôn tích lũy.
+- **Tự chọn:** 100% hình học phẳng và không gian.
 
 ---
 
@@ -528,7 +530,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước buổi chữa, d�
 
 ### BUỔI 11 — CHỮA ĐỀ 2
 
-**Phạm vi:** Hình học phẳng, Đường thẳng và đường tròn, Conic
+**Phạm vi:** Hình học phẳng và không gian, Đường thẳng và đường tròn, Conic
 
 **Hình thức:** học sinh làm đề trước buổi học. Trong buổi học, giáo viên chữa toàn bộ đề theo phương thức phân tầng.
 
@@ -729,7 +731,7 @@ Giáo viên phân loại câu đúng/sai thủ công trước buổi chữa, d�
 | Hàm số — bậc hai, mũ, logarit, đạo hàm | 3 | ~8% |
 | Lượng giác (三角函数) | 4–5 | ~20% |
 | Dãy số (数列) | 6 | ~13% |
-| Hình học phẳng (平面几何) | 8 | ~19% (cả ba buổi 8–10) |
+| Hình học phẳng và không gian (平面几何与空间几何) | 8 | ~19% (cả ba buổi 8–10) |
 | Đường thẳng và đường tròn (直线与圆) | 9 | — |
 | Conic (圆锥曲线) | 10 | — |
 | Vector và số phức (向量与复数) | 12 | ~6% |
