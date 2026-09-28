@@ -339,4 +339,13 @@ $$\begin{aligned}
 | `**Bài tập Câu X.**` ... | `\begin{baitap}[Câu X]...\end{baitap}` | Mỗi câu một ô riêng |
 | Text thường | Viết trực tiếp trong `\section` | Không khung |
 
-**Font dùng trong bản in (XeLaTeX, đã cấu hình trong template):** Libertinus Serif (thân bài), Libertinus Math (công thức), Segoe UI (tiêu đề), Microsoft YaHei (thuật ngữ Hán).
+**Font dùng trong bản in (XeLaTeX, đã cấu hình trong template):**
+
+| Hệ chữ | Font | Nguồn |
+|:-------|:-----|:------|
+| Latin (Anh + Việt) — thân bài | TeX Gyre Termes | Đi kèm TeX Live |
+| Latin — tiêu đề | TeX Gyre Heros | Đi kèm TeX Live |
+| Công thức toán | TeX Gyre Termes Math | Đi kèm TeX Live |
+| Chữ Hán (thuật ngữ) | Source Han Serif SC (思源宋体) | Cần cài trước khi biên dịch |
+
+Source Han Serif là chuẩn học thuật Trung Quốc (宋体), miễn phí và có trên cả ba hệ điều hành. Cài đặt trước khi biên dịch lần đầu.

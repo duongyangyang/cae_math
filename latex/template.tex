@@ -11,15 +11,21 @@
 \usepackage{polyglossia}
 \setmainlanguage{vietnamese}
 \setotherlanguage{english}
-\setmainfont{Libertinus Serif}
-\setsansfont{Segoe UI}
-\newfontfamily\cjkfont{Microsoft YaHei}[Scale=0.95]   % dùng cho thuật ngữ Hán
+
+% Chữ Latin (Anh + Việt): TeX Gyre Termes — bản clone Times New Roman,
+% đi kèm TeX Live, hỗ trợ đầy đủ dấu tiếng Việt.
+\setmainfont{TeX Gyre Termes}
+\setsansfont{TeX Gyre Heros}
+
+% Chữ Hán: Source Han Serif SC (思源宋体) — chuẩn học thuật Trung Quốc.
+% Cần cài font này trước khi biên dịch (miễn phí, có trên mọi hệ điều hành).
+\newfontfamily\cjkfont{Source Han Serif SC}[Scale=0.95]
 \newcommand{\cjk}[1]{{\cjkfont #1}}
 
 % ---------- TOÁN HỌC ----------
 \usepackage{amsmath, amssymb, amsthm, mathtools}
 \usepackage{unicode-math}
-\setmathfont{Libertinus Math}
+\setmathfont{TeX Gyre Termes Math}
 
 % ---------- BỐ CỤC TRANG ----------
 \usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.8cm, right=2.2cm]{geometry}
