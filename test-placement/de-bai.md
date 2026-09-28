@@ -10,7 +10,6 @@
 
 Đề gồm 20 câu trắc nghiệm, mỗi câu chọn một đáp án đúng. Thời gian làm bài 30 phút, trung bình 90 giây mỗi câu. Không được dùng máy tính.
 
-Đề thi chính thức có 48 câu trong 60 phút (75 giây mỗi câu). Đề này rút gọn còn 20 câu nhưng giữ nguyên tỉ lệ phân bố theo nhóm nội dung, nên kết quả phản ánh sát năng lực thực tế.
 
 ---
 

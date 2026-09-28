@@ -2,24 +2,26 @@
 
 Kho tài liệu biên soạn bởi **CAE SHANGHAI**, phục vụ công tác giảng dạy và ôn luyện môn Toán cho kỳ thi **CSCA (China Scholastic Competency Assessment)**.
 
+> **Phạm vi repo:** môn Toán. Kỳ thi CSCA còn có Vật lý, 理科中文 và 文科中文 — đề thi của ba môn này nằm trong `references/de-thi-chinh-thuc/` nhưng **chưa có chương trình giảng dạy** trong repo. Xem mục *Nguồn đề* bên dưới.
+
 ## Giới thiệu
 
 Đề thi Toán CSCA gồm 48 câu trắc nghiệm, thời lượng 60 phút, thang điểm 100, được phân bố theo 4 module kiến thức chính. Bộ tài liệu này bám sát cấu trúc đề thi chính thức, triển khai thành 9 chuyên đề giảng dạy nhằm đảm bảo học sinh nắm chắc kiến thức nền, kỹ năng vận dụng và tư duy giải quyết vấn đề.
-
-> **Nguồn tài liệu gốc:** [Google Drive – CAE Math CSCA](#) *(cập nhật link khi có)*
 
 ## Tổng quan cấu trúc repo
 
 | Thư mục / File | Nội dung |
 |---|---|
 | `docs/` | Tài liệu chương trình: syllabus, tổng quan, phân tích đề cương |
-| `source/` | Tài liệu giảng dạy dạng `.md` theo từng chuyên đề, kèm hình ảnh, bảng biểu minh họa (nếu có) |
-| `latex/` | Template LaTeX chuẩn giáo trình, system prompt để chuyển đổi `.md → .tex`, và các file `.tex` đã biên soạn |
+| `source/` | Tài liệu giảng dạy dạng `.md` theo từng chuyên đề (đã chuyển sang `classready/`) |
+| `latex/` | Template LaTeX chuẩn giáo trình và system prompt chuyển đổi `.md → .tex` |
 | `classready/` | Tài liệu giảng dạy hoàn chỉnh theo từng buổi, tách riêng bản học sinh và bản giáo viên |
+| `test-placement/` | Đề kiểm tra đầu vào rút gọn từ đề thi thật |
 | `question-bank/` | Kho đề markdown chuẩn hóa, phân theo 9 chuyên đề |
-| `references/` | Đề thi chính thức và đề luyện tập dùng làm nguồn biên soạn |
+| `references/` | Đề thi chính thức bốn môn và đề luyện tập môn Toán |
+| `.claude/skills/csca-tai-lieu/` | Quy trình soạn tài liệu, dùng cho các buổi tiếp theo |
 
-**Quy trình biên soạn:** `classready/*.md` (nguồn) → (áp dụng `latex/system_prompt.md`) → `latex/*.tex` → biên dịch XeLaTeX → PDF bàn giao
+**Quy trình biên soạn:** `classready/*.md` (nguồn) → `.tex` → biên dịch XeLaTeX → PDF bàn giao
 
 ## Tài liệu chương trình (`docs/`)
 
@@ -39,8 +41,14 @@ Mã câu hỏi theo format `CAE-M-CD{n}-{source}-{L}-{NNN}`. Chi tiết xem tạ
 
 | Thư mục | Nội dung |
 |---|---|
-| `references/de-thi-chinh-thuc/` | Đề thi CSCA môn Toán chính thức, sắp theo tháng thi |
-| `references/de-luyen-tap/` | Đề luyện tập và đề mô phỏng dùng cho biên soạn và chữa đề |
+| `references/de-thi-chinh-thuc/12-6月数学/` | Đề thi CSCA **môn Toán** chính thức, sắp theo tháng thi |
+| `references/de-thi-chinh-thuc/12-4月物理/` | Đề thi CSCA **môn Vật lý** chính thức |
+| `references/de-thi-chinh-thuc/12-4月理科中文/` | Đề thi CSCA **理科中文** (Khoa học tự nhiên – tiếng Trung) |
+| `references/de-thi-chinh-thuc/12-6月文科中文/` | Đề thi CSCA **文科中文** (Khoa học xã hội – tiếng Trung) |
+| `references/de-luyen-tap/` | Đề luyện tập và đề mô phỏng môn Toán |
+| `references/[0.2]CSCA数学备考指南.pdf` | Cẩm nang ôn tập môn Toán |
+
+Repo này hiện chỉ biên soạn **môn Toán**. Ba môn còn lại (Vật lý, 理科中文, 文科中文) có đề trong `references/` nhưng chưa có chương trình giảng dạy tương ứng.
 
 ## Tiến độ cập nhật
 
