@@ -1,6 +1,6 @@
 ---
 title: "TỔNG QUAN VỀ TOÁN TRONG CSCA"
-author: "Hoang Duong - CAE VIET NAM"
+author: "Hoang Duong - CAE SHANGHAI"
 contact: "info@caevietnam.vn"
 date: "31/08/2026"
 ---
@@ -15,7 +15,7 @@ Tài liệu này thuộc quyền sở hữu của CAE VIỆT NAM. Mọi hình th
 
 ## CSCA là gì?
 
-**CSCA (China Standard Curriculum Assessment)** là kỳ thi đánh giá năng lực học thuật theo chương trình chuẩn Trung Quốc, do **Beijing Crossline Edu Tech Co., Ltd.** phát triển, được sử dụng làm căn cứ xét tuyển vào các chương trình học tại Trung Quốc. Đề thi song ngữ (Trung/Anh), gồm nhiều môn, trong đó Toán là một trong những môn thi bắt buộc và có trọng số cao.
+**CSCA (The China Scholastic Competency Assessment)** là kỳ thi đánh giá năng lực học thuật theo chương trình chuẩn Trung Quốc, do **Beijing Crossline Edu Tech Co., Ltd.** phát triển, được sử dụng làm căn cứ xét tuyển vào các chương trình học tại Trung Quốc. Đề thi song ngữ (Trung/Anh), gồm nhiều môn, trong đó Toán là một trong những môn thi bắt buộc và có trọng số cao.
 
 ## Giới thiệu về Toán trong CSCA
 
@@ -43,4 +43,4 @@ Môn Toán trong kỳ thi CSCA đánh giá toàn diện khả năng nắm vững
 
 Module *Hàm số & Dãy số* chiếm tỷ trọng lớn nhất (33%), là trục kiến thức xuyên suốt và nền tảng cho các module còn lại; module *Hình học & Đại số* đòi hỏi kết hợp tư duy không gian với suy luận đại số; module *Xác suất & Thống kê* tuy chiếm tỷ trọng nhỏ nhất nhưng gắn liền với ứng dụng thực tế.
 
-Bộ tài liệu của CAE Việt Nam triển khai 9 chuyên đề giảng dạy bám sát 4 module trên (xem chi tiết tại [`tableofcontent.md`](tableofcontent.md)), đảm bảo học sinh được trang bị đầy đủ kiến thức và kỹ năng cần thiết để đạt kết quả tốt trong kỳ thi.
+Bộ tài liệu của CAE Việt Nam triển khai 9 chuyên đề giảng dạy bám sát 4 module trên (xem chi tiết tại [`syllabus.md`](syllabus.md)), đảm bảo học sinh được trang bị đầy đủ kiến thức và kỹ năng cần thiết để đạt kết quả tốt trong kỳ thi.

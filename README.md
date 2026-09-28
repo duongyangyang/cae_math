@@ -1,6 +1,6 @@
 # CÁC CHUYÊN ĐỀ TOÁN TRONG LUYỆN THI CSCA
 
-Kho tài liệu biên soạn bởi **CAE SHANGHAI**, phục vụ công tác giảng dạy và ôn luyện môn Toán cho kỳ thi **CSCA (China Standard Curriculum Assessment)**.
+Kho tài liệu biên soạn bởi **CAE SHANGHAI**, phục vụ công tác giảng dạy và ôn luyện môn Toán cho kỳ thi **CSCA (China Scholastic Competency Assessment)**.
 
 ## Giới thiệu
 
@@ -12,7 +12,7 @@ Kho tài liệu biên soạn bởi **CAE SHANGHAI**, phục vụ công tác gi�
 
 | Thư mục / File | Nội dung |
 |---|---|
-| `docs/` | Tài liệu chương trình: syllabus, mục lục, tổng quan, phân tích đề cương |
+| `docs/` | Tài liệu chương trình: syllabus, tổng quan, phân tích đề cương |
 | `source/` | Tài liệu giảng dạy dạng `.md` theo từng chuyên đề, kèm hình ảnh, bảng biểu minh họa (nếu có) |
 | `latex/` | Template LaTeX chuẩn giáo trình, system prompt để chuyển đổi `.md → .tex`, và các file `.tex` đã biên soạn |
 | `classready/` | Tài liệu hoàn thiện ở dạng `.pdf`, sẵn sàng in ấn/sử dụng trên lớp |
@@ -26,7 +26,6 @@ Kho tài liệu biên soạn bởi **CAE SHANGHAI**, phục vụ công tác gi�
 | File | Nội dung |
 |---|---|
 | `syllabus.md` | Đề cương chương trình: thông tin khóa học, chuẩn đầu ra, đánh giá, lịch trình 20 buổi |
-| `tableofcontent.md` | Mục lục tổng thể của toàn bộ chương trình, đối chiếu với cấu trúc đề thi CSCA |
 | `overview.md` | Giới thiệu chung về kỳ thi CSCA và định hướng học Toán |
 | `Math Syllabus Analysis.pdf` | Phân tích đề cương chính thức do đơn vị tổ chức thi công bố |
 

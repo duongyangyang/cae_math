@@ -4,7 +4,7 @@ Kho đề được trích xuất từ bộ tài liệu "BỘ 8 ĐỀ TỰ LUYỆ
 
 ## Cấu trúc
 
-- 9 chuyên đề (theo `docs/tableofcontent.md`)
+- 9 chuyên đề (theo `docs/syllabus.md`)
 - Mỗi câu hỏi được gán nhãn: chuyên đề, module, độ khó, nguồn
 - Nội dung câu hỏi bằng tiếng Trung, công thức LaTeX
 

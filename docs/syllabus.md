@@ -11,15 +11,15 @@
 | Tên khóa học | Luyện thi CSCA — môn Toán |
 | Mã khóa học | [CẦN BỔ SUNG] |
 | Đơn vị biên soạn | CAE SHANGHAI |
-| Phiên bản tài liệu | [CẦN BỔ SUNG] |
+| Phiên bản tài liệu | 1.0.0 cập nhật ngày 28.09.2026 |
 | Ngày ban hành | [CẦN BỔ SUNG] |
 | Số buổi học trên lớp | 20 buổi |
 | Số buổi kiểm tra | 3 buổi (2 giữa kỳ, 1 cuối kỳ), tổ chức ngoài giờ học |
-| Thời lượng mỗi buổi | 90 phút (80 phút thực học, nghỉ giải lao 10 phút) |
+| Thời lượng mỗi buổi | 90 phút (40+10+40) |
 | Tổng thời lượng | 30 giờ học trên lớp + 3 buổi kiểm tra |
 | Thời gian hoàn thành dự kiến | [CẦN BỔ SUNG] |
 | Lịch học dự kiến | [CẦN BỔ SUNG] |
-| Hình thức | Lớp học trực tiếp |
+| Hình thức | Lớp học trực tuyến |
 | Sĩ số lớp | [CẦN BỔ SUNG] |
 | Ngôn ngữ giảng dạy | Tiếng Việt, đối chiếu thuật ngữ tiếng Trung theo đề thi |
 
