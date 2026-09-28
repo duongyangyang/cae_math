@@ -1,0 +1,464 @@
+% =====================================================================
+%  BUỔI 12 — LỜI GIẢI BÀI TẬP VỀ NHÀ (từ giao-vien/02-loi-giai-bai-tap-ve-nha.md)
+%  Sinh tự động bằng scripts/md2tex-luoigiai.py — không sửa tay.
+%  Tài liệu giáo viên: dùng để chữa bài trên lớp và soạn đề kiểm tra.
+% =====================================================================
+\documentclass[11pt, a4paper]{article}
+\input{cae-style}
+
+\begin{document}
+
+\trangbia{LỜI GIẢI BÀI TẬP VỀ NHÀ}{12}{Vector và số phức}{向量与复数}{Tài liệu giáo viên \quad·\quad 40 câu}
+
+\subsection*{Nhóm A — Vector}
+
+\begin{dapan}[1 — Đáp án C]
+\textbf{Giải.} Điều kiện vuông góc $a \cdot b = 0$:
+
+$$5 \cdot (-2) + 1 \cdot 2k = 0 \iff -10 + 2k = 0 \iff k = 5$$
+
+\textbf{Chú ý.} Đáp án B ($10$) là kết quả khi quên chia cho $2$. Đáp án A và D là kết quả khi dùng công thức song song thay vì vuông góc.
+\end{dapan}
+
+\begin{dapan}[2 — Đáp án D]
+\textbf{Giải.} Nhân từng vector với hệ số rồi cộng:
+
+$$3a = (3, 9, 15), \qquad 2b = (-2, 6, 4)$$
+
+$$3a + 2b = (3 - 2,\ 9 + 6,\ 15 + 4) = (1, 15, 19)$$
+\end{dapan}
+
+\begin{dapan}[3 — Đáp án A]
+\textbf{Giải.} Kiểm tra tỉ số các thành phần tương ứng:
+
+$$\frac{-2}{1} = \frac{-4}{2} = \frac{-6}{3} = -2$$
+
+Ba tỉ số bằng nhau nên $b = -2a$, tức hai vector song song.
+
+\textbf{Cách nhanh.} Thấy ngay $b$ là bội âm của $a$ với hệ số $-2$ nên kết luận song song mà không cần tính tích vô hướng.
+\end{dapan}
+
+\begin{dapan}[4 — Đáp án D]
+\textbf{Giải.} Vì $\overrightarrow{AB} = B - A$ nên $B = A + \overrightarrow{AB}$:
+
+$$B = (1, 2, 0) + (2, -1, 3) = (3, 1, 3)$$
+
+\textbf{Bẫy.} Đáp án B $(-1, 3, -3)$ là kết quả của phép trừ $A - \overrightarrow{AB}$. Đáp án A chính là vector $\overrightarrow{AB}$, không phải tọa độ điểm.
+\end{dapan}
+
+\begin{dapan}[5 — Đáp án D]
+\textbf{Giải.} Tích vô hướng của hai vector chỉ phương:
+
+$$d\_1 \cdot d\_2 = 1 \cdot 2 + (-1) \cdot 2 + 2 \cdot 1 = 2 - 2 + 2 = 2$$
+
+Môđun: $\lvert d_1 \rvert = \sqrt{1 + 1 + 4} = \sqrt{6}$ và $\lvert d_2 \rvert = \sqrt{4 + 4 + 1} = 3$.
+
+$$\cos\theta = \frac{2}{\sqrt{6} \cdot 3} = \frac{2}{3\sqrt{6}} = \frac{2\sqrt{6}}{18} = \frac{\sqrt{6}}{9}$$
+
+\textbf{Chú ý.} Đáp án B ($\dfrac{\sqrt{6}}{3}$) là kết quả khi quên nhân với $3$ ở mẫu. Luôn viết đủ tích hai môđun.
+\end{dapan}
+
+\begin{dapan}[6 — Đáp án B]
+\textbf{Giải.} Vector chỉ phương của đường thẳng $AB$ là:
+
+$$\overrightarrow{AB} = B - A = (0 - 10,\ 15 - 0,\ 0 - 0) = (-10, 15, 0)$$
+
+Vector $(10, -15, 0)$ cũng là vector chỉ phương vì nó là bội của $\overrightarrow{AB}$ với hệ số $-1$.
+
+\textbf{Bẫy.} Đáp án A $(10, 15, 0)$ sai vì không lấy hiệu tọa độ. Đáp án D là vector không, không xác định phương.
+\end{dapan}
+
+\begin{dapan}[7 — Đáp án B]
+\textbf{Giải.} $\overrightarrow{OM} = M - O = (5, -1, 2)$.
+
+Điều kiện $\overrightarrow{OM} = \overrightarrow{AB}$ nghĩa là $B - A = \overrightarrow{OM}$, suy ra:
+
+$$B = A + \overrightarrow{OM} = (4, 2, -1) + (5, -1, 2) = (9, 1, 1)$$
+\end{dapan}
+
+\begin{dapan}[8 — Đáp án A]
+\textbf{Giải.} Phân tích vector theo quy tắc hiệu:
+
+$$\overrightarrow{DB} = \overrightarrow{AB} - \overrightarrow{AD} = a - b$$
+
+\textbf{Cách nhanh.} $\overrightarrow{DB}$ đi từ $D$ đến $B$, nên lấy vector xuất phát từ $A$ tới $B$ trừ vector xuất phát từ $A$ tới $D$. Quy tắc: \textbf{điểm cuối chung $A$ thì lấy hiệu hai vector}.
+\end{dapan}
+
+\subsection*{Nhóm B — Số phức}
+
+\begin{dapan}[9 — Đáp án A]
+\textbf{Giải.} Khai triển:
+
+$$(a + i)(1 - i) = a - ai + i - i^2 = (a + 1) + (1 - a)i$$
+
+Điều kiện số thuần ảo: phần thực bằng $0$ và phần ảo khác $0$.
+
+$$a + 1 = 0 \implies a = -1$$
+
+Kiểm tra phần ảo: $1 - (-1) = 2 \ne 0$, thỏa mãn.
+
+\textbf{Bẫy.} Đáp án C ($a = 1$) là kết quả khi đặt phần ảo $1 - a = 0$, tức nhầm điều kiện số \textbf{thực} với điều kiện số \textbf{thuần ảo}.
+\end{dapan}
+
+\begin{dapan}[10 — Đáp án C]
+\textbf{Giải.} Nhân tử và mẫu của phân thức với $1 - i$:
+
+$$\frac{-3-i}{1+i} = \frac{(-3-i)(1-i)}{(1+i)(1-i)} = \frac{-3 + 3i - i + i^2}{1 - i^2} = \frac{-4 + 2i}{2} = -2 + i$$
+
+Cộng thêm $i$:
+
+$$-2 + i + i = -2 + 2i$$
+\end{dapan}
+
+\begin{dapan}[11 — Đáp án B]
+\textbf{Giải.} Nhân tử và mẫu với $2 + i$:
+
+$$z = \frac{(10 + 5i)(2 + i)}{(2 - i)(2 + i)} = \frac{20 + 10i + 10i + 5i^2}{4 - i^2} = \frac{15 + 20i}{5} = 3 + 4i$$
+
+Phần ảo là số thực $4$.
+
+\textbf{Chú ý.} Đáp án C ($4i$) là phương án nhiễu kinh điển. 虚部 hỏi \textbf{số thực} đứng trước $i$, không phải cả cụm $4i$.
+\end{dapan}
+
+\begin{dapan}[12 — Đáp án B]
+\textbf{Giải.} Cộng hai số phức trước:
+
+$$z\_1 + z\_2 = (6 - 1) + (8 + 4)i = 5 + 12i$$
+
+$$\lvert 5 + 12i \rvert = \sqrt{25 + 144} = \sqrt{169} = 13$$
+
+\textbf{Cách nhanh.} Bộ số $5$–$12$–$13$ là bộ Pythagoras quen thuộc, đọc ngay đáp án mà không cần bấm căn.
+\end{dapan}
+
+\begin{dapan}[13 — Đáp án A]
+\textbf{Giải.} Dùng lũy thừa từng bước:
+
+$$(1+i)^2 = 1 + 2i + i^2 = 2i$$
+
+$$(1+i)^4 = (2i)^2 = 4i^2 = -4$$
+
+$$(1+i)^8 = (-4)^2 = 16$$
+
+\textbf{Cách nhanh.} Không khai triển nhị thức Newton với số mũ $8$. Luôn đưa về bình phương rồi lấy bình phương tiếp, mỗi bước chỉ cần một phép nhân.
+\end{dapan}
+
+\subsection*{Nhóm C — Conic}
+
+\begin{dapan}[14 — Đáp án B]
+\textbf{Giải.} Hai tiêu điểm $F_1(-3,0)$ và $F_2(3,0)$ cho $c = 3$ và trục lớn nằm trên trục hoành.
+
+Điểm $P(5,0)$ thuộc elip và nằm trên trục hoành nên là một đỉnh, suy ra $a = 5$.
+
+$$b^2 = a^2 - c^2 = 25 - 9 = 16$$
+
+Phương trình chính tắc: $\dfrac{x^2}{25} + \dfrac{y^2}{16} = 1$.
+
+\textbf{Chú ý.} Vì trục lớn trên trục hoành nên mẫu lớn hơn $25$ phải đứng dưới $x^2$. Đáp án A và C đặt ngược.
+\end{dapan}
+
+\begin{dapan}[15 — Đáp án C]
+\textbf{Giải.} Phương trình $y^2 = -12x$ có dạng $y^2 = 2px$ với $2p = -12$, suy ra $p = -6$. Dấu âm cho biết parabol mở sang trái.
+
+Tiêu điểm nằm trên trục hoành về phía mở:
+
+$$\left(\frac{p}{2}, 0\right) = (-3, 0)$$
+
+\textbf{Bẫy.} Đáp án A $(3,0)$ là kết quả khi bỏ qua dấu âm của $p$. Dấu của hệ số quyết định hướng mở và vị trí tiêu điểm.
+\end{dapan}
+
+\begin{dapan}[16 — Đáp án A]
+\textbf{Giải.} Hyperbol $\dfrac{x^2}{16} - \dfrac{y^2}{9} = 1$ có $a^2 = 16$ và $b^2 = 9$, tức $a = 4$ và $b = 3$.
+
+Phương trình tiệm cận:
+
+$$y = \pm\frac{b}{a}x = \pm\frac{3}{4}x$$
+
+\textbf{Chú ý.} Với hyperbol nằm ngang, hệ số góc là $\dfrac{b}{a}$, tức căn của mẫu chia căn của tử. Đáp án B ($\dfrac{4}{3}$) là kết quả khi đảo ngược tỉ số.
+\end{dapan}
+
+\begin{dapan}[17 — Đáp án D]
+\textbf{Giải.} Parabol $x^2 = -4y$ có dạng $x^2 = 2py$ với $2p = -4$, suy ra $p = -2$ và mở xuống dưới.
+
+Đường chuẩn của parabol $x^2 = 2py$ là $y = -\dfrac{p}{2}$:
+
+$$y = -\frac{-2}{2} = 1$$
+
+\textbf{Cách nhanh.} Parabol $x^2 = 2py$ có tiêu điểm $\left(0, \dfrac{p}{2}\right)$ và đường chuẩn $y = -\dfrac{p}{2}$. Với $p = -2$ thì tiêu điểm là $(0,-1)$ và đường chuẩn là $y = 1$, hai đường đối xứng qua gốc.
+
+\textbf{Bẫy.} Đáp án A và B chọn đường thẳng đứng, nhưng trục đối xứng của parabol này là trục tung nên đường chuẩn phải nằm ngang.
+\end{dapan}
+
+\begin{dapan}[18 — Đáp án C]
+\textbf{Giải.} Parabol $x^2 = 2py$ với $p > 0$ mở lên trên và có tiêu điểm $\left(0, \dfrac{p}{2}\right)$, đường chuẩn $y = -\dfrac{p}{2}$.
+
+Điểm $P$ cách $x$ trục một khoảng $6$, tức tung độ $y_P = 6$.
+
+Theo định nghĩa parabol, khoảng cách từ $P$ đến tiêu điểm bằng khoảng cách từ $P$ đến đường chuẩn:
+
+$$8 = y\_P + \frac{p}{2} = 6 + \frac{p}{2} \implies \frac{p}{2} = 2 \implies p = 4$$
+
+Phương trình: $x^2 = 8y$.
+\end{dapan}
+
+\begin{dapan}[19 — Đáp án C]
+\textbf{Giải.} Thay $D(1,-2)$ vào $y^2 = ax$: $4 = a$, vậy parabol là $y^2 = 4x$ với tiêu điểm $F(1, 0)$.
+
+Điều kiện $\overrightarrow{AF} = \dfrac{1}{3}(\overrightarrow{AB} + \overrightarrow{AC})$ cho thấy $F$ là trọng tâm của tam giác $ABC$, do đó:
+
+$$x\_A + x\_B + x\_C = 3x\_F = 3, \qquad y\_A + y\_B + y\_C = 3y\_F = 0$$
+
+Bốn đỉnh đều thuộc parabol $y^2 = 4x$, và các điểm trên parabol có $x \ge 0$. Với mỗi điểm $M$ trên parabol, khoảng cách đến tiêu điểm bằng $x_M + 1$ (khoảng cách đến đường chuẩn $x = -1$). Vậy:
+
+$$\lvert AF \rvert + \lvert BF \rvert + \lvert CF \rvert = (x\_A + 1) + (x\_B + 1) + (x\_C + 1) = 3 + 3 = 6$$
+
+\textbf{Cách nhanh.} Nhận ra $F$ là trọng tâm, rồi dùng công thức khoảng cách đến tiêu điểm của parabol. Không cần tìm tọa độ cụ thể của $A$, $B$, $C$.
+\end{dapan}
+
+\subsection*{Nhóm D — Đường thẳng và đường tròn}
+
+\begin{dapan}[20 — Đáp án A]
+\textbf{Giải.} Trên trục hoành thì $y = 0$. Thay vào phương trình:
+
+$$2x - 3 \cdot 0 + 6 = 0 \implies 2x = -6 \implies x = -3$$
+
+\textbf{Chú ý.} Đừng lẫn 截距 trên trục $x$ với 截距 trên trục $y$. Đọc kỹ chữ đứng sau 轴.
+\end{dapan}
+
+\begin{dapan}[21 — Đáp án C]
+\textbf{Giải.} Viết lại phương trình dưới dạng chính tắc bằng cách nhóm bình phương:
+
+$$x^2 - 4x + y^2 + 2y = 4$$
+
+$$(x - 2)^2 - 4 + (y + 1)^2 - 1 = 4$$
+
+$$(x - 2)^2 + (y + 1)^2 = 9$$
+
+Vậy bán kính là $\sqrt{9} = 3$.
+
+\textbf{Cách nhanh.} Với dạng $x^2 + y^2 + Dx + Ey + F = 0$, bán kính là $\sqrt{\dfrac{D^2 + E^2}{4} - F} = \sqrt{\dfrac{16 + 4}{4} + 4} = \sqrt{5 + 4} = 3$.
+\end{dapan}
+
+\begin{dapan}[22 — Đáp án B]
+\textbf{Giải.} Hai đường thẳng $A_1x + B_1y + C_1 = 0$ và $A_2x + B_2y + C_2 = 0$ vuông góc khi:
+
+$$A\_1A\_2 + B\_1B\_2 = 0$$
+
+Áp dụng với $A_1 = k$, $B_1 = -4$ và $A_2 = k+4$, $B_2 = -1$:
+
+$$k(k+4) + 4 = 0 \iff k^2 + 4k + 4 = 0 \iff (k+2)^2 = 0 \iff k = -2$$
+
+\textbf{Nhận xét.} Phương trình có nghiệm kép nên chỉ một giá trị $k$ thỏa mãn. Đây là điểm khác biệt so với dạng song song, nơi phương trình thường cho hai nghiệm.
+\end{dapan}
+
+\begin{dapan}[23 — Đáp án C]
+\textbf{Giải.} Đường thẳng đã cho có hệ số góc $-3$. Đường thẳng song song phải có cùng hệ số góc.
+
+Phương trình qua $(1,2)$ với hệ số góc $-3$:
+
+$$y - 2 = -3(x - 1) \iff y = -3x + 5 \iff 3x + y - 5 = 0$$
+
+\textbf{Bẫy.} Đáp án A ($3x + y - 7 = 0$) và đáp án C ($3x + y - 5 = 0$) chỉ khác hằng số. Phải thay tọa độ điểm vào để kiểm tra: $3(1) + 2 - 5 = 0$ nên C đúng, còn $3(1) + 2 - 7 = -2 \ne 0$ nên A sai.
+
+\textbf{Chú ý.} Câu này có hai phương án cùng hệ số góc nên phải kiểm tra bằng cách thay điểm, không được chỉ nhìn hệ số góc.
+\end{dapan}
+
+\subsection*{Nhóm E — Ôn tập tích lũy}
+
+\begin{dapan}[24 — Đáp án D]
+\textbf{Giải.} Xét từng quan hệ:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{A.} $a$ là một phần tử của $A$ nên $a \in A$. (đúng)
+\item \textbf{B.} Tập $\{a\}$ có mọi phần tử thuộc $A$ nên $\{a\} \subseteq A$. (đúng)
+\item \textbf{C.} Tập rỗng là tập con của mọi tập hợp nên $\varnothing \subseteq A$. (đúng)
+\end{itemize}
+
+- \textbf{D.} $c$ là một phần tử của $A$ nên $c \in A$, do đó $c \notin A$ là sai.
+\end{dapan}
+
+\begin{dapan}[25 — Đáp án D]
+\textbf{Giải.} Với $a > b > 0$:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{A.} $a^2 < b^2$ sai vì $a > b > 0$ cho $a^2 > b^2$.
+\item \textbf{B.} $\dfrac{1}{a} > \dfrac{1}{b}$ sai vì mẫu lớn hơn cho phân số nhỏ hơn khi cả hai dương.
+\item \textbf{C.} $a - b < 0$ sai vì $a > b$ cho $a - b > 0$.
+\end{itemize}
+
+- \textbf{D.} $\dfrac{a}{b} > 1$ đúng vì chia cả hai vế của $a > b$ cho số dương $b$ được $\dfrac{a}{b} > 1$. (đúng)
+\end{dapan}
+
+\subsection*{Nhóm E — Ôn tập tích lũy}
+
+\begin{dapan}[1 — Đáp án B]
+\textbf{Giải.} Chia hai vế cho $1 + i$, rồi nhân tử và mẫu với $1 - i$:
+
+$$z = \frac{2i}{1+i} = \frac{2i(1-i)}{(1+i)(1-i)} = \frac{2i - 2i^2}{1 - i^2} = \frac{2 + 2i}{2} = 1 + i$$
+\end{dapan}
+
+\begin{dapan}[2 — Đáp án B]
+\textbf{Giải.} Chọn hệ vector cơ sở $\overrightarrow{AB} = a$ và $\overrightarrow{AC} = b$. Vì $D$ là trung điểm $BC$:
+
+$$\overrightarrow{AD} = \frac{a + b}{2}$$
+
+Từ $\overrightarrow{EB} = 2\overrightarrow{AE}$ và $E$ nằm trên $AB$, suy ra $E$ chia $AB$ theo tỉ lệ $AE : EB = 1 : 2$, tức $\overrightarrow{AE} = \dfrac{1}{3}a$. Do đó $E = \dfrac{1}{3}a$ tính từ $A$.
+
+Từ $\overrightarrow{AF} = 2\overrightarrow{FC}$, suy ra $AF : FC = 2 : 1$, tức $\overrightarrow{AF} = \dfrac{2}{3}b$. Vậy $F = \dfrac{2}{3}b$.
+
+Điểm $G$ trên $EF$ nên $\overrightarrow{AG} = (1-s)\overrightarrow{AE} + s\overrightarrow{AF}$ với $s \in (0,1)$:
+
+$$\overrightarrow{AG} = \frac{1-s}{3}a + \frac{2s}{3}b$$
+
+Điểm $G$ cũng trên $AD$ nên $\overrightarrow{AG} = \lambda\overrightarrow{AD} = \dfrac{\lambda}{2}a + \dfrac{\lambda}{2}b$. Đồng nhất hệ số:
+
+$$\frac{1-s}{3} = \frac{\lambda}{2}, \qquad \frac{2s}{3} = \frac{\lambda}{2}$$
+
+Từ phương trình thứ hai: $\lambda = \dfrac{4s}{3}$. Thay vào phương trình thứ nhất: $\dfrac{1-s}{3} = \dfrac{2s}{3}$, suy ra $s = \dfrac{1}{3}$. Vậy $\lambda = \dfrac{4}{9}$.
+\end{dapan}
+
+\begin{dapan}[3 — Đáp án C]
+\textbf{Giải.} Điều kiện song song $x_1y_2 - x_2y_1 = 0$:
+
+$$k \cdot k - 4 \cdot 1 = 0 \iff k^2 = 4 \iff k = \pm 2$$
+
+\textbf{Bẫy.} Đáp án A và B chỉ có một nghiệm. Phương trình bậc hai theo tham số luôn phải xét cả hai nghiệm.
+\end{dapan}
+
+\begin{dapan}[4 — Đáp án C]
+\textbf{Giải.} Áp dụng $z \cdot \overline{z} = \lvert z \rvert^2$:
+
+$$\lvert z \rvert^2 = 9 \implies \lvert z \rvert = 3$$
+
+\textbf{Cách nhanh.} Không cần tìm $z$. Đẳng thức $z \cdot \overline{z} = 9$ cho thẳng môđun.
+\end{dapan}
+
+\begin{dapan}[5 — Đáp án C]
+\textbf{Giải.} Vì $\lvert \overline{z} \rvert = \lvert z \rvert$ nên chỉ cần tính môđun của $z = -3 - 4i$:
+
+$$\lvert z \rvert = \sqrt{(-3)^2 + (-4)^2} = \sqrt{9 + 16} = 5$$
+
+\textbf{Cách nhanh.} Nhận ra bộ $3$–$4$–$5$ thì đọc ngay đáp án.
+\end{dapan}
+
+\begin{dapan}[6 — Đáp án B]
+\textbf{Giải.} Với mặt phẳng $Ax + By + Cz + D = 0$, một vector pháp tuyến là $(A, B, C)$.
+
+Từ $x - 2y + 3z - 6 = 0$ ta đọc được $A = 1$, $B = -2$, $C = 3$.
+
+\textbf{Bẫy.} Đáp án C $(-1, 2, -3)$ cũng là vector pháp tuyến vì nó cùng phương với $(1,-2,3)$. Đề hỏi 一个法向量 (một vector pháp tuyến) nên cả hai đều đúng về mặt toán học, nhưng đáp án chính thức là B, vector đọc trực tiếp từ phương trình. Trên lớp nên nói rõ điều này để học sinh không hoang mang.
+\end{dapan}
+
+\begin{dapan}[7 — Đáp án B]
+\textbf{Giải.} Vì $\overrightarrow{AB} = B - A$ nên $B = A + \overrightarrow{AB}$:
+
+$$B = (-1, 2) + (3, -6) = (2, -4)$$
+\end{dapan}
+
+\begin{dapan}[8 — Đáp án C]
+\textbf{Giải.} Rút gọn từng phần:
+
+$$(3 - i)i = 3i - i^2 = 3i + 1 = 1 + 3i$$
+
+$$(3-i)i - (1 + 2i) = (1 + 3i) - (1 + 2i) = i$$
+\end{dapan}
+
+\begin{dapan}[9 — Đáp án A]
+\textbf{Giải.} Vì $D$ là trung điểm $BC$ nên $\overrightarrow{AD} = \dfrac{\overrightarrow{AB} + \overrightarrow{AC}}{2}$.
+
+Tính tổng hai vector:
+
+$$\overrightarrow{AB} + \overrightarrow{AC} = (5a + 2b) + (a - 3b) = 6a - b$$
+
+$$\overrightarrow{AD} = 3a - \frac{1}{2}b$$
+
+Tính bình phương môđun, dùng $a \cdot b = \lvert a \rvert \lvert b \rvert \cos\dfrac{\pi}{4} = 2\sqrt{2} \cdot 3 \cdot \dfrac{\sqrt{2}}{2} = 6$:
+
+$$\lvert \overrightarrow{AD} \rvert^2 = 9\lvert a \rvert^2 - 3(a \cdot b) + \frac{1}{4}\lvert b \rvert^2 = 9 \cdot 8 - 3 \cdot 6 + \frac{1}{4} \cdot 9 = 72 - 18 + \frac{9}{4} = \frac{225}{4}$$
+
+$$\lvert \overrightarrow{AD} \rvert = \frac{15}{2}$$
+\end{dapan}
+
+\begin{dapan}[10 — Đáp án D]
+\textbf{Giải.} Từ $x^5 + \alpha = 0$ suy ra $\alpha = -z^5$.
+
+Dùng công thức Moivre: $z = \cos\dfrac{\pi}{15} + i\sin\dfrac{\pi}{15}$ cho
+
+$$z^5 = \cos\frac{5\pi}{15} + i\sin\frac{5\pi}{15} = \cos\frac{\pi}{3} + i\sin\frac{\pi}{3} = \frac{1}{2} + \frac{\sqrt{3}}{2}i$$
+
+$$\alpha = -\left(\frac{1}{2} + \frac{\sqrt{3}}{2}i\right) = -\frac{1}{2} - \frac{\sqrt{3}}{2}i$$
+
+\textbf{Chú ý.} Đáp án B là $z^5$, không phải $\alpha$. Đề hỏi $\alpha$ nên phải đổi dấu cả hai phần.
+\end{dapan}
+
+\begin{dapan}[11 — Đáp án A]
+\textbf{Giải.} Tính $a + b = (3 - 1,\ -2 + 4) = (2, 2)$.
+
+$$a \cdot (a+b) = 3 \cdot 2 + (-2) \cdot 2 = 6 - 4 = 2$$
+
+\textbf{Cách nhanh.} Dùng $a \cdot (a+b) = \lvert a \rvert^2 + a \cdot b = 13 + (3 \cdot (-1) + (-2) \cdot 4) = 13 - 11 = 2$.
+\end{dapan}
+
+\begin{dapan}[12 — Đáp án A]
+\textbf{Giải.} Tính $a + tb = (2 + t,\ -1 + 3t)$.
+
+Điều kiện $(a + tb) \perp a$ cho $(a + tb) \cdot a = 0$:
+
+$$(2+t) \cdot 2 + (-1+3t) \cdot (-1) = 0 \iff 4 + 2t + 1 - 3t = 0 \iff 5 - t = 0 \iff t = 5$$
+\end{dapan}
+
+\begin{dapan}[13 — Đáp án D]
+\textbf{Giải.} Khai triển:
+
+$$z = (1+i)(3-i) = 3 - i + 3i - i^2 = 4 + 2i$$
+
+Số phức liên hợp: $\overline{z} = 4 - 2i$.
+\end{dapan}
+
+\begin{dapan}[14 — Đáp án A]
+\textbf{Giải.} Dùng tính chất môđun của thương:
+
+$$\lvert z \rvert = \frac{\lvert 3 + 4i \rvert}{\lvert 1 - 2i \rvert} = \frac{\sqrt{9 + 16}}{\sqrt{1 + 4}} = \frac{5}{\sqrt{5}} = \sqrt{5}$$
+
+\textbf{Cách nhanh.} Không cần thực hiện phép chia. Môđun của thương bằng thương các môđun, và môđun của tích bằng tích các môđun.
+\end{dapan}
+
+\begin{dapan}[15 — Đáp án D]
+\textbf{Giải.} Tính $a + \lambda b = (1 + 2\lambda,\ 2 - 3\lambda)$.
+
+Điều kiện $a \perp (a + \lambda b)$ cho $a \cdot (a + \lambda b) = 0$:
+
+$$1 \cdot (1 + 2\lambda) + 2 \cdot (2 - 3\lambda) = 0 \iff 1 + 2\lambda + 4 - 6\lambda = 0 \iff 5 - 4\lambda = 0 \iff \lambda = \frac{5}{4}$$
+\end{dapan}
+
+\clearpage
+\sectiondautrang{Tổng kết lỗi thường gặp}
+\addcontentsline{toc}{section}{Tổng kết lỗi thường gặp}
+
+Bảng chẩn đoán dùng khi chữa bài và khi soạn đề kiểm tra. Cột ``Câu liên quan'' trỏ tới đề bài tập về nhà.
+
+\bang{
+\begin{tabular}{@{}p{5.6cm}p{4.2cm}p{5.2cm}@{}}
+\toprule
+\textbf{Lỗi} & \textbf{Câu liên quan} & \textbf{Cách cảnh báo học sinh} \\
+\midrule
+Lẫn công thức vuông góc và song song & Câu 1, 3 phần bắt buộc; Câu 3, 12, 15 phần tự chọn & Vuông góc thì \textbf{cộng} tọa độ, song song thì \textbf{trừ} chéo \\
+Đảo chiều khi tìm điểm đầu từ điểm cuối & Câu 4, 7 phần bắt buộc; Câu 7 phần tự chọn & Viết công thức $B = A + \overrightarrow{AB}$ ra nháp trước khi thay số \\
+Đọc phần ảo là $bi$ thay vì $b$ & Câu 11 phần bắt buộc & 虚部 là \textbf{số thực}, phương án có chữ $i$ là phương án nhiễu \\
+Quên điều kiện $b \ne 0$ ở số thuần ảo & Câu 9 phần bắt buộc & $z = 0$ là số thực, không phải số thuần ảo \\
+Quên đổi dấu phần ảo khi lấy liên hợp & Câu 10 phần chuẩn bị; Câu 13 phần tự chọn & Đọc kỹ 共轭复数, bước cuối phải đổi dấu \\
+Bỏ qua nghiệm âm khi giải phương trình tham số & Câu 3 phần tự chọn & Phương trình bậc hai cho \textbf{hai} nghiệm, viết đủ \\
+Nhầm tiêu điểm elip với tiêu điểm hyperbol & Câu 14 phần bắt buộc & Elip trừ ($c^2 = a^2 - b^2$), hyperbol cộng ($c^2 = a^2 + b^2$) \\
+Bỏ dấu âm của $p$ khi đọc hướng parabol & Câu 15 phần bắt buộc & Dấu của hệ số quyết định hướng mở và vị trí tiêu điểm \\
+Nhầm bán kính với bình phương bán kính & Câu 21 phần bắt buộc & Đọc lại phương trình sau khi nhóm bình phương, lấy căn ở bước cuối \\
+Chỉ so hệ số góc mà không thay điểm & Câu 23 phần bắt buộc & Hai phương án cùng hệ số góc thì phải thay tọa độ điểm để chọn \\
+\bottomrule
+\end{tabular}}
+
+% Không dùng \vfill: nó đẩy chữ xuống sát đáy trang,
+% nơi banner letterhead chiếm chỗ (281-297mm) và sẽ che mất chữ.
+\vspace{0.8cm}
+\begin{center}
+{\footnotesize\color{cae_blue} Tài liệu nội bộ, CAE SHANGHAI}
+\end{center}
+
+\end{document}

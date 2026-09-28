@@ -387,7 +387,7 @@ D. $1 - 0.98^2$
 A. $\dfrac{a \cdot b}{C_{a+b}^2}$
 
 
-B. $\dfrac{C_a^1 \cdot C_b^1}{C_{a+b}^2}$
+B. $\dfrac{a \cdot b}{(a+b)^2}$
 
 
 C. $\dfrac{a \cdot b}{(a+b)(a+b-1)}$

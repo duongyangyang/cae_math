@@ -1,0 +1,493 @@
+% =====================================================================
+%  BUỔI 3 — LỜI GIẢI BÀI TẬP VỀ NHÀ (từ giao-vien/02-loi-giai-bai-tap-ve-nha.md)
+%  Sinh tự động bằng scripts/md2tex-luoigiai.py — không sửa tay.
+%  Tài liệu giáo viên: dùng để chữa bài trên lớp và soạn đề kiểm tra.
+% =====================================================================
+\documentclass[11pt, a4paper]{article}
+\input{cae-style}
+
+\begin{document}
+
+\trangbia{LỜI GIẢI BÀI TẬP VỀ NHÀ}{3}{Hàm số: bậc hai, mũ, logarit, đạo hàm}{二次函数·指数·对数·导数}{Tài liệu giáo viên \quad·\quad 40 câu}
+
+\subsection*{Nhóm A — Hàm bậc hai, mũ, logarit, đạo hàm}
+
+\begin{dapan}[1 — Đáp án A]
+\textbf{Giải.} Từ $f(2) = \dfrac{1}{64}$ với $f(x) = a^{3x}$:
+
+$$a^{3 \cdot 2} = a^6 = \frac{1}{64} = 2^{-6}$$
+
+Vậy $a = 2$ hoặc $a = \dfrac{1}{2}$.
+
+Điều kiện $f(x)$ nghịch biến trên $\mathbb{R}$ buộc $0 < a < 1$. Vậy $a = \dfrac{1}{2}$.
+
+\textbf{Chú ý.} Điều kiện đơn điệu loại một trong hai nghiệm, không cần thử lại bằng cách thay số.
+\end{dapan}
+
+\begin{dapan}[2 — Đáp án C]
+\textbf{Giải.} Từ $f(4) = \log_a 4 = 2$ suy ra $a^2 = 4$, được $a = 2$ (loại $a = -2$ vì cơ số phải dương).
+
+$$f(8) = \log\_2 8 = 3$$
+\end{dapan}
+
+\begin{dapan}[3 — Đáp án B]
+\textbf{Giải.} Vì $9 = 3^2$ nên theo công thức logarit của lũy thừa:
+
+$$\log\_2 9 = \log\_2 3^2 = 2\log\_2 3 = 2a$$
+
+\textbf{Chú ý.} Đáp án A $a^2$ là kết quả của việc nhầm $\log_2 3^2$ thành $(\log_2 3)^2$. Hệ số $n$ trong $\log_a M^n = n\log_a M$ nhân ra ngoài, không nâng lên lũy thừa.
+\end{dapan}
+
+\begin{dapan}[4 — Đáp án D]
+\textbf{Giải.} Viết lại $f(x) = \dfrac{5x^2 - 1}{x} = 5x - \dfrac{1}{x}$, rồi lấy đạo hàm từng hạng tử:
+
+$$f'(x) = 5 - \left(-\frac{1}{x^2}\right) = 5 + \frac{1}{x^2}$$
+
+\textbf{Bẫy.} Đáp án B $5 - \dfrac{1}{x^2}$ là kết quả khi quên đổi dấu khi đạo hàm $\dfrac{1}{x}$. Vì $\left(\dfrac{1}{x}\right)' = -\dfrac{1}{x^2}$ nên dấu trừ trước phân thức thành dấu cộng.
+\end{dapan}
+
+\begin{dapan}[5 — Đáp án A]
+\textbf{Giải.} Tung độ tiếp điểm: $f(1) = 1 - 3 + 1 = -1$.
+
+Đạo hàm $f'(x) = 3x^2 - 3$, suy ra hệ số góc $k = f'(1) = 3 - 3 = 0$.
+
+Phương trình tiếp tuyến:
+
+$$y - (-1) = 0 \cdot (x - 1) \implies y = -1$$
+
+\textbf{Nhận xét.} Hệ số góc bằng $0$ nên tiếp tuyến là đường nằm ngang. Đây là tiếp tuyến tại điểm uốn của đồ thị, không phải tại điểm cực trị.
+\end{dapan}
+
+\begin{dapan}[6 — Đáp án C]
+\textbf{Giải.} Dùng quy tắc đạo hàm tích với $u = x - c$, $v = e^x$:
+
+$$f'(x) = 1 \cdot e^x + (x - c)e^x = (x - c + 1)e^x$$
+
+Thay $x = c$:
+
+$$f'(c) = (c - c + 1)e^c = e^c$$
+
+Điều kiện $e^c = 15$ cho $c = \ln 15$.
+
+\textbf{Chú ý.} Đáp án A $c = 15$ là kết quả khi bỏ qua hàm mũ ở vế phải. Phải lấy logarit tự nhiên hai vế để tách $c$ ra khỏi số mũ.
+\end{dapan}
+
+\begin{dapan}[7 — Đáp án B]
+\textbf{Giải.} Đạo hàm $f'(x) = 3x^2 - 3 = 3(x-1)(x+1)$, cho $f'(x) = 0$ được $x = 1$ và $x = -1$.
+
+Hệ số bậc ba dương nên $x = -1$ là điểm cực đại, $x = 1$ là điểm cực tiểu.
+
+$$f(1) = 1 - 3 + 2 = 0$$
+
+Giá trị cực tiểu bằng $0$.
+\end{dapan}
+
+\begin{dapan}[8 — Đáp án D]
+\textbf{Giải.} Xét từng hàm trên khoảng $(5, 10)$:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{A.} $f(x) = x^2 - 12x + 30$ có trục đối xứng $x = 6$ và mở lên trên, nên giảm trên $(5,6)$ rồi tăng trên $(6,10)$. Không đơn điệu trên cả khoảng. (sai)
+\item \textbf{B.} $f(x) = |x - 8|$ giảm trên $(5,8)$ rồi tăng trên $(8,10)$. (sai)
+\item \textbf{C.} $f(x) = 2^{x-10}$ có cơ số $2 > 1$ nên đồng biến. (sai)
+\item \textbf{D.} $f(x) = \log_{0.5}(x-4)$ có cơ số $0{,}5 < 1$ nên nghịch biến, và xác định trên $(4, +\infty)$ chứa cả $(5,10)$. (đúng)
+\end{itemize}
+
+
+\textbf{Cách nhanh.} Chỉ cần nhìn cơ số: thấy $0{,}5$ là biết ngay hàm logarit nghịch biến, không cần xét ba hàm còn lại.
+\end{dapan}
+
+\begin{dapan}[9 — Đáp án A]
+\textbf{Giải.} Với mọi $x \in \mathbb{R}$, $2^x > 0$. Khi $x \to -\infty$ thì $2^x \to 0$ nhưng không bao giờ bằng $0$.
+
+Tập giá trị là $(0, +\infty)$.
+
+\textbf{Bẫy.} Đáp án B dùng ngoặc vuông $[0, +\infty)$ là sai: giá trị $0$ không đạt được với bất kỳ $x$ hữu hạn nào.
+\end{dapan}
+
+\begin{dapan}[10 — Đáp án B]
+\textbf{Giải.} Đặt $t = x - 10$, tập giá trị của $t$ là $\mathbb{R}$. Hàm trở thành $\left(\dfrac{1}{2}\right)^t$ với cơ số dương.
+
+Mọi lũy thừa với cơ số dương đều nhận giá trị trong $(0, +\infty)$, không phụ thuộc cơ số lớn hơn hay nhỏ hơn $1$. Vậy tập giá trị là $(0, +\infty)$.
+
+\textbf{Nhận xét.} Cơ số chỉ quyết định chiều biến thiên, không ảnh hưởng tập giá trị. Câu 9 và Câu 10 kiểm tra đúng điểm này.
+\end{dapan}
+
+\begin{dapan}[11 — Đáp án B]
+\textbf{Giải.} Vì $0 < a < 1$ nên hàm $a^x$ nghịch biến trên $\mathbb{R}$: giá trị hàm giảm khi biến tăng.
+
+Từ $a^x < a^y$ suy ra $x > y$.
+
+\textbf{Cách nhanh.} Thử $a = \dfrac{1}{2}$. Điều kiện $\left(\dfrac{1}{2}\right)^x < \left(\dfrac{1}{2}\right)^y$ xảy ra khi số mũ bên trái lớn hơn, tức $x > y$.
+
+\textbf{Chú ý.} Đây là câu hỏi lý thuyết thuần túy, không cần tính toán. Nhớ quy tắc: cơ số nhỏ hơn $1$ thì đảo chiều.
+\end{dapan}
+
+\begin{dapan}[12 — Đáp án A]
+\textbf{Giải.} Đạo hàm $f'(x) = x^2 + 2ax + b$. Hai điểm cực trị $x = 5$ và $x = 10$ là nghiệm của $f'(x) = 0$, nên theo định lý Viète:
+
+$$5 + 10 = -2a \implies a = -\frac{15}{2}$$
+
+$$5 \cdot 10 = b \implies b = 50$$
+
+Vậy $a + b = -\dfrac{15}{2} + 50 = \dfrac{85}{2}$.
+
+\textbf{Cách nhanh.} Không cần lập hệ phương trình. Nhận ra ngay $f'(x)$ là tam thức bậc hai có hai nghiệm $5$ và $10$, áp dụng Viète trong một bước.
+\end{dapan}
+
+\begin{dapan}[13 — Đáp án D]
+\textbf{Giải.} Đạo hàm $y' = 3ax^2 - 1$. Hàm nghịch biến trên toàn $\mathbb{R}$ khi $y' \le 0$ với mọi $x$:
+
+$$3ax^2 - 1 \le 0 \quad \forall x \in \mathbb{R}$$
+
+Nếu $a > 0$ thì $3ax^2 \to +\infty$ khi $|x| \to \infty$, bất đẳng thức không thể đúng. Nếu $a \le 0$ thì $3ax^2 \le 0$ với mọi $x$, kéo theo $y' \le -1 < 0$. Điều kiện là $a \le 0$.
+
+\textbf{Bẫy.} Đáp án A $a = \dfrac{1}{3}$ là giá trị làm $y' = 0$ tại đúng một điểm $x = \pm 1$, nhưng hàm vẫn tăng ở hai phía, không nghịch biến trên toàn $\mathbb{R}$.
+\end{dapan}
+
+\subsection*{Nhóm B — Tính chất hàm số}
+
+\begin{dapan}[14 — Đáp án D]
+\textbf{Giải.} Hai điều kiện cùng lúc:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item Căn bậc hai: $3x - 1 \ge 0 \implies x \ge \dfrac{1}{3}$
+\item Mẫu khác $0$: $x - 2 \ne 0 \implies x \ne 2$
+\end{itemize}
+
+
+Giao hai điều kiện: $\left[\dfrac{1}{3}, 2\right) \cup (2, +\infty)$.
+
+\textbf{Chú ý.} Đáp án A bỏ sót điều kiện mẫu khác $0$. Đáp án C sai cả hai đầu mút.
+\end{dapan}
+
+\begin{dapan}[15 — Đáp án C]
+\textbf{Giải.} Hàm $y = \cos x$ có $\cos(-x) = \cos x$ nên là hàm chẵn.
+
+\textbf{Nhận xét.} Ba đáp án còn lại: $y = x^3$ là hàm lẻ, $y = \sin x$ là hàm lẻ, $y = \log_2 x$ có tập xác định $(0, +\infty)$ không đối xứng nên không xét được chẵn lẻ.
+\end{dapan}
+
+\begin{dapan}[16 — Đáp án C]
+\textbf{Giải.} Hàm $g(x) = f(x-1)$ xác định khi đối số của $f$ nằm trong $[-2, 2]$:
+
+$$-2 \le x - 1 \le 2 \implies -1 \le x \le 3$$
+
+Tập xác định của $g$ là $[-1, 3]$.
+
+\textbf{Cách nhanh.} Đồ thị $f(x-1)$ là đồ thị $f(x)$ dịch sang phải $1$ đơn vị, nên tập xác định cũng dịch phải $1$ đơn vị: $[-2,2] \to [-1,3]$.
+\end{dapan}
+
+\begin{dapan}[17 — Đáp án C]
+\textbf{Giải.} Biểu thức dưới căn phải không âm:
+
+$$\log\_2 x \ge 0 \iff \log\_2 x \ge \log\_2 1 \iff x \ge 1$$
+
+Đồng thời logarit cần $x > 0$, nhưng điều kiện $x \ge 1$ đã bao hàm điều này. Tập xác định là $[1, +\infty)$.
+
+\textbf{Bẫy.} Đáp án A $(0, +\infty)$ là kết quả khi chỉ đặt điều kiện logarit mà quên điều kiện của căn. Đáp án D nhầm $\log_2 x \ge 0$ thành $x \ge 2$.
+\end{dapan}
+
+\begin{dapan}[18 — Đáp án A]
+\textbf{Giải.} Tính từ trong ra: vì $6 < 7$ nên dùng nhánh $x + 5$:
+
+$$f(6) = 6 + 5 = 11$$
+
+Vì $11 \ge 7$ nên dùng nhánh $x^2 - 3x + 3$:
+
+$$f(11) = 121 - 33 + 3 = 91$$
+
+\textbf{Chú ý.} Phải chọn đúng nhánh theo giá trị đầu vào ở từng bước. Chọn nhánh sai ở bước thứ hai là lỗi phổ biến nhất của dạng hàm cho bởi nhiều công thức.
+\end{dapan}
+
+\begin{dapan}[19 — Đáp án A]
+\textbf{Giải.} Hàm $y = x^3$ có $(-x)^3 = -x^3$ nên là hàm lẻ. Đạo hàm $y' = 3x^2 \ge 0$ với mọi $x$, và chỉ bằng $0$ tại một điểm, nên hàm đồng biến trên $\mathbb{R}$.
+
+Vậy hàm vừa lẻ vừa đồng biến.
+\end{dapan}
+
+\subsection*{Nhóm C — Tập hợp và bất đẳng thức}
+
+\begin{dapan}[20 — Đáp án B]
+\textbf{Giải.} Giải $x^2 - 4x + 3 = 0$ được $(x-1)(x-3) = 0$, suy ra $A = \{1, 3\}$.
+
+Phần bù trong $U = \{1,2,3,4,5\}$ là các phần tử không thuộc $A$:
+
+$$C\_U A = \{2, 4, 5\}$$
+\end{dapan}
+
+\begin{dapan}[21 — Đáp án C]
+\textbf{Giải.} Giải $x^2 - 12x + 20 = 0$ được $(x-2)(x-10) = 0$, hai nghiệm $x = 2$ và $x = 10$.
+
+Vì $a = 1 > 0$ và bất phương trình dùng dấu $\ge$, nghiệm nằm ngoài khoảng hai nghiệm:
+
+$$(-\infty, 2] \cup [10, +\infty)$$
+
+\textbf{Cách nhanh.} Quy tắc "trong trái, ngoài cùng": dấu $\ge$ với $a > 0$ lấy hai nhánh ngoài, đầu mút lấy cả hai vì đề dùng dấu bằng.
+\end{dapan}
+
+\begin{dapan}[22 — Đáp án B]
+\textbf{Giải.} Điều kiện $5 < x \le 18$ với $x \in \mathbb{Z}$ cho các giá trị $6, 7, \dots, 18$.
+
+Số phần tử: $18 - 6 + 1 = 13$.
+
+Số tập con thực sự là $2^{13} - 1$.
+
+\textbf{Bẫy.} Đếm nhầm thành $14$ phần tử nếu tính cả $x = 5$ (không thỏa mãn vì dấu nhỏ hơn nghiêm ngặt). Đáp án C $2^{14}-1$ chính là bẫy này.
+\end{dapan}
+
+\begin{dapan}[23 — Đáp án D]
+\textbf{Giải.} Vì mẫu $x + 5$ có thể âm, phải chuyển vế về $0$ thay vì nhân chéo:
+
+$$\frac{|x-1|}{x+5} - 1 \ge 0 \iff \frac{|x-1| - (x+5)}{x+5} \ge 0$$
+
+Xét hai trường hợp theo dấu của $x - 1$.
+
+\textbf{Trường hợp $x \ge 1$:} $|x-1| = x - 1$, tử thành $x - 1 - x - 5 = -6$. Bất phương trình thành $\dfrac{-6}{x+5} \ge 0$, đòi hỏi $x + 5 < 0$, mâu thuẫn với $x \ge 1$. Vô nghiệm.
+
+\textbf{Trường hợp $x < 1$:} $|x-1| = 1 - x$, tử thành $1 - x - x - 5 = -2x - 4 = -2(x+2)$. Bất phương trình thành:
+
+$$\frac{-2(x+2)}{x+5} \ge 0 \iff \frac{x+2}{x+5} \le 0$$
+
+Nghiệm tử $x = -2$ (lấy), nghiệm mẫu $x = -5$ (loại). Nghiệm trong khoảng hai nghiệm: $-5 < x \le -2$.
+
+Tập nghiệm là $(-5, -2]$.
+
+\textbf{Bẫy.} Đáp án A $[-5, 2]$ là kết quả khi nhân chéo $x + 5$ mà không xét dấu. Đáp án C là kết quả khi đổi chiều sai ở nhánh $x \ge 1$.
+\end{dapan}
+
+\subsection*{Nhóm D — Ôn tích lũy}
+
+\begin{dapan}[24 — Đáp án D]
+\textbf{Giải.} Ba điều kiện cùng lúc:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item Căn: $x^2 - 8x + 12 \ge 0 \iff (x-2)(x-6) \ge 0 \iff x \le 2$ hoặc $x \ge 6$
+\item Logarit: $x - 5 > 0 \iff x > 5$
+\item Mẫu: $\ln(x-5) \ne 0 \iff x - 5 \ne 1 \iff x \ne 6$
+\end{itemize}
+
+
+Giao ba điều kiện: từ $x \ge 6$ và $x > 5$ được $x \ge 6$; loại tiếp $x = 6$ vì mẫu bằng $0$. Kết quả là $x > 6$.
+
+\textbf{Nhận xét.} Đáp án A $(5,6) \cup (6,+\infty)$ quên điều kiện của căn. Đây là dạng gộp ba điều kiện, mỗi điều kiện loại một phần khác nhau của trục số.
+\end{dapan}
+
+\begin{dapan}[25 — Đáp án C]
+\textbf{Giải.} Điều kiện $A = \{x \mid ax^2 + 2x + 1 = 0\}$ có đúng một phần tử.
+
+\textbf{Trường hợp $a = 0$:} phương trình thành $2x + 1 = 0$, có đúng một nghiệm $x = -\dfrac{1}{2}$. Thỏa mãn.
+
+\textbf{Trường hợp $a \neq 0$:} phương trình bậc hai có nghiệm kép khi $\Delta = 4 - 4a = 0$, được $a = 1$.
+
+Vậy $a \in \{0, 1\}$.
+
+\textbf{Bẫy.} Đây là bẫy kinh điển của dạng bài này. Học sinh chỉ xét $\Delta = 0$ và chọn B. \textbf{Thấy tham số ở hệ số của $x^2$, luôn xét riêng giá trị làm hệ số đó bằng $0$.}
+\end{dapan}
+
+\subsection*{Nhóm D — Ôn tích lũy}
+
+\begin{dapan}[1 — Đáp án B]
+\textbf{Giải.} $f$ là hàm chẵn nên $f(-t) = f(t)$, và $f$ nghịch biến trên $(-\infty, 0)$ nên đồng biến trên $(0, +\infty)$. Vậy so sánh $a, b, c$ chính là so sánh các giá trị tuyệt đối của đối số.
+
+$$\left|2^{0{,}7}\right| \approx 1{,}62, \qquad |-\ln 2| \approx 0{,}69, \qquad |\log\_3 2| \approx 0{,}63$$
+
+Sắp theo thứ tự tăng: $0{,}63 < 0{,}69 < 1{,}62$, tức $|\log_3 2| < |-\ln 2| < 2^{0{,}7}$.
+
+Vì $f$ đồng biến trên $(0, +\infty)$ nên $f(\log_3 2) < f(-\ln 2) < f(2^{0{,}7})$, tức $c < b < a$.
+
+\textbf{Cách nhanh.} Nhớ hai giá trị xấp xỉ $\ln 2 \approx 0{,}693$ và $\log_3 2 \approx 0{,}631$ để so sánh ngay mà không cần máy tính.
+\end{dapan}
+
+\begin{dapan}[2 — Đáp án B]
+\textbf{Giải.} Đạo hàm $f'(x) = x^2 - 2ax + 1$, cho $f'(x) = 0$ được $x = a \pm \sqrt{a^2 - 1}$.
+
+Với $0 < a \le 1$: $\Delta' = a^2 - 1 \le 0$ nên $f'(x) \ge 0$ với mọi $x$, hàm đồng biến. Giá trị lớn nhất và nhỏ nhất đạt tại hai đầu mút:
+
+$$f(-3a) = -9a^3 - 9a^3 - 3a + 1 = -18a^3 - 3a + 1$$
+
+$$f(3a) = 9a^3 - 9a^3 + 3a + 1 = 3a + 1$$
+
+Tổng hai giá trị: $(-18a^3 - 3a + 1) + (3a + 1) = -18a^3 + 2$.
+
+Điều kiện $-18a^3 + 2 \ge -\dfrac{1}{4}$ tương đương $18a^3 \le \dfrac{9}{4}$, tức $a^3 \le \dfrac{1}{8}$, được $a \le \dfrac{1}{2}$.
+
+Với $a > 1$: hàm có hai điểm tới hạn. Kiểm tra tại $a = 1$: tổng lớn nhất cộng nhỏ nhất bằng $-16$, đã nhỏ hơn $-\dfrac{1}{4}$, nên mọi $a > 1$ đều vi phạm.
+
+Kết hợp: $0 < a \le \dfrac{1}{2}$.
+
+\textbf{Bẫy.} Đáp án C $(0,1]$ là kết quả khi bỏ qua việc kiểm tra miền $a > 1$. Tại $a = 1$ tổng đã bằng $-16$, không thỏa mãn.
+\end{dapan}
+
+\begin{dapan}[3 — Đáp án C]
+\textbf{Giải.} Đặt $t = 3x - 1$. Khi $x \ne \dfrac{1}{3}$ thì $t$ nhận mọi giá trị khác $0$.
+
+$$f(x) = \frac{1}{t}, \quad t \ne 0$$
+
+Tập giá trị của $\dfrac{1}{t}$ với $t \ne 0$ là $(-\infty, 0) \cup (0, +\infty)$.
+
+\textbf{Bẫy.} Đáp án B $\left(-\infty, \dfrac{1}{3}\right) \cup \left(\dfrac{1}{3}, +\infty\right)$ nhầm giá trị bị loại. Giá trị bị loại là $0$ (nghiệm của mẫu), không phải $\dfrac{1}{3}$ (nghiệm của mẫu trong biến $x$).
+\end{dapan}
+
+\begin{dapan}[4 — Đáp án A]
+\textbf{Giải.} Đặt $u = x + 1$, bài toán trở thành tìm giá trị nhỏ nhất của $g(u) = u^2 + \cos u + a$ trên $\mathbb{R}$.
+
+Đạo hàm $g'(u) = 2u - \sin u$. Tại $u = 0$ thì $g'(0) = 0$. Đạo hàm bậc hai $g''(u) = 2 - \cos u \ge 1 > 0$ với mọi $u$, nên $g$ lồi chặt và $u = 0$ là điểm cực tiểu duy nhất, đồng thời là cực tiểu toàn cục.
+
+$$g(0) = 0 + \cos 0 + a = 1 + a$$
+
+Điều kiện $1 + a = 4$ cho $a = 3$.
+\end{dapan}
+
+\begin{dapan}[5 — Đáp án A]
+\textbf{Giải.} Gọi $t$ là hoành độ tiếp điểm. Đạo hàm $f'(x) = \dfrac{1}{x} + \dfrac{1}{x^2}$, suy ra:
+
+$$a = f'(t) = \frac{1}{t} + \frac{1}{t^2}$$
+
+Tung độ tiếp điểm $f(t) = \ln t - \dfrac{1}{t}$, và $b = f(t) - a t$:
+
+$$b = \ln t - \frac{1}{t} - \left(\frac{1}{t} + \frac{1}{t^2}\right)t = \ln t - \frac{2}{t} - 1$$
+
+Vậy $a + b = \ln t - \dfrac{1}{t} + \dfrac{1}{t^2} - 1$. Đặt $g(t)$ là biểu thức này và tìm cực trị:
+
+$$g'(t) = \frac{1}{t} + \frac{1}{t^2} - \frac{2}{t^3} = \frac{t^2 + t - 2}{t^3} = \frac{(t+2)(t-1)}{t^3}$$
+
+Với $t > 0$, nghiệm duy nhất là $t = 1$. Qua $t = 1$, $g'$ đổi dấu từ âm sang dương nên $g$ đạt cực tiểu:
+
+$$g(1) = \ln 1 - 1 + 1 - 1 = -1$$
+\end{dapan}
+
+\begin{dapan}[6 — Đáp án A]
+\textbf{Giải.} Hai điều kiện:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item Mẫu có căn: $x^2 - 3x + 2 > 0 \iff (x-1)(x-2) > 0 \iff x < 1$ hoặc $x > 2$
+\item Logarit: $4 - x > 0 \iff x < 4$
+\end{itemize}
+
+
+Giao hai điều kiện: $x < 1$, hoặc $2 < x < 4$.
+
+$$(-\infty, 1) \cup (2, 4)$$
+
+\textbf{Chú ý.} Mẫu có căn nên điều kiện là \textbf{dương} (nghiêm ngặt), không phải không âm. Nếu để $\ge 0$ thì hai nghiệm $x = 1$ và $x = 2$ lọt vào tập xác định, sai.
+\end{dapan}
+
+\begin{dapan}[7 — Đáp án D]
+\textbf{Giải.} Đạo hàm $f'(x) = 3x^2 - 12 = 3(x-2)(x+2)$, cho $f'(x) = 0$ được $x = \pm 2$.
+
+Hệ số bậc ba dương nên $x = -2$ là điểm cực đại:
+
+$$f(-2) = -8 + 24 + 3 = 19$$
+
+\textbf{Bẫy.} Đáp án A $-13$ là giá trị cực tiểu $f(2) = 8 - 24 + 3$. Đọc kỹ đề hỏi 极大值 (cực đại) hay 极小值 (cực tiểu).
+\end{dapan}
+
+\begin{dapan}[8 — Đáp án C]
+\textbf{Giải.} Xét từng hàm trên $(0, +\infty)$:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{A.} $y = \dfrac{1}{x}$ nghịch biến trên $(0, +\infty)$. (sai)
+\item \textbf{B.} $y = -x^2$ nghịch biến trên $(0, +\infty)$. (sai)
+\item \textbf{C.} $y = \sqrt{x}$ có đạo hàm $\dfrac{1}{2\sqrt{x}} > 0$ trên $(0, +\infty)$. (đúng)
+\item \textbf{D.} $y = \cos x$ không đơn điệu trên $(0, +\infty)$. (sai)
+\end{itemize}
+
+
+\textbf{Nhận xét.} Đáp án A là bẫy phổ biến vì học sinh nhớ nhầm $\dfrac{1}{x}$ là hàm tăng. Trên từng khoảng xác định hàm này giảm, đạo hàm $-\dfrac{1}{x^2} < 0$.
+\end{dapan}
+
+\begin{dapan}[9 — Đáp án B]
+\textbf{Giải.} Theo ý nghĩa hình học của đạo hàm, $f'(x_0)$ là hệ số góc của tiếp tuyến với đồ thị $y = f(x)$ tại điểm $(x_0, f(x_0))$.
+
+\textbf{Chú ý.} Đáp án C 函数的平均变化率 (tốc độ biến thiên trung bình) là tỉ số $\dfrac{\Delta y}{\Delta x}$, không phải đạo hàm. Đạo hàm là giới hạn của tỉ số đó, tức tốc độ biến thiên tức thời.
+\end{dapan}
+
+\begin{dapan}[10 — Đáp án C]
+\textbf{Giải.} Đạo hàm $y' = 2x - \dfrac{2}{x^2}$. Điều kiện đồng biến:
+
+$$2x - \frac{2}{x^2} > 0 \iff \frac{2x^3 - 2}{x^2} > 0 \iff x^3 - 1 > 0 \iff x > 1$$
+
+Khoảng đồng biến là $(1, +\infty)$.
+
+\textbf{Cách nhanh.} Với hàm dạng $x^n + \dfrac{c}{x^m}$, nghiệm của đạo hàm thường rơi vào giá trị đẹp. Thử $x = 1$: $y' = 2 - 2 = 0$, đúng là mốc cần tìm.
+\end{dapan}
+
+\begin{dapan}[11 — Đáp án A]
+\textbf{Giải.} Theo định nghĩa đạo hàm:
+
+$$f'(x\_0) = \lim\_{\Delta x \to 0} \frac{f(x\_0 + \Delta x) - f(x\_0)}{\Delta x}$$
+
+Đặt $h = 2\Delta x$. Khi $\Delta x \to 0$ thì $h \to 0$, và biểu thức đề cho trở thành:
+
+$$\lim\_{h \to 0} \frac{f(x\_0 + h) - f(x\_0)}{h} = f'(x\_0)$$
+
+Đề cho giới hạn này bằng $1$, vậy $f'(x_0) = 1$.
+
+\textbf{Cách nhanh.} Hệ số $2$ ở tử và mẫu triệt tiêu nhau, không ảnh hưởng kết quả. Đáp án D $\dfrac{1}{2}$ là bẫy dành cho học sinh tưởng phải chia thêm cho $2$.
+\end{dapan}
+
+\begin{dapan}[12 — Đáp án D]
+\textbf{Giải.} Lãi kép: mỗi năm số tiền nhân với $(1 + 0{,}03)$, sau $n$ năm nhân $n$ lần.
+
+$$A(n) = 10000 \times (1 + 0{,}03)^n$$
+
+\textbf{Bẫy.} Đáp án A dùng $(1 + 0{,}03n)$ là công thức lãi đơn, số mũ $n$ bị nhân vào trong ngoặc. Phân biệt 复利 (lãi kép) và lãi đơn bằng vị trí của $n$.
+\end{dapan}
+
+\begin{dapan}[13 — Đáp án D]
+\textbf{Giải.} Mỗi giờ số lượng nhân đôi, sau $t$ giờ nhân $2^t$ lần so với ban đầu:
+
+$$N(t) = 100 \times 2^t$$
+
+\textbf{Cách nhanh.} Kiểm tra bằng $t = 0$: công thức phải cho $N(0) = 100$. Chỉ đáp án D thỏa mãn. Đáp án B cho $101$, đáp án A cho $0$, đáp án C cho $0$.
+
+\textbf{Nhận xét.} Thử giá trị biên $t = 0$ hoặc $t = 1$ là cách loại đáp án nhanh nhất cho mọi bài mô hình thực tế.
+\end{dapan}
+
+\begin{dapan}[14 — Đáp án C]
+\textbf{Giải.} Hàm lẻ khi $f(-x) = -f(x)$ với mọi $x$. Tính:
+
+$$f(-x) = -3x^3 - 5x + a - 1$$
+
+$$-f(x) = -3x^3 - 5x - a + 1$$
+
+Cho hai biểu thức bằng nhau: $a - 1 = -a + 1$, được $2a = 2$, vậy $a = 1$.
+
+\textbf{Cách nhanh.} Hàm lẻ thì $f(0) = 0$, suy ra $a - 1 = 0$ ngay lập tức. Chỉ cần điều kiện này vì hai hạng tử bậc lẻ $3x^3$ và $5x$ đã tự động thỏa mãn tính lẻ.
+\end{dapan}
+
+\begin{dapan}[15 — Đáp án B]
+\textbf{Giải.} $f''(x) < 0$ trên một khoảng nghĩa là $f'(x)$ nghịch biến, tức độ dốc của đồ thị giảm dần. Đồ thị cong xuống dưới, tức là \textbf{lồi} (凸).
+
+\textbf{Chú ý.} Đáp án A 凹 (lõm) ứng với $f''(x) > 0$. Quy ước tiếng Trung ngược với cách gọi thông thường trong một số tài liệu tiếng Việt, nên nhớ theo dấu đạo hàm bậc hai thay vì nhớ theo tên gọi.
+\end{dapan}
+
+\clearpage
+\sectiondautrang{Tổng kết lỗi thường gặp}
+\addcontentsline{toc}{section}{Tổng kết lỗi thường gặp}
+
+Bảng chẩn đoán dùng khi chữa bài và khi soạn đề kiểm tra. Cột ``Câu liên quan'' trỏ tới đề bài tập về nhà.
+
+\bang{
+\begin{tabular}{@{}p{5.6cm}p{4.2cm}p{5.2cm}@{}}
+\toprule
+\textbf{Lỗi} & \textbf{Câu liên quan} & \textbf{Cách cảnh báo học sinh} \\
+\midrule
+Không đảo chiều bất đẳng thức khi cơ số nhỏ hơn $1$ & Câu 11, 8 phần bắt buộc; Câu 5 phần chuẩn bị & Thấy cơ số trong $(0,1)$ thì đảo chiều ngay \\
+Lấy $y_{\text{đỉnh}}$ làm giá trị nhỏ nhất mà không kiểm tra đỉnh có thuộc đoạn & Câu 6 phần chuẩn bị; Câu 7 phần bắt buộc & Kiểm tra đỉnh trước, so hai đầu mút sau \\
+Bỏ điều kiện xác định của logarit và của căn khi tìm tập xác định & Câu 14, 17, 24 phần bắt buộc; Câu 6 phần tự chọn & Đặt \textbf{tất cả} điều kiện rồi mới giao \\
+Quên trường hợp hệ số tham số bằng $0$ & Câu 25 phần bắt buộc & Gặp tham số ở hệ số của $x^2$, xét riêng giá trị $0$ \\
+Dừng ở $f'(x_0) = 0$ rồi kết luận là cực trị & Câu 10 phần chuẩn bị & $f'(x_0) = 0$ chỉ là điều kiện cần, phải xét dấu hai bên \\
+Nhân chéo bất phương trình phân thức có mẫu chưa biết dấu & Câu 23 phần bắt buộc & Chuyển vế về $0$ rồi xét dấu, không nhân chéo \\
+Nhầm lãi đơn và lãi kép trong bài mô hình thực tế & Câu 12 phần tự chọn & Thử $t = 0$ hoặc $t = 1$ để loại đáp án \\
+Đọc nhầm 极大值 và 极小值 & Câu 7 phần tự chọn & Khoanh tròn chữ 大 hoặc 小 trong đề trước khi tính \\
+\bottomrule
+\end{tabular}}
+
+% Không dùng \vfill: nó đẩy chữ xuống sát đáy trang,
+% nơi banner letterhead chiếm chỗ (281-297mm) và sẽ che mất chữ.
+\vspace{0.8cm}
+\begin{center}
+{\footnotesize\color{cae_blue} Tài liệu nội bộ, CAE SHANGHAI}
+\end{center}
+
+\end{document}

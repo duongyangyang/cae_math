@@ -1,0 +1,209 @@
+# BUỔI 2 — ĐÁP ÁN BÀI TẬP CHUẨN BỊ
+
+> **Hàm số: tính chất （函数的性质）**
+> **Phiên bản:** 1.0.0, cập nhật 28.09.2026
+>
+> Mở file này **sau khi đã tự tra từ vựng và làm 10 câu bài tập chuẩn bị**. Dùng để đối chiếu trước khi vào buổi học.
+
+---
+
+## BẢNG ĐÁP ÁN 10 CÂU CHUẨN BỊ
+
+### Bài tập chuẩn bị
+
+| Câu | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|:----|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
+| Đáp án | C | B | C | D | A | A | B | C | B | B |
+
+---
+
+## PHẦN A — BẢNG TỪ VỰNG
+
+### Nhóm 1 — Hàm số và tập xác định
+
+| STT | Thuật ngữ | Nghĩa |
+|:---:|:----------|:------|
+| 1 | 函数 | hàm số |
+| 2 | 定义域 | tập xác định |
+| 3 | 值域 | tập giá trị |
+| 4 | 自变量 | biến số độc lập |
+| 5 | 因变量 | biến số phụ thuộc |
+| 6 | 对应关系 | quy tắc tương ứng |
+| 7 | 分段函数 | hàm số cho bởi nhiều công thức |
+| 8 | 解析式 | biểu thức giải tích |
+
+### Nhóm 2 — Tính chất hàm số
+
+| STT | Thuật ngữ | Nghĩa |
+|:---:|:----------|:------|
+| 9 | 单调性 | tính đơn điệu |
+| 10 | 增函数 | hàm số đồng biến (tăng) |
+| 11 | 减函数 | hàm số nghịch biến (giảm) |
+| 12 | 单调区间 | khoảng đơn điệu |
+| 13 | 奇函数 | hàm số lẻ |
+| 14 | 偶函数 | hàm số chẵn |
+| 15 | 奇偶性 | tính chẵn lẻ |
+| 16 | 周期函数 | hàm số tuần hoàn |
+| 17 | 最小正周期 | chu kỳ dương nhỏ nhất |
+
+### Nhóm 3 — Giá trị, đồ thị và đối xứng
+
+| STT | Thuật ngữ | Nghĩa |
+|:---:|:----------|:------|
+| 18 | 最大值 | giá trị lớn nhất |
+| 19 | 最小值 | giá trị nhỏ nhất |
+| 20 | 零点 | nghiệm của phương trình $f(x) = 0$ |
+| 21 | 图像 | đồ thị |
+| 22 | 对称轴 | trục đối xứng |
+| 23 | 关于原点对称 | đối xứng qua gốc tọa độ |
+| 24 | 关于y轴对称 | đối xứng qua trục tung |
+
+---
+
+## PHẦN B — HOÀN THIỆN BẢN DỊCH
+
+**Câu 2.** 设函数 $f(x)$ 是定义在 $\mathbb{R}$ 上的奇函数，且在区间 $(0,+\infty)$ 上是减函数，则 $f(-3)$ 与 $f(-1)$ 的大小关系是（ ）
+
+> **Dịch:** Cho hàm số $f(x)$ là hàm số lẻ xác định trên $\mathbb{R}$, và trên khoảng $(0, +\infty)$ là hàm số giảm, khi đó quan hệ lớn nhỏ giữa $f(-3)$ và $f(-1)$ là ( )
+
+**Từ khóa cần nhận ra:** 设 (cho, giả sử) · 定义在 $\mathbb{R}$ 上 (xác định trên $\mathbb{R}$) · 奇函数 (hàm số lẻ) · 在区间 (trên khoảng) · 减函数 (hàm số giảm) · 大小关系 (quan hệ lớn nhỏ).
+
+**Câu 3.** 若函数 $f(x)$ 满足 $f(-x)=-f(x)$ 对一切实数 $x$ 都成立，且 $f(2)=3$，则 $f(-2)$ 等于（ ）
+
+> **Dịch:** Nếu hàm số $f(x)$ thỏa mãn $f(-x) = -f(x)$ đúng với mọi số thực $x$, và $f(2) = 3$, thì $f(-2)$ bằng ( )
+
+**Từ khóa cần nhận ra:** 若 (nếu) · 满足 (thỏa mãn) · 对一切实数 $x$ (với mọi số thực $x$) · 都成立 (đều đúng) · 且 (và) · 则 (khi đó, thì) · 等于 (bằng).
+
+> **Nhận xét.** Đọc được 奇函数 là biết ngay có thể dùng hệ thức $f(-x) = -f(x)$ để đổi dấu đầu vào mà không cần biết công thức cụ thể của hàm số. Đây là điểm mấu chốt của mọi câu hỏi về tính chẵn lẻ.
+
+---
+
+## PHẦN C — BÀI TẬP CHUẨN BỊ
+
+**Câu 1.** `CAE-M-CD4-08.1-E-002` — **Đáp án C**
+
+**Giải.** Kiểm tra từng hàm theo định nghĩa $f(-x) = f(x)$:
+
+$y = x^3$ là hàm lẻ vì $(-x)^3 = -x^3$. $y = \sin x$ là hàm lẻ vì $\sin(-x) = -\sin x$. $y = \log_2 x$ có tập xác định $(0, +\infty)$, không đối xứng qua $0$, nên không chẵn không lẻ.
+
+$y = \cos x$ là hàm chẵn vì $\cos(-x) = \cos x$, đồ thị đối xứng qua trục tung.
+
+---
+
+**Câu 2.** `CAE-M-CD4-08.5-E-057` — **Đáp án B**
+
+**Giải.** Hàm số là phân thức với mẫu $2x^2 + 1$. Vì $2x^2 \ge 0$ với mọi $x$ nên $2x^2 + 1 \ge 1 > 0$, mẫu không bao giờ bằng $0$.
+
+Không có điều kiện nào khác ràng buộc, vậy tập xác định là $\mathbb{R}$.
+
+**Cách nhanh.** Gặp phân thức, câu hỏi đầu tiên luôn là mẫu có thể bằng $0$ hay không. Nếu mẫu vô nghiệm thực thì tập xác định là cả $\mathbb{R}$, không cần xét tiếp.
+
+---
+
+**Câu 3.** `CAE-M-CD4-08.1-E-004` — **Đáp án C**
+
+**Giải.** Hàm số cho bởi hai công thức. Xác định nhánh của từng giá trị đầu vào:
+
+$x = -1 < 0$ nên dùng nhánh thứ hai: $f(-1) = (-1)^2 = 1$.
+
+$x = 5 \ge 0$ nên dùng nhánh thứ nhất: $f(5) = 5 + 1 = 6$.
+
+$$f(-1) + f(5) = 1 + 6 = 7$$
+
+**Bẫy.** Đáp án A (4) là kết quả khi lấy nhầm $f(-1) = -1 + 1 = 0$ rồi cộng với $5 - 1$. Phải đọc đúng điều kiện của từng nhánh trước khi thay số.
+
+---
+
+**Câu 4.** `CAE-M-CD4-08.1-M-010` — **Đáp án D**
+
+**Giải.** Hàm $y = \sin x$ có $\omega = 1$. Áp dụng $T = \dfrac{2\pi}{|\omega|}$:
+
+$$T = \frac{2\pi}{1} = 2\pi$$
+
+**Chú ý.** $\pi$ là chu kỳ của hàm $\tan x$ và $\cot x$, không phải của $\sin x$. Đây là nhầm lẫn phổ biến nhất ở dạng bài tính chu kỳ.
+
+---
+
+**Câu 5.** `CAE-M-CD4-08.1-M-012` — **Đáp án A**
+
+**Giải.** Hàm số là hàm lẻ nên $f(-x) = -f(x)$, suy ra $f(-1) = -f(1)$.
+
+Vì $1 > 0$ nên dùng công thức của nhánh dương: $f(1) = 2(1)^2 + 1 = 3$.
+
+$$f(-1) = -3$$
+
+**Cách nhanh.** Không cần lập công thức cho nhánh $x < 0$. Chỉ cần tính $f$ tại giá trị đối rồi đổi dấu.
+
+---
+
+**Câu 6.** `CAE-M-CD4-08.1-M-013` — **Đáp án A**
+
+**Giải.** Hàm mũ $y = 2^x$ với cơ số $2 > 1$ luôn nhận giá trị dương với mọi $x \in \mathbb{R}$, và tiến sát $0$ khi $x \to -\infty$ mà không bao giờ đạt $0$.
+
+$$\text{Tập giá trị} = (0, +\infty)$$
+
+**Bẫy.** Đáp án B sai vì lấy cả giá trị $0$: phương trình $2^x = 0$ vô nghiệm. Đáp án C sai vì nhầm tập giá trị với tập xác định.
+
+---
+
+**Câu 7.** `CAE-M-CD4-08.1-M-014` — **Đáp án B**
+
+**Giải.** Hàm bậc hai $f(x) = x^2 - 2x + m$ có $a = 1 > 0$ nên đạt giá trị nhỏ nhất tại đỉnh $x = -\dfrac{-2}{2} = 1$.
+
+Đỉnh $x = 1$ nằm trong khoảng $[1, +\infty)$, vậy giá trị nhỏ nhất trên khoảng này là $f(1)$:
+
+$$f(1) = 1 - 2 + m = m - 1$$
+
+Đề cho giá trị nhỏ nhất bằng $-1$:
+
+$$m - 1 = -1 \implies m = 0$$
+
+**Nhận xét.** Nếu đỉnh nằm ngoài khoảng đang xét, giá trị nhỏ nhất sẽ đạt tại đầu mút gần đỉnh hơn. Luôn kiểm tra vị trí đỉnh so với khoảng trước khi kết luận.
+
+---
+
+**Câu 8.** `CAE-M-CD4-08.2-E-016` — **Đáp án C**
+
+**Giải.** Hàm số có hai loại ràng buộc. Điều kiện căn: $x - 4 \ge 0 \implies x \ge 4$.
+
+Điều kiện logarit: $5 - x > 0 \implies x < 5$.
+
+Giao hai điều kiện:
+
+$$D = [4, 5)$$
+
+**Bẫy.** Đáp án A và B chứa các khoảng $(-\infty, 3)$ và $(3, 4)$ là kết quả của việc xử lý sai dấu hoặc lấy hợp thay vì giao. Hàm số chỉ xác định khi **cả hai** điều kiện đồng thời đúng.
+
+---
+
+**Câu 9.** `CAE-M-CD4-08.2-E-020` — **Đáp án B**
+
+**Giải.** Hàm số $y = 2|x - 1|$ có điểm gãy tại $x = 1$, chia trục số thành hai khoảng.
+
+Với $x \ge 1$: $|x - 1| = x - 1$ nên $y = 2x - 2$, hệ số góc $2 > 0$, hàm tăng.
+
+Với $x \le 1$: $|x - 1| = 1 - x$ nên $y = 2 - 2x$, hệ số góc $-2 < 0$, hàm giảm.
+
+Vậy hàm đồng biến trên $[1, +\infty)$.
+
+---
+
+**Câu 10.** `CAE-M-CD4-LX1-H-116` — **Đáp án B**
+
+**Giải.** Hàm $f$ là hàm chẵn nên $f(-u) = f(u)$ với mọi $u$. Do đó $b = f(-\ln 2) = f(\ln 2)$.
+
+Hàm chẵn và nghịch biến trên $(-\infty, 0)$ thì đồng biến trên $(0, +\infty)$. Vậy trên khoảng dương, so sánh $f$ tại ba điểm tương ứng với so sánh chính ba điểm đó.
+
+Ba giá trị cần so sánh:
+
+$$2^{0.7} \approx 1{,}62, \qquad \ln 2 \approx 0{,}69, \qquad \log_3 2 \approx 0{,}63$$
+
+Sắp xếp tăng dần: $\log_3 2 < \ln 2 < 2^{0.7}$. Vì $f$ đồng biến trên $(0, +\infty)$ nên thứ tự giá trị hàm số giữ nguyên:
+
+$$c < b < a$$
+
+**Cách nhanh.** Không cần vẽ đồ thị. Chỉ cần ba bước: đổi $b$ về giá trị dương nhờ tính chẵn, so sánh ba số dương, rồi áp dụng chiều đơn điệu.
+
+---
+
+*Tài liệu nội bộ, CAE SHANGHAI.*

@@ -1,0 +1,199 @@
+# BUỔI 10 — ĐÁP ÁN BÀI TẬP CHUẨN BỊ
+
+> **Conic （圆锥曲线）**
+>
+> Mở file này **sau khi đã tự tra từ vựng và làm 10 câu bài tập chuẩn bị**. Dùng để đối chiếu trước khi vào buổi học.
+
+---
+
+## BẢNG ĐÁP ÁN 10 CÂU CHUẨN BỊ
+
+### Bài tập chuẩn bị
+
+| Câu | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|:----|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
+| Đáp án | B | A | D | B | B | D | A | A | C | C |
+
+---
+
+## PHẦN A — BẢNG TỪ VỰNG
+
+### Nhóm 1 — Định nghĩa và phương trình chính tắc
+
+| STT | Thuật ngữ | Nghĩa |
+|:---:|:----------|:------|
+| 1 | 圆锥曲线 | đường conic |
+| 2 | 椭圆 | elip |
+| 3 | 双曲线 | hyperbol |
+| 4 | 抛物线 | parabol |
+| 5 | 焦点 | tiêu điểm |
+| 6 | 焦距 | tiêu cự |
+| 7 | 标准方程 | phương trình chính tắc |
+| 8 | 轨迹 | quỹ tích, đường đi của điểm |
+
+### Nhóm 2 — Các trục và tham số
+
+| STT | Thuật ngữ | Nghĩa |
+|:---:|:----------|:------|
+| 9 | 长轴 | trục lớn |
+| 10 | 短轴 | trục nhỏ |
+| 11 | 半长轴 | nửa trục lớn |
+| 12 | 顶点 | đỉnh |
+| 13 | 实轴 | trục thực |
+| 14 | 虚轴 | trục ảo |
+| 15 | 离心率 | tâm sai |
+| 16 | 焦半径 | bán kính qua tiêu |
+
+### Nhóm 3 — Đường đặc trưng và dây cung
+
+| STT | Thuật ngữ | Nghĩa |
+|:---:|:----------|:------|
+| 17 | 渐近线 | đường tiệm cận |
+| 18 | 准线 | đường chuẩn |
+| 19 | 开口方向 | hướng mở |
+| 20 | 对称轴 | trục đối xứng |
+| 21 | 对称中心 | tâm đối xứng |
+| 22 | 弦 | dây cung |
+| 23 | 通径 | trục thông (dây cung qua tiêu điểm vuông góc trục thực) |
+| 24 | 焦点弦 | dây cung qua tiêu điểm |
+
+---
+
+## PHẦN B — HOÀN THIỆN BẢN DỊCH
+
+**Câu 2.** 抛物线 $x^2 = 16y$ 的准线方程是（ ）
+
+> **Dịch:** Phương trình đường chuẩn của parabol $x^2 = 16y$ là ( )
+
+**Từ khóa cần nhận ra:** 抛物线 (parabol) · 准线 (đường chuẩn) · 方程 (phương trình) · 是 (là).
+
+**Câu 3.** 椭圆 $\dfrac{x^2}{81} + \dfrac{y^2}{36} = 1$ 的焦点坐标是（ ）
+
+> **Dịch:** Tọa độ tiêu điểm của elip $\dfrac{x^2}{81} + \dfrac{y^2}{36} = 1$ là ( )
+
+**Từ khóa cần nhận ra:** 椭圆 (elip) · 焦点 (tiêu điểm) · 坐标 (tọa độ).
+
+> **Nhận xét.** Ba từ khóa 椭圆, 双曲线, 抛物线 xuất hiện ở ngay đầu đề và quyết định toàn bộ công thức phải dùng. Đọc được ba từ này là biết ngay lấy $c^2 = a^2 - b^2$ hay $c^2 = a^2 + b^2$.
+
+---
+
+## PHẦN C — BÀI TẬP CHUẨN BỊ
+
+**Câu 1.** `CAE-M-CD6-GV-E-001` — **Đáp án B**
+
+**Giải.** Từ phương trình $\dfrac{x^2}{49} + \dfrac{y^2}{24} = 1$ đọc được $a^2 = 49$, $b^2 = 24$. Vì mẫu dưới $x^2$ lớn hơn nên trục lớn nằm trên trục hoành và:
+
+$$c^2 = a^2 - b^2 = 49 - 24 = 25 \implies c = 5$$
+
+Đề hỏi 焦距 (tiêu cự), tức độ dài $F_1F_2$, chứ không phải $c$:
+
+$$2c = 10$$
+
+**Bẫy.** Đáp án A là $5$, tức giá trị của $c$ chứ không phải tiêu cự. Đọc kỹ chữ 焦距 (tiêu cự, bằng $2c$) và 焦点 (tiêu điểm, có tọa độ $(\pm c, 0)$).
+
+---
+
+**Câu 2.** `CAE-M-CD6-08.6-M-018` — **Đáp án A**
+
+**Giải.** Đây là định nghĩa của parabol: tập hợp các điểm cách đều tiêu điểm $F$ và đường chuẩn $l$. Với parabol có tiêu điểm $F\left(\dfrac{p}{2}, 0\right)$ và đường chuẩn $x = -\dfrac{p}{2}$, mọi điểm $P$ trên parabol đều thỏa mãn:
+
+$$PF = d(P, l)$$
+
+**Chú ý.** Ba đáp án còn lại mô tả tỉ số khác $1$, tương ứng với elip (tỉ số nhỏ hơn $1$) hoặc hyperbol (tỉ số lớn hơn $1$). Parabol là trường hợp duy nhất có tâm sai bằng $1$.
+
+---
+
+**Câu 3.** `CAE-M-CD6-08.3-M-010` — **Đáp án D**
+
+**Giải.** Phương trình $x^2 = -4y$ có dạng $x^2 = -2py$ với $2p = 4$, suy ra $p = 2$. Parabol mở xuống dưới nên đường chuẩn nằm phía trên, cách đỉnh một khoảng $\dfrac{p}{2} = 1$:
+
+$$y = 1$$
+
+**Bẫy.** Đáp án C là $y = -1$, lấy nhầm dấu. Với $x^2 = -2py$ (mở xuống), tiêu điểm ở dưới và đường chuẩn ở trên, tức $y = \dfrac{p}{2}$ dương.
+
+---
+
+**Câu 4.** `CAE-M-CD6-GV-E-002` — **Đáp án B**
+
+**Giải.** Phương trình $y^2 = -8x$ có dạng $y^2 = -2px$ với $2p = 8$, suy ra $p = 4$. Parabol mở sang trái nên đường chuẩn nằm phía bên phải, cách đỉnh một khoảng $\dfrac{p}{2} = 2$:
+
+$$x = 2$$
+
+**Cách nhanh.** Nhớ quy tắc đối xứng qua đỉnh: tiêu điểm và đường chuẩn luôn nằm về hai phía của đỉnh và cách đỉnh cùng một khoảng $\dfrac{p}{2}$. Biết tiêu điểm ở $\left(-\dfrac{p}{2}, 0\right)$ thì đường chuẩn chắc chắn là $x = \dfrac{p}{2}$.
+
+---
+
+**Câu 5.** `CAE-M-CD5-08.3-M-015` — **Đáp án B**
+
+**Giải.** Công thức khoảng cách giữa hai điểm trong không gian:
+
+$$AB = \sqrt{(2-1)^2 + (2-1)^2 + (2-1)^2} = \sqrt{1 + 1 + 1} = \sqrt{3}$$
+
+**Chú ý.** Công thức khoảng cách trong không gian có ba số hạng bình phương, không phải hai. Bỏ sót thành phần $z$ sẽ cho $\sqrt{2}$ (đáp án A).
+
+---
+
+**Câu 6.** `CAE-M-CD5-08.6-H-032` — **Đáp án D**
+
+**Giải.** Xét từng mệnh đề:
+
+- **A.** Ba điểm **không thẳng hàng** mới xác định một mặt phẳng. Ba điểm thẳng hàng thì vô số mặt phẳng. (sai)
+- **B.** Một đường thẳng và một điểm **không thuộc đường thẳng đó** mới xác định một mặt phẳng. Nếu điểm nằm trên đường thẳng thì vô số mặt phẳng. (sai)
+- **C.** Hai đường thẳng **cắt nhau** hoặc **song song** mới xác định một mặt phẳng. Hai đường thẳng chéo nhau không đồng phẳng. (sai)
+- **D.** Hai đường thẳng cắt nhau luôn xác định duy nhất một mặt phẳng. (đúng)
+
+---
+
+**Câu 7.** `CAE-M-CD6-08.4-M-011` — **Đáp án A**
+
+**Giải.** Phương trình $y^2 = 20x$ có dạng $y^2 = 2px$ với $2p = 20$, suy ra $p = 10$. Parabol mở sang phải nên tiêu điểm nằm trên trục hoành, cách đỉnh một khoảng $\dfrac{p}{2} = 5$:
+
+$$F(5, 0)$$
+
+**Bẫy.** Đáp án C là $(0, 5)$, lấy nhầm trục. Chữ $y^2$ đứng một mình nghĩa là trục đối xứng là trục hoành, tiêu điểm phải có tung độ bằng $0$.
+
+---
+
+**Câu 8.** `CAE-M-CD5-08.8-M-042` — **Đáp án A**
+
+**Giải.** Nhóm các số hạng theo ẩn và thêm bớt để thành bình phương đủ:
+
+$$x^2 - 10x + y^2 + 12y + 57 = 0$$
+
+$$(x^2 - 10x + 25) + (y^2 + 12y + 36) = 25 + 36 - 57$$
+
+$$(x - 5)^2 + (y + 6)^2 = 4$$
+
+Vậy tâm $I(5, -6)$ và $r^2 = 4$, tức $r = 2$.
+
+**Chú ý.** Số hạng tự do sau khi nhóm là $25 + 36 - 57 = 4$, không phải $57$. Đây là bước dễ sai nhất khi đưa phương trình đường tròn về dạng chính tắc.
+
+---
+
+**Câu 9.** `CAE-M-CD5-08.6-M-027` — **Đáp án C**
+
+**Giải.** Với $M$ là trung điểm của $AB$ và $O$ là điểm bất kỳ, quy tắc trung điểm cho:
+
+$$\vec{OM} = \frac{1}{2}\left(\vec{OA} + \vec{OB}\right)$$
+
+**Cách nhanh.** Kiểm tra bằng trường hợp đặc biệt: cho $O$ trùng $A$. Khi đó $\vec{OM}$ là nửa vectơ $\vec{AB}$, và công thức cho $\dfrac{1}{2}\left(\vec{0} + \vec{AB}\right) = \dfrac{1}{2}\vec{AB}$, khớp kết quả.
+
+---
+
+**Câu 10.** `CAE-M-CD6-GV-H-001` — **Đáp án C**
+
+**Giải.** Từ phương trình $\dfrac{x^2}{16} - \dfrac{y^2}{9} = 1$ đọc được $a^2 = 16$, tức $a = 4$ và trục thực dài $2a = 8$.
+
+Theo định nghĩa hyperbol, hiệu hai khoảng cách từ điểm $P$ trên hyperbol tới hai tiêu điểm bằng $2a$:
+
+$$|PF_1| - |PF_2| = 2a = 8$$
+
+Vì $P$ nằm trên nhánh phải (gần $F_2$ hơn) nên $PF_1 > PF_2$. Thay $PF_2 = 3$:
+
+$$|PF_1| = 3 + 8 = 11$$
+
+**Bẫy.** Đáp án B là $8$, tức giá trị $2a$ chứ không phải khoảng cách cần tìm. Đọc kỹ đề hỏi $PF_1$ hay hỏi $2a$.
+
+---
+
+*Tài liệu nội bộ, CAE SHANGHAI.*

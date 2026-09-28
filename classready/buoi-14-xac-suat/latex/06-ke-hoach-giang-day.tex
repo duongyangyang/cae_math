@@ -1,0 +1,204 @@
+% =====================================================================
+%  BUỔI 14 — KẾ HOẠCH GIẢNG DẠY (từ giao-vien/01-ke-hoach-giang-day.md)
+%  Sinh tự động bằng scripts/md2tex-chung.py — không sửa tay.
+% =====================================================================
+\documentclass[11pt, a4paper]{article}
+\input{cae-style}
+
+\begin{document}
+
+\trangbia{KẾ HOẠCH GIẢNG DẠY}{14}{Xác suất}{概率}{Module M4 \quad·\quad Tỉ trọng đề thi $\sim$3\% (cùng thống kê) \quad·\quad khoảng 1–2 câu}
+
+\section{PHÂN BỔ THỜI GIAN}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xcc@{}}
+\toprule
+\textbf{Hoạt động} & \textbf{Tỉ trọng} & \textbf{Thời lượng} \\
+\midrule
+Chữa bài tập buổi 13 và bài chuẩn bị & 20\% & 16 phút \\
+Hệ thống hóa kiến thức trọng tâm & 30\% & 24 phút \\
+Đi các dạng bài trong chủ đề & 50\% & 40 phút \\
+\bottomrule
+\end{tabularx}}
+
+\section{KHỐI 1 — CHỮA BÀI TẬP VÀ BÀI CHUẨN BỊ (16 phút)}
+
+\subsection{Mục tiêu}
+
+Học sinh nhận ra ba lỗi của buổi trước vẫn còn tồn tại, và nắm được hai câu chuẩn bị hay sai nhất của buổi này trước khi vào bài mới.
+
+\subsection{Kịch bản}
+
+\textbf{Phút 1–8 · Chữa BTVN buổi 13.} Buổi 13 là buổi chữa đề 3, tổng hợp hình học giải tích và đại số. Ba lỗi hay gặp nhất:
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Lỗi} & \textbf{Cách chữa nhanh} \\
+\midrule
+Nhầm dấu của tọa độ khi xác định tâm đường tròn từ phương trình tổng quát & Cho ví dụ $x^2 + y^2 - 6x + 8y - 11 = 0$, tâm là $(3, -4)$ chứ không phải $(-3, 4)$ \\
+Lấy $\sqrt{b^2}$ làm $c$ khi tìm tiêu điểm elip & Viết lên bảng: $c^2 = a^2 - b^2$, phải bình phương trước khi trừ \\
+Quên trường hợp tham số bằng $0$ ở bài tìm điều kiện xác định & Nhắc lại quy tắc của buổi 1: tham số ở hệ số thì luôn xét riêng giá trị $0$ \\
+\bottomrule
+\end{tabularx}}
+
+\textbf{Phút 9–16 · Chữa bài tập chuẩn bị.} Chiếu bảng đáp án, sau đó chữa kỹ hai câu:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{Câu 9} (\texttt{CAE-M-CD8-08.5-H-027}): đề cho 独立 (độc lập) nên nhân hai xác suất để tìm phần giao. Học sinh hay dùng công thức cộng xung khắc và chọn A hoặc D. Nhấn mạnh: 独立 thì \textbf{nhân}, 互斥 thì \textbf{cộng}, hai từ khóa này ngược nhau hoàn toàn.
+\item \textbf{Câu 10} (\texttt{CAE-M-CD8-LX1-M-053}): mẫu số là $4 \times 4 = 16$ chứ không phải $C_4^2 = 6$, vì $m$ và $n$ là hai lựa chọn độc lập. Học sinh hay dùng tổ hợp rồi chọn C.
+\end{itemize}
+
+\subsection{Điểm cần chốt}
+
+Kết thúc khối này học sinh phải nói được: \textbf{“互斥 thì cộng, 独立 thì nhân, 至少 thì lấy 1 trừ.”}
+
+\section{KHỐI 2 — HỆ THỐNG HÓA KIẾN THỨC TRỌNG TÂM (24 phút)}
+
+\subsection{Mục tiêu}
+
+Học sinh nắm được 8 tính chất trong \texttt{../hoc-sinh/02-tai-lieu-buoi-hoc.md} mục 2, đặc biệt là ba công thức cộng, nhân và biến cố đối.
+
+\subsection{Kịch bản}
+
+\textbf{Phút 1–6 · Từ khóa nhận dạng đề.} Đây là phần \textbf{quan trọng nhất của khối này}, không được cắt. Chiếu bảng 12 từ khóa. Với mỗi từ, yêu cầu học sinh đọc to phiên âm rồi nói nghĩa. Dừng lâu hơn ở ba cặp đối lập:
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Cặp từ khóa} & \textbf{Hướng xử lý ngược nhau} \\
+\midrule
+互斥 (xung khắc) và 相互独立 (độc lập) & Cộng thẳng so với nhân để tìm phần giao \\
+至少 (ít nhất) và 恰好 (đúng) & Đi qua biến cố đối so với đếm trực tiếp \\
+不放回 (không hoàn lại) và 有放回 (có hoàn lại) & Mẫu số giảm dần so với mẫu số giữ nguyên \\
+\bottomrule
+\end{tabularx}}
+
+\textbf{Phút 7–12 · Xác suất cổ điển.} Trình bày Định nghĩa 5 và Tính chất 1. Không giảng lại khái niệm xác suất, học sinh đã biết. Nhấn mạnh công thức cổ điển biến bài toán thành \textbf{hai bài toán đếm}, và sai xác suất gần như luôn là sai ở mẫu số.
+
+Dành 2 phút cho Tính chất 1 ($0 \le P(A) \le 1$) và hỏi cả lớp: “Thấy đáp án 1.5 trong bốn phương án thì kết luận được gì?”. Đây là kĩ năng loại đáp án nhiễu không cần tính.
+
+\textbf{Phút 13–20 · Ba công thức tính xác suất.} Trình bày Tính chất 2 đến Tính chất 6. \textbf{Viết ba công thức lên góc bảng và để nguyên đến hết buổi}:
+
+$$P(\overline{A}) = 1 - P(A), \qquad P(A \cup B) = P(A) + P(B) - P(A \cap B), \qquad P(A \cap B) = P(A) \cdot P(B) \ \text{(độc lập)}$$
+
+Với Tính chất 6 (xác suất có điều kiện), giải thích bằng ví dụ cụ thể thay vì đọc công thức: nếu đã biết em đó thích bóng rổ thì mẫu số không còn là cả lớp mà chỉ là nhóm thích bóng rổ.
+
+\textbf{Phút 21–24 · Quy tắc đếm.} Trình bày Tính chất 7 và 8. Nhấn mạnh cách phân biệt chỉnh hợp với tổ hợp: \textbf{đổi chỗ hai phần tử đã chọn có cho ra kết quả khác không}. Rút hai quả bóng cùng lúc thì không, dùng $C$. Lấy lần lượt thì có, dùng $A$.
+
+\subsection{Lỗi học sinh hay mắc — cần cảnh báo trước}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Lỗi} & \textbf{Cách cảnh báo} \\
+\midrule
+Dùng công thức xung khắc cho biến cố độc lập & Viết to chữ 互斥 và 独立 lên bảng, nói rõ: xung khắc thì phần giao bằng $0$, độc lập thì phần giao bằng tích \\
+Quên hệ số $C_n^k$ ở công thức Bernoulli & Nói trước: “$k$ lần thành công có thể rơi vào bất kì vị trí nào trong $n$ lần, nên luôn có hệ số đếm vị trí” \\
+Chia nhầm mẫu số ở bài xác suất có điều kiện & Khoanh tròn cụm sau chữ 如果 trên đề, nói: “Mẫu số là nhóm này, không phải cả lớp” \\
+Lấy $1$ trừ sai biến cố đối & Yêu cầu học sinh viết rõ biến cố đối bằng lời trước khi lấy $1$ trừ \\
+\bottomrule
+\end{tabularx}}
+
+\section{KHỐI 3 — ĐI CÁC DẠNG BÀI (40 phút)}
+
+\subsection{Mục tiêu}
+
+Học sinh làm được 5 dạng bài, mỗi dạng nắm được \textbf{cách nhận dạng} từ đề, đây mới là đích của khối, không phải thuộc lời giải.
+
+\subsection{Kịch bản}
+
+Năm dạng bài có trong \texttt{../hoc-sinh/02-tai-lieu-buoi-hoc.md} mục 3. Phân bổ khoảng 7 phút mỗi dạng theo cấu trúc cố định:
+
+1. \textbf{Đọc đề mẫu} (30 giây): giáo viên đọc to đề tiếng Trung, yêu cầu học sinh chỉ ra từ khóa.
+2. \textbf{Hỏi cách nhận dạng} (30 giây): “Dấu hiệu nào cho biết đây là dạng này?”
+3. \textbf{Giảng phương pháp} (2 phút): trình bày các bước, không giải chi tiết.
+4. \textbf{Học sinh làm tại chỗ} (3 phút): cho một câu tương tự, học sinh tự làm.
+5. \textbf{Chữa nhanh} (1 phút): chốt đáp án và lỗi nếu có.
+
+\subsection{Thứ tự ưu tiên}
+
+Nếu hết thời gian, \textbf{không được cắt Dạng 2, 3, 4}. Đây là ba dạng xuất hiện nhiều nhất trong đề thi thật:
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xcl@{}}
+\toprule
+\textbf{Dạng} & \textbf{Tần suất} & \textbf{Ghi chú} \\
+\midrule
+Dạng 1 — Xác suất cổ điển & Trung bình & Có thể cắt ngắn nếu hết giờ \\
+\textbf{Dạng 2 — Đếm bằng tổ hợp} & \textbf{Cao} & Ưu tiên giữ \\
+\textbf{Dạng 3 — Biến cố đối, ít nhất} & \textbf{Cao} & Ưu tiên giữ \\
+\textbf{Dạng 4 — Cộng, nhân, xác suất có điều kiện} & \textbf{Cao} & Ưu tiên giữ \\
+Dạng 5 — Công thức Bernoulli & Thấp & Chỉ cần nhận dạng công thức \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Câu dùng để luyện tại chỗ}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lXl@{}}
+\toprule
+\textbf{Dạng} & \textbf{Câu luyện} & \textbf{Mã câu} \\
+\midrule
+1 & Gieo hai xúc xắc, tính xác suất tổng bằng $7$ & tự soạn \\
+2 & \texttt{CAE-M-CD8-08.1-H-004} & trong kho đề \\
+3 & \texttt{CAE-M-CD8-08.3-H-019} & trong kho đề \\
+4 & \texttt{CAE-M-CD8-08.5-H-027} & trong kho đề \\
+5 & \texttt{CAE-M-CD8-08.6-H-037} & trong kho đề \\
+\bottomrule
+\end{tabularx}}
+
+\section{CHỐT BUỔI (5 phút cuối, nằm trong khối 3)}
+
+Chốt lại ba điểm, viết lên góc bảng và để nguyên khi học sinh ra về:
+
+1. \textbf{互斥 thì cộng, 独立 thì nhân.}
+2. \textbf{Thấy 至少 thì viết biến cố đối ra trước khi tính.}
+3. \textbf{Mẫu số là nhóm đứng sau chữ 如果, không phải cả không gian mẫu.}
+
+Dặn dò: BTVN gồm 25 câu bắt buộc + 15 câu tự chọn, nộp trước buổi 15. Buổi 15 học về thống kê; BTVN buổi này đã có 25\% nội dung ôn vector và số phức, 15\% ôn conic.
+
+\section{ĐÁP ÁN BÀI TẬP CHUẨN BỊ}
+
+Dùng để chữa nhanh nếu cần. Lời giải chi tiết có trong \texttt{../hoc-sinh/04-dap-an-chuan-bi.md}.
+
+\bang{
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+\textbf{Câu} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} \\
+\midrule
+Đáp án & A & D & A & C & B & C & B & A & C & D \\
+\bottomrule
+\end{tabular}}
+
+\textbf{Câu cần chữa kỹ nếu học sinh làm sai nhiều:} Câu 9 và Câu 10.
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{Câu 9} (\texttt{CAE-M-CD8-08.5-H-027}): lẫn 独立 (độc lập) với 互斥 (xung khắc). Học sinh nhân sai hoặc cộng sai.
+\item \textbf{Câu 10} (\texttt{CAE-M-CD8-LX1-M-053}): dùng $C_4^2 = 6$ làm mẫu số thay vì $4 \times 4 = 16$. Đây là bẫy phân biệt “chọn đồng thời” với “hai lựa chọn độc lập”.
+\end{itemize}
+
+\section{GHI CHÚ SAU BUỔI HỌC}
+
+\emph{(Điền sau khi dạy xong, dùng để điều chỉnh buổi sau và các buổi lặp lại.)}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xl@{}}
+\toprule
+\textbf{Nội dung} & \textbf{Ghi nhận} \\
+\midrule
+Thời gian thực tế từng khối &  \\
+Dạng bài học sinh yếu nhất &  \\
+Câu hỏi học sinh hỏi nhiều &  \\
+Điều chỉnh cho lần dạy sau &  \\
+\bottomrule
+\end{tabularx}}
+
+\emph{Tài liệu nội bộ, CAE SHANGHAI.}
+\vspace{0.8cm}
+\begin{center}
+{\footnotesize\color{cae_blue} Tài liệu nội bộ, CAE SHANGHAI}
+\end{center}
+
+\end{document}

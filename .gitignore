@@ -14,5 +14,9 @@ scoped_dir*/
 # PDF biên dịch — bản trung gian trong latex/, bản chính ở classready/**/pdf/
 latex/*.pdf
 
+# Python
+__pycache__/
+*.pyc
+
 # macOS
 .DS_Store

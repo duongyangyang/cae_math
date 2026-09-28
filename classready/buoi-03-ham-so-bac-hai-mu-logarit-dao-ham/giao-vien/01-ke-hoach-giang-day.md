@@ -1,0 +1,166 @@
+# BUỔI 3 — KẾ HOẠCH GIẢNG DẠY
+
+> **Hàm số: bậc hai, mũ, logarit, đạo hàm （二次函数·指数·对数·导数）**
+> **Module:** M2 · **Tỉ trọng đề thi:** ~8% · khoảng 3–5 câu
+> **Thời lượng:** 90 phút (40 + 10 nghỉ + 40), thực học 80 phút
+>
+> **Tài liệu này chỉ dành cho giáo viên.** Nội dung lý thuyết và bài tập đã có trong `../hoc-sinh/`, không lặp lại ở đây.
+
+---
+
+## PHÂN BỔ THỜI GIAN
+
+| Hoạt động | Tỉ trọng | Thời lượng |
+|:----------|:--------:|:----------:|
+| Chữa bài tập buổi 2 và bài chuẩn bị | 20% | 16 phút |
+| Hệ thống hóa kiến thức trọng tâm | 30% | 24 phút |
+| Đi các dạng bài trong chủ đề | 50% | 40 phút |
+
+---
+
+## KHỐI 1 — CHỮA BÀI TẬP VÀ BÀI CHUẨN BỊ (16 phút)
+
+### Mục tiêu
+
+Học sinh nhận ra ba lỗi của buổi trước vẫn còn tồn tại, và nắm được hai câu chuẩn bị hay sai nhất của buổi này trước khi vào bài mới.
+
+### Kịch bản
+
+**Phút 1–8 · Chữa BTVN buổi 2.** Buổi 2 học về tính chất hàm số: tập xác định, tập giá trị, chẵn lẻ, đơn điệu, tuần hoàn, giá trị lớn nhất nhỏ nhất. Ba lỗi hay gặp nhất:
+
+| Lỗi | Cách chữa nhanh |
+|:----|:----------------|
+| Bỏ sót điều kiện xác định của logarit khi tìm tập xác định | Viết lên bảng: biểu thức trong 对数 phải **dương**, không phải không âm |
+| Nhầm tập xác định và tập giá trị khi hàm cho dưới dạng $\{x \mid \dots\}$ và $\{y \mid \dots\}$ | Hỏi cả lớp: chữ nào đứng trước dấu gạch đứng thì đó là biến |
+| Quên rằng điều kiện chẵn lẻ là tập xác định phải đối xứng | Cho phản ví dụ $y = \sqrt{x}$, hỏi có phải hàm chẵn không |
+
+**Phút 9–16 · Chữa bài tập chuẩn bị.** Chiếu bảng đáp án, sau đó chữa kỹ hai câu:
+
+- **Câu 5** (`CAE-M-CD4-08.6-E-073`): so sánh $\log_{0.5} 0.2$ và $\log_{0.5} 0.4$. Nhấn mạnh cơ số nhỏ hơn $1$ làm đảo chiều. Học sinh chọn B vì thấy $0{,}2 < 0{,}4$ rồi suy ra luôn theo thứ tự.
+- **Câu 10** (`CAE-M-CD4-LX3-M-135`): bẫy cực trị. Hệ phương trình cho hai nghiệm $a = 1$ và $a = 2$, nhưng $a = 1$ không cho cực trị vì đạo hàm không đổi dấu. Học sinh chọn A hoặc B do dừng ở bước giải hệ. Đây là bài học cho cả buổi: $f'(x_0) = 0$ chỉ là điều kiện cần.
+
+### Điểm cần chốt
+
+Kết thúc khối này học sinh phải nói được: **"$f'(x_0) = 0$ chưa đủ để kết luận cực trị, phải kiểm tra dấu hai bên."**
+
+---
+
+## KHỐI 2 — HỆ THỐNG HÓA KIẾN THỨC TRỌNG TÂM (24 phút)
+
+### Mục tiêu
+
+Học sinh nắm được trục đối xứng của parabol, ba công thức logarit then chốt (tích, thương, đổi cơ số), và bảng đạo hàm cơ bản.
+
+### Kịch bản
+
+**Phút 1–6 · Từ khóa nhận dạng đề.** Chiếu bảng 12 từ khóa trong `../hoc-sinh/02-tai-lieu-buoi-hoc.md` mục 1. Yêu cầu học sinh đọc to từng từ rồi nói nghĩa. Dừng lâu ở ba từ 顶点, 最值, 单调区间 vì cả ba đều dẫn về cùng một công cụ: trục đối xứng $x = -\dfrac{b}{2a}$.
+
+**Phút 7–12 · Hàm số bậc hai.** Trình bày Tính chất 1 đến 3. Vẽ một parabol mở lên với trục đối xứng và đỉnh được đánh dấu, để nguyên trên bảng đến hết buổi.
+
+Dành 3 phút cho Tính chất 3 và nhấn mạnh: đề cho đoạn $[m, n]$ thì việc đầu tiên là kiểm tra đỉnh có thuộc đoạn hay không. Chiếu câu chuẩn bị Câu 6 (`CAE-M-CD4-08.7-E-084`) làm ví dụ phản diện: nếu chỉ so hai đầu mút $-10$ và $10$ thì được $210$ và $10$, bỏ sót giá trị $-15$ tại đỉnh.
+
+**Phút 13–18 · Mũ và logarit.** Trình bày Định nghĩa 2 đến 4 và Tính chất 4 đến 12. Vẽ hai đường cong $a^x$ với $a > 1$ và $0 < a < 1$ cạnh nhau để học sinh thấy chiều biến thiên ngược nhau.
+
+Viết công thức đổi cơ số lên góc bảng và để nguyên: $\log_a N = \dfrac{\log_m N}{\log_m a}$. Nhấn mạnh: thấy hai logarit khác cơ số thì bước đầu tiên luôn là đổi về cùng cơ số.
+
+**Phút 19–24 · Đạo hàm.** Trình bày Định nghĩa 5 và Tính chất 13 đến 20. Bảng đạo hàm cơ bản chiếu trên màn hình, yêu cầu học sinh đọc đồng thanh một lượt.
+
+Dành 2 phút cho ý nghĩa hình học: $f'(x_0)$ là hệ số góc tiếp tuyến. Đây là câu hỏi lý thuyết xuất hiện trực tiếp trong đề (`CAE-M-CD4-08.6-E-072`), không cần tính toán, chỉ cần nhớ định nghĩa.
+
+### Lỗi học sinh hay mắc — cần cảnh báo trước
+
+| Lỗi | Cách cảnh báo |
+|:----|:--------------|
+| Lấy $y_{\text{đỉnh}}$ làm giá trị nhỏ nhất mà quên kiểm tra đỉnh có thuộc đoạn | Vẽ parabol có đỉnh nằm ngoài đoạn, hỏi giá trị nhỏ nhất đạt ở đâu |
+| Không đảo chiều bất đẳng thức khi cơ số mũ hoặc logarit nhỏ hơn $1$ | Viết to số $0{,}5$ lên bảng, khoanh tròn, nói: "thấy số này là đảo chiều" |
+| Dừng ở $f'(x_0) = 0$ rồi kết luận ngay là cực trị | Cho ví dụ $f(x) = x^3$ tại $x = 0$: đạo hàm bằng $0$ nhưng không có cực trị |
+| Bỏ điều kiện 真数大于零 khi giải bất phương trình logarit | Giải mẫu một câu, khoanh tròn bước đặt điều kiện và nói đây là bước bắt buộc |
+
+---
+
+## KHỐI 3 — ĐI CÁC DẠNG BÀI (40 phút)
+
+### Mục tiêu
+
+Học sinh làm được 7 dạng bài, mỗi dạng nắm được **cách nhận dạng** từ đề, đây mới là đích của khối, không phải thuộc lời giải.
+
+### Kịch bản
+
+Bảy dạng bài có trong `../hoc-sinh/02-tai-lieu-buoi-hoc.md` mục 3. Phân bổ khoảng 5–6 phút mỗi dạng theo cấu trúc cố định:
+
+1. **Đọc đề mẫu** (30 giây): giáo viên đọc to đề tiếng Trung, yêu cầu học sinh chỉ ra từ khóa.
+2. **Hỏi cách nhận dạng** (30 giây): "Dấu hiệu nào cho biết đây là dạng này?"
+3. **Giảng phương pháp** (2 phút): trình bày các bước, không giải chi tiết.
+4. **Học sinh làm tại chỗ** (2 phút): cho một câu tương tự, học sinh tự làm.
+5. **Chữa nhanh** (1 phút): chốt đáp án và lỗi nếu có.
+
+### Thứ tự ưu tiên
+
+Nếu hết thời gian, **không được cắt Dạng 1, 5, 6, 7**. Đây là bốn dạng xuất hiện nhiều nhất trong đề thi thật:
+
+| Dạng | Tần suất | Ghi chú |
+|:-----|:--------:|:--------|
+| **Dạng 1 — Bậc hai trên đoạn** | **Cao** | Ưu tiên giữ |
+| Dạng 2 — Biến đổi mũ | Trung bình | Có thể cắt ngắn nếu hết giờ |
+| Dạng 3 — Biến đổi logarit | Trung bình | Học sinh thường làm nhanh |
+| Dạng 4 — Phương trình, bất phương trình mũ logarit | Trung bình | — |
+| **Dạng 5 — Tính đạo hàm** | **Cao** | Ưu tiên giữ |
+| **Dạng 6 — Phương trình tiếp tuyến** | **Cao** | Ưu tiên giữ |
+| **Dạng 7 — Cực trị và đơn điệu** | **Cao** | Ưu tiên giữ |
+
+### Câu dùng để luyện tại chỗ
+
+| Dạng | Câu luyện | Mã câu |
+|:-----|:----------|:-------|
+| 1 | `CAE-M-CD4-08.3-E-031` | trong kho đề |
+| 2 | `CAE-M-CD4-08.5-E-060` | trong kho đề |
+| 3 | `CAE-M-CD4-08.4-M-049` | trong kho đề |
+| 4 | `CAE-M-CD2-08.4-E-026` | trong kho đề |
+| 5 | `CAE-M-CD4-08.6-E-071` | trong kho đề |
+| 6 | `CAE-M-CD4-08.3-E-034` | trong kho đề |
+| 7 | `CAE-M-CD4-08.3-E-032` | trong kho đề |
+
+---
+
+## CHỐT BUỔI (5 phút cuối, nằm trong khối 3)
+
+Chốt lại bốn điểm, viết lên góc bảng và để nguyên khi học sinh ra về:
+
+1. **Bậc hai trên đoạn: kiểm tra đỉnh trước, so đầu mút sau.**
+2. **Cơ số nhỏ hơn $1$ thì đảo chiều bất đẳng thức.**
+3. **$f'(x_0) = 0$ chỉ là điều kiện cần của cực trị.**
+4. **Tiếp tuyến tại $x_0$: ba bước $y_0$, $f'(x_0)$, $y - y_0 = k(x - x_0)$.**
+
+Dặn dò: BTVN gồm 25 câu bắt buộc + 15 câu tự chọn, nộp trước buổi 4. Cơ cấu 25 câu bắt buộc: 13 câu bài mới, 6 câu tính chất hàm số, 4 câu tập hợp và bất đẳng thức, 2 câu ôn tích lũy. Buổi 4 học về giá trị lượng giác và công thức biến đổi.
+
+---
+
+## ĐÁP ÁN BÀI TẬP CHUẨN BỊ
+
+Dùng để chữa nhanh nếu cần. Lời giải chi tiết có trong `../hoc-sinh/04-dap-an-chuan-bi.md`.
+
+| Câu | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|:----|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
+| Đáp án | A | C | C | B | A | D | B | C | D | D |
+
+**Câu cần chữa kỹ nếu học sinh làm sai nhiều:** Câu 5 và Câu 10.
+
+- **Câu 5** (`CAE-M-CD4-08.6-E-073`): học sinh quên đảo chiều khi cơ số nhỏ hơn $1$.
+- **Câu 10** (`CAE-M-CD4-LX3-M-135`): bẫy cực trị, nghiệm $a = 1$ không thỏa mãn vì đạo hàm không đổi dấu.
+
+---
+
+## GHI CHÚ SAU BUỔI HỌC
+
+*(Điền sau khi dạy xong, dùng để điều chỉnh buổi sau và các buổi lặp lại.)*
+
+| Nội dung | Ghi nhận |
+|:---------|:---------|
+| Thời gian thực tế từng khối | |
+| Dạng bài học sinh yếu nhất | |
+| Câu hỏi học sinh hỏi nhiều | |
+| Điều chỉnh cho lần dạy sau | |
+
+---
+
+*Tài liệu nội bộ, CAE SHANGHAI.*

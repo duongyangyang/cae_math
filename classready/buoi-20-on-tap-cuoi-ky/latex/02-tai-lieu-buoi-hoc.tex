@@ -1,0 +1,365 @@
+% =====================================================================
+%  BUỔI 20 — TÀI LIỆU BUỔI HỌC (từ hoc-sinh/02-tai-lieu-buoi-hoc.md)
+%  Sinh tự động bằng scripts/md2tex-chung.py — không sửa tay.
+% =====================================================================
+\documentclass[11pt, a4paper]{article}
+\input{cae-style}
+
+\begin{document}
+
+\trangbia{TÀI LIỆU BUỔI HỌC}{20}{Hệ thống hóa toàn chương trình}{总复习}{}
+
+\section{BẢNG CÔNG THỨC TRỌNG TÂM TOÀN CHƯƠNG TRÌNH}
+
+Tài liệu tra cứu của buổi học. Trong phòng thi mỗi câu có 75 giây, công thức phải nằm trong trí nhớ chứ không nằm trong bảng tra.
+
+\subsection{Nhóm 1 — Tập hợp và bất đẳng thức}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Giao, hợp, phần bù & $A \cap B = \{x \mid x \in A \text{ và } x \in B\}$; $A \cup B = \{x \mid x \in A \text{ hoặc } x \in B\}$; $\complement_U A = \{x \mid x \in U \text{ và } x \notin A\}$ \\
+Quan hệ tập con & $A \cap B = B \iff B \subseteq A$; $A \cup B = A \iff B \subseteq A$ \\
+Số tập con & Tập $n$ phần tử có $2^n$ tập con, $2^n - 1$ tập con thực sự \\
+Tam thức bậc hai & $a > 0$: ngoài khoảng hai nghiệm cùng dấu với $a$, trong khoảng hai nghiệm trái dấu với $a$ \\
+Giá trị tuyệt đối & $\lvert f(x) \rvert < a \iff -a < f(x) < a$ với $a > 0$ \\
+Bất phương trình thương & Nghiệm của mẫu luôn bị loại, kể cả khi đề dùng dấu $\ge$ hoặc $\le$ \\
+Đúng với mọi $x$ & $ax^2 + bx + c > 0$ với mọi $x$ khi và chỉ khi $a > 0$ và $\Delta < 0$ \\
+Có nghiệm & $f(x) > m$ có nghiệm khi và chỉ khi $\max f > m$; $f(x) > m$ với mọi $x$ khi và chỉ khi $\min f > m$ \\
+Cauchy & $a + b \ge 2\sqrt{ab}$ với $a, b \ge 0$; dấu bằng khi $a = b$ \\
+Cauchy với tổng bình phương & Nếu $a^2 + b^2 = R^2$ thì giá trị lớn nhất của $pa + qb$ là $R\sqrt{p^2 + q^2}$ \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Hai từ khóa 恒成立 (đúng với mọi $x$) và 有解 (có nghiệm) ngược nhau về cách xử lý. 恒成立 dùng điều kiện $\Delta$; 有解 so sánh với giá trị lớn nhất hoặc nhỏ nhất. Đọc nhầm hai từ này là mất điểm chắc chắn.
+
+\subsection{Nhóm 2 — Hàm số tính chất}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Ba điều kiện xác định & Mẫu khác $0$; biểu thức dưới căn bậc hai không âm; biểu thức trong logarit dương \\
+Hàm chẵn & $f(-x) = f(x)$, đồ thị nhận trục tung làm trục đối xứng \\
+Hàm lẻ & $f(-x) = -f(x)$, đồ thị nhận gốc tọa độ làm tâm đối xứng \\
+Điều kiện tiên quyết xét chẵn lẻ & Tập xác định phải đối xứng qua $0$, nếu không thì kết luận ngay không chẵn không lẻ \\
+Đồng biến, nghịch biến & $x_1 < x_2$ mà $f(x_1) < f(x_2)$ là đồng biến; $f(x_1) > f(x_2)$ là nghịch biến \\
+Hàm chứa giá trị tuyệt đối & $y = a\lvert x - x_0 \rvert$ với $a > 0$ nghịch biến trên $(-\infty, x_0]$ và đồng biến trên $[x_0, +\infty)$ \\
+Chu kỳ hàm lượng giác & $y = A\sin(\omega x + \varphi)$ và $y = A\cos(\omega x + \varphi)$ có chu kỳ $T = \dfrac{2\pi}{\lvert \omega \rvert}$; $y = A\tan(\omega x + \varphi)$ có chu kỳ $T = \dfrac{\pi}{\lvert \omega \rvert}$ \\
+Miền giá trị lượng giác & $-1 \le \sin x \le 1$; $-1 \le \cos x \le 1$ \\
+Đỉnh parabol & $f(x) = ax^2 + bx + c$ đạt cực trị tại $x = -\dfrac{b}{2a}$ \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Gặp 定义域 thì viết ngay hệ điều kiện rồi giao lại. Gặp 奇偶性 thì kiểm tra tập xác định có đối xứng qua gốc tọa độ hay không \textbf{trước} khi tính $f(-x)$.
+
+\subsection{Nhóm 3 — Hàm số bậc hai, mũ, logarit, đạo hàm}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Đỉnh và trục đối xứng & Parabol $y = ax^2 + bx + c$ có đỉnh $\left(-\dfrac{b}{2a}, f\left(-\dfrac{b}{2a}\right)\right)$ \\
+Cực trị trên đoạn & So sánh $f(m)$, $f(n)$ và $f(x_0)$ với $x_0 = -\dfrac{b}{2a}$ nếu $x_0$ thuộc đoạn \\
+Hàm mũ & $y = a^x$ có tập xác định $\mathbb{R}$, tập giá trị $(0, +\infty)$, đồ thị qua $(0, 1)$ \\
+Hàm logarit & $y = \log_a x$ có tập xác định $(0, +\infty)$, tập giá trị $\mathbb{R}$, đồ thị qua $(1, 0)$ \\
+Đơn điệu mũ và logarit & $a > 1$: đồng biến; $0 < a < 1$: nghịch biến \\
+Logarit của tích, thương, lũy thừa & $\log_a(MN) = \log_a M + \log_a N$; $\log_a \dfrac{M}{N} = \log_a M - \log_a N$; $\log_a M^n = n\log_a M$ \\
+Đổi cơ số & $\log_a b = \dfrac{\log_c b}{\log_c a}$; $\log_a b \cdot \log_b a = 1$ \\
+Hai hằng đẳng thức & $a^{\log_a N} = N$; $\log_a a^N = N$ \\
+Đạo hàm cơ bản & $(x^n)' = nx^{n-1}$; $(\sin x)' = \cos x$; $(\cos x)' = -\sin x$; $(\ln x)' = \dfrac{1}{x}$; $(e^x)' = e^x$ \\
+Quy tắc đạo hàm & $(uv)' = u'v + uv'$; $\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}$ \\
+Tiếp tuyến & $y = f'(x_0)(x - x_0) + f(x_0)$ \\
+Đạo hàm và đơn điệu & $f'(x) > 0$ trên khoảng thì $f$ đồng biến trên khoảng đó \\
+Cực trị & $f'(x)$ đổi dấu khi qua $x_0$ thì $x_0$ là điểm cực trị \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Ba từ khóa 顶点, 最值, 单调区间 đều dẫn về cùng một công cụ là trục đối xứng $x = -\dfrac{b}{2a}$. Gặp 切线 thì viết ngay hai giá trị $f(x_0)$ và $f'(x_0)$.
+
+\subsection{Nhóm 4 — Lượng giác: giá trị và công thức}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Hệ thức cơ bản & $\sin^2 x + \cos^2 x = 1$; $\tan x = \dfrac{\sin x}{\cos x}$; $1 + \tan^2 x = \dfrac{1}{\cos^2 x}$ \\
+Dấu theo phần tư & Phần tư I cả ba dương; II chỉ $\sin$ dương; III chỉ $\tan$ dương; IV chỉ $\cos$ dương \\
+Cung đối, cung bù, cung phụ & $\sin(-x) = -\sin x$; $\cos(-x) = \cos x$; $\sin(\pi - x) = \sin x$; $\cos(\pi - x) = -\cos x$; $\sin\left(\dfrac{\pi}{2} - x\right) = \cos x$ \\
+Công thức cộng & $\sin(a \pm b) = \sin a \cos b \pm \cos a \sin b$; $\cos(a \pm b) = \cos a \cos b \mp \sin a \sin b$ \\
+Công thức nhân đôi & $\sin 2x = 2\sin x \cos x$; $\cos 2x = \cos^2 x - \sin^2 x = 1 - 2\sin^2 x$ \\
+Công thức hạ bậc & $\sin^2 x = \dfrac{1 - \cos 2x}{2}$; $\cos^2 x = \dfrac{1 + \cos 2x}{2}$ \\
+Gộp bậc nhất sin và cos & $a\sin x + b\cos x = \sqrt{a^2 + b^2}\sin(x + \varphi)$ \\
+Miền giá trị của gộp & $-\sqrt{a^2 + b^2} \le a\sin x + b\cos x \le \sqrt{a^2 + b^2}$ \\
+Giá trị đặc biệt & $\sin 30^\circ = \dfrac{1}{2}$; $\cos 30^\circ = \dfrac{\sqrt{3}}{2}$; $\sin 45^\circ = \cos 45^\circ = \dfrac{\sqrt{2}}{2}$; $\sin 60^\circ = \dfrac{\sqrt{3}}{2}$ \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Bốn từ 正弦, 余弦, 正切, 余切 ứng với bốn hàm sin, cos, tan, cot. Đề rất hay hỏi 正切 trong khi biểu thức cho sẵn dưới dạng sin và cos; nhận ra điều này là biết ngay phải chia cả tử và mẫu cho $\cos\alpha$.
+
+\subsection{Nhóm 5 — Lượng giác: hàm số và phương trình}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Chu kỳ & $\sin x$ và $\cos x$ có chu kỳ $2\pi$; $\tan x$ có chu kỳ $\pi$ \\
+Chu kỳ hàm gộp & $y = A\sin(\omega x + \varphi)$ có chu kỳ $T = \dfrac{2\pi}{\lvert \omega \rvert}$ \\
+Chẵn lẻ & $\sin$ và $\tan$ là hàm lẻ; $\cos$ là hàm chẵn \\
+Tập giá trị & $y = a\sin x + b\cos x$ có tập giá trị $\left[-\sqrt{a^2 + b^2}, \sqrt{a^2 + b^2}\right]$ \\
+Đối xứng của đồ thị & Đồ thị $y = \cos x$ nhận trục $Oy$ làm trục đối xứng; $y = \sin x$ nhận gốc tọa độ làm tâm đối xứng \\
+Nghiệm cơ bản của $\sin$ & $\sin x = \sin\alpha \iff x = \alpha + k2\pi$ hoặc $x = \pi - \alpha + k2\pi$ \\
+Nghiệm cơ bản của $\cos$ & $\cos x = \cos\alpha \iff x = \pm\alpha + k2\pi$ \\
+Nghiệm cơ bản của $\tan$ & $\tan x = \tan\alpha \iff x = \alpha + k\pi$ \\
+Phương trình bậc hai theo sin, cos & Đặt $t = \sin x$ hoặc $t = \cos x$ với $t \in [-1, 1]$, giải bậc hai theo $t$, loại nghiệm ngoài đoạn \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Hai từ khóa 最大值 và 最小值 quyết định toàn bộ hướng làm. Gặp 最大值 thì lấy biên trên của tập giá trị, gặp 最小值 thì lấy biên dưới.
+
+\subsection{Nhóm 6 — Dãy số}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Cấp số cộng & $a_n = a_1 + (n-1)d$; $S_n = \dfrac{n(a_1 + a_n)}{2} = \dfrac{n\left[2a_1 + (n-1)d\right]}{2}$ \\
+Cấp số nhân & $a_n = a_1 q^{n-1}$; $S_n = \dfrac{a_1(1 - q^n)}{1 - q}$ với $q \ne 1$ \\
+Trung bình cộng & Ba số $a, b, c$ lập thành cấp số cộng khi và chỉ khi $2b = a + c$ \\
+Trung bình nhân & Ba số $a, b, c$ lập thành cấp số nhân khi và chỉ khi $b^2 = ac$ \\
+Cấp số nhân lùi vô hạn & Với $\lvert q \rvert < 1$, tổng $S = \dfrac{a_1}{1 - q}$ \\
+Nhận dạng nhanh & $a_3 + a_{11} = a_6 + a_8 = 2a_7$; chỉ số cộng lại bằng nhau thì tổng bằng nhau \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Cấp số cộng dùng \textbf{phép trừ} để tìm công sai $d = a_{n+1} - a_n$; cấp số nhân dùng \textbf{phép chia} để tìm công bội $q = \dfrac{a_{n+1}}{a_n}$. Đọc nhầm loại cấp số là mất điểm ngay từ bước đầu.
+
+\subsection{Nhóm 7 — Hình học phẳng và không gian}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Pythagoras & Tam giác vuông có hai cạnh góc vuông $a, b$ và cạnh huyền $c$: $a^2 + b^2 = c^2$ \\
+Tổng góc trong đa giác & Đa giác $n$ cạnh có tổng góc trong bằng $(n-2) \cdot 180^\circ$ \\
+Thể tích chóp & $V = \dfrac{1}{3}Sh$ \\
+Thể tích trụ & $V = \pi r^2 h$; diện tích toàn phần $2\pi r^2 + 2\pi rh$ \\
+Thể tích nón & $V = \dfrac{1}{3}\pi r^2 h$; diện tích xung quanh $\pi r l$ \\
+Thể tích cầu & $V = \dfrac{4}{3}\pi R^3$; diện tích mặt cầu $4\pi R^2$ \\
+Khoảng cách điểm đến mặt phẳng & $d = \dfrac{\lvert ax_0 + by_0 + cz_0 + d \rvert}{\sqrt{a^2 + b^2 + c^2}}$ \\
+Mặt cầu & $(x-a)^2 + (y-b)^2 + (z-c)^2 = R^2$ có tâm $(a, b, c)$ và bán kính $R$ \\
+Tọa độ trung điểm & $M\left(\dfrac{x_A + x_B}{2}, \dfrac{y_A + y_B}{2}, \dfrac{z_A + z_B}{2}\right)$ \\
+Độ dài đoạn thẳng & $\lvert AB \rvert = \sqrt{(x_B - x_A)^2 + (y_B - y_A)^2 + (z_B - z_A)^2}$ \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Mặt cầu cho dưới dạng khai triển $x^2 + y^2 + z^2 + Dx + Ey + Fz + G = 0$ thì tâm là $\left(-\dfrac{D}{2}, -\dfrac{E}{2}, -\dfrac{F}{2}\right)$ và $R = \sqrt{\dfrac{D^2 + E^2 + F^2}{4} - G}$.
+
+\subsection{Nhóm 8 — Đường thẳng và đường tròn}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Hệ số góc qua hai điểm & $k = \dfrac{y_2 - y_1}{x_2 - x_1}$ \\
+Quan hệ hệ số góc & $k_1 = k_2$ là song song; $k_1k_2 = -1$ là vuông góc \\
+Liên hệ hệ số góc và góc nghiêng & $k = \tan\alpha$ với $\alpha \in [0^\circ, 180^\circ)$ \\
+Khoảng cách điểm đến đường thẳng & $d = \dfrac{\lvert ax_0 + by_0 + c \rvert}{\sqrt{a^2 + b^2}}$ \\
+Đường tròn dạng chính tắc & $(x-a)^2 + (y-b)^2 = R^2$ có tâm $(a, b)$ và bán kính $R$ \\
+Đường tròn dạng tổng quát & $x^2 + y^2 - 2ax - 2by + c = 0$ có tâm $(a, b)$, bán kính $R = \sqrt{a^2 + b^2 - c}$ \\
+Điều kiện tiếp xúc & Đường thẳng tiếp xúc đường tròn khi và chỉ khi khoảng cách từ tâm đến đường thẳng bằng bán kính \\
+Độ dài dây cung & Với $d$ là khoảng cách từ tâm đến dây và $R$ là bán kính: nửa dây $= \sqrt{R^2 - d^2}$ \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Đọc tâm đường tròn từ dạng tổng quát phải \textbf{đổi dấu} nửa hệ số của $x$ và $y$. Đây là lỗi mất điểm phổ biến nhất ở nhóm này.
+
+\subsection{Nhóm 9 — Conic}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Elip & $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$ với $a > b > 0$; $a^2 = b^2 + c^2$; tiêu điểm $(\pm c, 0)$; tâm sai $e = \dfrac{c}{a} < 1$ \\
+Hyperbol & $\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$; $c^2 = a^2 + b^2$; tiêu điểm $(\pm c, 0)$; tiệm cận $y = \pm\dfrac{b}{a}x$; tâm sai $e = \dfrac{c}{a} > 1$ \\
+Parabol & $y^2 = 2px$ có tiêu điểm $\left(\dfrac{p}{2}, 0\right)$, đường chuẩn $x = -\dfrac{p}{2}$ \\
+Parabol mở lên, xuống & $x^2 = 2py$ có tiêu điểm $\left(0, \dfrac{p}{2}\right)$, đường chuẩn $y = -\dfrac{p}{2}$ \\
+Bán kính qua tiêu của parabol & Điểm $M$ trên parabol có khoảng cách tới tiêu điểm bằng khoảng cách tới đường chuẩn \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Phương trình $y^2 = -12x$ viết thành $y^2 = 2px$ với $2p = -12$, tức $p = -6$ và tiêu điểm là $\left(\dfrac{p}{2}, 0\right) = (-3, 0)$. Dấu âm nằm trong giá trị $p$, không phải ở vị trí tiêu điểm.
+
+\subsection{Nhóm 10 — Vector và số phức}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Tích vô hướng & $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2$; $\vec{a} \perp \vec{b} \iff \vec{a} \cdot \vec{b} = 0$ \\
+Độ lớn vector & $\lvert \vec{a} \rvert = \sqrt{a_1^2 + a_2^2}$ \\
+Góc giữa hai vector & $\cos\langle \vec{a}, \vec{b} \rangle = \dfrac{\vec{a} \cdot \vec{b}}{\lvert \vec{a} \rvert \lvert \vec{b} \rvert}$ \\
+Song song & $\vec{a} \parallel \vec{b} \iff a_1b_2 - a_2b_1 = 0$ \\
+Hình chiếu & Hình chiếu của $\vec{a}$ lên phương $\vec{b}$ là $\dfrac{\vec{a} \cdot \vec{b}}{\lvert \vec{b} \rvert}$ \\
+Tích có hướng trong không gian & $\vec{a} \times \vec{b} = (a_2b_3 - a_3b_2,\ a_3b_1 - a_1b_3,\ a_1b_2 - a_2b_1)$ \\
+Môđun số phức & $\lvert z \rvert = \sqrt{a^2 + b^2}$ với $z = a + bi$; $z \cdot \overline{z} = \lvert z \rvert^2$ \\
+Nghịch đảo số phức & $\dfrac{1}{z} = \dfrac{\overline{z}}{\lvert z \rvert^2}$ \\
+Số thuần ảo & $z = a + bi$ là số thuần ảo khi và chỉ khi $a = 0$ và $b \ne 0$ \\
+Lũy thừa đơn vị ảo & $i^{4k} = 1$; $i^{4k+1} = i$; $i^{4k+2} = -1$; $i^{4k+3} = -i$ \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Nhân hai số phức thì nhân như nhân đa thức rồi thay $i^2 = -1$. Chia hai số phức thì nhân cả tử và mẫu với số phức liên hợp của mẫu.
+
+\subsection{Nhóm 11 — Xác suất và thống kê}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Công thức} & \textbf{Nội dung} \\
+\midrule
+Xác suất cổ điển & $P(A) = \dfrac{\text{số kết quả thuận lợi}}{\text{số kết quả có thể}}$ \\
+Cộng xác suất & $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ \\
+Biến cố đối & $P(\overline{A}) = 1 - P(A)$ \\
+Xung khắc & $A$, $B$ xung khắc thì $P(A \cap B) = 0$ \\
+Độc lập & $A$, $B$ độc lập thì $P(A \cap B) = P(A) \cdot P(B)$ \\
+Xác suất có điều kiện & $P(A \mid B) = \dfrac{P(A \cap B)}{P(B)}$ \\
+Trung bình & $\overline{x} = \dfrac{x_1 + x_2 + \dots + x_n}{n}$ \\
+Phương sai & $s^2 = \dfrac{\sum (x_i - \overline{x})^2}{n}$; độ lệch chuẩn $s = \sqrt{s^2}$ \\
+Dịch dữ liệu & Cộng thêm $c$ vào mọi giá trị thì trung bình tăng $c$, phương sai không đổi \\
+Nhân dữ liệu & Nhân mọi giá trị với $k$ thì trung bình nhân $k$, phương sai nhân $k^2$ \\
+Quy tắc thực nghiệm & Khoảng $\mu \pm \sigma$ chứa khoảng 68\% dữ liệu, $\mu \pm 2\sigma$ chứa khoảng 95\% \\
+\bottomrule
+\end{tabularx}}
+
+\nhan{Chú ý} Từ khóa 至少 (ít nhất) gần như luôn dùng biến cố đối: tính $1 - P(\text{không có lần nào})$. Từ khóa 互斥 (xung khắc) cộng trực tiếp hai xác suất, còn 相互独立 (độc lập) nhân hai xác suất. Đọc nhầm hai từ này là sai cả câu.
+
+\section{CÁC DẠNG BÀI TRỌNG TÂM}
+
+Mười lăm dạng dưới đây chiếm phần lớn số câu trong đề thi thật. Cột \textbf{Dấu hiệu} là thứ phải nhận ra trong vài giây đầu. Bảng chia làm hai phần cho vừa trang in.
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}llX@{}}
+\toprule
+\textbf{Dạng} & \textbf{Dấu hiệu nhận dạng} & \textbf{Cách xử lý} \\
+\midrule
+1. Phép toán tập hợp & Hai tập hợp dạng $\{x \mid \dots\}$, hỏi 交集 hoặc 并集 & Giải từng bất phương trình về dạng khoảng, vẽ trục số rồi lấy phần chung \\
+2. Đếm tập con & Hỏi 子集个数 hoặc 真子集个数 & Đếm số phần tử $n$, áp dụng $2^n$ hoặc $2^n - 1$ \\
+3. Tham số và điều kiện tập con & Có tham số, yêu cầu $A \cap B = B$ hoặc $A \subseteq B$ & Đưa về điều kiện tập con, \textbf{luôn xét trường hợp tập rỗng trước} \\
+4. Bất phương trình bậc hai & Tam thức bậc hai so với $0$ & Tìm hai nghiệm, dùng quy tắc "trong trái ngoài cùng" \\
+5. Bất phương trình thương và tích & Phân thức hoặc tích hai biểu thức so với $0$ & Xét dấu trên trục số, nghiệm của mẫu luôn bị loại \\
+6. Bất phương trình chứa giá trị tuyệt đối & Có $\lvert f(x) \rvert$ & Phá dấu theo $\lvert f \rvert < a \iff -a < f < a$ \\
+7. Tập xác định và chẵn lẻ & Hỏi 定义域 hoặc 奇偶性 & Viết hệ điều kiện; kiểm tra tập xác định đối xứng trước \\
+8. Đơn điệu, cực trị, tiếp tuyến & Có 单调区间, 极值, 切线, 导数 & Tính $f'(x)$, xét dấu; tiếp tuyến dùng $y = f'(x_0)(x - x_0) + f(x_0)$ \\
+\bottomrule
+\end{tabularx}}
+
+Các dạng 9 đến 15:
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}llX@{}}
+\toprule
+\textbf{Dạng} & \textbf{Dấu hiệu nhận dạng} & \textbf{Cách xử lý} \\
+\midrule
+9. Giá trị và công thức lượng giác & Có 求值, 化简, 二倍角, 两角和 & Dùng công thức cộng, nhân đôi, hạ bậc; chú ý dấu theo phần tư \\
+10. Hàm lượng giác và phương trình & Có 最小正周期, 值域, 最大值, 解方程 & Đọc chu kỳ từ hệ số của $x$; gộp $a\sin x + b\cos x$ \\
+11. Cấp số cộng và cấp số nhân & Có 等差数列 hoặc 等比数列 & Xác định $a_1$ và $d$ hoặc $q$, dùng công thức số hạng tổng quát \\
+12. Khoảng cách và mặt cầu không gian & Có 距离, 球面, 平面 & Thay tọa độ vào công thức khoảng cách; mặt cầu đọc tâm và bán kính \\
+13. Vector và số phức & Có 数量积, 夹角, 模, 共轭复数 & Tích vô hướng theo tọa độ; số phức nhân chia như đa thức \\
+14. Conic & Có 椭圆, 双曲线, 抛物线 kèm 焦点 hoặc 渐近线 & Đọc $a$, $b$, $c$ từ phương trình chính tắc rồi áp công thức \\
+15. Xác suất và thống kê & Có 概率, 随机抽取, 平均数, 方差 & Đếm kết quả bằng tổ hợp; chú ý 至少 dùng biến cố đối \\
+\bottomrule
+\end{tabularx}}
+
+\section{BẢNG LỖI THƯỜNG GẶP TOÀN CHƯƠNG TRÌNH}
+
+Bảng dưới đây gom những lỗi đã xuất hiện nhiều nhất qua 19 buổi. Đọc trước khi làm đề luyện ở mục 4.
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}llX@{}}
+\toprule
+\textbf{Nhóm} & \textbf{Lỗi} & \textbf{Cách phòng} \\
+\midrule
+1 & Nhầm 子集 với 真子集 & Có chữ 真 thì trừ $1$ \\
+1 & Quên xét trường hợp hệ số bằng $0$ & Thấy tham số ở hệ số của $x$, viết ngay câu hỏi: nếu nó bằng $0$ thì sao \\
+1 & Lấy nghiệm của mẫu khi giải bất phương trình thương & Vẽ dấu ngoặc tròn ở nghiệm của mẫu trên trục số \\
+1 & Nhầm 恒成立 với 有解 & 恒成立 dùng $\Delta$, 有解 so sánh với giá trị lớn nhất hoặc nhỏ nhất \\
+2 & Xét chẵn lẻ khi tập xác định không đối xứng & Kiểm tra tập xác định trước, không cần tính $f(-x)$ \\
+2 & Bỏ sót một điều kiện trong hệ xác định & Viết đủ ba điều kiện rồi giao lại \\
+3 & Quên công thức tiếp tuyến & Viết ngay hai giá trị $f(x_0)$ và $f'(x_0)$ \\
+3 & Nhầm cơ số lớn hơn $1$ với nhỏ hơn $1$ & Với $0 < a < 1$, mũ lớn hơn thì giá trị nhỏ hơn \\
+4 & Sai dấu giá trị lượng giác theo phần tư & Vẽ bảng dấu bốn phần tư \\
+4 & Nhầm công thức cộng của $\cos$ & $\cos$ đổi dấu, $\sin$ giữ dấu \\
+5 & Tính sai chu kỳ & $T = \dfrac{2\pi}{\lvert \omega \rvert}$, chia cho hệ số của $x$ \\
+5 & Nhầm 最大值 với 最小值 & 最大值 lấy biên trên, 最小值 lấy biên dưới \\
+6 & Nhầm cấp số cộng với cấp số nhân & Cộng thì trừ tìm $d$, nhân thì chia tìm $q$ \\
+6 & Nhầm công thức $S_n$ của cấp số nhân & Mẫu là $1 - q$, không phải $q - 1$ \\
+7 & Nhầm bán kính với đường kính & Mặt cầu cho $MN$ làm đường kính thì $R = \dfrac{\lvert MN \rvert}{2}$ \\
+7 & Nhầm công thức thể tích chóp và trụ & Chóp có hệ số $\dfrac{1}{3}$, trụ không có \\
+8 & Quên đổi dấu khi đọc tâm đường tròn & Dạng $x^2 + y^2 - 2ax - 2by + c = 0$ có tâm $(a, b)$ \\
+8 & Nhầm $k_1k_2 = -1$ với $k_1 = k_2$ & Vuông góc thì tích bằng $-1$ \\
+9 & Nhầm tiệm cận hyperbol thành $\dfrac{a}{b}$ & Tiệm cận là $y = \pm\dfrac{b}{a}x$, hệ số nhỏ hơn $1$ khi $b < a$ \\
+9 & Nhầm $a^2 = b^2 + c^2$ của elip với $c^2 = a^2 + b^2$ của hyperbol & Elip trừ, hyperbol cộng \\
+10 & Nhầm 实部 với 虚部 & 实部 là phần không có $i$ \\
+10 & Nhầm số thuần ảo với số ảo & Thuần ảo cần phần thực bằng $0$ và phần ảo khác $0$ \\
+11 & Nhầm 互斥 với 相互独立 & Xung khắc cộng, độc lập nhân \\
+11 & Nhầm phương sai khi dịch dữ liệu & Cộng thêm $c$ thì phương sai không đổi \\
+11 & Quên rằng 至少 dùng biến cố đối & Tính $1 - P(\text{không lần nào})$ \\
+\bottomrule
+\end{tabularx}}
+
+\section{PHÂN BỔ THỜI GIAN TRONG PHÒNG THI}
+
+Đề thi có 48 câu trong 60 phút, trung bình 75 giây mỗi câu. Ba vòng làm bài:
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}ccX@{}}
+\toprule
+\textbf{Vòng} & \textbf{Thời gian} & \textbf{Nhiệm vụ} \\
+\midrule
+Vòng 1 & 30 phút & Làm hết những câu nhận ra dạng ngay. Câu nào quá 90 giây thì đánh dấu và bỏ qua \\
+Vòng 2 & 20 phút & Quay lại các câu đã đánh dấu, dùng kỹ thuật loại trừ và thay đáp án \\
+Vòng 3 & 10 phút & Tô lại phiếu trả lời, kiểm tra câu bỏ trống, dành 3 đến 4 phút cho việc tô đáp án \\
+\bottomrule
+\end{tabularx}}
+
+\textbf{Ba nguyên tắc bắt buộc.}
+
+1. \textbf{90 giây không có hướng thì chuyển câu.} Câu làm sai không phải câu khó nhất, mà là câu dành cho nó quá nhiều thời gian.
+2. \textbf{Không bao giờ để trống một câu.} Xác suất đoán đúng là 25\%, để trống là mất chắc chắn một phần tư cơ hội.
+3. \textbf{Làm hết câu dễ trước, không kiểm tra lại câu đã chắc.} Kiểm tra lại câu đã chắc là cách tiêu thời gian tốn kém nhất.
+
+\textbf{Ngưỡng bỏ qua theo nhóm nội dung.} Câu thuộc nhóm 1, 6, 10, 11 thường giải xong dưới 40 giây. Câu thuộc nhóm 4, 5, 9, 14 có thể mất tới 90 giây. Nếu một câu nhóm dễ đã mất quá 60 giây, gần như chắc chắn đang làm sai hướng.
+
+\section{GIỮ TÂM LÝ ỔN ĐỊNH KHI BƯỚC VÀO KỲ THI}
+
+\textbf{Trước giờ thi.} Không học công thức mới trong 24 giờ cuối. Chỉ đọc lại bảng công thức ở mục 1 và bảng lỗi ở mục 3. Ngủ đủ giấc, ăn nhẹ trước khi vào phòng thi.
+
+\textbf{Mười phút đầu.} Đọc lướt toàn bộ đề, đánh dấu những câu nhận ra dạng ngay. Bắt đầu làm từ những câu đó. Không làm theo thứ tự từ câu 1, vì câu 1 có thể là câu khó và sẽ tiêu hết thời gian của những câu dễ phía sau.
+
+\textbf{Khi gặp câu không làm được.} Đánh dấu và chuyển ngay. Cảm giác hoang mang sau một câu khó là nguyên nhân phổ biến nhất khiến học sinh làm sai cả những câu sau đó. Hít thở sâu hai lần rồi đọc câu tiếp theo.
+
+\textbf{Khi thấy nhiều đáp án giống nhau.} Đó là dấu hiệu đề đang kiểm tra dấu hoặc hệ số, không phải kiểm tra độ khó. Kiểm tra lại dấu của mình trước khi tính lại toàn bộ.
+
+\textbf{Năm phút cuối.} Dừng làm bài mới, chuyển sang tô phiếu. Một câu đúng nhưng chưa tô thì không có điểm.
+
+\textbf{Sau khi thi.} Không so đáp án với bạn ngay sau giờ thi. Kết quả đã nằm trong phiếu trả lời, so đáp án chỉ làm mất tinh thần cho môn tiếp theo.
+
+\emph{Tài liệu nội bộ, CAE SHANGHAI.}
+\vspace{0.8cm}
+\begin{center}
+{\footnotesize\color{cae_blue} Tài liệu nội bộ, CAE SHANGHAI}
+\end{center}
+
+\end{document}

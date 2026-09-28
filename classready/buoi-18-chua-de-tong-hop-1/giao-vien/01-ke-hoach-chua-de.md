@@ -1,0 +1,269 @@
+# BUỔI 18 — CHỮA ĐỀ TỔNG HỢP 1
+
+> **Toàn bộ chương trình （综合模拟）**
+> **Phiên bản:** 1.0.0, cập nhật 28.09.2026
+
+---
+
+**Tài liệu này chỉ dành cho giáo viên.** Đề và đáp án đã có trong `../hoc-sinh/`, không lặp lại ở đây.
+
+**Thời lượng:** 90 phút (40 + 10 nghỉ + 40), thực học 80 phút.
+
+---
+
+## TỔNG QUAN
+
+Đề gồm 48 câu, phủ toàn bộ chương trình theo đúng tỉ lệ đề thi thật. Học sinh làm trước ở nhà có bấm giờ 60 phút, nộp bài qua hệ thống. Buổi học dùng để chữa theo mức độ sai, không chữa tuần tự từ câu 1.
+
+**Ba việc phải xong trong 80 phút:**
+
+1. Xác định nhóm nội dung nào học sinh yếu nhất, dựa trên số câu sai theo từng nhóm.
+2. Chữa kỹ các câu sai nhiều, đủ để học sinh tự làm lại được câu tương tự.
+3. Rà soát quản lý thời gian, vì đây là buổi tổng hợp đầu tiên có đủ 48 câu.
+
+---
+
+## PHÂN BỔ THỜI GIAN
+
+| Hoạt động | Tỉ trọng | Thời lượng |
+|:----------|:--------:|:----------:|
+| Tổng quan và phân loại lỗi theo nhóm nội dung | 10\% | 8 phút |
+| Chữa nhanh các câu đúng | 25\% | 20 phút |
+| Chữa kỹ các câu sai nhiều | 45\% | 36 phút |
+| Luyện lại dạng sai nhiều nhất và rà soát quản lý thời gian | 20\% | 16 phút |
+
+---
+
+## BẢNG PHÂN BỐ CÂU THEO NHÓM NỘI DUNG
+
+| Nhóm nội dung | Câu | Số câu | Tỉ lệ đề thi |
+|:--------------|:----|:------:|:------------:|
+| Lượng giác | 1–10 | 10 | ~20\% |
+| Hình học giải tích | 11–19 | 9 | ~19\% |
+| Dãy số | 20–25 | 6 | ~13\% |
+| Hàm số | 26–31 | 6 | ~13\% |
+| Tập hợp và bất đẳng thức | 32–36 | 5 | ~10\% |
+| Mũ và logarit | 37–40 | 4 | ~8\% |
+| Vector và số phức | 41–43 | 3 | ~6\% |
+| Xác suất và thống kê | 44–45 | 2 | ~3\% |
+| Hình học phẳng và không gian | 46–48 | 3 | ~6\% |
+
+### Mã câu
+
+Toàn bộ 48 câu của đề này do giáo viên soạn, vì kho đề hiện có không còn câu nào vừa chưa dùng vừa không trùng nội dung với các buổi 1–17. Mã đánh theo độ khó: `E` dễ, `M` trung bình, `H` khó.
+
+| Câu | Mã | Câu | Mã | Câu | Mã | Câu | Mã |
+|:---:|:---|:---:|:---|:---:|:---|:---:|:---|
+| 1 | `CAE-M-GV-M-001` | 13 | `CAE-M-GV-E-013` | 25 | `CAE-M-GV-E-025` | 37 | `CAE-M-GV-E-037` |
+| 2 | `CAE-M-GV-E-002` | 14 | `CAE-M-GV-M-014` | 26 | `CAE-M-GV-M-026` | 38 | `CAE-M-GV-E-038` |
+| 3 | `CAE-M-GV-E-003` | 15 | `CAE-M-GV-M-015` | 27 | `CAE-M-GV-E-027` | 39 | `CAE-M-GV-E-039` |
+| 4 | `CAE-M-GV-E-004` | 16 | `CAE-M-GV-M-016` | 28 | `CAE-M-GV-E-028` | 40 | `CAE-M-GV-E-040` |
+| 5 | `CAE-M-GV-M-005` | 17 | `CAE-M-GV-E-017` | 29 | `CAE-M-GV-E-029` | 41 | `CAE-M-GV-E-041` |
+| 6 | `CAE-M-GV-E-006` | 18 | `CAE-M-GV-M-018` | 30 | `CAE-M-GV-E-030` | 42 | `CAE-M-GV-M-042` |
+| 7 | `CAE-M-GV-E-007` | 19 | `CAE-M-GV-E-019` | 31 | `CAE-M-GV-E-031` | 43 | `CAE-M-GV-E-043` |
+| 8 | `CAE-M-GV-H-008` | 20 | `CAE-M-GV-E-020` | 32 | `CAE-M-GV-M-032` | 44 | `CAE-M-GV-E-044` |
+| 9 | `CAE-M-GV-M-009` | 21 | `CAE-M-GV-E-021` | 33 | `CAE-M-GV-M-033` | 45 | `CAE-M-GV-E-045` |
+| 10 | `CAE-M-GV-H-010` | 22 | `CAE-M-GV-E-022` | 34 | `CAE-M-GV-M-034` | 46 | `CAE-M-GV-E-046` |
+| 11 | `CAE-M-GV-E-011` | 23 | `CAE-M-GV-E-023` | 35 | `CAE-M-GV-M-035` | 47 | `CAE-M-GV-M-047` |
+| 12 | `CAE-M-GV-E-012` | 24 | `CAE-M-GV-M-024` | 36 | `CAE-M-GV-M-036` | 48 | `CAE-M-GV-E-048` |
+
+Phân bố độ khó: 30 dễ, 16 trung bình, 2 khó.
+
+---
+
+## KHỐI 1 — TỔNG QUAN VÀ PHÂN LOẠI LỖI (8 phút)
+
+### Mục tiêu
+
+Trong 8 phút, cả lớp phải biết mình yếu nhóm nào. Không giảng bài trong khối này.
+
+### Kịch bản
+
+**Phút 1–3 · Trả bài và công bố phân bố điểm.** Chiếu bảng phân bố câu theo nhóm nội dung. Nêu khoảng điểm của lớp và số câu sai trung bình. Không đọc tên học sinh yếu.
+
+**Phút 4–8 · Học sinh tự điền bảng chẩn đoán.** Phát bảng dưới đây, yêu cầu mỗi học sinh đếm số câu sai theo từng nhóm và khoanh vào ô tương ứng.
+
+### Bảng chẩn đoán lỗi theo nhóm nội dung
+
+| Nhóm nội dung | Câu | Số câu | Sai 0–1 | Sai 2–3 | Sai 4 trở lên |
+|:--------------|:----|:------:|:-------:|:-------:|:-------------:|
+| Lượng giác | 1–10 | 10 | | | |
+| Hình học giải tích | 11–19 | 9 | | | |
+| Dãy số | 20–25 | 6 | | | |
+| Hàm số | 26–31 | 6 | | | |
+| Tập hợp và bất đẳng thức | 32–36 | 5 | | | |
+| Mũ và logarit | 37–40 | 4 | | | |
+| Vector và số phức | 41–43 | 3 | | | |
+| Xác suất và thống kê | 44–45 | 2 | | | |
+| Hình học phẳng và không gian | 46–48 | 3 | | | |
+
+**Cách đọc bảng.** Ô "Sai 4 trở lên" ở nhóm Lượng giác và Hình học giải tích là tín hiệu nặng nhất, vì đây là hai nhóm chiếm gần 40\% số câu trong đề thật. Học sinh sai nhiều ở nhóm nhỏ (Xác suất, Thống kê) thường do đọc đề chứ không do thiếu kiến thức, cần xử lý riêng ở khối 4.
+
+### Điểm cần chốt
+
+Mỗi học sinh viết ra một câu: "Nhóm em yếu nhất là ...". Giáo viên thu lại để đối chiếu với thực tế điểm số.
+
+---
+
+## KHỐI 2 — CHỮA NHANH CÁC CÂU ĐÚNG (20 phút)
+
+### Mục tiêu
+
+Củng cố cách nhận dạng nhanh, không giảng lại lời giải. Mỗi câu tối đa 40 giây.
+
+### Kịch bản
+
+Chữa theo từng nhóm nội dung, mỗi nhóm gọi một học sinh đọc đáp án và nêu **từ khóa nhận dạng** đã dùng. Giáo viên chỉ bổ sung khi học sinh không nói được từ khóa.
+
+**Thứ tự và trọng tâm từng nhóm:**
+
+| Nhóm | Câu chữa nhanh | Từ khóa cần học sinh nói ra |
+|:-----|:---------------|:----------------------------|
+| Lượng giác | 2, 4, 7 | 余弦值 (giá trị cosin), 最小正周期 (chu kì), 解的个数 (số nghiệm) |
+| Hình học giải tích | 11, 12, 17, 19 | 截距 (chặn), 距离 (khoảng cách), 准线 (đường chuẩn), 中点 (trung điểm) |
+| Dãy số | 20, 21, 22, 23, 25 | 公差 (công sai), 公比 (công bội), 前 n 项和 (tổng $n$ số hạng đầu) |
+| Hàm số | 27, 30, 31 | 最大值 (giá trị lớn nhất), 偶函数 (hàm chẵn) |
+| Tập hợp và bất đẳng thức | 33, 35 | 解集 (tập nghiệm), 最大值 (giá trị lớn nhất) |
+| Mũ và logarit | 37, 38, 40 | 定义域 (tập xác định), 解 (nghiệm) |
+| Vector và số phức | 41, 43 | 模 (môđun), 数量积 (tích vô hướng) |
+| Xác suất và thống kê | 44, 45 | 概率 (xác suất), 平均数 (trung bình cộng) |
+| Hình học phẳng và không gian | 48 | 体积 (thể tích) |
+
+**25 câu trên chữa ở khối này.** **23 câu còn lại (1, 3, 5, 6, 8, 9, 10, 13, 14, 15, 16, 18, 24, 26, 28, 29, 32, 34, 36, 39, 42, 46, 47) chuyển sang khối 3** vì phần lớn học sinh làm sai, hoặc vì cách làm đúng nhưng chưa chuẩn.
+
+---
+
+## KHỐI 3 — CHỮA KỸ CÁC CÂU SAI NHIỀU (36 phút)
+
+### Danh sách câu cần chữa kỹ
+
+**Ưu tiên 1 (chữa đủ bốn bước, 3 phút mỗi câu, 6 câu, 18 phút)**
+
+| Câu | Nhóm | Lý do |
+|:---:|:-----|:------|
+| 1 | Lượng giác | Quên dấu của $\sin\alpha$ theo góc phần tư |
+| 10 | Lượng giác | Dấu của $\tan 2\alpha$ khi $\tan\alpha > 1$ |
+| 16 | Hình học giải tích | Nhầm tiêu điểm hypebol với đỉnh |
+| 26 | Hàm số | Lấy dấu bằng ở điều kiện logarit |
+| 32 | Tập hợp và bất đẳng thức | Quên đầu mút thuộc tập thứ hai |
+| 42 | Vector và số phức | Nhầm phần ảo với số thuần ảo |
+
+**Ưu tiên 2 (chữa gọn ba bước, 1,5 phút mỗi câu, 9 câu, 13,5 phút)**
+
+| Câu | Nhóm | Lý do |
+|:---:|:-----|:------|
+| 5 | Lượng giác | Không nghĩ ra kỹ thuật bình phương để tìm $\sin 2\alpha$ |
+| 8 | Lượng giác | Nhầm trục đối xứng với điểm cực trị |
+| 14 | Hình học giải tích | Chọn nhầm chính đường đã cho thay vì đường song song |
+| 18 | Hình học giải tích | Xét tỉ lệ hệ số không đầy đủ, kết luận nhầm sang trùng nhau |
+| 24 | Dãy số | Không dùng công thức tổng $S_n$ dạng ghép cặp |
+| 29 | Hàm số | Nhầm tập giá trị hàm mũ với nửa khoảng đóng |
+| 34 | Tập hợp và bất đẳng thức | Dùng nhầm dấu $\le$ cho bất phương trình thương |
+| 36 | Tập hợp và bất đẳng thức | Lấy cả hai đầu mút khi $\Delta = 0$ |
+| 46 | Hình học phẳng và không gian | Quên lấy căn bậc hai của bán kính bình phương |
+
+**Ưu tiên 3 (chữa bằng bảng chiếu, 0,5 phút mỗi câu, 8 câu, 4 phút)**
+
+| Câu | Nhóm | Lý do |
+|:---:|:-----|:------|
+| 3 | Lượng giác | Không nhớ công thức $\sin 2\alpha$ theo $\tan$ |
+| 6 | Lượng giác | Không nhớ công thức giá trị nhỏ nhất của $a\sin x + b\cos x$ |
+| 9 | Lượng giác | Không nhận ra công thức hạ bậc |
+| 13 | Hình học giải tích | Nhầm bán kính với bình phương bán kính |
+| 15 | Hình học giải tích | Nhầm trục lớn với trục bé |
+| 28 | Hàm số | Bỏ dấu âm khi thay giá trị âm vào hàm |
+| 39 | Mũ và logarit | Không kiểm tra điều kiện của logarit |
+| 47 | Hình học phẳng và không gian | Tính sai dấu khi thay tọa độ vào tử số |
+
+Tổng 23 câu, khoảng 35,5 phút, làm tròn thành 36 phút.
+
+### Kịch bản chữa kỹ
+
+Cấu trúc bốn bước cho câu ưu tiên 1:
+
+1. **Gọi học sinh sai nhiều nhất trình bày cách làm** (40 giây). Không sửa ngay, để cả lớp nghe hết.
+2. **Hỏi cả lớp: sai ở bước nào?** (30 giây). Mục đích là để học sinh tự chỉ ra lỗi, không phải giáo viên chỉ.
+3. **Chốt cách nhận dạng và một dòng công thức** (50 giây). Viết lên bảng và để nguyên.
+4. **Cho một biến thể nhỏ** (1 phút). Ví dụ đổi số liệu, hỏi ngay đáp án.
+
+Câu ưu tiên 2 bỏ bước 4. Câu ưu tiên 3 chỉ chiếu đáp án và nêu một dòng lỗi, không gọi học sinh trình bày.
+
+### Ba lỗi hệ thống cần chốt lên góc bảng
+
+Ba lỗi dưới đây lặp lại ở nhiều câu khác nhau trong đề này, không phải lỗi riêng của một câu:
+
+| Lỗi hệ thống | Câu liên quan | Cách chữa |
+|:-------------|:--------------|:----------|
+| Bỏ qua dấu khi xác định góc phần tư | 1, 5, 10 | Vẽ góc phần tư trước khi tính, ghi dấu ra nháp |
+| Lấy đầu mút khi điều kiện là dấu ngặt | 26, 32, 36 | Đọc lại dấu bất đẳng thức trước khi viết kết luận |
+| Nhầm đại lượng với bình phương của nó | 13, 46 | Viết công thức tổng quát ra nháp, thay số sau |
+
+---
+
+## KHỐI 4 — LUYỆN LẠI VÀ RÀ SOÁT THỜI GIAN (16 phút)
+
+### Phần A — Luyện lại dạng sai nhiều nhất (10 phút)
+
+Chọn dạng sai nhiều nhất dựa trên bảng chẩn đoán đã điền ở khối 1. Hai kịch bản thường gặp:
+
+**Kịch bản 1: Lượng giác là nhóm yếu nhất.** Cho làm tại chỗ ba câu biến thể, mỗi câu 3 phút:
+
+| Câu luyện | Đề | Đáp án |
+|:----------|:---|:-------|
+| L1 | Biết $\cos\alpha = -\dfrac{4}{5}$ và $\alpha$ ở góc phần tư thứ ba, tính $\sin 2\alpha$ | $\dfrac{24}{25}$ |
+| L2 | Biết $\tan\alpha = 3$, tính $\tan 2\alpha$ | $-\dfrac{3}{4}$ |
+| L3 | Tìm chu kì của $y = 4\sin\!\left(\dfrac{x}{3}\right)$ | $6\pi$ |
+
+**Kịch bản 2: Hình học giải tích là nhóm yếu nhất.** Cho làm tại chỗ ba câu biến thể:
+
+| Câu luyện | Đề | Đáp án |
+|:----------|:---|:-------|
+| L4 | Đường thẳng $2x - 5y + 10 = 0$ cắt trục $x$ tại điểm nào | $(-5, 0)$ |
+| L5 | Hypebol $\dfrac{x^2}{25} - \dfrac{y^2}{144} = 1$ có tiêu điểm là gì | $(\pm 13, 0)$ |
+| L6 | Đường tròn $x^2 + y^2 + 4x - 6y - 12 = 0$ có bán kính bằng bao nhiêu | $5$ |
+
+Chữa nhanh ba câu ngay tại chỗ, chỉ chốt đáp án và lỗi nếu có.
+
+### Phần B — Rà soát quản lý thời gian (6 phút)
+
+Đây là điểm khác biệt của buổi tổng hợp so với các buổi chữa đề trước. Học sinh đã làm đủ 48 câu trong 60 phút, nên số liệu thời gian là thật.
+
+**Phút 1–2 · Công bố ngân sách thời gian.** Viết lên bảng:
+
+| Loại câu | Số câu | Thời gian mỗi câu | Tổng |
+|:---------|:------:|:-----------------:|:----:|
+| Câu dễ và trung bình (làm chắc) | 36 | 60 giây | 36 phút |
+| Câu khó (làm được thì làm) | 12 | 90 giây | 18 phút |
+| Kiểm tra lại và tô đáp án | | | 6 phút |
+
+**Phút 3–4 · Ba mốc kiểm soát.** Yêu cầu học sinh ghi vào đầu đề thi lần sau:
+
+- Hết 20 phút phải xong câu 16.
+- Hết 40 phút phải xong câu 32.
+- Hết 54 phút phải xong câu 48, còn 6 phút để tô và soát.
+
+**Phút 5–6 · Quy tắc bỏ câu.** Nêu quy tắc: một câu đã dành quá 2 phút mà chưa ra đáp án thì đánh dấu, chọn tạm một phương án và đi tiếp. Quay lại nếu còn thời gian. Học sinh thường mất 5–8 phút cho một câu khó và làm hỏng cả phần sau.
+
+### Dặn dò
+
+- Buổi 19 là buổi chữa đề tổng hợp thứ hai, cũng 48 câu trong 60 phút, mức khó tương đương. Giữ nguyên quy tắc bấm giờ.
+- Học sinh phải tự làm lại toàn bộ câu đã sai trong buổi này, nộp lại trước buổi 19.
+- Ghi lại bảng chẩn đoán đã điền để đối chiếu với kết quả đề tổng hợp 2.
+
+---
+
+## GHI CHÚ SAU BUỔI HỌC
+
+*(Điền sau khi dạy xong, dùng để điều chỉnh buổi 19.)*
+
+| Nội dung | Ghi nhận |
+|:---------|:---------|
+| Nhóm nội dung học sinh yếu nhất | |
+| Câu sai nhiều nhất | |
+| Số học sinh vượt mốc câu 32 trong 40 phút | |
+| Câu hỏi học sinh hỏi nhiều | |
+| Điều chỉnh cho buổi 19 | |
+
+---
+
+*Tài liệu nội bộ, CAE SHANGHAI.*

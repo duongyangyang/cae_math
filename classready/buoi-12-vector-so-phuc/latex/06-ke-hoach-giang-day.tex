@@ -1,0 +1,205 @@
+% =====================================================================
+%  BUỔI 12 — KẾ HOẠCH GIẢNG DẠY (từ giao-vien/01-ke-hoach-giang-day.md)
+%  Sinh tự động bằng scripts/md2tex-chung.py — không sửa tay.
+% =====================================================================
+\documentclass[11pt, a4paper]{article}
+\input{cae-style}
+
+\begin{document}
+
+\trangbia{KẾ HOẠCH GIẢNG DẠY}{12}{Vector và số phức}{向量与复数}{Module M3 \quad·\quad Tỉ trọng đề thi $\sim$6\% \quad·\quad khoảng 2–4 câu}
+
+\section{PHÂN BỔ THỜI GIAN}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xcc@{}}
+\toprule
+\textbf{Hoạt động} & \textbf{Tỉ trọng} & \textbf{Thời lượng} \\
+\midrule
+Chữa bài tập buổi 11 & 20\% & 16 phút \\
+Hệ thống hóa kiến thức trọng tâm & 30\% & 24 phút \\
+Đi các dạng bài trong chủ đề & 50\% & 40 phút \\
+\bottomrule
+\end{tabularx}}
+
+\section{KHỐI 1 — CHỮA BÀI TẬP BUỔI 11 (16 phút)}
+
+\subsection{Mục tiêu}
+
+Học sinh nhận ra ba lỗi lặp lại nhiều nhất ở nhóm hình học giải tích: đọc sai dạng phương trình đường tròn, quên điều kiện xác định của căn, và nhầm tiêu điểm của elip với tiêu điểm của hyperbol.
+
+\subsection{Kịch bản}
+
+\textbf{Phút 1–6 · Chữa ba câu sai nhiều nhất.} Chọn câu theo bảng đáp án buổi 11. Với mỗi câu, chỉ viết lời giải lên bảng trong 90 giây, phần còn lại dành cho việc chỉ ra \textbf{chỗ học sinh chọn sai và vì sao}.
+
+\textbf{Phút 7–11 · Ba lỗi hệ thống.} Viết lên góc bảng và để nguyên đến hết buổi:
+
+1. \textbf{Nhầm tiêu điểm elip và hyperbol.} Elip dùng $c^2 = a^2 - b^2$, hyperbol dùng $c^2 = a^2 + b^2$. Cách nhớ: hyperbol "cộng thêm" vì nó mở rộng vô hạn.
+2. \textbf{Quên đổi dấu khi đọc tâm đường tròn.} Từ $x^2 + y^2 - 2ax - 2by + c = 0$, tâm là $(a, b)$ chứ không phải $(-a, -b)$.
+3. \textbf{Bỏ điều kiện xác định khi bình phương.} Với bất phương trình chứa căn, đặt điều kiện \textbf{trước} khi bình phương.
+
+\textbf{Phút 12–16 · Chuyển tiếp sang buổi 12.} Nói rõ: chuyên đề hôm nay chỉ chiếm 2–4 câu nhưng là \textbf{nhóm câu dễ lấy điểm nhất} trong đề, vì mỗi câu chỉ cần một công thức. Đây là phần học sinh không được phép mất điểm.
+
+\subsection{Điểm cần chốt}
+
+Kết thúc khối này, học sinh phải trả lời được: \textbf{"Elip dùng công thức nào để tìm $c$, hyperbol dùng công thức nào?"}
+
+\section{KHỐI 2 — HỆ THỐNG HÓA KIẾN THỨC TRỌNG TÂM (24 phút)}
+
+\subsection{Mục tiêu}
+
+Học sinh nắm được 10 tính chất trong \texttt{../hoc-sinh/02-tai-lieu-buoi-hoc.md} mục 2, đặc biệt là ba công thức dùng nhiều nhất: tích vô hướng theo tọa độ, điều kiện vuông góc và song song, và phép chia số phức.
+
+\subsection{Kịch bản}
+
+\textbf{Phút 1–6 · Từ khóa nhận dạng đề.} Chiếu bảng 12 từ khóa. Với mỗi từ, yêu cầu học sinh đọc to phiên âm rồi nói nghĩa, mục đích là luyện phản xạ nhìn chữ Hán. Dừng lâu hơn ở ba cặp dễ lẫn: 模 và 共轭复数, 纯虚数 và 虚数, 垂直 và 平行.
+
+\textbf{Phút 7–13 · Vector.} Trình bày Định nghĩa 1–2 và Tính chất 1–6. Nhấn mạnh hai công thức quyết định:
+
+$$a \perp b \iff x_1x_2 + y_1y_2 = 0; \qquad a \parallel b \iff x_1y_2 - x_2y_1 = 0$$
+
+Viết hai công thức này cạnh nhau trên bảng và khoanh tròn sự khác nhau: một cái \textbf{cộng}, một cái \textbf{trừ}. Đây là nguồn gốc của phần lớn lỗi sai ở dạng tìm tham số.
+
+Dành 2 phút cho công thức hình chiếu $\dfrac{a \cdot b}{\lvert b \rvert}$ và hỏi cả lớp: "Hình chiếu là số hay vector?" Học sinh phải trả lời được là \textbf{số}.
+
+\textbf{Phút 14–20 · Số phức.} Trình bày Định nghĩa 3–5 và Tính chất 7–10. Dạy phép chia số phức bằng một câu thần chú duy nhất: \textbf{"nhân tử và mẫu với liên hợp của mẫu"}. Không cần chứng minh, chỉ cần thành thạo.
+
+Với Tính chất 8 (chu kì của $i$), yêu cầu học sinh tính nhẩm $i^{2025}$ trong 10 giây. Nếu ai chưa làm được, nhắc lại mẹo chia cho $4$ lấy dư.
+
+\textbf{Phút 21–24 · Ba công thức tra nhanh.} Chiếu và yêu cầu học sinh chép vào đầu trang tài liệu:
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Bài toán} & \textbf{Công thức} \\
+\midrule
+Môđun số phức & $\lvert a + bi \rvert = \sqrt{a^2 + b^2}$ \\
+Điểm cuối của vector & $B = A + \overrightarrow{AB}$ \\
+Tọa độ trung điểm & $\left(\dfrac{x_1+x_2}{2}, \dfrac{y_1+y_2}{2}\right)$ \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Lỗi học sinh hay mắc — cần cảnh báo trước}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Lỗi} & \textbf{Cách cảnh báo} \\
+\midrule
+Lẫn công thức vuông góc và song song & Viết hai công thức cạnh nhau, khoanh tròn dấu cộng và dấu trừ \\
+Đọc phần ảo là $bi$ thay vì $b$ & Nói rõ: 虚部 là \textbf{số thực}, phương án có chữ $i$ là phương án nhiễu \\
+Quên điều kiện $b \ne 0$ ở số thuần ảo & Nhắc: $z = 0$ là số thực, không phải số thuần ảo \\
+Đảo dấu khi tìm điểm đầu từ điểm cuối & Viết công thức $B = A + \overrightarrow{AB}$ và yêu cầu học sinh chép lại \\
+\bottomrule
+\end{tabularx}}
+
+\section{KHỐI 3 — ĐI CÁC DẠNG BÀI (40 phút)}
+
+\subsection{Mục tiêu}
+
+Học sinh làm được 8 dạng bài, mỗi dạng nắm được \textbf{cách nhận dạng} từ đề, đây mới là đích của khối, không phải thuộc lời giải.
+
+\subsection{Kịch bản}
+
+Tám dạng bài có trong \texttt{../hoc-sinh/02-tai-lieu-buoi-hoc.md} mục 3. Phân bổ 5 phút mỗi dạng theo cấu trúc cố định:
+
+1. \textbf{Đọc đề mẫu} (30 giây): giáo viên đọc to đề tiếng Trung, yêu cầu học sinh chỉ ra từ khóa.
+2. \textbf{Hỏi cách nhận dạng} (30 giây): "Dấu hiệu nào cho biết đây là dạng này?"
+3. \textbf{Giảng phương pháp} (2 phút): trình bày các bước, không giải chi tiết.
+4. \textbf{Học sinh làm tại chỗ} (1 phút 30 giây): cho một câu tương tự, học sinh tự làm.
+5. \textbf{Chữa nhanh} (30 giây): chốt đáp án và lỗi nếu có.
+
+\subsection{Thứ tự ưu tiên}
+
+Nếu hết thời gian, \textbf{không được cắt Dạng 1, 5, 7}. Đây là ba dạng xuất hiện nhiều nhất trong đề thi thật:
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xcl@{}}
+\toprule
+\textbf{Dạng} & \textbf{Tần suất} & \textbf{Ghi chú} \\
+\midrule
+\textbf{Dạng 1 — Tích vô hướng và góc} & \textbf{Cao} & Ưu tiên giữ \\
+Dạng 2 — Tham số để vuông góc & Trung bình & Có thể cắt ngắn \\
+Dạng 3 — Tham số để song song & Trung bình & Có thể cắt ngắn \\
+Dạng 4 — Môđun, hình chiếu, trung điểm & Trung bình & — \\
+\textbf{Dạng 5 — Phép toán số phức} & \textbf{Cao} & Ưu tiên giữ \\
+Dạng 6 — Phần thực, phần ảo, liên hợp & Trung bình & — \\
+\textbf{Dạng 7 — Tham số để thuần ảo} & \textbf{Cao} & Ưu tiên giữ \\
+Dạng 8 — Môđun và lũy thừa $i$ & Trung bình & Học sinh thường làm nhanh \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Câu dùng để luyện tại chỗ}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lXl@{}}
+\toprule
+\textbf{Dạng} & \textbf{Câu luyện} & \textbf{Mã câu} \\
+\midrule
+1 & \texttt{CAE-M-CD7-08.2-M-005} & trong kho đề \\
+2 & \texttt{CAE-M-CD7-08.1-M-001} & trong kho đề \\
+3 & Cho $a = (1,2)$, $b = (3,m)$. Tìm $m$ để $a \parallel b$ & tự soạn \\
+4 & \texttt{CAE-M-CD7-LX2-E-037} & trong kho đề \\
+5 & \texttt{CAE-M-CD7-08.7-M-024} & trong kho đề \\
+6 & \texttt{CAE-M-CD7-08.2-H-006} & trong kho đề \\
+7 & \texttt{CAE-M-CD7-08.1-H-002} & trong kho đề \\
+8 & \texttt{CAE-M-CD7-08.3-H-010} & trong kho đề \\
+\bottomrule
+\end{tabularx}}
+
+\section{CHỐT BUỔI (5 phút cuối, nằm trong khối 3)}
+
+Chốt lại bốn điểm, viết lên góc bảng và để nguyên khi học sinh ra về:
+
+1. \textbf{Vuông góc thì cộng, song song thì trừ.}
+2. \textbf{Chia số phức: nhân tử và mẫu với liên hợp của mẫu.}
+3. \textbf{Phần ảo là số thực, không kèm $i$.}
+4. \textbf{Điểm cuối bằng điểm đầu cộng vector.}
+
+Dặn dò: BTVN gồm 25 câu bắt buộc + 15 câu tự chọn, nộp trước buổi 13. Phần tự chọn khó hơn rõ rệt, chỉ làm sau khi xong phần bắt buộc. Nhắc trước: \textbf{buổi sau là buổi chữa đề 3}, học sinh cần ôn lại toàn bộ nhóm Hình học và Đại số trước khi vào buổi.
+
+Nói rõ với học sinh về bài kiểm tra cuối chuyên đề: đề 24 câu, 35 phút, phủ bốn buổi 8, 9, 10 và 12. Đây là bài tính điểm, làm nghiêm túc.
+
+\section{ĐÁP ÁN BÀI TẬP CHUẨN BỊ}
+
+Dùng để chữa nhanh nếu cần. Lời giải chi tiết có trong \texttt{../hoc-sinh/04-dap-an-chuan-bi.md}.
+
+\bang{
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+\textbf{Câu} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} \\
+\midrule
+Đáp án & B & A & D & B & A & C & A & B & C & B \\
+\bottomrule
+\end{tabular}}
+
+\textbf{Câu cần chữa kỹ nếu học sinh làm sai nhiều:} Câu 8 và Câu 10.
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{Câu 8} (\texttt{CAE-M-CD7-08.6-M-020}): học sinh hay bỏ qua phương án có thành phần bằng $0$ vì tỉ số không xác định. Phải xét riêng.
+\item \textbf{Câu 10} (\texttt{CAE-M-CD7-08.2-H-006}): bẫy kinh điển: tính ra $z$ rồi quên đổi dấu phần ảo để lấy liên hợp. Học sinh chọn A thay vì B.
+\end{itemize}
+
+\section{GHI CHÚ SAU BUỔI HỌC}
+
+\emph{(Điền sau khi dạy xong, dùng để điều chỉnh buổi sau và các buổi lặp lại.)}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xl@{}}
+\toprule
+\textbf{Nội dung} & \textbf{Ghi nhận} \\
+\midrule
+Thời gian thực tế từng khối &  \\
+Dạng bài học sinh yếu nhất &  \\
+Câu hỏi học sinh hỏi nhiều &  \\
+Điều chỉnh cho lần dạy sau &  \\
+\bottomrule
+\end{tabularx}}
+
+\emph{Tài liệu nội bộ, CAE SHANGHAI.}
+\vspace{0.8cm}
+\begin{center}
+{\footnotesize\color{cae_blue} Tài liệu nội bộ, CAE SHANGHAI}
+\end{center}
+
+\end{document}

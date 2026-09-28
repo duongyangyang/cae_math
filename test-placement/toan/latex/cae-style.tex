@@ -1,0 +1,195 @@
+% =====================================================================
+%  CAE SHANGHAI — GÓI LỆNH DÙNG CHUNG CHO TÀI LIỆU LUYỆN THI CSCA TOÁN
+%  Biên dịch bằng XeLaTeX. Mọi file .tex trong buổi học \input file này.
+% =====================================================================
+
+% ---------- NGÔN NGỮ & PHÔNG CHỮ ----------
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{vietnamese}
+\setotherlanguage{english}
+
+% Chữ Latin (Anh + Việt): TeX Gyre Termes — bản clone Times New Roman,
+% đi kèm TeX Live, hỗ trợ đầy đủ dấu tiếng Việt.
+\setmainfont{TeX Gyre Termes}
+\setsansfont{TeX Gyre Heros}
+
+% Chữ Hán: ưu tiên Source Han Serif SC (思源宋体) — chuẩn học thuật Trung Quốc.
+% Nếu máy chưa cài, tự động dùng Songti SC (宋体, có sẵn trên macOS).
+% Cả hai đều thuộc họ 宋体 nên diện mạo tài liệu không đổi.
+\IfFontExistsTF{Source Han Serif SC}{
+  \newcommand{\cjkfamilyname}{Source Han Serif SC}
+}{
+  \IfFontExistsTF{Songti SC}{
+    \newcommand{\cjkfamilyname}{Songti SC}
+  }{
+    \newcommand{\cjkfamilyname}{Noto Serif CJK SC}
+  }
+}
+
+% xeCJK tự chuyển font khi gặp ký tự Hán, không cần bọc \cjk{} thủ công.
+% Đây là điều kiện bắt buộc: font Latin (TeX Gyre Termes) không có glyph chữ Hán,
+% nếu không khai báo xeCJK thì mọi chữ Hán viết trần sẽ bị nuốt khỏi bản in.
+\usepackage{xeCJK}
+\setCJKfamilyfont{caehan}{\cjkfamilyname}[Scale=0.95]
+\setCJKmainfont{\cjkfamilyname}[Scale=0.95]
+\setCJKsansfont{\cjkfamilyname}[Scale=0.95]
+\setCJKmonofont{\cjkfamilyname}[Scale=0.95]
+
+% \cjk{} ép dùng font Hán trong ngữ cảnh cần thiết (ví dụ trong tiêu đề in đậm
+% hoặc trong bảng có định dạng riêng). Dùng \CJKfamily chứ không phải tên font,
+% vì tên font chỉ là văn bản — sẽ in ra chữ thay vì đổi font.
+\newcommand{\cjk}[1]{{\CJKfamily{caehan}#1}}
+
+% ---------- TOÁN HỌC ----------
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage{unicode-math}
+\setmathfont{TeX Gyre Termes Math}
+
+% ---------- BỐ CỤC TRANG ----------
+% Lề phải chừa vùng an toàn của letterhead:
+%   banner trên chiếm 0–19mm  → top tối thiểu 2,2cm
+%   banner dưới chiếm 281–297mm → bottom tối thiểu 2,2cm
+% Lề trên 2,6cm (26mm) để tiêu đề đầu trang không đè banner (banner hết ở 19mm).
+\usepackage[a4paper, top=2.6cm, bottom=2.4cm, left=2.5cm, right=2.0cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{booktabs, array, longtable}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[colorlinks=true, linkcolor=cae_blue, citecolor=cae_blue, urlcolor=cae_blue]{hyperref}
+
+% ---------- BẢNG MÀU THƯƠNG HIỆU ----------
+\definecolor{cae_blue}{RGB}{0, 51, 102}
+\definecolor{cae_gold}{RGB}{196, 149, 60}
+\definecolor{box_bg}{RGB}{245, 247, 250}
+\definecolor{box_line}{RGB}{0, 51, 102}
+
+% ---------- TIÊU ĐỀ MỤC ----------
+% Đệm đầu trang: banner letterhead chiếm 0–19mm, mà lề trên là 22mm.
+% \section* đầu trang (sau \clearpage) sát lề nên phải chừa thêm, nếu không
+% sẽ đè lên banner.
+\titleformat{\section}
+  {\normalfont\large\bfseries\sffamily\color{cae_blue}}{\thesection.}{0.6em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\sffamily\color{cae_blue!85!black}}{\thesubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+% Tiêu đề không đánh số ở đầu trang: \section* sau \clearpage nằm sát lề trên
+% nên đè lên banner letterhead. Dùng \vspace* ngay TRƯỚC \section* không đủ,
+% vì titlesec chèn khoảng cách riêng. Cách chắc chắn là đệm bằng \null.
+\newcommand{\sectiondautrang}[1]{\section*{#1}}
+
+% Dạng bài dùng \subsection*{} nên cần định dạng riêng, đậm và có gạch chân màu
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\sffamily\color{cae_blue!85!black}}{\thesubsubsection}{0.6em}{}
+
+% ---------- LETTERHEAD (ảnh nền toàn trang) ----------
+% Ảnh letterhead của CAE Shanghai: banner xanh trên/dưới kèm logo chìm giữa.
+% Tỉ lệ ảnh 1414x2000 = 0.7070, khớp A4 (0.7071) nên chèn thẳng không méo.
+% Đặt ở lớp nền dưới cùng để chữ không bị ảnh che.
+% Dùng \AddToShipoutPictureBG (không có dấu *) để áp dụng cho MỌI trang.
+\usepackage{eso-pic}
+\AddToShipoutPictureBG{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]{images/letterhead.png}%
+  }%
+}
+
+% ---------- ĐẦU / CHÂN TRANG ----------
+% Letterhead đã có banner trên và dưới, nên bỏ dòng chạy để tránh chồng chữ.
+% Số trang đặt trong vùng nội dung, sát trên banner dưới, lề phải.
+\pagestyle{fancy}
+\setlength{\headheight}{0pt}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[R]{\raisebox{0.9cm}{\small\color{cae_blue}\thepage}}
+
+% ---------- MÔI TRƯỜNG NỘI DUNG ----------
+% Trong tcolorbox, LaTeX đặt parindent = parskip = 0, nên các đoạn văn trong
+% khung dính liền nhau. Đặt lại khoảng cách đoạn cho mọi khung.
+\newcommand{\khoangcachdoan}{\setlength{\parskip}{0.5em}\setlength{\parindent}{0pt}}
+\tcbset{before upper={\khoangcachdoan}}
+
+\newtcolorbox{dinhnghia}[1][]{
+  colback=box_bg, colframe=box_line, boxrule=0.6pt, arc=1pt,
+  fonttitle=\bfseries, title={Định nghĩa #1}, breakable}
+\newtcolorbox{dinhly}[1][]{
+  colback=box_bg, colframe=cae_gold, boxrule=0.6pt, arc=1pt,
+  fonttitle=\bfseries, title={Tính chất #1}, breakable}
+\newtcolorbox{vidu}[1][]{
+  colback=white, colframe=black!40, boxrule=0.4pt, arc=1pt,
+  fonttitle=\bfseries, title={Ví dụ #1}, breakable}
+\newtcolorbox{baitap}[1][]{
+  colback=white, colframe=cae_blue!50, boxrule=0.4pt, arc=1pt,
+  fonttitle=\bfseries, title={Câu #1}, breakable}
+
+% Ô đáp án: viền xanh đậm hơn, dùng trong file đáp án
+\newtcolorbox{dapan}[1][]{
+  colback=box_bg, colframe=cae_blue, boxrule=0.6pt, arc=1pt,
+  fonttitle=\bfseries, title={Câu #1}, breakable}
+
+% ---------- TÊN CHỨNG MINH ----------
+\renewcommand{\proofname}{\normalfont\bfseries Chứng minh}
+
+% ---------- MÔN HỌC ----------
+% Đổi được ở file .tex trước khi \input{cae-style} bằng \renewcommand{\monhoc}{...}
+\providecommand{\monhoc}{Môn Toán}
+
+% ---------- TRANG BÌA GỌN ----------
+% #1 = loại tài liệu (TÀI LIỆU CHUẨN BỊ, TÀI LIỆU BUỔI HỌC, ...)
+% #2 = số buổi
+% #3 = tên buổi tiếng Việt
+% #4 = tên buổi tiếng Hán
+% #5 = module và tỉ trọng
+\newcommand{\trangbia}[5]{%
+  \begin{center}
+    \vspace*{0.6cm}
+    {\large\bfseries\color{cae_blue} CAE SHANGHAI}\\[0.15cm]
+    {\footnotesize Tài liệu luyện thi CSCA · \monhoc}\\[0.5cm]
+    {\color{cae_gold}\rule{0.55\linewidth}{0.8pt}}\\[0.35cm]
+    {\small\bfseries\color{cae_blue!80!black} #1}\\[0.35cm]
+    {\Large\bfseries\color{cae_blue} BUỔI #2 — #3}\\[0.2cm]
+    {\large\color{cae_blue!85!black} \cjk{#4}}\\[0.25cm]
+    \ifx\relax#5\relax\else{\small #5}\\[0.35cm]\fi
+    {\color{cae_gold}\rule{0.55\linewidth}{0.8pt}}\\[0.3cm]
+    {\footnotesize Biên soạn: Hoàng Dương, CAE Shanghai \quad·\quad \today}
+  \end{center}
+  \vspace{0.3cm}
+}
+
+% ---------- TRANG BÌA CHO ĐỀ KIỂM TRA ----------
+% Khác \trangbia ở chỗ không có chữ "BUỔI N" — dùng cho đề thi, không phải bài giảng.
+% #1 = loại tài liệu, #2 = tên kỳ thi (Việt), #3 = tên kỳ thi (Hán), #4 = thông số
+\newcommand{\biade}[4]{%
+  \begin{center}
+    \vspace*{0.6cm}
+    {\large\bfseries\color{cae_blue} CAE SHANGHAI}\\[0.15cm]
+    {\footnotesize Tài liệu luyện thi CSCA · \monhoc}\\[0.5cm]
+    {\color{cae_gold}\rule{0.55\linewidth}{0.8pt}}\\[0.35cm]
+    {\small\bfseries\color{cae_blue!80!black} #1}\\[0.35cm]
+    {\Large\bfseries\color{cae_blue} #2}\\[0.2cm]
+    {\large\color{cae_blue!85!black} \cjk{#3}}\\[0.25cm]
+    {\small #4}\\[0.35cm]
+    {\color{cae_gold}\rule{0.55\linewidth}{0.8pt}}\\[0.3cm]
+    {\footnotesize Biên soạn: Hoàng Dương, CAE Shanghai \quad·\quad \today}
+  \end{center}
+  \vspace{0.3cm}
+}
+
+% ---------- TIỆN ÍCH ----------
+% Nhãn từ khóa in đậm ở đầu đoạn, dùng cho Từ vựng / Từ khóa nhận dạng / Chú ý
+% Khoảng cách đoạn do khung tự đặt (xem \khoangcachdoan ở trên),
+% ở đây chỉ cần tách đoạn và bỏ thụt đầu dòng.
+\newcommand{\nhan}[1]{\par\noindent\textbf{#1.}\ \ignorespaces}
+
+% Bảng gọn, không đánh số
+\newcommand{\bang}[1]{%
+  \begin{center}#1\end{center}}
+
+% Đánh dấu ô trống cho học sinh điền
+\newcommand{\chotrong}{\makebox[3.2cm]{\dotfill}}

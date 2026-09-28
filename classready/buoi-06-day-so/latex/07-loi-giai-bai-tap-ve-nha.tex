@@ -1,0 +1,334 @@
+% =====================================================================
+%  BUỔI 6 — LỜI GIẢI BÀI TẬP VỀ NHÀ (từ giao-vien/02-loi-giai-bai-tap-ve-nha.md)
+%  Sinh tự động bằng scripts/md2tex-luoigiai.py — không sửa tay.
+%  Tài liệu giáo viên: dùng để chữa bài trên lớp và soạn đề kiểm tra.
+% =====================================================================
+\documentclass[11pt, a4paper]{article}
+\input{cae-style}
+
+\begin{document}
+
+\trangbia{LỜI GIẢI BÀI TẬP VỀ NHÀ}{6}{Dãy số}{数列}{Tài liệu giáo viên \quad·\quad 40 câu}
+
+\subsection*{Nhóm A — Dãy số: cấp số cộng và cấp số nhân}
+
+\begin{dapan}[1 — Đáp án A]
+\textbf{Giải.} Cộng hai phương trình để triệt tiêu $b_2$:
+
+$$(b\_1 + b\_2) + (b\_1 - b\_2) = 3 + (-1) \implies 2b\_1 = 2 \implies b\_1 = 1$$
+
+Thay lại $b_1 = 1$ vào $b_1 + b_2 = 3$ được $b_2 = 2$, vậy $q = \dfrac{b_2}{b_1} = 2$.
+\end{dapan}
+
+\begin{dapan}[2 — Đáp án C]
+\textbf{Giải.} Cấp số cộng với $a_1 = 1$, $d = 3$. Áp dụng $S_n = na_1 + \dfrac{n(n-1)}{2}d$:
+
+$$S\_n = n + \frac{3n(n-1)}{2} = \frac{2n + 3n^2 - 3n}{2} = \frac{3n^2 - n}{2}$$
+\end{dapan}
+
+\begin{dapan}[3 — Đáp án C]
+\textbf{Giải.} Đề cho 等差数列, tìm công sai bằng phép trừ:
+
+$$d = \frac{a\_7 - a\_5}{7 - 5} = \frac{19 - 15}{2} = 2 \implies a\_3 = a\_5 - 2d = 15 - 4 = 11$$
+\end{dapan}
+
+\begin{dapan}[4 — Đáp án D]
+\textbf{Giải.} Đề cho 前 $n$ 项和 $S_n = n^2 + 4n$. Dùng $a_n = S_n - S_{n-1}$:
+
+$$a\_3 = S\_3 - S\_2 = (9 + 12) - (4 + 8) = 21 - 12 = 9$$
+\end{dapan}
+
+\begin{dapan}[5 — Đáp án B]
+\textbf{Giải.} Ba số lập thành 等差数列 khi số hạng giữa là trung bình cộng của hai số hạng hai đầu:
+
+$$a = \frac{3 + 27}{2} = 15$$
+\end{dapan}
+
+\begin{dapan}[6 — Đáp án C]
+\textbf{Giải.} Số hạng chung thỏa mãn $3n + 1 = 4m - 1$, tức $3n + 2 = 4m$. Từ $3n \equiv 2 \pmod 4$ suy ra $n \equiv 2 \pmod 4$.
+
+Viết $n = 4k + 2$ với $k \ge 0$, số hạng chung là $12k + 7$. Dãy $\{a_n\}$ là cấp số cộng với $a_1 = 7$, $d = 12$:
+
+$$S\_{20} = 20 \cdot 7 + \frac{20 \cdot 19}{2} \cdot 12 = 140 + 2280 = 2420$$
+\end{dapan}
+
+\begin{dapan}[7 — Đáp án B]
+\textbf{Giải.} Nhóm bốn số hạng đã cho thành hai cặp đối xứng quanh $a_7$:
+
+$$a\_3 + a\_{11} = a\_6 + a\_8 = 2a\_7$$
+
+Vậy $4a_7 = 12$, suy ra $a_7 = 3$. Biểu thức cần tính:
+
+$$2a\_9 - a\_{11} = 2(a\_7 + 2d) - (a\_7 + 4d) = a\_7 = 3$$
+\end{dapan}
+
+\begin{dapan}[8 — Đáp án D]
+\textbf{Giải.} Từ $a_4 - a_1 = a_1(q^3 - 1) = 78$ và $S_3 = a_1(1 + q + q^2) = 39$. Chia vế theo vế và dùng $q^3 - 1 = (q - 1)(q^2 + q + 1)$:
+
+$$q - 1 = \frac{78}{39} = 2 \implies q = 3, \qquad a\_1 = \frac{39}{1 + 3 + 9} = 3$$
+
+Vậy $a_n = 3 \cdot 3^{n-1} = 3^n$ và $b_n = \log_3 a_n = n$. Tổng mười số hạng đầu:
+
+$$b\_1 + b\_2 + \cdots + b\_{10} = 1 + 2 + \cdots + 10 = 55$$
+\end{dapan}
+
+\begin{dapan}[9 — Đáp án A]
+\textbf{Giải.} Cấp số cộng với $a_1 = 2$, $d = 3$. Công thức số hạng tổng quát:
+
+$$a\_5 = a\_1 + 4d = 2 + 12 = 14$$
+\end{dapan}
+
+\begin{dapan}[10 — Đáp án A]
+\textbf{Giải.} Đề cho 等差数列 (cấp số cộng) và hai số hạng cách nhau bốn bước. Công sai tính bằng phép trừ:
+
+$$d = \frac{a\_7 - a\_3}{7 - 3} = \frac{19 - 7}{4} = 3$$
+\end{dapan}
+
+\begin{dapan}[11 — Đáp án A]
+\textbf{Giải.} Áp dụng công thức tổng $S_n = na_1 + \dfrac{n(n-1)}{2}d$ với $n = 10$, $a_1 = 1$:
+
+$$100 = 10 \cdot 1 + \frac{10 \cdot 9}{2}d = 10 + 45d \implies 45d = 90 \implies d = 2$$
+\end{dapan}
+
+\begin{dapan}[12 — Đáp án D]
+\textbf{Giải.} Công sai tính bằng phép trừ:
+
+$$d = \frac{a\_8 - a\_4}{8 - 4} = \frac{20 - 8}{4} = 3 \implies a\_1 = a\_4 - 3d = 8 - 9 = -1$$
+
+$$S\_{10} = \frac{10(a\_1 + a\_{10})}{2} = 5(-1 + 26) = 125$$
+\end{dapan}
+
+\begin{dapan}[13 — Đáp án D]
+\textbf{Giải.} Từ $S_5 = \dfrac{5(a_1 + a_5)}{2} = 55$ suy ra $a_1 + a_5 = 22$, vậy $a_1 = 22 - 15 = 7$ và
+
+$$d = \frac{a\_5 - a\_1}{5 - 1} = \frac{15 - 7}{4} = 2 \implies a\_{10} = a\_5 + 5d = 15 + 10 = 25$$
+\end{dapan}
+
+\subsection*{Nhóm B — Lượng giác}
+
+\begin{dapan}[14 — Đáp án C]
+\textbf{Giải.} Hàm số liên tục tại $x = 0$ khi $a$ bằng giới hạn của hàm tại đó:
+
+$$a = \lim\_{x \to 0} \frac{\sin x}{x} = 1$$
+\end{dapan}
+
+\begin{dapan}[15 — Đáp án A]
+\textbf{Giải.} Đưa hằng số ra ngoài dấu tích phân rồi dùng nguyên hàm cơ bản:
+
+$$\int \frac{1}{2}\cos x\,dx = \frac{1}{2}\int \cos x\,dx = \frac{1}{2}\sin x + C$$
+\end{dapan}
+
+\begin{dapan}[16 — Đáp án B]
+\textbf{Giải.} Chu kỳ của hàm $y = \sin(\omega x)$ là $T = \dfrac{2\pi}{\lvert \omega \rvert}$. Với $\omega = 2$:
+
+$$T = \frac{2\pi}{2} = \pi$$
+\end{dapan}
+
+\begin{dapan}[17 — Đáp án D]
+\textbf{Giải.} Đây là 特殊角 (góc đặc biệt). Theo bảng giá trị lượng giác của góc đặc biệt:
+
+$$\cos\frac{\pi}{3} = \frac{1}{2}$$
+\end{dapan}
+
+\begin{dapan}[18 — Đáp án C]
+\textbf{Giải.} Đây là 特殊角. Theo bảng giá trị lượng giác của góc đặc biệt:
+
+$$\tan\frac{\pi}{4} = 1$$
+\end{dapan}
+
+\begin{dapan}[19 — Đáp án A]
+\textbf{Giải.} Đề hỏi 值域 (tập giá trị). Vì $-1 \le \sin x \le 1$ nên nhân ba vế với $3$:
+
+$$-3 \le 3\sin x \le 3$$
+
+Tập giá trị là $[-3, 3]$.
+\end{dapan}
+
+\subsection*{Nhóm C — Hàm số, mũ, logarit}
+
+\begin{dapan}[20 — Đáp án D]
+\textbf{Giải.} Theo định nghĩa 对数 (logarit), $\log_a 1 = 0$ với mọi cơ số $a > 0$, $a \ne 1$:
+
+$$\log\_5 1 = 0$$
+\end{dapan}
+
+\begin{dapan}[21 — Đáp án B]
+\textbf{Giải.} Trên $(-1, 1)$ đồ thị nằm trên trục hoành nên tích phân dương và đóng góp trực tiếp vào diện tích. Trên $(1, 5)$ đồ thị nằm dưới trục hoành nên tích phân âm, phải đổi dấu mới thành diện tích.
+
+$$S = \int\_{-1}^{1} f(x)\,dx - \int\_{1}^{5} f(x)\,dx$$
+\end{dapan}
+
+\begin{dapan}[22 — Đáp án C]
+\textbf{Giải.} Đưa về cùng cơ số: $8 = 2^3$, do đó
+
+$$\log\_2 8 = \log\_2 2^3 = 3$$
+\end{dapan}
+
+\begin{dapan}[23 — Đáp án B]
+\textbf{Giải.} Tính 幂 (lũy thừa) trực tiếp:
+
+$$2^3 = 2 \cdot 2 \cdot 2 = 8$$
+\end{dapan}
+
+\subsection*{Nhóm D — Ôn tập tích lũy}
+
+\begin{dapan}[24 — Đáp án C]
+\textbf{Giải.} Xét hai mệnh đề 甲 và 乙 trước. Cả hai đều tương đương với $A \subseteq B$, nên 甲 và 乙 luôn cùng đúng hoặc cùng sai.
+
+Vì chỉ có đúng một mệnh đề không成立, mệnh đề đó phải là 丙 hoặc 丁. Mà 丁 tương đương với $\complement_U(A \cap B) = \complement_U A$, tức $A \cap B = A$, cũng tương đương $A \subseteq B$. Vậy 丁 cũng cùng nhóm với 甲 và 乙.
+
+Chỉ còn 丙: $\complement_U B = \complement_U A$ tương đương $A = B$, là điều kiện mạnh hơn $A \subseteq B$. Khi $A \subset B$ thật sự thì 甲, 乙, 丁 đúng còn 丙 sai.
+\end{dapan}
+
+\begin{dapan}[25 — Đáp án B]
+\textbf{Giải.} Xét dấu của $x$ và $y$ theo bốn trường hợp. Ký hiệu $T = \dfrac{x}{\lvert x \rvert} + \dfrac{y}{\lvert y \rvert} + \dfrac{\lvert xy \rvert}{xy}$.
+
+Với $x > 0, y > 0$: $T = 1 + 1 + 1 = 3$. Với $x > 0, y < 0$: $T = 1 - 1 - 1 = -1$. Với $x < 0, y > 0$: $T = -1 + 1 - 1 = -1$. Với $x < 0, y < 0$: $T = -1 - 1 + 1 = -1$.
+
+Vậy $M = \{3, -1\}$, do đó $-1 \in M$.
+\end{dapan}
+
+\subsection*{Nhóm D — Ôn tập tích lũy}
+
+\subsection*{Nhóm tự chọn — Dãy số}
+
+\begin{dapan}[1 — Đáp án B]
+\textbf{Giải.} Đề cho 前 $n$ 项和 (tổng $n$ số hạng đầu) $S_n = 3n^2 - 2n$. Dùng $a_n = S_n - S_{n-1}$ cho $n \ge 2$:
+
+$$a\_2 = S\_2 - S\_1 = (12 - 4) - (3 - 2) = 8 - 1 = 7$$
+\end{dapan}
+
+\begin{dapan}[2 — Đáp án B]
+\textbf{Giải.} Áp dụng công thức tổng 等比数列 với $a_1 = 8$, $q = \dfrac{1}{2}$:
+
+$$S\_n = \frac{8\left(1 - \left(\frac{1}{2}\right)^n\right)}{1 - \frac{1}{2}} = 16\left(1 - \frac{1}{2^n}\right) = 15$$
+
+$$1 - \frac{1}{2^n} = \frac{15}{16} \implies \frac{1}{2^n} = \frac{1}{16} \implies n = 4$$
+\end{dapan}
+
+\begin{dapan}[3 — Đáp án B]
+\textbf{Giải.} Áp dụng công thức tổng của 等比数列 với $a_1 = 2$, $q = 3$:
+
+$$S\_3 = a\_1 + a\_1 q + a\_1 q^2 = 2 + 6 + 18 = 26$$
+\end{dapan}
+
+\begin{dapan}[4 — Đáp án B]
+\textbf{Giải.} Hai phương trình theo $a_1$ và $d$:
+
+$$a\_2 + a\_6 = 2a\_1 + 6d = 10, \qquad a\_3 = a\_1 + 2d = 4$$
+
+Từ phương trình thứ hai: $a_1 = 4 - 2d$. Thay vào phương trình đầu: $2(4 - 2d) + 6d = 10$, suy ra $8 + 2d = 10$, vậy $d = 1$ và $a_1 = 2$.
+\end{dapan}
+
+\begin{dapan}[5 — Đáp án D]
+\textbf{Giải.} Tính ba số hạng đầu từ công thức tổng:
+
+$$a\_1 = S\_1 = 4^0 + t = 1 + t, \qquad a\_2 = S\_2 - S\_1 = (4 + t) - (1 + t) = 3$$
+
+$$a\_3 = S\_3 - S\_2 = (16 + t) - (4 + t) = 12$$
+
+Cấp số nhân nên $a_2^2 = a_1 a_3$, tức $9 = 12(1 + t)$, suy ra $1 + t = \dfrac{3}{4}$ và $t = -\dfrac{1}{4}$.
+\end{dapan}
+
+\begin{dapan}[6 — Đáp án D]
+\textbf{Giải.} Trong cấp số cộng, $a_m + a_n = 2a_1 + (m + n - 2)d$. Đẳng thức $a_m + a_n = a_p + a_q$ trở thành
+
+$$2a\_1 + (m+n-2)d = 2a\_1 + (p+q-2)d \implies m + n = p + q$$
+\end{dapan}
+
+\begin{dapan}[7 — Đáp án D]
+\textbf{Giải.} Đề cho 递推公式 với chỉ số nhỏ nên thay lần lượt, không cần công thức tổng quát.
+
+Với $n = 1$: $a_2 = a_1 + 2 \cdot 1 = 1 + 2 = 3$. Với $n = 2$: $a_3 = a_2 + 2 \cdot 2 = 3 + 4 = 7$.
+\end{dapan}
+
+\begin{dapan}[8 — Đáp án A]
+\textbf{Giải.} Gọi $a_1$ là số phù điêu tầng dưới cùng, các tầng tạo thành cấp số nhân công bội $2$:
+
+$$4a\_1 - 2a\_1 = 16 \implies a\_1 = 8$$
+
+$$S\_7 = 8 \cdot \frac{2^7 - 1}{2 - 1} = 8 \cdot 127 = 1016$$
+\end{dapan}
+
+\begin{dapan}[9 — Đáp án A]
+\textbf{Giải.} Ba số hạng $a_1, a_3, a_5$ cách đều nên $a_1 + a_5 = 2a_3$, suy ra $3a_3 = 12$ và $a_3 = 4$. Tương tự $3a_4 = 18$ nên $a_4 = 6$.
+
+Vậy $d = a_4 - a_3 = 2$ và $a_7 = a_4 + 3d = 6 + 6 = 12$.
+\end{dapan}
+
+\begin{dapan}[10 — Đáp án A]
+\textbf{Giải.} Đề hỏi 最大值 (giá trị lớn nhất) của $S_n$ khi $d < 0$. Tổng là hàm bậc hai theo $n$:
+
+$$S\_n = 20n - \frac{3n(n-1)}{2} = -\frac{3}{2}n^2 + \frac{43}{2}n$$
+
+Đỉnh parabol tại $n = \dfrac{43}{6} \approx 7{,}17$. Xét hai giá trị nguyên gần nhất:
+
+$$S\_7 = 140 - 63 = 77, \qquad S\_8 = 160 - 84 = 76$$
+
+Vậy giá trị lớn nhất là $77$.
+\end{dapan}
+
+\begin{dapan}[11 — Đáp án A]
+\textbf{Giải.} Dùng tính chất 等比中项: bình phương mỗi số hạng bằng tích hai số hạng cách đều nó. Từ $a_3 = 4$, $a_5 = 16$ suy ra $a_4^2 = a_3 a_5 = 64$, vậy $a_4 = 8$ (các số hạng dương).
+
+$$a\_5^2 = a\_4 a\_6 \implies a\_6 = \frac{256}{8} = 32, \qquad a\_6^2 = a\_5 a\_7 \implies a\_7 = \frac{1024}{16} = 64$$
+\end{dapan}
+
+\begin{dapan}[12 — Đáp án C]
+\textbf{Giải.} Đề hỏi 收敛条件 (điều kiện hội tụ) của 无穷等比数列. Chuỗi hội tụ khi và chỉ khi giá trị tuyệt đối của công bội nhỏ hơn $1$:
+
+$$\lvert q \rvert < 1$$
+\end{dapan}
+
+\begin{dapan}[13 — Đáp án C]
+\textbf{Giải.} Với $n \ge 2$, hiệu hai tổng liên tiếp cho số hạng thứ $n$:
+
+$$a\_4 = S\_4 - S\_3 = (2 \cdot 16 + 12) - (2 \cdot 9 + 9) = 44 - 27 = 17$$
+\end{dapan}
+
+\begin{dapan}[14 — Đáp án C]
+\textbf{Giải.} Tích năm số hạng đầu: $a_1 a_2 a_3 a_4 a_5 = a_1^5 q^{0+1+2+3+4} = a_1^5 q^{10}$. Với $q = 4$:
+
+$$a\_1^5 \cdot 4^{10} = 4^{10} \implies a\_1^5 = 1 \implies a\_1 = 1$$
+
+$$a\_4 a\_6 = a\_1^2 q^{3 + 5} = 1 \cdot 4^8 = 4^8$$
+\end{dapan}
+
+\begin{dapan}[15 — Đáp án C]
+\textbf{Giải.} Dãy $1, 1, 2, 3, 5, 8, \ldots$ có quy luật 递推公式 $a_n = a_{n-1} + a_{n-2}$: mỗi số hạng bằng tổng hai số hạng liền trước.
+
+Đây là 斐波那契数列 (dãy Fibonacci). Dãy không phải cấp số cộng vì hiệu các số hạng thay đổi, cũng không phải cấp số nhân vì tỉ các số hạng thay đổi.
+\end{dapan}
+
+\clearpage
+\sectiondautrang{Tổng kết lỗi thường gặp}
+\addcontentsline{toc}{section}{Tổng kết lỗi thường gặp}
+
+Bảng chẩn đoán dùng khi chữa bài và khi soạn đề kiểm tra. Cột ``Câu liên quan'' trỏ tới đề bài tập về nhà.
+
+\bang{
+\begin{tabular}{@{}p{5.6cm}p{4.2cm}p{5.2cm}@{}}
+\toprule
+\textbf{Lỗi thường gặp} & \textbf{Dấu hiệu nhận biết} & \textbf{Câu liên quan} \\
+\midrule
+Nhầm cấp số cộng với cấp số nhân & Đề có 公差 mà học sinh đi tìm thương, hoặc ngược lại & Câu 1, Câu 2, Câu 9 \\
+Dùng trung bình nhân khi đề hỏi trung bình cộng & Ba số lập thành cấp số cộng nhưng học sinh viết $y^2 = xz$ & Câu 5, Câu 6 \\
+Nhầm mẫu $1 - q$ thành $q - 1$ & Kết quả tổng ra số âm hoặc sai dấu ở mẫu & Câu 3, Câu 8 \\
+Bỏ sót điều kiện $\lvert q \rvert < 1$ & Đề có 无穷 nhưng học sinh áp thẳng công thức tổng vô hạn & Câu 2 tự chọn, Câu 12 tự chọn \\
+Tính $a_n$ từ $S_n$ mà quên trường hợp $n = 1$ & Học sinh thay $n = 1$ vào $S_n - S_{n-1}$ rồi kết luận sai $a_1$ & Câu 4, Câu 13 tự chọn \\
+Thay nhầm chỉ số trong công thức truy hồi & Số hạng thêm vào dùng chỉ số của số hạng trước thay vì số hạng đang tính & Câu 7 tự chọn \\
+Lẫn chu kỳ của $\sin$ với của $\tan$ & Đề cho $\sin(\omega x)$ nhưng học sinh chia cho $\pi$ & Câu 16 \\
+Nhầm tập giá trị của $\sin$ và $\cos$ & Kết luận $y = 3\sin x$ có tập giá trị $[-1, 1]$ & Câu 19 \\
+Quên điều kiện xác định của hàm logarit & Cho rằng $\log_2(x - 1)$ xác định với mọi $x > 0$ & Câu 20, Câu 22 \\
+Nhầm dấu khi tính diện tích hình phẳng & Lấy nguyên tích phân mà không tách đoạn đổi dấu & Câu 21 \\
+\bottomrule
+\end{tabular}}
+
+% Không dùng \vfill: nó đẩy chữ xuống sát đáy trang,
+% nơi banner letterhead chiếm chỗ (281-297mm) và sẽ che mất chữ.
+\vspace{0.8cm}
+\begin{center}
+{\footnotesize\color{cae_blue} Tài liệu nội bộ, CAE SHANGHAI}
+\end{center}
+
+\end{document}

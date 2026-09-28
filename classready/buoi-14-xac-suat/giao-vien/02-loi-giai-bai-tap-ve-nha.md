@@ -1,0 +1,611 @@
+# BUỔI 14 — LỜI GIẢI BÀI TẬP VỀ NHÀ
+
+> **Xác suất （概率）**
+>
+> **Tài liệu giáo viên.** Dùng để chữa bài trên lớp và soạn đề kiểm tra. Học sinh chỉ nhận bảng đáp án (`../hoc-sinh/05-dap-an-bai-tap-ve-nha.md`).
+
+---
+
+## PHẦN D — BÀI TẬP VỀ NHÀ
+
+### PHẦN BẮT BUỘC
+
+#### Nhóm A — Xác suất cổ điển và đếm bằng tổ hợp
+
+**Câu 1.** `CAE-M-CD8-08.1-H-002` — **Đáp án D**
+
+**Giải.** Tổng số cách chọn $3$ học sinh từ $8$ học sinh:
+
+$$C_8^3 = \frac{8 \cdot 7 \cdot 6}{6} = 56$$
+
+Số cách thuận lợi: chọn $1$ nam từ $3$ nam và $2$ nữ từ $5$ nữ.
+
+$$C_3^1 \cdot C_5^2 = 3 \cdot 10 = 30$$
+
+$$P = \frac{30}{56} = \frac{15}{28}$$
+
+**Bẫy.** Đáp án A là $\dfrac{15}{56}$, tức quên nhân với $C_3^1$ ở tử số. Đáp án C là $\dfrac{13}{56}$, không ứng với cách đếm nào.
+
+---
+
+**Câu 2.** `CAE-M-CD8-08.4-H-022` — **Đáp án D**
+
+**Giải.** Lập bảng số liệu theo hai chiều giới tính và thị lực:
+
+| Nhóm | Nam | Nữ | Tổng |
+|:-----|:---:|:--:|:----:|
+| Thị lực bình thường | 150 | 120 | 270 |
+| Thị lực bất thường | 50 | 30 | 80 |
+| Tổng | 200 | 150 | 350 |
+
+Tổng số học sinh là $350$. Số nam có thị lực bình thường là $150$.
+
+$$P = \frac{150}{350} = \frac{3}{7}$$
+
+**Bẫy.** Đáp án B là $\dfrac{150}{200}$, tức lấy mẫu số là số nam chứ không phải cả trường. Đáp án A là $\dfrac{50}{350}$, tức đếm nhầm ô nam bị bất thường.
+
+---
+
+**Câu 3.** `CAE-M-CD8-08.3-H-015` — **Đáp án B**
+
+**Giải.** Trong $10$ số từ $1$ đến $10$ có $5$ số lẻ $\{1,3,5,7,9\}$ và $5$ số chẵn $\{2,4,6,8,10\}$. Tổng hai số là số chẵn khi hai số cùng tính chẵn lẻ.
+
+Tổng số cách rút $2$ thẻ:
+
+$$C_{10}^2 = 45$$
+
+Số cách thuận lợi:
+
+$$C_5^2 + C_5^2 = 10 + 10 = 20$$
+
+$$P = \frac{20}{45} = \frac{4}{9}$$
+
+**Cách nhanh.** Tử số luôn là $2 C_5^2$ khi hai nhóm có số phần tử bằng nhau. Không cần tính riêng từng nhóm.
+
+---
+
+**Câu 4.** `CAE-M-CD8-08.5-H-024` — **Đáp án C**
+
+**Giải.** Hai con xúc xắc cho $6 \times 6 = 36$ kết quả. Các cặp có tổng bằng $8$:
+
+$$(2,6), (3,5), (4,4), (5,3), (6,2)$$
+
+Có $5$ kết quả thuận lợi.
+
+$$P = \frac{5}{36}$$
+
+**Nhận xét.** Số cặp có tổng bằng $k$ giảm dần khi $k$ rời xa $7$. Tổng $7$ có $6$ cặp, tổng $8$ có $5$ cặp, tổng $9$ có $4$ cặp.
+
+---
+
+**Câu 5.** `CAE-M-CD8-08.2-H-008` — **Đáp án B**
+
+**Giải.** Tung đồng xu $3$ lần cho $2^3 = 8$ kết quả. Số cách chọn vị trí cho $2$ lần mặt ngửa là $C_3^2 = 3$.
+
+$$P = \frac{C_3^2}{2^3} = \frac{3}{8}$$
+
+**Chú ý.** Đây là công thức Bernoulli với $n = 3$, $k = 2$, $p = \dfrac{1}{2}$. Hệ số $C_3^2$ là phần học sinh hay quên, dẫn đến chọn A.
+
+---
+
+**Câu 6.** `CAE-M-CD8-08.6-H-036` — **Đáp án A**
+
+**Giải.** Lấy lần lượt không hoàn lại $2$ sản phẩm. Lần thứ nhất có $95$ chính phẩm trong $100$ sản phẩm.
+
+Sau khi lấy ra một chính phẩm, còn $94$ chính phẩm trong $99$ sản phẩm.
+
+$$P = \frac{95}{100} \times \frac{94}{99}$$
+
+**Bẫy.** Đáp án C giữ nguyên mẫu số $100$ ở lần thứ hai, tức nhầm với trường hợp có hoàn lại. Đáp án B và D tính xác suất lấy được cả hai phế phẩm.
+
+---
+
+**Câu 7.** `CAE-M-CD8-08.8-H-045` — **Đáp án C**
+
+**Giải.** Trong $20$ số từ $1$ đến $20$ có $10$ số chẵn. Số cách rút $3$ thẻ đều là số chẵn:
+
+$$C_{10}^3 = \frac{10 \cdot 9 \cdot 8}{6} = 120$$
+
+Tổng số cách rút $3$ thẻ:
+
+$$C_{20}^3 = \frac{20 \cdot 19 \cdot 18}{6} = 1140$$
+
+$$P = \frac{C_{10}^3}{C_{20}^3} = \frac{120}{1140} = \frac{10 \cdot 9 \cdot 8}{20 \cdot 19 \cdot 18} = \frac{2}{19}$$
+
+**Bẫy.** Đáp án A nhân thêm $2$ ở tử số. Đáp án B dùng chỉnh hợp $P_{20}^3$ ở mẫu số, tức tính đến thứ tự trong khi đề rút đồng thời.
+
+---
+
+#### Nhóm B — Biến cố đối và bài toán ít nhất
+
+**Câu 8.** `CAE-M-CD8-08.2-H-007` — **Đáp án C**
+
+**Giải.** Gọi $A$ là biến cố “có ít nhất một quả đen”. Biến cố đối $\overline{A}$ là “cả ba quả đều trắng”.
+
+Hộp có $4$ quả trắng và $6$ quả đen, tổng $10$ quả.
+
+$$P(\overline{A}) = \frac{C_4^3}{C_{10}^3} = \frac{4}{120}$$
+
+$$P(A) = 1 - \frac{4}{120} = \frac{116}{120}$$
+
+**Bẫy.** Đáp án B là $\dfrac{4}{120}$, tức tính xác suất cả ba quả đều trắng rồi dừng lại, quên lấy $1$ trừ. Đáp án D là $\dfrac{119}{120}$, ứng với bài toán “ít nhất một quả trắng”.
+
+---
+
+**Câu 9.** `CAE-M-CD8-08.3-H-019` — **Đáp án A**
+
+**Giải.** Gọi $A$ là biến cố “có ít nhất một sản phẩm đạt chuẩn”. Biến cố đối $\overline{A}$ là “cả hai sản phẩm đều không đạt chuẩn”.
+
+Tỉ lệ không đạt chuẩn là $1 - 0.98 = 0.02$. Vì hai lần lấy độc lập:
+
+$$P(\overline{A}) = 0.02^2$$
+
+$$P(A) = 1 - 0.02^2$$
+
+**Bẫy.** Đáp án D là $1 - 0.98^2$, tức lấy đối của biến cố “cả hai đều đạt chuẩn”. Biến cố đối đúng phải là “cả hai đều không đạt”.
+
+---
+
+**Câu 10.** `CAE-M-CD8-08.6-H-035` — **Đáp án B**
+
+**Giải.** Gọi $A$ là “đạt môn thứ nhất”, $B$ là “đạt môn thứ hai”. Hai biến cố độc lập nên:
+
+$$P(A \cup B) = 1 - P(\overline{A}) \cdot P(\overline{B}) = 1 - 0.2 \times 0.3 = 1 - 0.06 = 0.94$$
+
+**Cách nhanh.** Công thức $1 - P(\overline{A}) P(\overline{B})$ cho đáp án trong một bước, không cần tìm phần giao rồi áp công thức cộng.
+
+**Bẫy.** Đáp án A là $0.56$, tức tích $0.8 \times 0.7$, ứng với biến cố “đạt cả hai môn”. Đáp án D là $1.5$, vượt quá $1$ nên loại được ngay mà không cần tính.
+
+---
+
+#### Nhóm C — Công thức cộng và biến cố độc lập
+
+**Câu 11.** `CAE-M-CD8-08.5-H-031` — **Đáp án A**
+
+**Giải.** Đề cho 只允许中一个奖项 (chỉ được trúng một giải), tức ba biến cố trúng thưởng xung khắc từng đôi. Áp dụng công thức cộng cho biến cố xung khắc:
+
+$$P = 0.01 + 0.05 + 0.1 = 0.16$$
+
+**Bẫy.** Đáp án B là tích ba xác suất, công thức dành cho biến cố độc lập. Đáp án C là công thức của bài toán “ít nhất một”, áp dụng khi ba biến cố độc lập và có thể cùng xảy ra.
+
+---
+
+**Câu 12.** `CAE-M-CD8-LX2-E-055` — **Đáp án D**
+
+**Giải.** Gọi $A$ là biến cố “甲 hoặc 乙 được chọn”. Biến cố đối $\overline{A}$ là “cả 甲 và 乙 đều không được chọn”, tức chọn $2$ người từ $3$ người còn lại.
+
+$$P(\overline{A}) = \frac{C_3^2}{C_5^2} = \frac{3}{10}$$
+
+$$P(A) = 1 - \frac{3}{10} = \frac{7}{10}$$
+
+**Cách nhanh.** Cách khác là cộng trực tiếp: số cách có 甲 là $C_4^1 = 4$, số cách có 乙 là $C_4^1 = 4$, trừ đi trường hợp có cả hai là $1$:
+
+$$4 + 4 - 1 = 7 \implies P = \frac{7}{10}$$
+
+**Chú ý.** Đáp án C là $\dfrac{3}{5}$, tức quên trừ trường hợp có cả 甲 và 乙 khi cộng trực tiếp.
+
+---
+
+**Câu 13.** `CAE-M-CD8-08.7-H-040` — **Đáp án A**
+
+**Giải.** Từ định nghĩa xác suất có điều kiện:
+
+$$P(A \mid B) = \frac{P(A \cap B)}{P(B)} \implies P(A \cap B) = P(A \mid B) \cdot P(B)$$
+
+Thay số:
+
+$$P(A \cap B) = 0.7 \times 0.4 = 0.28$$
+
+**Bẫy.** Đáp án C là $0.7$, tức chép lại xác suất có điều kiện mà không nhân với $P(B)$. Đáp án D là $0.4$, tức chép lại $P(B)$.
+
+---
+
+#### Nhóm D — Vector và số phức
+
+**Câu 14.** `CAE-M-CD7-08.2-M-003` — **Đáp án D**
+
+**Giải.** Khai triển tích theo hằng đẳng thức:
+
+$$(a+b)\cdot(a-b) = a \cdot a - b \cdot b = \lvert a \rvert^2 - \lvert b \rvert^2$$
+
+$$\lvert a \rvert^2 = 1^2 + (-5)^2 = 26, \qquad \lvert b \rvert^2 = 2^2 + 4^2 = 20$$
+
+$$(a+b)\cdot(a-b) = 26 - 20 = 6$$
+
+**Cách nhanh.** Không cần tính $a+b$ và $a-b$ rồi nhân. Hiệu hai bình phương phương của hai vector cho đáp án trong hai bước.
+
+---
+
+**Câu 15.** `CAE-M-CD7-08.2-M-005` — **Đáp án A**
+
+**Giải.** Tính tích vô hướng và độ dài:
+
+$$u \cdot v = 1 \cdot \sqrt{3} + \sqrt{3} \cdot 1 = 2\sqrt{3}$$
+
+$$\lvert u \rvert = \sqrt{1 + 3} = 2, \qquad \lvert v \rvert = \sqrt{3 + 1} = 2$$
+
+$$\cos\theta = \frac{2\sqrt{3}}{2 \times 2} = \frac{\sqrt{3}}{2} \implies \theta = 30^\circ$$
+
+**Chú ý.** Hai vector đối xứng nhau qua đường phân giác nên góc giữa chúng nhỏ. Đáp án C là $60^\circ$, tức nhầm với góc của vector $u$ và trục hoành.
+
+---
+
+**Câu 16.** `CAE-M-CD7-08.5-M-019` — **Đáp án C**
+
+**Giải.** Với $z = a + bi$ ta có $\overline{z} = a - bi$, do đó:
+
+$$z \cdot \overline{z} = a^2 + b^2 = \lvert z \rvert^2$$
+
+Từ $z \cdot \overline{z} = 9$ suy ra $\lvert z \rvert^2 = 9$, vậy $\lvert z \rvert = 3$.
+
+**Cách nhanh.** Nhớ đẳng thức $\lvert z \rvert^2 = z \cdot \overline{z}$. Đây là cách tính môđun không cần tách phần thực và phần ảo.
+
+---
+
+**Câu 17.** `CAE-M-CD7-08.6-M-020` — **Đáp án B**
+
+**Giải.** Hai vector cùng phương khi tọa độ tương ứng tỉ lệ. Xét từng cặp:
+
+- **A.** $(1,2)$ và $(4,4)$: tỉ số $\dfrac{4}{1} = 4 \neq 2 = \dfrac{4}{2}$. Không cùng phương.
+- **B.** $(1,2)$ và $(2,4)$: $\dfrac{2}{1} = 2 = \dfrac{4}{2}$. Cùng phương.
+- **C.** $(3,0)$ và $(0,1)$: vector thứ hai có hoành độ $0$, tỉ số không tồn tại và tích chéo $3 \cdot 1 - 0 \cdot 0 = 3 \neq 0$. Không cùng phương.
+- **D.** $(1,1)$ và $(-1,1)$: tích chéo $1 \cdot 1 - 1 \cdot (-1) = 2 \neq 0$. Không cùng phương.
+
+**Cách nhanh.** Dùng tích chéo $a_1 b_2 - a_2 b_1 = 0$ làm điều kiện cùng phương, tránh chia cho $0$ ở cặp C.
+
+---
+
+**Câu 18.** `CAE-M-CD7-08.4-H-015` — **Đáp án D**
+
+**Giải.** Từ định nghĩa vector $\overrightarrow{AB} = B - A$ suy ra $B = A + \overrightarrow{AB}$.
+
+$$B = (1, 2, 0) + (2, -1, 3) = (3, 1, 3)$$
+
+**Bẫy.** Đáp án B là $(-1, 3, -3)$, tức trừ thay vì cộng. Đáp án A chép lại chính vector $\overrightarrow{AB}$.
+
+---
+
+**Câu 19.** `CAE-M-CD7-08.3-M-008` — **Đáp án B**
+
+**Giải.** Từ $z(1+i) = 2i$ suy ra:
+
+$$z = \frac{2i}{1+i} = \frac{2i(1-i)}{(1+i)(1-i)} = \frac{2i - 2i^2}{2} = \frac{2i + 2}{2} = 1 + i$$
+
+**Cách nhanh.** Nhân cả tử và mẫu với số phức liên hợp của mẫu. Nhớ $i^2 = -1$ nên $-2i^2 = 2$.
+
+---
+
+#### Nhóm E — Conic
+
+**Câu 20.** `CAE-M-CD6-08.3-M-008` — **Đáp án C**
+
+**Giải.** Mẫu số lớn hơn nằm dưới $x^2$ nên $a^2 = 25$, $b^2 = 9$ và tiêu điểm nằm trên trục hoành.
+
+$$c^2 = a^2 - b^2 = 25 - 9 = 16 \implies c = 4$$
+
+Tiêu điểm là $(\pm 4, 0)$.
+
+**Bẫy.** Đáp án A là $(\pm 3, 0)$, tức lấy $\sqrt{b^2} = 3$ làm $c$. Phải tính $c^2 = a^2 - b^2$ trước khi lấy căn.
+
+---
+
+**Câu 21.** `CAE-M-CD6-08.4-M-011` — **Đáp án A**
+
+**Giải.** Đưa về dạng chính tắc $y^2 = 2px$ với $2p = 20$, suy ra $p = 10$.
+
+Tiêu điểm của parabol $y^2 = 2px$ là $\left(\dfrac{p}{2}, 0\right) = (5, 0)$.
+
+**Bẫy.** Đáp án C là $(0,5)$, tức đặt tiêu điểm lên trục tung trong khi phương trình có dạng $y^2 = 2px$ nên trục đối xứng là trục hoành.
+
+---
+
+**Câu 22.** `CAE-M-CD6-08.6-M-016` — **Đáp án C**
+
+**Giải.** Chia cả hai vế cho $36$ để đưa về dạng chính tắc:
+
+$$\frac{x^2}{9} + \frac{y^2}{4} = 1$$
+
+Suy ra $a^2 = 9$, tức $a = 3$. Độ dài trục lớn là $2a = 6$.
+
+**Bẫy.** Đáp án A là $3$, tức trả lời độ dài nửa trục lớn thay vì trục lớn. Đề hỏi 长轴长 (độ dài trục lớn), không phải 半长轴 (nửa trục lớn).
+
+---
+
+**Câu 23.** `CAE-M-CD6-08.1-H-002` — **Đáp án B**
+
+**Giải.** Với hyperbol $\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$, hai đường tiệm cận là $y = \pm\dfrac{b}{a}x$.
+
+Ở đây $a^2 = 16$ nên $a = 4$, $b^2 = 9$ nên $b = 3$.
+
+$$y = \pm\frac{3}{4}x$$
+
+**Cách nhanh.** Cho vế phải của phương trình chính tắc bằng $0$ rồi giải ra $y$, không cần nhớ công thức:
+
+$$\frac{x^2}{16} - \frac{y^2}{9} = 0 \implies y = \pm\frac{3}{4}x$$
+
+**Bẫy.** Đáp án A đảo ngược tỉ số thành $\dfrac{a}{b}$. Chú ý mẫu số dưới $x^2$ đi vào tử số của hệ số góc.
+
+---
+
+#### Nhóm F — Ôn tập tích lũy
+
+**Câu 24.** `CAE-M-CD2-08.6-E-038` — **Đáp án C**
+
+**Giải.** Với $x > 2$ thì $x - 2 > 0$. Tách số hạng và áp dụng bất đẳng thức Cauchy:
+
+$$x + \frac{1}{x-2} = (x-2) + \frac{1}{x-2} + 2 \ge 2\sqrt{(x-2) \cdot \frac{1}{x-2}} + 2 = 2 + 2 = 4$$
+
+Dấu bằng xảy ra khi $x - 2 = \dfrac{1}{x-2}$, tức $x - 2 = 1$, hay $x = 3$.
+
+**Chú ý.** Không áp dụng Cauchy trực tiếp cho $x$ và $\dfrac{1}{x-2}$ vì hai số hạng không cùng biến. Phải tách bớt $2$ để hai số hạng còn lại có tích không đổi.
+
+---
+
+**Câu 25.** `CAE-M-CD1-08.4-E-010` — **Đáp án D**
+
+**Giải.** Phân tích thành nhân tử:
+
+$$x^3 - 4x = x(x^2 - 4) = x(x-2)(x+2) = 0$$
+
+Phương trình có ba nghiệm phân biệt $x = 0$, $x = 2$, $x = -2$. Vậy tập hợp $P$ có $3$ phần tử.
+
+**Bẫy.** Đáp án C là $2$, tức chỉ giải $x^2 - 4 = 0$ và bỏ sót nghiệm $x = 0$. Luôn đặt nhân tử chung $x$ ra trước khi giải.
+
+---
+
+### PHẦN TỰ CHỌN
+
+**Câu 1.** `CAE-M-CD8-LX1-E-050` — **Đáp án D**
+
+**Giải.** Với phân phối chuẩn $\xi \sim N(\mu, \sigma^2)$, đường cong đối xứng qua $x = \mu$.
+
+Hai mệnh đề 乙 và 丙 cùng đúng hoặc cùng sai, vì $P(\xi > a) = 0.5$ tương đương $P(\xi \le a) = 0.5$. Đề cho chỉ có một mệnh đề sai nên 乙 và 丙 đều đúng, suy ra $a = \mu$.
+
+Với $a = \mu$, xét mệnh đề 甲. Theo tính đối xứng:
+
+$$P(\xi > a + 2) = P(\xi < a - 2)$$
+
+Vì $a - 1 > a - 2$ nên $P(\xi < a - 1) > P(\xi < a - 2) = P(\xi > a + 2)$. Vậy 甲 đúng.
+
+Xét mệnh đề 丁: khoảng $(a, a+1)$ nằm gần tâm hơn khoảng $(a+1, a+2)$, nên diện tích dưới đường cong trên khoảng thứ nhất lớn hơn.
+
+$$P(a < \xi < a+1) > P(a+1 < \xi < a+2)$$
+
+Mệnh đề 丁 phát biểu ngược lại nên 丁 sai.
+
+**Nhận xét.** Bước quyết định là nhận ra 乙 và 丙 cùng giá trị chân lí. Nếu bỏ qua điều này thì không xác định được vị trí của $a$.
+
+---
+
+**Câu 2.** `CAE-M-CD8-LX2-M-056` — **Đáp án C**
+
+**Giải.** Chọn $3$ đèn để tắt trong $5$ đèn tương đương chọn $2$ đèn để sáng. Tổng số cách chọn:
+
+$$C_5^2 = 10$$
+
+Đếm số cách chọn $2$ đèn sáng kề nhau trong $5$ vị trí xếp thành hàng:
+
+$$(1,2), (2,3), (3,4), (4,5)$$
+
+Có $4$ cặp kề nhau. Vậy số cách chọn $2$ đèn sáng không kề nhau là $10 - 4 = 6$.
+
+$$P = \frac{6}{10} = 0.6$$
+
+**Cách nhanh.** Với $n$ vị trí xếp hàng, số cặp kề nhau luôn là $n - 1$. Không cần liệt kê khi $n$ lớn.
+
+---
+
+**Câu 3.** `CAE-M-CD8-LX2-H-057` — **Đáp án B**
+
+**Giải.** Phân phối chuẩn $\xi \sim N(1, \sigma^2)$ đối xứng qua $\mu = 1$. Từ $P(\xi \le 0) = P(\xi \ge a)$ suy ra $0$ và $a$ đối xứng qua $1$:
+
+$$\frac{0 + a}{2} = 1 \implies a = 2$$
+
+Cần tìm giá trị nhỏ nhất của $f(x) = \dfrac{1}{x} + \dfrac{9}{2-x}$ trên $0 < x < 2$. Áp dụng bất đẳng thức Cauchy dạng cộng mẫu:
+
+$$\left(\frac{1}{x} + \frac{9}{2-x}\right)\big(x + (2-x)\big) \ge (1 + 3)^2 = 16$$
+
+Vì $x + (2-x) = 2$ nên:
+
+$$\frac{1}{x} + \frac{9}{2-x} \ge \frac{16}{2} = 8$$
+
+Dấu bằng xảy ra khi $\dfrac{1}{x} = \dfrac{3}{2-x}$, tức $2 - x = 3x$, hay $x = \dfrac{1}{2}$ (thỏa mãn $0 < x < 2$).
+
+**Cách nhanh.** Công thức tổng quát: $\dfrac{m^2}{u} + \dfrac{n^2}{v} \ge \dfrac{(m+n)^2}{u+v}$ với $u, v > 0$. Ở đây $m = 1$, $n = 3$, $u + v = 2$.
+
+---
+
+**Câu 4.** `CAE-M-CD8-LX2-H-058` — **Đáp án D**
+
+**Giải.** Xếp $5$ chữ khác nhau thành một hàng có $5! = 120$ cách.
+
+Đếm số cách xếp mà ba chữ 仁, 义, 礼 giữ nguyên thứ tự tương đối. Với mỗi cách xếp ba chữ này theo đúng thứ tự 仁 trước 义 trước 礼, hai chữ còn lại 智 và 信 nhận hai vị trí bất kì:
+
+$$\frac{5!}{3!} = \frac{120}{6} = 20$$
+
+$$P = \frac{20}{120} = \frac{1}{6}$$
+
+**Cách nhanh.** Trong $3! = 6$ hoán vị của ba chữ, chỉ đúng một hoán vị giữ nguyên thứ tự 仁, 义, 礼. Vậy đáp án là $\dfrac{1}{3!} = \dfrac{1}{6}$.
+
+---
+
+**Câu 5.** `CAE-M-CD8-LX3-M-061` — **Đáp án A**
+
+**Giải.** Tính trực tiếp theo hai trường hợp cho lần rút của 甲.
+
+Nếu 甲 rút được quả đỏ (xác suất $\dfrac{2}{5}$), còn $1$ đỏ trong $4$ quả:
+
+$$P_1 = \frac{2}{5} \times \frac{1}{4} = \frac{1}{10}$$
+
+Nếu 甲 rút được quả trắng (xác suất $\dfrac{3}{5}$), còn $2$ đỏ trong $4$ quả:
+
+$$P_2 = \frac{3}{5} \times \frac{2}{4} = \frac{3}{10}$$
+
+$$P = P_1 + P_2 = \frac{1}{10} + \frac{3}{10} = \frac{2}{5}$$
+
+**Cách nhanh.** Không cần chia trường hợp. Rút không hoàn lại nhưng thứ tự không ảnh hưởng đến phân phối xác suất của từng vị trí, nên xác suất 乙 rút được quả đỏ vẫn là $\dfrac{2}{5}$, đúng bằng xác suất của 甲.
+
+**Nhận xét.** Kết quả này đúng cho mọi người rút, không chỉ người thứ hai. Đây là tính chất đối xứng của phép rút không hoàn lại.
+
+---
+
+**Câu 6.** `CAE-M-CD8-LX1-E-051` — **Đáp án C**
+
+**Giải.** Không gian mẫu là $\{1,2,3,4,5,6\}$.
+
+$$A = \{1, 4\}, \qquad B = \{1, 3, 5\}$$
+
+Vì $A \cap B = \{1\} \neq \varnothing$ nên $A$ và $B$ không xung khắc, do đó đáp án A sai.
+
+Vì $A \cup B = \{1,3,4,5\} \neq \Omega$ nên $A$ và $B$ không đối nhau, đáp án B sai.
+
+$$P(A + B) = P(A \cup B) = \frac{4}{6} = \frac{2}{3}$$
+
+**Chú ý.** Kí hiệu $A + B$ trong tài liệu Trung Quốc nghĩa là biến cố hợp $A \cup B$, không phải phép cộng số học.
+
+---
+
+**Câu 7.** `CAE-M-CD8-LX1-E-052` — **Đáp án D**
+
+**Giải.** Mỗi lần rút có $2$ kết quả có thể (đỏ hoặc đen) và có hoàn lại, nên ba lần rút độc lập nhau.
+
+Số điểm mẫu là $2^3 = 8$.
+
+**Cách nhanh.** Với $k$ lần rút có hoàn lại từ $m$ loại kết quả, số điểm mẫu là $m^k$. Ở đây $2^3 = 8$.
+
+**Bẫy.** Đáp án B là $6$, ứng với việc đếm số lượng từng màu (từ $0$ đến $3$ quả đỏ) thay vì đếm dãy kết quả có thứ tự.
+
+---
+
+**Câu 8.** `CAE-M-CD8-08.3-H-016` — **Đáp án B**
+
+**Giải.** Gọi $A$ là biến cố “có ít nhất một lần trúng thưởng”. Biến cố đối $\overline{A}$ là “cả ba lần đều không trúng”.
+
+Xác suất không trúng mỗi lần là $1 - 0.1 = 0.9$. Ba lần độc lập nên:
+
+$$P(\overline{A}) = 0.9^3$$
+
+$$P(A) = 1 - 0.9^3$$
+
+**Bẫy.** Đáp án D là $1 - 0.1^3$, tức lấy đối của biến cố “cả ba lần đều trúng”. Biến cố đối đúng là “không lần nào trúng”.
+
+---
+
+**Câu 9.** `CAE-M-CD8-08.7-H-039` — **Đáp án A**
+
+**Giải.** Lần thứ nhất lấy từ $10$ quả, trong đó có $4$ quả xanh:
+
+$$P(\text{lần 1 xanh}) = \frac{4}{10}$$
+
+Sau khi lấy ra một quả xanh và không hoàn lại, còn $9$ quả trong đó có $6$ quả trắng:
+
+$$P(\text{lần 2 trắng} \mid \text{lần 1 xanh}) = \frac{6}{9}$$
+
+$$P = \frac{4}{10} \times \frac{6}{9}$$
+
+**Bẫy.** Đáp án B giữ nguyên mẫu số $10$ ở lần hai, tức nhầm với trường hợp có hoàn lại. Đáp án C cộng hai xác suất thay vì nhân.
+
+---
+
+**Câu 10.** `CAE-M-CD8-08.4-H-023` — **Đáp án B**
+
+**Giải.** Vì $A$ và $B$ xung khắc nên $P(A \cap B) = 0$. Áp dụng công thức cộng:
+
+$$P(A \cup B) = 0.6 + 0.3 = 0.9$$
+
+**Bẫy.** Đáp án D là $0.18$, tức tích hai xác suất, công thức dành cho biến cố độc lập. Đáp án A là $0.3$, chỉ là $P(B)$.
+
+---
+
+**Câu 11.** `CAE-M-CD8-08.6-H-033` — **Đáp án A**
+
+**Giải.** Gọi $F$ là “thích bóng đá”, $B$ là “thích bóng rổ”. Đề cho:
+
+$$P(F) = 0.6, \qquad P(B) = 0.3, \qquad P(F \cap B) = 0.1$$
+
+Điều kiện đã biết là em đó thích bóng rổ, nên mẫu số là $P(B)$:
+
+$$P(F \mid B) = \frac{P(F \cap B)}{P(B)} = \frac{0.1}{0.3} = \frac{1}{3}$$
+
+**Bẫy.** Đáp án C là $\dfrac{1}{6}$, tức chia cho $P(F) = 0.6$. Mẫu số phải là xác suất của nhóm đứng sau chữ 如果 (nếu).
+
+---
+
+**Câu 12.** `CAE-M-CD8-08.7-H-042` — **Đáp án C**
+
+**Giải.** Hai biến cố $\{X > a\}$ và $\{X \le a\}$ là hai biến cố đối, nên tổng xác suất bằng $1$:
+
+$$P(X \le a) = 1 - P(X > a) = 1 - 0.3 = 0.7$$
+
+**Cách nhanh.** Đây là bài toán biến cố đối thuần túy, không cần biết phân phối của $X$ là gì.
+
+**Bẫy.** Đáp án D là 无法确定 (không xác định được), nhưng thực ra xác định được vì quan hệ đối luôn đúng với mọi biến ngẫu nhiên.
+
+---
+
+**Câu 13.** `CAE-M-CD8-08.7-H-043` — **Đáp án C**
+
+**Giải.** Không gian mẫu là $\{1,2,3,4,5,6\}$.
+
+$$A = \{2, 4, 6\}, \qquad B = \{5, 6\}$$
+
+$$A \cap B = \{6\}, \qquad A \cup B = \{2, 4, 5, 6\}$$
+
+Áp dụng công thức cộng tổng quát:
+
+$$P(A \cup B) = \frac{3}{6} + \frac{2}{6} - \frac{1}{6} = \frac{4}{6} = \frac{2}{3}$$
+
+**Bẫy.** Đáp án D là $\dfrac{5}{6}$, tức quên trừ phần giao. Hai biến cố này có phần tử chung là $6$ nên không xung khắc.
+
+---
+
+**Câu 14.** `CAE-M-CD8-08.8-H-046` — **Đáp án A**
+
+**Giải.** Gọi $A$ là biến cố “có ít nhất $2$ nam”. Biến cố đối $\overline{A}$ là “có ít nhất $4$ nữ”, tức chỉ có $0$ hoặc $1$ nam.
+
+Đếm số cách thuận lợi cho $\overline{A}$: chọn $5$ nữ, hoặc chọn $1$ nam và $4$ nữ.
+
+$$P(\overline{A}) = \frac{C_{15}^5 + C_{10}^1 C_{15}^4}{C_{25}^5}$$
+
+$$P(A) = 1 - \frac{C_{15}^5 + C_{10}^1 C_{15}^4}{C_{25}^5}$$
+
+**Bẫy.** Đáp án B và D chỉ tính trường hợp có đúng $2$ nam, bỏ sót trường hợp $3$, $4$, $5$ nam. Đáp án C lấy đối của biến cố “có ít nhất $2$ nam” nhưng phần bù lại đếm các trường hợp có $2$ nam trở lên.
+
+---
+
+**Câu 15.** `CAE-M-CD8-08.8-H-049` — **Đáp án B**
+
+**Giải.** Mức ý nghĩa $\alpha$ là xác suất bác bỏ giả thuyết $H_0$ trong khi $H_0$ đúng. Đây chính là định nghĩa của sai lầm loại một.
+
+Với $\alpha = 0.05$:
+
+$$P(\text{sai lầm loại một}) = 0.05 = 5\%$$
+
+**Bẫy.** Đáp án A là $95\%$, tức độ tin cậy $1 - \alpha$ chứ không phải mức ý nghĩa. Hai con số này bù nhau nên rất dễ chọn nhầm.
+
+---
+
+## TỔNG KẾT LỖI THƯỜNG GẶP
+
+Bảng chẩn đoán dùng khi chữa bài và khi soạn đề kiểm tra. Cột “Câu liên quan” trỏ tới `../hoc-sinh/03-bai-tap-ve-nha.md`.
+
+| Lỗi | Câu liên quan | Cách cảnh báo học sinh |
+|:----|:--------------|:-----------------------|
+| Dùng công thức xung khắc cho biến cố độc lập, hoặc ngược lại | Câu 11, 13 phần bắt buộc; Câu 10 phần tự chọn | Viết to 互斥 và 独立 lên bảng: xung khắc thì phần giao bằng $0$, độc lập thì phần giao bằng tích |
+| Quên hệ số $C_n^k$ ở công thức Bernoulli | Câu 5 phần bắt buộc | $k$ lần thành công rơi vào vị trí nào cũng được, nên luôn có hệ số đếm vị trí |
+| Lấy $1$ trừ sai biến cố đối | Câu 8, 9, 10 phần bắt buộc; Câu 8, 14 phần tự chọn | Yêu cầu viết biến cố đối bằng lời trước khi lấy $1$ trừ |
+| Giữ nguyên mẫu số ở lần lấy thứ hai khi không hoàn lại | Câu 6 phần bắt buộc; Câu 9 phần tự chọn | Đề không ghi 有放回 thì mẫu số phải giảm sau mỗi lần lấy |
+| Chia nhầm mẫu số ở bài xác suất có điều kiện | Câu 11 phần tự chọn | Khoanh tròn cụm sau chữ 如果: mẫu số là nhóm đó, không phải cả không gian mẫu |
+| Dùng chỉnh hợp thay vì tổ hợp khi đếm đồng thời | Câu 7 phần bắt buộc | Đổi chỗ hai vật đã chọn có ra kết quả khác không, không thì dùng $C$ |
+| Nhầm $C_n^2$ với tích $n(n-1)$ ở mẫu số | Câu 3, 4, 5 phần bắt buộc; Câu 2, 5 phần tự chọn | Rút hai vật cùng lúc: mẫu số luôn là $\dfrac{n(n-1)}{2}$ |
+| Nhầm biến cố đối với biến cố bù một phần | Câu 9 phần bắt buộc | ít nhất một đạt đối với cả hai đều không đạt, không phải cả hai đều đạt |
+| Đọc nhầm 至少 và 恰好 | Câu 8 phần bắt buộc; Câu 5 phần tự chọn | Ít nhất thì đi qua biến cố đối, đúng $k$ lần thì đếm trực tiếp |
+| Chọn nhầm trục của tiêu điểm conic | Câu 20 phần bắt buộc | Mẫu lớn hơn nằm dưới biến nào thì tiêu điểm nằm trên trục của biến kia |
+| Lấy $\sqrt{b^2}$ làm $c$ của elip | Câu 20 phần bắt buộc | Phải tính $c^2 = a^2 - b^2$ trước khi lấy căn |
+| Nhầm trục lớn với nửa trục lớn | Câu 22 phần bắt buộc | Đề hỏi 长轴长 thì nhân đôi $a$, đừng dừng ở $a$ |
+| Bỏ sót nghiệm khi phân tích đa thức | Câu 25 phần bắt buộc | Đặt nhân tử chung $x$ ra trước, rồi mới giải phương trình bậc hai còn lại |
+| Cộng trực tiếp mà quên trừ phần giao | Câu 12 phần bắt buộc; Câu 13 phần tự chọn | Hai biến cố có phần tử chung thì phải trừ, kể cả khi chỉ chung một phần tử |
+
+---
+
+*Tài liệu nội bộ, CAE SHANGHAI.*

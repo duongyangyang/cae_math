@@ -1,0 +1,151 @@
+# BUỔI 17 — KỸ NĂNG THI （考试技巧）
+
+> **Kỹ năng làm bài trắc nghiệm dưới áp lực thời gian**
+> **Phiên bản:** 1.0.0, cập nhật 28.09.2026
+
+---
+
+## PHẦN A — BẢNG CÔNG THỨC TRỌNG TÂM
+
+Buổi 17 không có kiến thức mới. Nhiệm vụ là tra lại công thức của 16 buổi trước cho tới khi nhận ra chúng trong vài giây. Trong phòng thi, một câu trung bình chỉ có 75 giây, nên công thức phải nằm trong trí nhớ chứ không nằm trong bảng tra.
+
+### Nhóm 1 — Tập hợp và bất đẳng thức
+
+| Công thức | Nội dung |
+|:----------|:---------|
+| Giao, hợp, phần bù | $A \cap B = \{x \mid x \in A \text{ và } x \in B\}$; $A \cup B = \{x \mid x \in A \text{ hoặc } x \in B\}$ |
+| Số tập con | Tập $n$ phần tử có $2^n$ tập con, $2^n - 1$ tập con thực sự |
+| Tam thức bậc hai | $a > 0$ và $\Delta > 0$: ngoài hai nghiệm cùng dấu $a$, trong hai nghiệm trái dấu $a$ |
+| Giá trị tuyệt đối | $\lvert f(x) \rvert < a \iff -a < f(x) < a$ với $a > 0$ |
+| Đúng với mọi $x$ | $ax^2 + bx + c > 0$ với mọi $x$ khi và chỉ khi $a > 0$ và $\Delta < 0$ |
+| Cauchy | $a + b \ge 2\sqrt{ab}$ với $a, b \ge 0$; dấu bằng khi $a = b$ |
+
+### Nhóm 2 — Hàm số và đạo hàm
+
+| Công thức | Nội dung |
+|:----------|:---------|
+| Chẵn, lẻ | $f(-x) = f(x)$ là hàm chẵn; $f(-x) = -f(x)$ là hàm lẻ |
+| Đơn điệu | $f'(x) > 0$ trên khoảng thì $f$ đồng biến trên khoảng đó |
+| Đạo hàm cơ bản | $(x^n)' = nx^{n-1}$; $(\sin x)' = \cos x$; $(\cos x)' = -\sin x$; $(\ln x)' = \dfrac{1}{x}$ |
+| Tiếp tuyến | $y = f'(x_0)(x - x_0) + f(x_0)$ |
+| Cực trị | $f'(x)$ đổi dấu qua $x_0$ thì $x_0$ là điểm cực trị |
+
+### Nhóm 3 — Mũ và logarit
+
+| Công thức | Nội dung |
+|:----------|:---------|
+| Tích và thương | $\log_a(MN) = \log_a M + \log_a N$; $\log_a \dfrac{M}{N} = \log_a M - \log_a N$ |
+| Lũy thừa | $\log_a M^n = n\log_a M$ |
+| Đổi cơ số | $\log_a b = \dfrac{\log_c b}{\log_c a}$ |
+| Hai hằng đẳng thức | $a^{\log_a N} = N$; $\log_a a^N = N$ |
+| So sánh | $a > 1$: mũ lớn hơn thì giá trị lớn hơn; $0 < a < 1$: mũ lớn hơn thì giá trị nhỏ hơn |
+
+### Nhóm 4 — Lượng giác
+
+| Công thức | Nội dung |
+|:----------|:---------|
+| Cơ bản | $\sin^2 x + \cos^2 x = 1$; $\tan x = \dfrac{\sin x}{\cos x}$ |
+| Cộng | $\sin(a \pm b) = \sin a \cos b \pm \cos a \sin b$; $\cos(a \pm b) = \cos a \cos b \mp \sin a \sin b$ |
+| Nhân đôi | $\sin 2x = 2\sin x \cos x$; $\cos 2x = 1 - 2\sin^2 x$ |
+| Hạ bậc | $\sin^2 x = \dfrac{1 - \cos 2x}{2}$; $\cos^2 x = \dfrac{1 + \cos 2x}{2}$ |
+| Chu kỳ | $\sin x$, $\cos x$ có chu kỳ $2\pi$; $\tan x$ có chu kỳ $\pi$ |
+| Nghiệm cơ bản | $\sin x = \sin\alpha \iff x = \alpha + k2\pi$ hoặc $x = \pi - \alpha + k2\pi$ |
+
+### Nhóm 5 — Dãy số
+
+| Công thức | Nội dung |
+|:----------|:---------|
+| Cấp số cộng | $a_n = a_1 + (n-1)d$; $S_n = \dfrac{n(a_1 + a_n)}{2}$ |
+| Cấp số nhân | $a_n = a_1 q^{n-1}$; $S_n = \dfrac{a_1(1 - q^n)}{1 - q}$ với $q \ne 1$ |
+
+### Nhóm 6 — Hình học phẳng và không gian
+
+| Công thức | Nội dung |
+|:----------|:---------|
+| Thể tích chóp | $V = \dfrac{1}{3}Sh$ |
+| Thể tích trụ | $V = \pi r^2 h$; diện tích toàn phần $2\pi r^2 + 2\pi rh$ |
+| Thể tích cầu | $V = \dfrac{4}{3}\pi R^3$; diện tích mặt cầu $4\pi R^2$ |
+| Khoảng cách điểm đến mặt phẳng | $d = \dfrac{\lvert ax_0 + by_0 + cz_0 + d \rvert}{\sqrt{a^2 + b^2 + c^2}}$ |
+| Mặt cầu | $(x-a)^2 + (y-b)^2 + (z-c)^2 = R^2$ có tâm $(a,b,c)$ và bán kính $R$ |
+
+### Nhóm 7 — Đường thẳng, đường tròn, conic
+
+| Công thức | Nội dung |
+|:----------|:---------|
+| Khoảng cách điểm đến đường thẳng | $d = \dfrac{\lvert ax_0 + by_0 + c \rvert}{\sqrt{a^2 + b^2}}$ |
+| Song song, vuông góc | $k_1 = k_2$ là song song; $k_1 k_2 = -1$ là vuông góc |
+| Đường tròn | $x^2 + y^2 - 2ax - 2by + c = 0$ có tâm $(a,b)$, bán kính $R = \sqrt{a^2 + b^2 - c}$ |
+| Elip | $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$ với $a > b > 0$; $a^2 = b^2 + c^2$; $e = \dfrac{c}{a}$ |
+| Hyperbol | $\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$ có tiệm cận $y = \pm\dfrac{b}{a}x$ |
+| Parabol | $y^2 = 2px$ có tiêu điểm $\left(\dfrac{p}{2}, 0\right)$, đường chuẩn $x = -\dfrac{p}{2}$ |
+
+### Nhóm 8 — Vector và số phức
+
+| Công thức | Nội dung |
+|:----------|:---------|
+| Tích vô hướng | $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2$; $\vec{a} \perp \vec{b} \iff \vec{a} \cdot \vec{b} = 0$ |
+| Song song | $\vec{a} \parallel \vec{b} \iff a_1b_2 - a_2b_1 = 0$ |
+| Môđun | $\lvert z \rvert = \sqrt{a^2 + b^2}$ với $z = a + bi$; $z \cdot \overline{z} = \lvert z \rvert^2$ |
+| Nghịch đảo | $\dfrac{1}{z} = \dfrac{\overline{z}}{\lvert z \rvert^2}$ |
+| Lũy thừa đơn vị ảo | $i^{4k} = 1$; $i^{4k+1} = i$; $i^{4k+2} = -1$; $i^{4k+3} = -i$ |
+
+### Nhóm 9 — Xác suất và thống kê
+
+| Công thức | Nội dung |
+|:----------|:---------|
+| Cộng xác suất | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| Biến cố đối | $P(\overline{A}) = 1 - P(A)$ |
+| Độc lập | $A$, $B$ độc lập thì $P(A \cap B) = P(A) \cdot P(B)$ |
+| Trung bình và phương sai | $\overline{x} = \dfrac{x_1 + \dots + x_n}{n}$; $s^2 = \dfrac{\sum (x_i - \overline{x})^2}{n}$ |
+| Dịch dữ liệu | Cộng thêm $c$ vào mọi giá trị thì trung bình tăng $c$, phương sai không đổi |
+| Quy tắc 68–95–99,7 | Khoảng $\mu \pm \sigma$ chứa khoảng 68\% dữ liệu, $\mu \pm 2\sigma$ chứa khoảng 95\% |
+
+---
+
+## PHẦN B — NHIỆM VỤ CHUẨN BỊ
+
+### Bước 1 — Làm một đề tổng hợp có bấm giờ
+
+Chọn một đề 48 câu trong kho đề đã phát. Điều kiện làm bài giống thi thật:
+
+| Điều kiện | Yêu cầu |
+|:----------|:--------|
+| Thời gian | 60 phút, bấm đồng hồ, không tạm dừng |
+| Máy tính | Không dùng, kể cả điện thoại |
+| Tài liệu | Không mở bảng công thức |
+| Nộp bài | Ghi đáp án ra giấy riêng, không sửa lại sau khi hết giờ |
+
+### Bước 2 — Ghi thời gian từng câu
+
+Bảng dưới đây là mẫu. Kẻ lại vào vở và điền trong lúc làm bài, không điền sau khi xong.
+
+| Câu | Thời gian (giây) | Đáp án chọn | Ghi chú |
+|:---:|:----------------:|:-----------:|:--------|
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+| ... | | | |
+| 48 | | | |
+
+**Cách điền.** Ghi giờ bắt đầu và giờ kết thúc mỗi câu, hoặc dùng đồng hồ bấm giây bấm lại sau mỗi câu. Cột **Ghi chú** dùng để đánh dấu ba loại: câu làm chắc chắn, câu phải đoán, câu bỏ qua rồi quay lại.
+
+### Bước 3 — Phân loại kết quả sau khi làm xong
+
+Chấm điểm rồi chia 48 câu thành bốn nhóm và đếm số câu mỗi nhóm:
+
+| Nhóm | Tiêu chí | Số câu |
+|:-----|:---------|:------:|
+| Làm nhanh và đúng | Dưới 60 giây, đáp án đúng | |
+| Làm chậm nhưng đúng | Trên 60 giây, đáp án đúng | |
+| Đúng do đoán | Không chắc, đáp án đúng | |
+| Sai | Đáp án sai, kể cả câu bỏ trống | |
+
+Hai con số cần chú ý là số câu **sai** và số câu **đúng do đoán**. Câu sai ở nhóm nào thì buổi 18 chữa theo nhóm đó. Câu đúng do đoán nhiều nghĩa là kỹ năng loại trừ đang gánh điểm thay cho kiến thức, và đó là điều bình thường trong một đề 75 giây mỗi câu.
+
+### Bước 4 — Ghi lại ba câu tốn nhiều thời gian nhất
+
+Chép nguyên văn đề của ba câu em mất trên 150 giây. Mang theo đến lớp. Ba câu này dùng làm ví dụ chữa ngay trong buổi 17, vì chúng cho thấy chỗ nào cần bỏ qua sớm hơn.
+
+---
+
+*Nộp bảng thời gian và bảng phân loại trước buổi học qua hệ thống.*

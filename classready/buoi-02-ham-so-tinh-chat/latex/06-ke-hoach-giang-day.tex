@@ -1,0 +1,203 @@
+% =====================================================================
+%  BUỔI 2 — KẾ HOẠCH GIẢNG DẠY (từ giao-vien/01-ke-hoach-giang-day.md)
+%  Sinh tự động bằng scripts/md2tex-chung.py — không sửa tay.
+% =====================================================================
+\documentclass[11pt, a4paper]{article}
+\input{cae-style}
+
+\begin{document}
+
+\trangbia{KẾ HOẠCH GIẢNG DẠY}{2}{Hàm số: tính chất}{函数的性质}{Module M2 \quad·\quad Tỉ trọng đề thi $\sim$13\% \quad·\quad khoảng 5–7 câu}
+
+\section{PHÂN BỔ THỜI GIAN}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xcc@{}}
+\toprule
+\textbf{Hoạt động} & \textbf{Tỉ trọng} & \textbf{Thời lượng} \\
+\midrule
+Chữa bài tập buổi 1 & 20\% & 16 phút \\
+Hệ thống hóa kiến thức trọng tâm & 30\% & 24 phút \\
+Đi các dạng bài trong chủ đề & 50\% & 40 phút \\
+\bottomrule
+\end{tabularx}}
+
+Khối 1 của buổi này là chữa BTVN buổi 1 (đã giao 25 câu bắt buộc + 15 câu tự chọn). Từ buổi 3 trở đi, khoản này giữ nguyên tỉ trọng 20\% và dùng để chữa bài của buổi liền trước.
+
+\section{KHỐI 1 — CHỮA BÀI TẬP BUỔI 1 (16 phút)}
+
+\subsection{Mục tiêu}
+
+Học sinh nhận ra lỗi của mình ở chuyên đề tập hợp và bất đẳng thức, đặc biệt là ba lỗi hệ thống đã dự đoán trước khi giao bài.
+
+\subsection{Kịch bản}
+
+\textbf{Phút 1–3 · Trả kết quả và thống kê.} Đọc tỉ lệ làm đúng từng câu. Không đọc tên học sinh làm sai.
+
+\textbf{Phút 4–11 · Chữa ba câu được dự đoán sai nhiều nhất.} Chiếu đề, gọi học sinh nêu cách làm, chỉ ra chỗ sai, chốt cách đúng.
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}llX@{}}
+\toprule
+\textbf{Câu} & \textbf{Mã câu} & \textbf{Lỗi cần chữa} \\
+\midrule
+BTVN Câu 20 & \texttt{CAE-M-CD2-08.2-E-010} & Nhân chéo bất phương trình phân thức mà không biết dấu mẫu \\
+BTVN Câu 25 & \texttt{CAE-M-CD2-LX2-H-061} & Nhầm 有解 (có nghiệm) với 恒成立 (đúng với mọi $x$) \\
+BTVN tự chọn Câu 11 & \texttt{CAE-M-CD2-LX1-E-056} & Bình phương hai vế mà bỏ điều kiện xác định của căn \\
+\bottomrule
+\end{tabularx}}
+
+\textbf{Phút 12–16 · Chốt ba quy tắc của buổi 1.} Viết lên góc bảng và để nguyên đến hết buổi, vì buổi 2 sẽ dùng lại cả ba khi xét tập xác định.
+
+1. \textbf{Giải bất phương trình trước, vẽ trục số sau.}
+2. \textbf{Luôn xét tập rỗng khi có tham số.}
+3. \textbf{Nghiệm của mẫu luôn bị loại.}
+
+\subsection{Điểm cần chốt}
+
+Kết thúc khối này, học sinh phải nói được vì sao bất phương trình phân thức không được nhân chéo. Nếu cả lớp im lặng, nhắc lại: mẫu chưa biết dấu nên nhân vào có thể đổi chiều mà không hay.
+
+\section{KHỐI 2 — HỆ THỐNG HÓA KIẾN THỨC TRỌNG TÂM (24 phút)}
+
+\subsection{Mục tiêu}
+
+Học sinh nắm được 9 tính chất trong \texttt{../hoc-sinh/02-tai-lieu-buoi-hoc.md} mục 2, đặc biệt là ba điều kiện xác định, định nghĩa chẵn lẻ và bảng đơn điệu của hàm cơ bản.
+
+\subsection{Kịch bản}
+
+\textbf{Phút 1–6 · Từ khóa nhận dạng đề.} Đây là phần \textbf{quan trọng nhất của khối này}, không được cắt. Chiếu bảng 14 từ khóa. Với mỗi từ, yêu cầu học sinh đọc to phiên âm rồi nói nghĩa, mục đích là luyện phản xạ nhìn chữ Hán. Dừng lâu nhất ở ba từ 定义域, 奇偶性, 单调性 vì chúng quyết định cách xử lý toàn bộ chuyên đề.
+
+\textbf{Phút 7–12 · Tập xác định.} Trình bày Tính chất 1 (ba điều kiện xác định) và Định nghĩa 1. Học sinh đã biết cách tìm tập xác định từ cấp ba, nên phần này chỉ cần nhấn mạnh \textbf{quy tắc giao chứ không hợp}.
+
+Viết lên bảng ví dụ có cả căn ở mẫu lẫn logarit, yêu cầu học sinh tự viết hai điều kiện rồi giao lại. Đây là dạng bài xuất hiện nhiều nhất trong đề ở chuyên đề này.
+
+\textbf{Phút 13–18 · Tính đơn điệu và tính chẵn lẻ.} Trình bày Định nghĩa 2–5 và Tính chất 2, 4, 5.
+
+Với tính chẵn lẻ, \textbf{bắt buộc nói bước kiểm tra tập xác định đối xứng trước}. Học sinh thường lao vào tính $f(-x)$ rồi kết luận sai khi tập xác định không đối xứng.
+
+Với tính đơn điệu, chiếu bảng Tính chất 2 và \textbf{để nguyên đến hết buổi}. Học sinh sẽ tra lại nhiều lần khi làm dạng bài.
+
+\textbf{Phút 19–21 · Tính tuần hoàn.} Trình bày Tính chất 6. Nhấn mạnh chỉ hệ số $\omega$ quyết định chu kỳ, hệ số biên độ và pha không ảnh hưởng.
+
+\textbf{Phút 22–24 · Giá trị lớn nhất, nhỏ nhất.} Trình bày Tính chất 7–9. Nhấn mạnh hai công thức cho đáp án trong vài giây: miền giá trị $[-1,1]$ của sin và cos, và công thức $\max(pa+qb) = R\sqrt{p^2+q^2}$ khi $a^2+b^2 = R^2$.
+
+\subsection{Lỗi học sinh hay mắc — cần cảnh báo trước}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Lỗi} & \textbf{Cách cảnh báo} \\
+\midrule
+Lấy hợp các điều kiện xác định thay vì giao & Viết hai điều kiện ở hai dòng khác nhau trên bảng, rồi hỏi: "điểm nào thỏa cả hai?" \\
+Biểu thức dưới căn nằm ở mẫu mà vẫn đặt dấu $\ge$ & Nói trước: "Căn ở mẫu thì mẫu phải khác 0, nên điều kiện là dấu lớn hơn nghiêm ngặt" \\
+Tính $f(-x)$ trước khi kiểm tra tập xác định & Nói trước: "Tập xác định không đối xứng thì kết luận ngay, không cần tính" \\
+Nhầm chu kỳ của sin với của tan & Viết cạnh nhau: $T = \frac{2\pi}{\lvert\omega\rvert}$ cho sin và cos, $T = \frac{\pi}{\lvert\omega\rvert}$ cho tan và cot \\
+Cho rằng hàm chẵn là hàm có $f(-x) = f(x)$ với mọi $x$ mà quên đối xứng & Viết lại định nghĩa đầy đủ, gạch chân vế điều kiện tập xác định \\
+\bottomrule
+\end{tabularx}}
+
+\section{KHỐI 3 — ĐI CÁC DẠNG BÀI (40 phút)}
+
+\subsection{Mục tiêu}
+
+Học sinh làm được 7 dạng bài, mỗi dạng nắm được \textbf{cách nhận dạng} từ đề, đây mới là đích của khối, không phải thuộc lời giải.
+
+\subsection{Kịch bản}
+
+Bảy dạng bài có trong \texttt{../hoc-sinh/02-tai-lieu-buoi-hoc.md} mục 3. Phân bổ khoảng 5–6 phút mỗi dạng theo cấu trúc cố định:
+
+1. \textbf{Đọc đề mẫu} (30 giây): giáo viên đọc to đề tiếng Trung, yêu cầu học sinh chỉ ra từ khóa.
+2. \textbf{Hỏi cách nhận dạng} (30 giây): "Dấu hiệu nào cho biết đây là dạng này?"
+3. \textbf{Giảng phương pháp} (2 phút): trình bày các bước, không giải chi tiết.
+4. \textbf{Học sinh làm tại chỗ} (2 phút): cho một câu tương tự, học sinh tự làm.
+5. \textbf{Chữa nhanh} (1 phút): chốt đáp án và lỗi nếu có.
+
+\subsection{Thứ tự ưu tiên}
+
+Nếu hết thời gian, \textbf{không được cắt Dạng 1, 2 và 4}. Đây là ba dạng xuất hiện nhiều nhất trong đề thi thật:
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xcl@{}}
+\toprule
+\textbf{Dạng} & \textbf{Tần suất} & \textbf{Ghi chú} \\
+\midrule
+\textbf{Dạng 1 — Tập xác định nhiều điều kiện} & \textbf{Cao} & Ưu tiên giữ \\
+\textbf{Dạng 2 — Chẵn lẻ theo định nghĩa} & \textbf{Cao} & Ưu tiên giữ \\
+Dạng 3 — Tập giá trị & Trung bình & Có thể cắt ngắn nếu hết giờ \\
+\textbf{Dạng 4 — Đơn điệu và khoảng đơn điệu} & \textbf{Cao} & Ưu tiên giữ \\
+Dạng 5 — Tuần hoàn & Trung bình & Học sinh thường làm nhanh \\
+Dạng 6 — Giá trị lớn nhất, nhỏ nhất & Trung bình & — \\
+Dạng 7 — Hàm cho bởi nhiều công thức & Trung bình & — \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Câu dùng để luyện tại chỗ}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}lXl@{}}
+\toprule
+\textbf{Dạng} & \textbf{Câu luyện} & \textbf{Mã câu} \\
+\midrule
+1 & Tìm tập xác định của $f(x) = \sqrt{x-4} + \log_2(5-x)$ & tự soạn \\
+2 & \texttt{CAE-M-CD4-08.3-E-030} & trong kho đề \\
+3 & \texttt{CAE-M-CD4-08.5-E-055} & trong kho đề \\
+4 & \texttt{CAE-M-CD4-08.7-E-083} & trong kho đề \\
+5 & \texttt{CAE-M-CD4-08.5-M-068} & trong kho đề \\
+6 & \texttt{CAE-M-CD4-08.7-E-084} & trong kho đề \\
+7 & \texttt{CAE-M-CD4-08.8-E-097} & trong kho đề \\
+\bottomrule
+\end{tabularx}}
+
+\section{CHỐT BUỔI (5 phút cuối, nằm trong khối 3)}
+
+Chốt lại ba điểm, viết lên góc bảng và để nguyên khi học sinh ra về:
+
+1. \textbf{Tập xác định là giao của các điều kiện, không phải hợp.}
+2. \textbf{Kiểm tra tập xác định đối xứng trước khi xét chẵn lẻ.}
+3. \textbf{Chỉ hệ số $\omega$ quyết định chu kỳ.}
+
+Dặn dò: BTVN gồm 25 câu bắt buộc + 15 câu tự chọn, nộp trước buổi 3. Phần tự chọn khó hơn rõ rệt, chỉ làm sau khi xong phần bắt buộc. Buổi 3 học về hàm bậc hai, mũ, logarit và đạo hàm; BTVN buổi này đã có 25\% nội dung ôn tập hai buổi trước.
+
+\section{ĐÁP ÁN BÀI TẬP CHUẨN BỊ}
+
+Dùng để chữa nhanh nếu cần. Lời giải chi tiết có trong \texttt{../hoc-sinh/04-dap-an-chuan-bi.md}.
+
+\bang{
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+\textbf{Câu} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} \\
+\midrule
+Đáp án & C & B & C & D & A & A & B & C & B & B \\
+\bottomrule
+\end{tabular}}
+
+\textbf{Câu cần chữa kỹ nếu học sinh làm sai nhiều:} Câu 8 và Câu 10.
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{Câu 8} (\texttt{CAE-M-CD4-08.2-E-016}): học sinh hay lấy hợp hai điều kiện thay vì giao, dẫn tới chọn đáp án A hoặc B.
+\item \textbf{Câu 10} (\texttt{CAE-M-CD4-LX1-H-116}): học sinh quên đổi $b = f(-\ln 2)$ về $f(\ln 2)$ nhờ tính chẵn, hoặc quên rằng hàm chẵn nghịch biến trên $(-\infty,0)$ thì đồng biến trên $(0,+\infty)$.
+\end{itemize}
+
+\section{GHI CHÚ SAU BUỔI HỌC}
+
+\emph{(Điền sau khi dạy xong, dùng để điều chỉnh buổi sau và các buổi lặp lại.)}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xl@{}}
+\toprule
+\textbf{Nội dung} & \textbf{Ghi nhận} \\
+\midrule
+Thời gian thực tế từng khối &  \\
+Dạng bài học sinh yếu nhất &  \\
+Câu hỏi học sinh hỏi nhiều &  \\
+Điều chỉnh cho lần dạy sau &  \\
+\bottomrule
+\end{tabularx}}
+
+\emph{Tài liệu nội bộ, CAE SHANGHAI.}
+\vspace{0.8cm}
+\begin{center}
+{\footnotesize\color{cae_blue} Tài liệu nội bộ, CAE SHANGHAI}
+\end{center}
+
+\end{document}

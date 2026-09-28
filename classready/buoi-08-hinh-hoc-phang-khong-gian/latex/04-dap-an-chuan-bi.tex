@@ -1,0 +1,187 @@
+% =====================================================================
+%  BUỔI 8 — ĐÁP ÁN BÀI TẬP CHUẨN BỊ (từ hoc-sinh/04-dap-an-chuan-bi.md)
+%  Sinh tự động bằng scripts/md2tex-chung.py — không sửa tay.
+% =====================================================================
+\documentclass[11pt, a4paper]{article}
+\input{cae-style}
+
+\begin{document}
+
+\trangbia{ĐÁP ÁN BÀI TẬP CHUẨN BỊ}{8}{Hình học phẳng và không gian}{平面几何与空间几何}{}
+
+\section{BẢNG ĐÁP ÁN 10 CÂU CHUẨN BỊ}
+
+\bang{
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+\textbf{Câu} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} \\
+\midrule
+Đáp án & C & B & A & A & C & B & C & B & B & D \\
+\bottomrule
+\end{tabular}}
+
+\section{PHẦN A — BẢNG TỪ VỰNG}
+
+\subsection{Nhóm 1 — Hình phẳng cơ bản}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}clX@{}}
+\toprule
+\textbf{STT} & \textbf{Thuật ngữ} & \textbf{Nghĩa} \\
+\midrule
+1 & 三角形 & tam giác \\
+2 & 四边形 & tứ giác \\
+3 & 多边形 & đa giác \\
+4 & 正多边形 & đa giác đều \\
+5 & 周长 & chu vi \\
+6 & 面积 & diện tích \\
+7 & 内角 & góc trong \\
+8 & 外角 & góc ngoài \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Nhóm 2 — Tam giác và đường tròn}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}clX@{}}
+\toprule
+\textbf{STT} & \textbf{Thuật ngữ} & \textbf{Nghĩa} \\
+\midrule
+9 & 直角三角形 & tam giác vuông \\
+10 & 等腰三角形 & tam giác cân \\
+11 & 等边三角形 & tam giác đều \\
+12 & 相似 & đồng dạng \\
+13 & 全等 & bằng nhau, toàn đẳng \\
+14 & 勾股定理 & định lý Pythagoras \\
+15 & 圆心 & tâm đường tròn \\
+16 & 半径 & bán kính \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Nhóm 3 — Hình không gian}
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}clX@{}}
+\toprule
+\textbf{STT} & \textbf{Thuật ngữ} & \textbf{Nghĩa} \\
+\midrule
+17 & 正方体 & hình lập phương \\
+18 & 长方体 & hình hộp chữ nhật \\
+19 & 圆柱 & hình trụ \\
+20 & 圆锥 & hình nón \\
+21 & 球 & hình cầu \\
+22 & 表面积 & diện tích mặt \\
+23 & 体积 & thể tích \\
+24 & 母线 & đường sinh \\
+\bottomrule
+\end{tabularx}}
+
+\section{PHẦN B — HOÀN THIỆN BẢN DỊCH}
+
+\textbf{Câu 2.} 一个圆柱的底面半径为 $r$，高为 $h$，则它的表面积是（ ）
+
+\noindent\emph{\textbf{Dịch:} Một hình trụ có bán kính đáy là $r$, chiều cao là $h$, khi đó diện tích mặt của nó là ( )}
+
+\textbf{Từ khóa cần nhận ra:} 圆柱 (hình trụ) · 底面半径 (bán kính đáy) · 高 (chiều cao) · 表面积 (diện tích mặt) · 则 (khi đó).
+
+\textbf{Câu 3.} 已知圆锥的底面半径为 3，母线长为 5，则这个圆锥的体积是（ ）
+
+\noindent\emph{\textbf{Dịch:} Cho hình nón có bán kính đáy là 3, độ dài đường sinh là 5, khi đó thể tích của hình nón này là ( )}
+
+\textbf{Từ khóa cần nhận ra:} 圆锥 (hình nón) · 母线长 (độ dài đường sinh) · 体积 (thể tích) · 这个 (này).
+
+\noindent\emph{\textbf{Nhận xét.} Gặp 母线长 (đường sinh) trong đề hỏi thể tích là biết ngay phải đổi về chiều cao bằng $h = \sqrt{l^2-r^2}$. Đề cho đường sinh mà hỏi thể tích luôn có sẵn đáp án nhiễu dùng nhầm đường sinh làm chiều cao.}
+
+\section{PHẦN C — BÀI TẬP CHUẨN BỊ}
+
+\textbf{Câu 1.} \texttt{CAE-M-CD5-TS-E-001} — \textbf{Đáp án C}
+
+\textbf{Giải.} Tam giác có cạnh đáy $a = 6$ và chiều cao tương ứng $h = 5$:
+
+$$S = \frac{1}{2}ah = \frac{1}{2} \cdot 6 \cdot 5 = 15$$
+
+\nhan{Bẫy} Đáp án D là $30$, tức quên nhân $\dfrac{1}{2}$. Đáp án A là $10$, tức dùng nhầm $h = 5$ thành nửa đáy.
+
+\textbf{Câu 2.} \texttt{CAE-M-CD5-TS-E-002} — \textbf{Đáp án B}
+
+\textbf{Giải.} Chu vi đường tròn bán kính $r = 3$:
+
+$$C = 2\pi r = 2\pi \cdot 3 = 6\pi$$
+
+\nhan{Bẫy} Đáp án C là $9\pi$: đó là \textbf{diện tích} $S = \pi r^2$, không phải chu vi. Đọc kỹ 周长 (chu vi) và 面积 (diện tích).
+
+\textbf{Câu 3.} \texttt{CAE-M-CD5-TS-E-003} — \textbf{Đáp án A}
+
+\textbf{Giải.} Lục giác có $n = 6$ cạnh, tổng góc trong:
+
+$$(n-2) \cdot 180^\circ = 4 \cdot 180^\circ = 720^\circ$$
+
+\nhan{Cách nhanh} Tổng góc trong của tứ giác là $360^\circ$; mỗi khi thêm một cạnh thì cộng thêm $180^\circ$. Từ tứ giác lên lục giác thêm hai cạnh, vậy $360^\circ + 2 \cdot 180^\circ = 720^\circ$.
+
+\textbf{Câu 4.} \texttt{CAE-M-CD5-TS-E-004} — \textbf{Đáp án A}
+
+\textbf{Giải.} Tam giác vuông có hai cạnh góc vuông $3$ và $4$. Áp dụng định lý Pythagoras:
+
+$$c^2 = 3^2 + 4^2 = 9 + 16 = 25 \implies c = 5$$
+
+\nhan{Cách nhanh} $(3, 4, 5)$ là bộ ba Pythagoras quen thuộc, không cần bấm máy.
+
+\textbf{Câu 5.} \texttt{CAE-M-CD5-08.1-H-008} — \textbf{Đáp án C}
+
+\textbf{Giải.} Công thức thể tích hình chóp: $V = \dfrac{1}{3}Sh$ với $S$ là diện tích đáy và $h$ là chiều cao.
+
+\nhan{Chú ý} Hệ số $\dfrac{1}{3}$ là điểm phân biệt hình chóp với lăng trụ. Lăng trụ cùng đáy và chiều cao có thể tích $Sh$.
+
+\textbf{Câu 6.} \texttt{CAE-M-CD5-08.5-H-024} — \textbf{Đáp án B}
+
+\textbf{Giải.} Hình hộp chữ nhật có ba kích thước $l, w, h$ có thể tích $V = lwh$.
+
+\nhan{Bẫy} Đáp án C là $2(lw + wh + hl)$, tức công thức \textbf{diện tích toàn phần}. Đáp án A là tổng ba mặt đôi một, cũng là một phần của diện tích mặt. Đọc kỹ 体积 (thể tích).
+
+\textbf{Câu 7.} \texttt{CAE-M-CD5-08.3-H-017} — \textbf{Đáp án C}
+
+\textbf{Giải.} Thể tích hình cầu bán kính $R$ là $V = \dfrac{4}{3}\pi R^3$. Cho $V = 36\pi$:
+
+$$\frac{4}{3}\pi R^3 = 36\pi \implies R^3 = 27 \implies R = 3$$
+
+\nhan{Bẫy} Đáp án A là $6$, tức lấy $36 \div 6$ hoặc nhầm công thức $S = 4\pi R^2$. Đáp án D là $\sqrt{6}$, tức giải $R^2 = 6$ thay vì $R^3 = 27$.
+
+\textbf{Câu 8.} \texttt{CAE-M-CD5-08.3-H-018} — \textbf{Đáp án B}
+
+\textbf{Giải.} Hình lập phương cạnh $a' = 2a$. Đường chéo khối:
+
+$$d = a'\sqrt{3} = 2a\sqrt{3}$$
+
+\nhan{Bẫy} Đáp án A là $2a\sqrt{2}$: đó là đường chéo \textbf{mặt}, không phải đường chéo khối. Đề ghi rõ 连接不相邻的两个顶点 (nối hai đỉnh không kề nhau), tức hai đỉnh đối diện qua tâm khối.
+
+\textbf{Câu 9.} \texttt{CAE-M-CD5-08.6-M-029} — \textbf{Đáp án B}
+
+\textbf{Giải.} Hình trụ bán kính đáy $r$, chiều cao $h$ có diện tích toàn phần bằng diện tích xung quanh cộng hai đáy:
+
+$$S = 2\pi rh + 2\pi r^2$$
+
+\nhan{Bẫy} Đáp án A là $2\pi rh$, tức chỉ có diện tích xung quanh (侧面积). Đáp án D là $\pi r^2 h$, tức thể tích.
+
+\textbf{Câu 10.} \texttt{CAE-M-CD5-08.2-M-010} — \textbf{Đáp án D}
+
+\textbf{Giải.} Đáy $ABC$ vuông tại $A$, cạnh huyền $BC = 2a$, cạnh góc vuông $AB = a$. Cạnh góc vuông còn lại:
+
+$$AC = \sqrt{BC^2 - AB^2} = \sqrt{4a^2 - a^2} = a\sqrt{3}$$
+
+Diện tích đáy:
+
+$$S_{ABC} = \frac{1}{2} \cdot AB \cdot AC = \frac{1}{2} \cdot a \cdot a\sqrt{3} = \frac{a^2\sqrt{3}}{2}$$
+
+Mặt bên $BB'C'C$ là hình vuông nên chiều cao lăng trụ bằng $BC = 2a$. Thể tích:
+
+$$V = S_{ABC} \cdot h = \frac{a^2\sqrt{3}}{2} \cdot 2a = a^3\sqrt{3}$$
+
+\nhan{Nhận xét} Mấu chốt là nhận ra chiều cao lăng trụ bằng cạnh $BC$ chứ không phải bằng $AB$. Mặt bên $BB'C'C$ chứa cạnh $BC$ và đường sinh, nên khi mặt đó là hình vuông thì cạnh hình vuông chính là $BC$.
+
+\emph{Tài liệu nội bộ, CAE SHANGHAI.}
+\vspace{0.8cm}
+\begin{center}
+{\footnotesize\color{cae_blue} Tài liệu nội bộ, CAE SHANGHAI}
+\end{center}
+
+\end{document}

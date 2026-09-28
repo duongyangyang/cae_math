@@ -1,0 +1,551 @@
+% =====================================================================
+%  BUỔI 2 — LỜI GIẢI BÀI TẬP VỀ NHÀ (từ giao-vien/02-loi-giai-bai-tap-ve-nha.md)
+%  Sinh tự động bằng scripts/md2tex-luoigiai.py — không sửa tay.
+%  Tài liệu giáo viên: dùng để chữa bài trên lớp và soạn đề kiểm tra.
+% =====================================================================
+\documentclass[11pt, a4paper]{article}
+\input{cae-style}
+
+\begin{document}
+
+\trangbia{LỜI GIẢI BÀI TẬP VỀ NHÀ}{2}{Hàm số: tính chất}{函数的性质}{Tài liệu giáo viên \quad·\quad 40 câu}
+
+\subsection*{Nhóm A — Tính chất hàm số}
+
+\begin{dapan}[1 — Đáp án A]
+\textbf{Giải.} Tập xác định: $|x| + 1 > 0$ với mọi $x$ nên biểu thức xác định trên $\mathbb{R}$. Tập $\mathbb{R}$ đối xứng qua $0$, thỏa điều kiện tiên quyết.
+
+Tính $f(-x)$:
+
+$$f(-x) = (-x)\ln(|-x| + 1) = -x\ln(|x| + 1) = -f(x)$$
+
+Vậy $f$ là hàm lẻ.
+
+\textbf{Cách nhanh.} Tích của hàm lẻ $x$ với hàm chẵn $\ln(|x|+1)$ cho hàm lẻ. Nhận ra quy tắc dấu của tích tiết kiệm cả bước biến đổi.
+\end{dapan}
+
+\begin{dapan}[2 — Đáp án C]
+\textbf{Giải.} Trên đoạn $[0, \pi]$, hàm $y = \sin x$ tăng trên $\left[0, \dfrac{\pi}{2}\right]$ và giảm trên $\left[\dfrac{\pi}{2}, \pi\right]$.
+
+Giá trị lớn nhất đạt tại đỉnh $x = \dfrac{\pi}{2}$: $\sin\dfrac{\pi}{2} = 1$.
+
+Giá trị nhỏ nhất đạt tại hai đầu mút: $\sin 0 = 0$ và $\sin\pi = 0$.
+
+Vậy giá trị lớn nhất là $1$, giá trị nhỏ nhất là $0$.
+
+\textbf{Bẫy.} Đáp án A là kết quả khi lấy miền giá trị của sin trên toàn trục số, nhưng đề giới hạn trên đoạn $[0,\pi]$ nên giá trị $-1$ không đạt được.
+\end{dapan}
+
+\begin{dapan}[3 — Đáp án A]
+\textbf{Giải.} Điều kiện căn ở mẫu: biểu thức dưới căn phải \textbf{dương} vì nằm ở mẫu.
+
+$$x^2 - 3x + 2 > 0 \iff (x-1)(x-2) > 0 \iff x < 1 \ \text{hoặc} \ x > 2$$
+
+Điều kiện logarit: $4 - x > 0 \iff x < 4$.
+
+Giao hai điều kiện, giữ phần chung của $\big[(-\infty,1)\cup(2,+\infty)\big]$ với $(-\infty,4)$:
+
+$$D = (-\infty, 1) \cup (2, 4)$$
+
+\textbf{Chú ý.} Hai điểm $x = 1$ và $x = 2$ làm mẫu bằng $0$ nên bị loại. Nếu đặt điều kiện $\ge 0$ sẽ lấy nhầm hai điểm này.
+\end{dapan}
+
+\begin{dapan}[4 — Đáp án B]
+\textbf{Giải.} Tập xác định là $\mathbb{R}\setminus\{0\}$, đối xứng qua $0$.
+
+$$f(-x) = \frac{\sin(-x)}{-x} = \frac{-\sin x}{-x} = \frac{\sin x}{x} = f(x)$$
+
+Vậy $f$ là hàm chẵn.
+
+\textbf{Nhận xét.} Thương của hai hàm lẻ là hàm chẵn. Hàm này là ví dụ kinh điển của hàm chẵn không phải đa thức, hay xuất hiện trong các câu hỏi lý thuyết.
+\end{dapan}
+
+\begin{dapan}[5 — Đáp án C]
+\textbf{Giải.} Đây là bài về đơn điệu của hàm bậc ba. Xét dấu đạo hàm $f'(x) = 3x^2 - 27 = 3(x^2 - 9)$.
+
+Phương trình $f'(x) = 0$ có hai nghiệm $x = -3$ và $x = 3$. Hệ số $a = 3 > 0$ nên $f'(x) > 0$ ở ngoài khoảng hai nghiệm:
+
+$$f'(x) > 0 \iff x < -3 \ \text{hoặc} \ x > 3$$
+
+Vậy hàm đồng biến trên $(3, +\infty)$.
+
+\textbf{Chú ý.} Đáp án A là khoảng nghịch biến, không phải đồng biến. Hàm bậc ba có hai cực trị thì chiều đơn điệu luân phiên: tăng, giảm, tăng.
+\end{dapan}
+
+\begin{dapan}[6 — Đáp án B]
+\textbf{Giải.} Hai hàm số được gọi là giống nhau khi có cùng tập xác định và cùng công thức giá trị trên tập đó.
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{A.} $f(x) = x$ có tập xác định $\mathbb{R}$; $g(x) = \dfrac{x^2}{x}$ có tập xác định $\mathbb{R}\setminus\{0\}$. Khác nhau. ✗
+\item \textbf{B.} $f(x) = |x|$ và $g(x) = \sqrt{x^2}$. Vì $\sqrt{x^2} = |x|$ với mọi $x \in \mathbb{R}$ và cả hai đều xác định trên $\mathbb{R}$, hai hàm giống nhau. ✓
+\item \textbf{C.} $f(x) = \sqrt{x^2-1}$ có tập xác định $(-\infty,-1]\cup[1,+\infty)$; $g(x)$ có tập xác định $[0,+\infty)$. Khác nhau. ✗
+\item \textbf{D.} $f(x) = 1$ có tập xác định $\mathbb{R}$; $g(x) = x^0$ có tập xác định $\mathbb{R}\setminus\{0\}$. Khác nhau. ✗
+\end{itemize}
+
+
+\textbf{Chú ý.} Đáp án D là bẫy kinh điển: $x^0 = 1$ đúng với mọi $x \neq 0$, nhưng tại $x = 0$ biểu thức $0^0$ không xác định.
+\end{dapan}
+
+\begin{dapan}[7 — Đáp án C]
+\textbf{Giải.} Hàm $g(x) = f(x-1)$ xác định khi và chỉ khi đối số của $f$ nằm trong tập xác định của $f$, tức $x - 1 \in [-2, 2]$.
+
+Cộng $1$ vào cả ba vế:
+
+$$-1 \le x \le 3$$
+
+Vậy tập xác định của $g$ là $[-1, 3]$.
+
+\textbf{Cách nhanh.} Dịch đồ thị sang phải $1$ đơn vị thì tập xác định cũng dịch sang phải $1$ đơn vị: $[-2,2]$ thành $[-1,3]$.
+\end{dapan}
+
+\begin{dapan}[8 — Đáp án A]
+\textbf{Giải.} Điều kiện logarit: biểu thức trong logarit phải dương.
+
+$$x^2 - 4x + 3 > 0 \iff (x-1)(x-3) > 0$$
+
+Vì hệ số bậc hai dương và dấu $> 0$, lấy ngoài khoảng hai nghiệm:
+
+$$D = (-\infty, 1) \cup (3, +\infty)$$
+
+\textbf{Bẫy.} Đáp án B là khoảng \textbf{trong} hai nghiệm, tương ứng với dấu $< 0$. Đọc kỹ chiều bất đẳng thức trước khi chọn khoảng.
+\end{dapan}
+
+\begin{dapan}[9 — Đáp án C]
+\textbf{Giải.} Với $x \neq \dfrac{1}{3}$, biểu thức $3x - 1$ nhận mọi giá trị thực khác $0$. Nghịch đảo của tập đó cũng là mọi số thực khác $0$.
+
+$$\text{Tập giá trị} = (-\infty, 0) \cup (0, +\infty)$$
+
+\textbf{Nhận xét.} Đáp án B là bẫy: giá trị $\dfrac{1}{3}$ bị loại là \textbf{đầu vào} của hàm, không phải đầu ra. Tập giá trị không liên quan đến giá trị làm mẫu bằng $0$.
+\end{dapan}
+
+\begin{dapan}[10 — Đáp án B]
+\textbf{Giải.} Hàm $f$ là hàm lẻ nên $f(-x) = -f(x)$, suy ra $f(-2) = -f(2)$.
+
+Vì $2 > 0$ nên dùng công thức nhánh dương: $f(2) = 3(2)^2 + 1 = 13$.
+
+$$f(-2) = -13$$
+\end{dapan}
+
+\begin{dapan}[11 — Đáp án D]
+\textbf{Giải.} Thay $x$ bằng $x - 1$ vào công thức $f(x) = 2^x$:
+
+$$f(x-1) = 2^{x-1}$$
+
+Dùng quy tắc lũy thừa $a^{m-n} = \dfrac{a^m}{a^n}$:
+
+$$2^{x-1} = \frac{2^x}{2} = \frac{1}{2} \times 2^x$$
+
+Vậy cả B và C đều đúng, hai biểu thức chỉ khác cách viết.
+
+\textbf{Nhận xét.} Đề kiểm tra khả năng nhận ra hai biểu thức tương đương. Gặp đáp án dạng "B và C đều đúng", phải kiểm tra cả hai chứ không chọn đại một trong hai.
+\end{dapan}
+
+\begin{dapan}[12 — Đáp án B]
+\textbf{Giải.} Hệ số $\omega = -3$. Áp dụng $T = \dfrac{2\pi}{|\omega|}$:
+
+$$T = \frac{2\pi}{|-3|} = \frac{2\pi}{3}$$
+
+\textbf{Chú ý.} Dấu âm của $\omega$ không ảnh hưởng vì công thức dùng giá trị tuyệt đối. Pha $\dfrac{\pi}{3}$ cũng không ảnh hưởng, chỉ dịch đồ thị chứ không thay đổi chu kỳ.
+\end{dapan}
+
+\begin{dapan}[13 — Đáp án D]
+\textbf{Giải.} Kiểm tra từng hàm trên toàn $\mathbb{R}$:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{A.} $f(x) = 2x - 1$ có hệ số góc $2 > 0$, là hàm tăng. ✗
+\item \textbf{B.} $f(x) = x$ có hệ số góc $1 > 0$, là hàm tăng. ✗
+\item \textbf{C.} $f(x) = e^x$ có cơ số $e > 1$, là hàm tăng. ✗
+\item \textbf{D.} $f(x) = 2^{-x} = \left(\dfrac{1}{2}\right)^x$ có cơ số $0 < \dfrac{1}{2} < 1$, là hàm giảm trên $\mathbb{R}$. ✓
+\end{itemize}
+
+
+\textbf{Cách nhanh.} Viết lại $2^{-x}$ thành lũy thừa với cơ số nhỏ hơn $1$ để nhận ra ngay chiều đơn điệu.
+\end{dapan}
+
+\begin{dapan}[14 — Đáp án D]
+\textbf{Giải.} Hàm số có hai ràng buộc. Điều kiện căn: $3x - 1 \ge 0 \implies x \ge \dfrac{1}{3}$.
+
+Điều kiện phân thức: $x - 2 \neq 0 \implies x \neq 2$.
+
+Giao hai điều kiện, giữ $\left[\dfrac{1}{3}, +\infty\right)$ và loại điểm $x = 2$:
+
+$$D = \left[\dfrac{1}{3}, 2\right) \cup (2, +\infty)$$
+
+\textbf{Bẫy.} Đáp án A là kết quả khi quên điều kiện mẫu khác $0$. Đáp án C sai vì đổi ngoặc vuông thành ngoặc tròn tại $\dfrac{1}{3}$, trong khi điều kiện căn là $\ge 0$ nên điểm đó được lấy.
+\end{dapan}
+
+\begin{dapan}[15 — Đáp án C]
+\textbf{Giải.} Kiểm tra từng hàm trên khoảng $(0, +\infty)$:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{A.} $y = \dfrac{1}{x}$ là hàm giảm trên $(0, +\infty)$. ✗
+\item \textbf{B.} $y = -x^2$ có đỉnh tại $x = 0$, hệ số $a < 0$ nên giảm trên $(0, +\infty)$. ✗
+\item \textbf{C.} $y = \sqrt{x}$ là hàm tăng trên $[0, +\infty)$, do đó tăng trên $(0, +\infty)$. ✓
+\end{itemize}
+
+- \textbf{D.} $y = \cos x$ dao động tuần hoàn, không đơn điệu trên $(0, +\infty)$. ✗
+\end{dapan}
+
+\begin{dapan}[16 — Đáp án D]
+\textbf{Giải.} Hàm bậc hai $f(x) = x^2 - 10x + 10$ có $a = 1 > 0$ nên đạt giá trị nhỏ nhất tại đỉnh.
+
+$$x\_{\text{đỉnh}} = -\frac{-10}{2 \cdot 1} = 5$$
+
+Đỉnh $x = 5$ nằm trong đoạn $[-10, 10]$, vậy giá trị nhỏ nhất trên đoạn là $f(5)$:
+
+$$f(5) = 25 - 50 + 10 = -15$$
+
+\textbf{Chú ý.} Phải kiểm tra đỉnh có thuộc đoạn không. Nếu đỉnh nằm ngoài, giá trị nhỏ nhất sẽ đạt tại đầu mút gần đỉnh hơn.
+\end{dapan}
+
+\begin{dapan}[17 — Đáp án A]
+\textbf{Giải.} Xét $f(x) = x^3 - 3x^2 + 2$ trên $[0,3]$. Đạo hàm $f'(x) = 3x^2 - 6x = 3x(x-2)$.
+
+Phương trình $f'(x) = 0$ có hai nghiệm $x = 0$ và $x = 2$. Lập bảng giá trị tại các điểm tới hạn và hai đầu mút:
+
+\bang{
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{$x$} & \textbf{$0$} & \textbf{$2$} & \textbf{$3$} \\
+\midrule
+$f(x)$ & $2$ & $-2$ & $2$ \\
+\bottomrule
+\end{tabular}}
+
+Giá trị lớn nhất là $2$, giá trị nhỏ nhất là $-2$.
+
+$$\max f + \min f = 2 + (-2) = 0$$
+
+\textbf{Nhận xét.} Điểm $x = 0$ vừa là đầu mút vừa là nghiệm của đạo hàm, không cần xét riêng. Cần so sánh đủ ba giá trị vì cực trị địa phương có thể không phải cực trị toàn cục trên đoạn.
+\end{dapan}
+
+\begin{dapan}[18 — Đáp án D]
+\textbf{Giải.} Hàm số có ba ràng buộc. Điều kiện căn: $x^2 - 8x + 12 \ge 0 \iff (x-2)(x-6) \ge 0 \iff x \le 2$ hoặc $x \ge 6$.
+
+Điều kiện logarit: $x - 5 > 0 \iff x > 5$.
+
+Điều kiện mẫu khác $0$: $\ln(x-5) \neq 0 \iff x - 5 \neq 1 \iff x \neq 6$.
+
+Giao ba điều kiện: phần chung của $\big[(-\infty,2]\cup[6,+\infty)\big]$ với $(5,+\infty)$ là $[6,+\infty)$. Loại tiếp điểm $x = 6$:
+
+$$D = (6, +\infty)$$
+
+\textbf{Bẫy.} Đây là dạng bài khó nhất của nhóm tập xác định vì có ba điều kiện, trong đó điều kiện mẫu chứa logarit. Đáp án A sai vì lấy cả điểm $x = 6$.
+\end{dapan}
+
+\subsection*{Nhóm B — Ôn tập tập hợp và bất đẳng thức}
+
+\begin{dapan}[19 — Đáp án D]
+\textbf{Giải.} Giải điều kiện $|x| < 2 \iff -2 < x < 2$. Vì $x \in \mathbb{Z}$ nên $A = \{-1, 0, 1\}$, có $n = 3$ phần tử.
+
+Số tập con là $2^3 = 8$.
+\end{dapan}
+
+\begin{dapan}[20 — Đáp án B]
+\textbf{Giải.} Tập $A$: $x^2 - 4x + 3 = 0 \implies (x-1)(x-3) = 0 \implies A = \{1, 3\}$.
+
+Phần bù trong $U = \{1,2,3,4,5\}$ là các phần tử của $U$ không thuộc $A$:
+
+$$C\_U A = \{2, 4, 5\}$$
+\end{dapan}
+
+\begin{dapan}[21 — Đáp án C]
+\textbf{Giải.} Điều kiện logarit: $x - 1 > 0 \iff x > 1$.
+
+Vì cơ số $2 > 1$, hàm logarit đồng biến nên giữ nguyên chiều:
+
+$$\log\_2(x-1) \le 1 = \log\_2 2 \iff x - 1 \le 2 \iff x \le 3$$
+
+Giao với điều kiện xác định:
+
+$$1 < x \le 3$$
+
+\textbf{Chú ý.} Đáp án B là kết quả khi quên điều kiện $x > 1$. Với cơ số nhỏ hơn $1$ thì phải \textbf{đổi chiều} bất đẳng thức khi bỏ logarit.
+\end{dapan}
+
+\begin{dapan}[22 — Đáp án A]
+\textbf{Giải.} Đề dùng cụm 恒成立 (đúng với mọi $x$). Vì hệ số $a = 1 > 0$, chỉ cần điều kiện $\Delta < 0$:
+
+$$\Delta = (-2)^2 - 4 \cdot 1 \cdot 2m = 4 - 8m < 0 \iff m > \frac{1}{2}$$
+
+\textbf{Cách nhanh.} Gặp 恒成立 là dùng điều kiện $\Delta$, không cần biến đổi biểu thức. Gặp 有解 mới phải tìm giá trị nhỏ nhất hoặc lớn nhất.
+\end{dapan}
+
+\begin{dapan}[23 — Đáp án B]
+\textbf{Giải.} Điều kiện $5 < x \le 18$ với $x \in \mathbb{Z}$ cho tập $A = \{6, 7, \ldots, 18\}$.
+
+Số phần tử: $18 - 6 + 1 = 13$.
+
+Số tập con thực sự là $2^{13} - 1$.
+
+\textbf{Bẫy.} Đáp án A ($2^{12}-1$) là kết quả khi đếm nhầm thành $12$ phần tử, thường do quên rằng đầu mút $18$ được lấy (dấu $\le$). Đọc kỹ ngoặc vuông và ngoặc tròn của hai đầu mút.
+\end{dapan}
+
+\begin{dapan}[24 — Đáp án C]
+\textbf{Giải.} Đặt $t = x - 2 > 0$, suy ra $x = t + 2$. Biểu thức trở thành:
+
+$$x + \frac{1}{x-2} = t + 2 + \frac{1}{t} = \left(t + \frac{1}{t}\right) + 2$$
+
+Áp dụng bất đẳng thức Cauchy cho hai số dương $t$ và $\dfrac{1}{t}$:
+
+$$t + \frac{1}{t} \ge 2\sqrt{t \cdot \frac{1}{t}} = 2$$
+
+Vậy biểu thức nhỏ nhất bằng $2 + 2 = 4$, dấu bằng xảy ra khi $t = 1$, tức $x = 3$.
+
+\textbf{Chú ý.} Phải đổi biến để đưa về dạng Cauchy chuẩn. Áp dụng trực tiếp cho $x$ và $\dfrac{1}{x-2}$ sẽ sai vì tích không phải hằng số.
+\end{dapan}
+
+\begin{dapan}[25 — Đáp án A]
+\textbf{Giải.} Phân tích thành nhân tử: $x^3 - x^2 - 2x = x(x^2 - x - 2) = x(x+1)(x-2)$.
+
+Ba nghiệm $\{-1, 0, 2\}$ chia trục số thành bốn khoảng. Hệ số bậc cao nhất dương nên dấu luân phiên, bắt đầu dấu $+$ ở khoảng ngoài cùng bên phải:
+
+\bang{
+\begin{tabularx}{\linewidth}{@{}Xc@{}}
+\toprule
+\textbf{Khoảng} & \textbf{Dấu tích} \\
+\midrule
+$x < -1$ & $-$ \\
+$-1 < x < 0$ & $+$ ✓ \\
+$0 < x < 2$ & $-$ \\
+$x > 2$ & $+$ ✓ \\
+\bottomrule
+\end{tabularx}}
+
+Vì đề dùng dấu $\ge$, lấy cả ba nghiệm. Tập nghiệm:
+
+$$[-1, 0] \cup [2, +\infty)$$
+\end{dapan}
+
+\subsection*{Nhóm B — Ôn tập tập hợp và bất đẳng thức}
+
+\begin{dapan}[1 — Đáp án A]
+\textbf{Giải.} Tập xác định $\mathbb{R}$ đối xứng qua $0$. Tính $f(-x)$:
+
+$$f(-x) = (-x)^3 = -x^3 = -f(x)$$
+
+Vậy $f$ là hàm lẻ. Mặt khác $y = x^3$ đồng biến trên $\mathbb{R}$ vì với $x_1 < x_2$ thì $x_1^3 < x_2^3$.
+
+Vậy hàm vừa lẻ vừa đồng biến.
+\end{dapan}
+
+\begin{dapan}[2 — Đáp án C]
+\textbf{Giải.} Hệ số $\omega = 4$. Áp dụng $T = \dfrac{2\pi}{|\omega|}$:
+
+$$T = \frac{2\pi}{4} = \frac{\pi}{2}$$
+
+\textbf{Chú ý.} Hệ số $4$ nằm bên trong hàm sin nên ảnh hưởng trực tiếp đến chu kỳ. Pha $-\dfrac{\pi}{3}$ nằm ngoài nên không ảnh hưởng.
+\end{dapan}
+
+\begin{dapan}[3 — Đáp án A]
+\textbf{Giải.} Đặt $u = x + 1$, biểu thức trở thành $g(u) = u^2 + \cos u + a$.
+
+Hàm $h(u) = u^2 + \cos u$ đạt giá trị nhỏ nhất tại $u = 0$: cả hai số hạng $u^2$ và $\cos u$ đều nhỏ nhất tại đó (vì $u^2 \ge 0$ và $\cos u \ge -1$ với dấu bằng tại $u = 0$).
+
+$$h(0) = 0 + 1 = 1$$
+
+Vậy giá trị nhỏ nhất của $f$ là $1 + a$. Đề cho giá trị này bằng $4$:
+
+$$1 + a = 4 \implies a = 3$$
+
+\textbf{Nhận xét.} Hai số hạng cùng đạt cực tiểu tại một điểm nên không cần khảo sát đạo hàm. Nhận ra điều này rút ngắn bài toán còn một dòng.
+\end{dapan}
+
+\begin{dapan}[4 — Đáp án B]
+\textbf{Giải.} Trên $[-\pi, 0]$, hàm $\sin x$ nhận giá trị trong $[-1, 0]$, nên $\sin^2 x$ nhận giá trị trong $[0, 1]$.
+
+Giá trị lớn nhất của $\sin^2 x$ là $1$, đạt tại $x = -\dfrac{\pi}{2}$ (vì $\sin\left(-\dfrac{\pi}{2}\right) = -1$).
+
+Vậy giá trị lớn nhất của $f(x) = \dfrac{\sin^2 x}{2}$ là $\dfrac{1}{2}$.
+
+\textbf{Chú ý.} Bình phương làm mất dấu nên miền giá trị của $\sin^2 x$ vẫn là $[0,1]$ dù $x$ chỉ chạy trên nửa trục âm. Không được kết luận $\sin^2 x \le 0$.
+\end{dapan}
+
+\begin{dapan}[5 — Đáp án D]
+\textbf{Giải.} Kiểm tra từng hàm trên khoảng $(5, 10)$:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+\item \textbf{A.} $f(x) = x^2 - 12x + 30$ có đỉnh tại $x = 6$. Hàm giảm trên $(5,6)$ nhưng \textbf{tăng} trên $(6,10)$. Không giảm trên cả khoảng. ✗
+\item \textbf{B.} $f(x) = |x-8|$ có điểm gãy tại $x = 8$: giảm trên $(5,8)$, tăng trên $(8,10)$. ✗
+\item \textbf{C.} $f(x) = 2^{x-10}$ có cơ số $2 > 1$ nên tăng trên $\mathbb{R}$. ✗
+\item \textbf{D.} $f(x) = \log_{0.5}(x-4)$ có cơ số $0 < 0{,}5 < 1$ nên giảm trên tập xác định $(4, +\infty)$, do đó giảm trên $(5,10)$. ✓
+\end{itemize}
+
+
+\textbf{Chú ý.} Đáp án A và B đều có chiều đơn điệu đổi giữa khoảng. Đọc kỹ yêu cầu 在区间 (5,10) 上是减函数, tức phải giảm trên \textbf{toàn bộ} khoảng đó.
+\end{dapan}
+
+\begin{dapan}[6 — Đáp án A]
+\textbf{Giải.} Mẫu $3 - \cos x \ge 2 > 0$ với mọi $x$ nên tập xác định là $\mathbb{R}$, đối xứng qua $0$.
+
+Tính $f(-x)$:
+
+$$f(-x) = \frac{\sin(-x) - (-x)}{3 - \cos(-x)} = \frac{-\sin x + x}{3 - \cos x} = \frac{-(\sin x - x)}{3 - \cos x} = -f(x)$$
+
+Vậy $f$ là hàm lẻ.
+
+\textbf{Cách nhanh.} Tử là hiệu của hai hàm lẻ nên là hàm lẻ; mẫu là hàm chẵn và không triệt tiêu. Thương của hàm lẻ với hàm chẵn là hàm lẻ.
+\end{dapan}
+
+\begin{dapan}[7 — Đáp án B]
+\textbf{Giải.} Tập xác định $\mathbb{R}$ đối xứng qua $0$.
+
+$$f(-x) = (-x)\cos(-x) = -x\cos x = -f(x)$$
+
+Vậy $f$ là hàm lẻ.
+
+\textbf{Cách nhanh.} Tích của hàm lẻ $x$ với hàm chẵn $\cos x$ là hàm lẻ.
+\end{dapan}
+
+\begin{dapan}[8 — Đáp án D]
+\textbf{Giải.} Hàm số có hai ràng buộc lồng nhau. Điều kiện căn: $\ln x \ge 0$.
+
+Điều kiện logarit: $x > 0$.
+
+Giải $\ln x \ge 0 \iff \ln x \ge \ln 1 \iff x \ge 1$ (vì cơ số $e > 1$).
+
+Giao với $x > 0$, điều kiện $x \ge 1$ đã bao hàm điều kiện $x > 0$:
+
+$$D = [1, +\infty)$$
+
+\textbf{Bẫy.} Đáp án A chỉ xét điều kiện logarit mà bỏ điều kiện căn. Đây là dạng bài hai tầng: căn bọc ngoài logarit nên phải giải cả hai.
+\end{dapan}
+
+\begin{dapan}[9 — Đáp án A]
+\textbf{Giải.} Đặt $g(x) = x + \dfrac{1}{x}$. Với $x \neq 0$:
+
+$$g(-x) = -x + \frac{1}{-x} = -\left(x + \frac{1}{x}\right) = -g(x)$$
+
+Vậy $g$ là hàm lẻ. Giả thiết cho $F(x) = g(x)f(x)$ là hàm chẵn, tức $F(-x) = F(x)$:
+
+$$g(-x)f(-x) = g(x)f(x) \implies -g(x)f(-x) = g(x)f(x)$$
+
+Vì $f$ không đồng nhất bằng $0$ nên tồn tại $x_0$ với $f(x_0) \neq 0$, và tại đó $g(x_0) \neq 0$ (vì $g$ chỉ triệt tiêu tại $x = \pm i$, không thực). Rút gọn được $g(x)$:
+
+$$-f(-x) = f(x) \implies f(-x) = -f(x)$$
+
+Vậy $f$ là hàm lẻ.
+
+\textbf{Nhận xét.} Quy tắc dấu của tích: lẻ $\times$ lẻ $=$ chẵn. Ở đây biết tích là chẵn và một nhân tử là lẻ, suy ra nhân tử còn lại phải là lẻ.
+\end{dapan}
+
+\begin{dapan}[10 — Đáp án D]
+\textbf{Giải.} Hàm $y = ax^3 - x$ có đạo hàm $y' = 3ax^2 - 1$.
+
+Để hàm nghịch biến trên toàn $\mathbb{R}$, cần $y' \le 0$ với mọi $x$.
+
+Xét $a = 0$: $y' = -1 < 0$ với mọi $x$, thỏa mãn.
+
+Xét $a < 0$: $3ax^2 - 1 \le 0$ với mọi $x$ vì $3ax^2 \le 0$ và trừ thêm $1$, thỏa mãn.
+
+Xét $a > 0$: khi $x$ lớn, $3ax^2 - 1 > 0$, hàm tăng, không thỏa mãn.
+
+Vậy điều kiện là $a \le 0$.
+
+\textbf{Chú ý.} Ba đáp án A, B, C đều là các giá trị dương cụ thể. Đề cho đáp án dạng điều kiện $a \le 0$ nên phải xét cả trường hợp $a = 0$, đây chính là điểm phân biệt với đáp án nhiễu.
+\end{dapan}
+
+\begin{dapan}[11 — Đáp án B]
+\textbf{Giải.} Đặt $y = \dfrac{x}{x^2+1}$. Vì $x^2 + 1 > 0$ với mọi $x$, nhân hai vế:
+
+$$y(x^2 + 1) = x \iff yx^2 - x + y = 0$$
+
+Phương trình này có nghiệm thực $x$ khi và chỉ khi $\Delta \ge 0$:
+
+$$\Delta = 1 - 4y^2 \ge 0 \iff y^2 \le \frac{1}{4} \iff -\frac{1}{2} \le y \le \frac{1}{2}$$
+
+Vậy giá trị lớn nhất là $\dfrac{1}{2}$, đạt tại $x = 1$.
+
+\textbf{Cách nhanh.} Dùng bất đẳng thức Cauchy: $x^2 + 1 \ge 2|x|$ nên $\left|\dfrac{x}{x^2+1}\right| \le \dfrac{1}{2}$.
+\end{dapan}
+
+\begin{dapan}[12 — Đáp án C]
+\textbf{Giải.} Tập xác định là $\mathbb{R}\setminus\{0\}$. Tính đạo hàm:
+
+$$y' = 2x - \frac{2}{x^2} = \frac{2x^3 - 2}{x^2} = \frac{2(x^3-1)}{x^2}$$
+
+Vì $x^2 > 0$ với $x \neq 0$, dấu của $y'$ phụ thuộc vào $x^3 - 1$.
+
+$$y' > 0 \iff x^3 > 1 \iff x > 1$$
+
+Vậy hàm đồng biến trên $(1, +\infty)$.
+
+\textbf{Bẫy.} Đáp án D là khoảng âm, nhưng trên $(-\infty,0)$ thì $x^3 < 1$ nên $y' < 0$, hàm \textbf{nghịch biến}. Kiểm tra dấu bằng một giá trị cụ thể nếu chưa chắc.
+\end{dapan}
+
+\begin{dapan}[13 — Đáp án B]
+\textbf{Giải.} Hàm $f(x) = \lg x + 2x - 5$ xác định trên $(0, +\infty)$ và đồng biến trên đó vì cả $\lg x$ và $2x$ đều tăng. Hàm đồng biến nên có tối đa một nghiệm.
+
+Tính giá trị tại hai điểm nguyên liên tiếp:
+
+$$f(2) = \lg 2 + 4 - 5 = \lg 2 - 1 < 0$$
+
+$$f(3) = \lg 3 + 6 - 5 = \lg 3 + 1 > 0$$
+
+Vì $f(2) < 0 < f(3)$ và hàm liên tục, nghiệm nằm trong khoảng $(2, 3)$.
+
+$$k = 2$$
+
+\textbf{Cách nhanh.} Không cần giải phương trình. Chỉ cần tìm hai số nguyên liên tiếp mà hàm đổi dấu, dựa vào tính liên tục và đơn điệu.
+\end{dapan}
+
+\begin{dapan}[14 — Đáp án C]
+\textbf{Giải.} Điều kiện hàm chẵn: $f(-x) = f(x)$ với mọi $x$.
+
+$$f(-x) = (-x)^2 + 2a(-x) + a^2 + 1 = x^2 - 2ax + a^2 + 1$$
+
+So sánh với $f(x) = x^2 + 2ax + a^2 + 1$:
+
+$$x^2 - 2ax + a^2 + 1 = x^2 + 2ax + a^2 + 1 \implies -2ax = 2ax \implies 4ax = 0$$
+
+Điều này đúng với mọi $x$ khi và chỉ khi $a = 0$.
+
+\textbf{Cách nhanh.} Hàm bậc hai chẵn khi và chỉ khi hệ số của $x$ bằng $0$, tức trục đối xứng là trục tung.
+\end{dapan}
+
+\begin{dapan}[15 — Đáp án C]
+\textbf{Giải.} Hệ thức $f(2^x) = x$ cho biết $f$ là hàm ngược của hàm mũ cơ số $2$, tức $f(u) = \log_2 u$.
+
+Tìm $x$ sao cho $2^x = 3$:
+
+$$x = \log\_2 3$$
+
+Vậy $f(3) = \log_2 3$.
+
+\textbf{Cách nhanh.} Không cần viết công thức tường minh của $f$. Chỉ cần giải $2^x = 3$ rồi thay vào vế phải.
+\end{dapan}
+
+\clearpage
+\sectiondautrang{Tổng kết lỗi thường gặp}
+\addcontentsline{toc}{section}{Tổng kết lỗi thường gặp}
+
+Bảng chẩn đoán dùng khi chữa bài và khi soạn đề kiểm tra. Cột ``Câu liên quan'' trỏ tới đề bài tập về nhà.
+
+\bang{
+\begin{tabular}{@{}p{5.6cm}p{4.2cm}p{5.2cm}@{}}
+\toprule
+\textbf{Lỗi} & \textbf{Câu liên quan} & \textbf{Cách cảnh báo học sinh} \\
+\midrule
+Lấy hợp các điều kiện xác định thay vì giao & Câu 3, 14, 18 phần bắt buộc & Hàm số chỉ xác định khi \textbf{mọi} điều kiện đồng thời đúng, luôn giao \\
+Biểu thức dưới căn nằm ở mẫu mà vẫn đặt dấu $\ge$ & Câu 3 phần bắt buộc & Căn ở mẫu thì mẫu phải khác $0$, điều kiện là dấu lớn hơn nghiêm ngặt \\
+Quên điều kiện mẫu khác $0$ & Câu 14 phần bắt buộc & Viết điều kiện mẫu trước khi xét bất cứ điều kiện nào khác \\
+Bỏ qua điều kiện của logarit bên trong căn & Câu 14 phần tự chọn & Đọc từ ngoài vào: căn trước, logarit sau, rồi giao lại \\
+Tính $f(-x)$ trước khi kiểm tra tập xác định đối xứng & Câu 1, 4, 7 phần tự chọn & Tập xác định không đối xứng thì kết luận ngay là không chẵn không lẻ \\
+Nhầm chu kỳ của sin với của tan & Câu 12 phần bắt buộc, Câu 10 phần tự chọn & Sin và cos dùng $\frac{2\pi}{\lvert\omega\rvert}$; tan và cot dùng $\frac{\pi}{\lvert\omega\rvert}$ \\
+Lấy miền giá trị toàn trục số khi đề giới hạn trên đoạn & Câu 2 phần bắt buộc & Đọc kỹ khoảng giới hạn trước khi lấy giá trị lớn nhất, nhỏ nhất \\
+Chỉ tính giá trị tại đỉnh mà bỏ qua hai đầu mút & Câu 16, 17 phần bắt buộc & Lập bảng giá trị tại đỉnh và hai đầu mút rồi so sánh \\
+Nhầm tập giá trị với tập xác định của hàm phân thức & Câu 9 phần bắt buộc & Giá trị làm mẫu bằng $0$ là đầu vào bị loại, không phải đầu ra \\
+Cho rằng hai hàm giống nhau chỉ cần cùng công thức & Câu 6 phần bắt buộc & Phải kiểm tra \textbf{cả} tập xác định, ví dụ $x$ và $\frac{x^2}{x}$ \\
+Kết luận hàm không đổi chiều đơn điệu khi đề hỏi cả khoảng & Câu 13 phần tự chọn & Đọc kỹ cụm 在区间上是减函数, phải giảm trên toàn bộ khoảng \\
+Quên trường hợp tham số bằng $0$ ở điều kiện đơn điệu toàn trục & Câu 15 phần tự chọn & Gặp $a \le 0$ thì luôn xét riêng $a = 0$ \\
+\bottomrule
+\end{tabular}}
+
+% Không dùng \vfill: nó đẩy chữ xuống sát đáy trang,
+% nơi banner letterhead chiếm chỗ (281-297mm) và sẽ che mất chữ.
+\vspace{0.8cm}
+\begin{center}
+{\footnotesize\color{cae_blue} Tài liệu nội bộ, CAE SHANGHAI}
+\end{center}
+
+\end{document}

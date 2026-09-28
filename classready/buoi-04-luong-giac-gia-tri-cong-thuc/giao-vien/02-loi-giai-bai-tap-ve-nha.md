@@ -1,0 +1,570 @@
+# BUỔI 4 — LỜI GIẢI BÀI TẬP VỀ NHÀ
+
+> **Lượng giác: giá trị và công thức biến đổi （三角函数·恒等变换）**
+> **Phiên bản:** 1.0.0, cập nhật 28.09.2026
+>
+> **Tài liệu giáo viên.** Dùng để chữa bài trên lớp và soạn đề kiểm tra. Học sinh chỉ nhận bảng đáp án (`../hoc-sinh/05-dap-an-bai-tap-ve-nha.md`).
+
+---
+
+## PHẦN D — BÀI TẬP VỀ NHÀ
+
+### PHẦN BẮT BUỘC
+
+#### Nhóm A — Giá trị và công thức lượng giác
+
+**Câu 1.** `CAE-M-CD4-08.1-E-005` — **Đáp án D**
+
+**Giải.** Vì $\tan\alpha = 2$ nên $\cos\alpha \neq 0$. Chia cả tử và mẫu của phân thức cho $\cos\alpha$:
+
+$$\frac{\sin\alpha - \cos\alpha}{\sin\alpha + \cos\alpha} = \frac{\dfrac{\sin\alpha}{\cos\alpha} - 1}{\dfrac{\sin\alpha}{\cos\alpha} + 1} = \frac{\tan\alpha - 1}{\tan\alpha + 1} = \frac{2-1}{2+1} = \frac{1}{3}$$
+
+**Cách nhanh.** Không cần tìm $\sin\alpha$ và $\cos\alpha$ riêng lẻ. Chỉ một phép chia cho $\cos\alpha$ là ra đáp án.
+
+---
+
+**Câu 2.** `CAE-M-CD4-08.1-M-011` — **Đáp án B**
+
+**Giải.** Với mọi $x$, hàm $\cos$ nhận giá trị trong $[-1, 1]$:
+
+$$-1 \le \cos\!\left(2x - \frac{\pi}{3}\right) \le 1$$
+
+Nhân cả ba vế với $-1$ và đổi chiều bất đẳng thức:
+
+$$-1 \le -\cos\!\left(2x - \frac{\pi}{3}\right) \le 1$$
+
+Vậy tập giá trị là $[-1, 1]$.
+
+**Chú ý.** Hệ số $-1$ ở trước hàm cos **không** làm thay đổi tập giá trị, chỉ đảo ngược thứ tự đạt cực đại và cực tiểu. Học sinh hay nhầm thành $[-2, 2]$ khi thấy có số $2$ trong biểu thức $2x$.
+
+---
+
+**Câu 3.** `CAE-M-CD4-08.2-E-018` — **Đáp án A**
+
+**Giải.** Từ $\sin^2\alpha + \cos^2\alpha = 1$:
+
+$$\cos^2\alpha = 1 - \sin^2\alpha = 1 - \left(-\frac{1}{2}\right)^2 = 1 - \frac{1}{4} = \frac{3}{4}$$
+
+Suy ra $|\cos\alpha| = \dfrac{\sqrt{3}}{2}$. Góc $\alpha$ ở phần tư thứ ba nên $\cos\alpha < 0$, vậy:
+
+$$\cos\alpha = -\frac{\sqrt{3}}{2}$$
+
+**Bẫy.** Học sinh quên dấu trừ và chọn đáp án B. Phần tư thứ ba có cả sin và cos đều âm.
+
+---
+
+**Câu 4.** `CAE-M-CD4-08.2-E-021` — **Đáp án B**
+
+**Giải.** Áp dụng công thức gộp bậc nhất với $a = b = 1$:
+
+$$y = \sin x + \cos x = \sqrt{1^2+1^2}\,\sin\!\left(x + \frac{\pi}{4}\right) = \sqrt{2}\sin\!\left(x + \frac{\pi}{4}\right)$$
+
+Vì $|\sin| \le 1$ nên giá trị lớn nhất của $y$ là $\sqrt{2}$, đạt được khi $x + \dfrac{\pi}{4} = \dfrac{\pi}{2}$, tức $x = \dfrac{\pi}{4}$.
+
+**Cách nhanh.** Nhớ công thức $\max(a\sin x + b\cos x) = \sqrt{a^2+b^2}$, thay $a = b = 1$ là ra $\sqrt{2}$ trong vài giây.
+
+---
+
+**Câu 5.** `CAE-M-CD4-08.2-M-028` — **Đáp án C**
+
+**Giải.** Hàm cos là hàm chẵn nên $\cos(-x) = \cos x$:
+
+$$\cos\!\left(-\frac{\pi}{6}\right) = \cos\frac{\pi}{6} = \frac{\sqrt{3}}{2}$$
+
+**Chú ý.** Dấu trừ trong ngoặc **không** làm đổi dấu kết quả, vì cos là hàm chẵn. Chỉ với sin và tan thì dấu trừ mới đưa ra ngoài.
+
+---
+
+**Câu 6.** `CAE-M-CD4-08.3-M-035` — **Đáp án D**
+
+**Giải.** Áp dụng quy tắc đạo hàm hàm hợp: đạo hàm của $\sin u$ là $u'\cos u$ với $u = 2x + \dfrac{\pi}{4}$, và $u' = 2$.
+
+$$f'(x) = 2\cos\!\left(2x + \frac{\pi}{4}\right)$$
+
+**Bẫy.** Đáp án A là kết quả khi quên nhân với $u' = 2$. Đạo hàm hàm hợp luôn phải nhân thêm đạo hàm của biểu thức bên trong.
+
+---
+
+**Câu 7.** `CAE-M-CD4-08.3-M-036` — **Đáp án C**
+
+**Giải.** Thay $\sin^2 x = 1 - \cos^2 x = (1-\cos x)(1+\cos x)$:
+
+$$\frac{\sin^2 x}{1-\cos x} = \frac{(1-\cos x)(1+\cos x)}{1-\cos x} = 1 + \cos x$$
+
+Điều kiện $\cos x \neq 1$ đảm bảo mẫu khác $0$, nên phép rút gọn hợp lệ.
+
+**Cách nhanh.** Thấy $\sin^2$ ở tử và một biểu thức bậc nhất của $\cos$ ở mẫu thì nghĩ ngay đến hằng đẳng thức $\sin^2 x = (1-\cos x)(1+\cos x)$.
+
+---
+
+**Câu 8.** `CAE-M-CD4-08.4-M-051` — **Đáp án A**
+
+**Giải.** Trên $\left[0, \dfrac{\pi}{2}\right]$, hàm $\sin x$ tăng từ $0$ đến $1$. Đây là một phần của nhánh đồng biến của hàm sin.
+
+---
+
+**Câu 9.** `CAE-M-CD4-08.5-E-061` — **Đáp án A**
+
+**Giải.** Hàm $y = \cos x$ là hàm chẵn: $\cos(-x) = \cos x$. Đồ thị của hàm chẵn nhận trục $Oy$ (trục $y$) làm trục đối xứng.
+
+**Chú ý.** Đáp án B (gốc tọa độ) là đáp án dành cho hàm lẻ như $\sin x$ hay $\tan x$. Phân biệt: hàm chẵn đối xứng qua trục tung, hàm lẻ đối xứng qua gốc tọa độ.
+
+---
+
+**Câu 10.** `CAE-M-CD4-08.6-E-070` — **Đáp án A**
+
+**Giải.** Công thức nhân đôi của tan:
+
+$$\tan 2\alpha = \frac{2\tan\alpha}{1-\tan^2\alpha}$$
+
+**Cách nhớ.** Suy ra từ công thức cộng $\tan(\alpha+\beta)$ bằng cách thay $\beta = \alpha$, thu được $\dfrac{\tan\alpha + \tan\alpha}{1 - \tan\alpha\tan\alpha}$.
+
+**Bẫy.** Đáp án C và D là công thức của $\cot 2\alpha$, không phải $\tan 2\alpha$. Đọc kỹ tên hàm trong đề.
+
+---
+
+**Câu 11.** `CAE-M-CD4-08.6-E-075` — **Đáp án D**
+
+**Giải.** Từ $\tan\alpha = 1$ suy ra $\sin\alpha = \cos\alpha$. Thay vào $\sin^2\alpha + \cos^2\alpha = 1$:
+
+$$2\sin^2\alpha = 1 \implies |\sin\alpha| = \frac{\sqrt{2}}{2}$$
+
+Góc $\alpha$ ở phần tư thứ ba nên $\sin\alpha < 0$, vậy $\sin\alpha = -\dfrac{\sqrt{2}}{2}$.
+
+**Bẫy.** Đáp án A và B là giá trị của $\sin$ tại các góc đặc biệt khác ($\dfrac{\pi}{6}$ và $\dfrac{\pi}{3}$), không liên quan đến $\tan\alpha = 1$. Với $\tan\alpha = 1$, góc phần tư thứ ba là $\alpha = \dfrac{5\pi}{4}$.
+
+---
+
+**Câu 12.** `CAE-M-CD4-08.6-M-077` — **Đáp án D**
+
+**Giải.** Công thức cộng của sin:
+
+$$\sin(\alpha+\beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta$$
+
+**Chú ý.** Phân biệt bốn đáp án:
+- A là $\cos(\alpha+\beta) = \cos\alpha\cos\beta - \sin\alpha\sin\beta$
+- B là $\sin(\alpha-\beta) = \sin\alpha\cos\beta - \cos\alpha\sin\beta$
+- C là $\cos(\alpha-\beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta$
+- D là $\sin(\alpha+\beta)$ ✓
+
+Học sinh hay nhầm A với D vì cả hai đều có bốn nhân tử. Quy tắc: sin thì **sin trước**, cos thì **cos trước**.
+
+---
+
+**Câu 13.** `CAE-M-CD4-08.7-E-086` — **Đáp án A**
+
+**Giải.** Hàm $y = \tan x$ đồng biến trên mỗi khoảng xác định $\left(-\dfrac{\pi}{2}+k\pi, \dfrac{\pi}{2}+k\pi\right)$.
+
+Khoảng $\left(\dfrac{\pi}{2}, \dfrac{3\pi}{2}\right)$ là khoảng xác định ứng với $k = 1$ (dịch khoảng cơ bản sang phải một khoảng $\pi$), nên hàm tan đồng biến trên đó.
+
+**Chú ý.** Không được nói hàm tan đồng biến trên toàn tập xác định, vì nó có các điểm gián đoạn. Chỉ đồng biến trên **từng khoảng** xác định riêng lẻ.
+
+---
+
+#### Nhóm B — Hàm bậc hai, mũ, logarit, đạo hàm
+
+**Câu 14.** `CAE-M-CD4-08.7-E-088` — **Đáp án C**
+
+**Giải.** Từ $f(16) = 2$ và $f(x) = \log_a x$:
+
+$$\log_a 16 = 2 \implies a^2 = 16 \implies a = 4 \ \text{hoặc} \ a = -4$$
+
+Vì cơ số logarit phải dương và khác $1$, ta có $a = 4$.
+
+**Chú ý.** Luôn loại nghiệm âm khi tìm cơ số logarit. Điều kiện $a > 0$, $a \neq 1$ là bắt buộc.
+
+---
+
+**Câu 15.** `CAE-M-CD4-08.8-E-100` — **Đáp án B**
+
+**Giải.** Từ $\log_7 x = 2$, theo định nghĩa logarit:
+
+$$x = 7^2 = 49$$
+
+**Bẫy.** Đáp án C ghi $7^2$ là biểu thức chưa tính, không phải giá trị cụ thể. Đáp án A ($14 = 7 \times 2$) là kết quả khi nhân sai thay vì lũy thừa.
+
+---
+
+**Câu 16.** `CAE-M-CD4-LX3-E-129` — **Đáp án C**
+
+**Giải.** Từ $f(1) = 1$ và $f(x) = \log_a(x+1)$:
+
+$$\log_a 2 = 1 \implies a^1 = 2 \implies a = 2$$
+
+---
+
+**Câu 17.** `CAE-M-CD4-08.7-M-091` — **Đáp án B**
+
+**Giải.** Mỗi năm giá trị còn lại $100\% - 5\% = 95\%$ của năm trước, tức nhân với hệ số $1 - 0{,}05 = 0{,}95$.
+
+Sau $t$ năm, giá trị là:
+
+$$V(t) = 1000 \times (0{,}95)^t = 1000(1-0{,}05)^t$$
+
+**Bẫy.** Đáp án A là công thức **lãi đơn** (giảm đều mỗi năm một lượng như nhau). Đáp án B là công thức **lãi kép** (giảm theo phần trăm của giá trị hiện tại). Đề nói "每年折旧 5%" nghĩa là phần trăm của giá trị hiện có, tức lãi kép.
+
+---
+
+**Câu 18.** `CAE-M-CD4-LX1-M-112` — **Đáp án B**
+
+**Giải.** Hàm $f(x) = 2^x + x - 7$ có $f'(x) = 2^x\ln 2 + 1 > 0$ với mọi $x$, nên $f$ đồng biến trên $\mathbb{R}$.
+
+Vì $f$ đồng biến và $x_0$ là nghiệm:
+- Với $x_1 < x_0$ thì $f(x_1) < f(x_0) = 0$
+- Với $x_2 > x_0$ thì $f(x_2) > f(x_0) = 0$
+
+Vậy $f(x_1) < 0$ và $f(x_2) > 0$.
+
+**Cách nhanh.** Không cần tìm giá trị cụ thể của $x_0$. Chỉ cần biết hàm đồng biến là suy ra dấu.
+
+---
+
+**Câu 19.** `CAE-M-CD4-08.8-M-104` — **Đáp án C**
+
+**Giải.** Khai triển $f(x) = x^3 - x^2 + 5x - 5$, đạo hàm:
+
+$$f'(x) = 3x^2 - 2x + 5$$
+
+Thay $x = 2$:
+
+$$f'(2) = 3(4) - 2(2) + 5 = 12 - 4 + 5 = 13$$
+
+**Cách nhanh.** Dùng quy tắc tích: $f'(x) = 2x(x-1) + (x^2+5)$. Thay $x=2$: $4(1) + 9 = 13$.
+
+---
+
+#### Nhóm C — Tính chất hàm số
+
+**Câu 20.** `CAE-M-CD4-08.8-E-098` — **Đáp án A**
+
+**Giải.** Hàm $f(x) = \dfrac{ax+15}{x-a}$ là hàm lẻ khi $f(-x) = -f(x)$ với mọi $x$ trong tập xác định.
+
+$$f(-x) = \frac{-ax+15}{-x-a} = \frac{ax-15}{x+a}$$
+
+Điều kiện $f(-x) = -f(x)$ trở thành:
+
+$$\frac{ax-15}{x+a} = -\frac{ax+15}{x-a} = \frac{-ax-15}{x-a}$$
+
+Nhân chéo và rút gọn:
+
+$$(ax-15)(x-a) = (-ax-15)(x+a)$$
+
+$$ax^2 - a^2x - 15x + 15a = -ax^2 - a^2x - 15x - 15a$$
+
+$$2ax^2 + 30a = 0 \implies 2a(x^2+15) = 0$$
+
+Vì $x^2 + 15 > 0$ với mọi $x$ nên $a = 0$.
+
+Khi đó $f(x) = \dfrac{15}{x}$, đúng là hàm lẻ.
+
+**Chú ý.** Với $a = \pm\sqrt{15}$, mẫu số có nghiệm trùng với nghiệm của tử, hàm không xác định tại đó và không thỏa mãn định nghĩa hàm lẻ.
+
+**Chú ý về kho đề.** Câu gốc dùng ở vị trí này (`CAE-M-CD4-08.1-E-003`) có đáp án không chặt chẽ: tập xác định đúng của $\dfrac{1}{\sqrt{x}-2}$ là $[0,4) \cup (4,+\infty)$, không đáp án nào trong bốn lựa chọn mô tả đúng. Câu đã được thay bằng `CAE-M-CD4-08.8-E-098`.
+
+---
+
+**Câu 21.** `CAE-M-CD4-08.6-M-081` — **Đáp án D**
+
+**Giải.** Hàm $f(x) = \dfrac{x^2-1}{3x-1}$ chỉ cần mẫu khác $0$:
+
+$$3x - 1 \neq 0 \implies x \neq \frac{1}{3}$$
+
+Tập xác định:
+
+$$\left(-\infty, \frac{1}{3}\right) \cup \left(\frac{1}{3}, +\infty\right)$$
+
+**Chú ý.** Đáp án A và B giống hệt nhau (đều ghi $\mathbb{R}$). Khi gặp hai đáp án trùng nhau trong đề trắc nghiệm, chắc chắn cả hai đều sai.
+
+---
+
+**Câu 22.** `CAE-M-CD4-LX2-E-120` — **Đáp án B**
+
+**Giải.** Hàm $y = f(x)$ là hàm lẻ nên $f(-a) = -f(a)$ với mọi $a$.
+
+Suy ra điểm $(-a, -f(a))$ thỏa mãn $y = f(x)$ tại $x = -a$: tung độ $-f(a)$ đúng bằng $f(-a)$.
+
+**Cách nhanh.** Điểm trên đồ thị hàm lẻ có dạng $(x, f(x))$. Thay $x = -a$ được điểm $(-a, f(-a)) = (-a, -f(a))$.
+
+---
+
+**Câu 23.** `CAE-M-CD4-LX2-E-119` — **Đáp án C**
+
+**Giải.** Cần tìm $x$ sao cho $\dfrac{x}{2x-1} = \dfrac{1}{3}$:
+
+$$3x = 2x - 1 \implies x = -1$$
+
+Thay $x = -1$ vào biểu thức:
+
+$$f\!\left(\frac{1}{3}\right) = 2(-1)^2 + 3 = 2 + 3 = 5$$
+
+**Bẫy.** Học sinh hay thay $x = \dfrac{1}{3}$ trực tiếp vào $2x^2+3$ và được $\dfrac{2}{9}+3$. Sai, vì $\dfrac{1}{3}$ là **giá trị của biểu thức trong ngoặc**, không phải giá trị của $x$.
+
+---
+
+#### Nhóm D — Ôn tích lũy
+
+**Câu 24.** `CAE-M-CD1-08.7-E-024` — **Đáp án D**
+
+**Giải.** Tập $M$ gồm các số có dạng $3k+1$ với $k \in \mathbb{Z}$. Kiểm tra từng đáp án bằng cách xét số dư khi chia cho $3$:
+- $0 = 3(0) + 0$: số dư $0$ ✗
+- $2 = 3(0) + 2$: số dư $2$ ✗
+- $3 = 3(1) + 0$: số dư $0$ ✗
+- $4 = 3(1) + 1$: số dư $1$ ✓
+
+Vậy $4 \in M$.
+
+**Cách nhanh.** Chỉ cần tính số dư của từng đáp án khi chia cho $3$, tìm đáp án có số dư bằng $1$.
+
+---
+
+**Câu 25.** `CAE-M-CD1-LX2-E-036` — **Đáp án C**
+
+**Giải.** Tính $a \odot 2 = a \cdot 2 - 2 = 2a - 2$ với từng $a \in A = \{0, 1, 2\}$:
+- $a = 0$: $0 - 2 = -2$
+- $a = 1$: $2 - 2 = 0$
+- $a = 2$: $4 - 2 = 2$
+
+Vậy $B = \{-2, 0, 2\}$.
+
+$$A \cap B = \{0,1,2\} \cap \{-2,0,2\} = \{0, 2\}$$
+
+**Chú ý.** Đáp án B ($\{1\}$) là kết quả khi lấy nhầm $A \setminus B$ hoặc tính sai phép toán. Phải thay từng phần tử của $A$ rồi lấy giao.
+
+---
+
+### PHẦN TỰ CHỌN
+
+**Câu 1.** `CAE-M-CD4-08.3-M-040` — **Đáp án B**
+
+**Giải.** Áp dụng công thức cộng của tan với $\tan\dfrac{\pi}{4} = 1$:
+
+$$\tan\!\left(\alpha + \frac{\pi}{4}\right) = \frac{\tan\alpha + \tan\frac{\pi}{4}}{1 - \tan\alpha \cdot \tan\frac{\pi}{4}} = \frac{2+1}{1 - 2 \cdot 1} = \frac{3}{-1} = -3$$
+
+**Bẫy.** Học sinh hay quên dấu trừ ở mẫu và chọn đáp án A. Công thức cộng của tan có mẫu là $1 - \tan\alpha\tan\beta$ (dấu ngược với tử).
+
+---
+
+**Câu 2.** `CAE-M-CD4-08.4-E-043` — **Đáp án B**
+
+**Giải.** Kiểm tra tính chẵn của từng hàm:
+- $y = x+1$: $f(-x) = -x+1 \neq f(x)$, không chẵn không lẻ ✗
+- $y = x^2+1$: $f(-x) = x^2+1 = f(x)$, hàm chẵn ✓
+- $y = \sin x$: hàm lẻ ✗
+- $y = 2x$: hàm lẻ ✗
+
+---
+
+**Câu 3.** `CAE-M-CD4-08.4-M-047` — **Đáp án C**
+
+**Giải.** Hàm $y = \tan x = \dfrac{\sin x}{\cos x}$ xác định khi $\cos x \neq 0$:
+
+$$x \neq \frac{\pi}{2} + k\pi, \quad k \in \mathbb{Z}$$
+
+**Bẫy.** Đáp án B loại các điểm $x = k\pi$, nhưng đó là các điểm cos **bằng** $\pm 1$ (tan xác định). Đáp án D chỉ loại nửa số điểm vì dùng chu kỳ $2\pi$ thay vì $\pi$.
+
+---
+
+**Câu 4.** `CAE-M-CD4-08.4-M-050` — **Đáp án C**
+
+**Giải.** Áp dụng công thức cung phụ với $\dfrac{\pi}{2} - \alpha$ (ở đây $\alpha = x - \dfrac{\pi}{2}$ không áp dụng trực tiếp, dùng công thức cộng):
+
+$$\cos\!\left(x - \frac{\pi}{2}\right) = \cos x\cos\frac{\pi}{2} + \sin x\sin\frac{\pi}{2} = \cos x \cdot 0 + \sin x \cdot 1 = \sin x$$
+
+**Cách nhanh.** Trừ $\dfrac{\pi}{2}$ trong hàm cos thì đổi thành sin. Quy tắc: cos lệch $\dfrac{\pi}{2}$ thành sin, dấu phụ thuộc chiều dịch chuyển.
+
+---
+
+**Câu 5.** `CAE-M-CD4-08.5-M-067` — **Đáp án B**
+
+**Giải.** Cần tìm $\alpha$ sao cho $\tan\alpha = \sqrt{3}$. Giá trị này tương ứng với góc đặc biệt:
+
+$$\tan\frac{\pi}{3} = \sqrt{3}$$
+
+Vậy $\alpha = \dfrac{\pi}{3}$ là một giá trị thỏa mãn.
+
+**Chú ý.** Các đáp án khác: $\tan\dfrac{\pi}{6} = \dfrac{\sqrt{3}}{3}$, $\tan\dfrac{\pi}{4} = 1$, $\tan\dfrac{2\pi}{3} = -\sqrt{3}$.
+
+---
+
+**Câu 6.** `CAE-M-CD4-08.7-M-092` — **Đáp án D**
+
+**Giải.** Viết $210^\circ = 180^\circ + 30^\circ$ và dùng cung hơn kém $\pi$:
+
+$$\cos 210^\circ = \cos(180^\circ + 30^\circ) = -\cos 30^\circ = -\frac{\sqrt{3}}{2}$$
+
+**Cách nhanh.** $210^\circ$ thuộc phần tư thứ ba, ở đó cos âm. Giá trị tuyệt đối bằng $\cos 30^\circ = \dfrac{\sqrt{3}}{2}$.
+
+---
+
+**Câu 7.** `CAE-M-CD4-08.7-M-093` — **Đáp án A**
+
+**Giải.** Khai triển hai công thức cộng:
+
+$$\sin(\alpha+\beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta = \frac{3}{5}$$
+
+$$\sin(\alpha-\beta) = \sin\alpha\cos\beta - \cos\alpha\sin\beta = \frac{1}{5}$$
+
+Cộng hai phương trình:
+
+$$2\sin\alpha\cos\beta = \frac{4}{5} \implies \sin\alpha\cos\beta = \frac{2}{5}$$
+
+Trừ hai phương trình:
+
+$$2\cos\alpha\sin\beta = \frac{2}{5} \implies \cos\alpha\sin\beta = \frac{1}{5}$$
+
+Lập tỉ số:
+
+$$\tan\alpha\cot\beta = \frac{\sin\alpha\cos\beta}{\cos\alpha\sin\beta} = \frac{2/5}{1/5} = 2$$
+
+**Cách nhanh.** Cộng và trừ hai phương trình để tách riêng hai tích, không cần giải hệ tìm từng góc.
+
+---
+
+**Câu 8.** `CAE-M-CD4-08.8-E-102` — **Đáp án A**
+
+**Giải.** Chia cả tử và mẫu cho $\cos\alpha$:
+
+$$\frac{2\sin\alpha + \cos\alpha}{\sin\alpha + 2\cos\alpha} = \frac{2\tan\alpha + 1}{\tan\alpha + 2} = \frac{2(7)+1}{7+2} = \frac{15}{9} = \frac{5}{3}$$
+
+**Cách nhanh.** Cùng dạng với Câu 1 nhưng hệ số khác. Quy trình luôn là chia cho $\cos\alpha$ rồi thay $\tan\alpha$.
+
+---
+
+**Câu 9.** `CAE-M-CD4-LX1-E-109` — **Đáp án D**
+
+**Giải.** Với mọi $\alpha$, ta có $|\sin\alpha| \le 1$, tức $-1 \le \sin\alpha \le 1$.
+
+Kiểm tra đáp án D: $\dfrac{\sqrt{5}}{2} \approx 1{,}118 > 1$. Vậy giá trị này không thể là $\sin\alpha$.
+
+Ba đáp án còn lại đều nằm trong $[-1,1]$ nên đều có thể.
+
+**Cách nhanh.** Bình phương từng đáp án và so với $1$: chỉ $\dfrac{5}{4} > 1$.
+
+---
+
+**Câu 10.** `CAE-M-CD4-LX1-M-114` — **Đáp án D**
+
+**Giải.** Xét từng mệnh đề:
+- A đúng: độ và radian là hai đơn vị đo góc.
+- B đúng: $1^\circ = \dfrac{360^\circ}{360}$, và $1$ rad $= \dfrac{2\pi \text{ rad}}{2\pi}$.
+- C đúng: $1$ rad $\approx 57{,}3^\circ > 1^\circ$.
+- D sai: số đo radian của một góc **không phụ thuộc** bán kính. Công thức $l = |\alpha|r$ cho thấy tỉ số $\dfrac{l}{r}$ không đổi khi $r$ thay đổi.
+
+---
+
+**Câu 11.** `CAE-M-CD4-LX1-H-117` — **Đáp án A**
+
+**Giải.** Hàm $f(x) = \sin x + a\cos x$ có giá trị lớn nhất là $\sqrt{1+a^2}$. Đề cho giá trị này bằng $\sqrt{5}$:
+
+$$\sqrt{1+a^2} = \sqrt{5} \implies 1+a^2 = 5 \implies a^2 = 4$$
+
+Vì $a > 0$ nên $a = 2$. Hàm trở thành $f(x) = \sin x + 2\cos x$, đạo hàm $f'(x) = \cos x - 2\sin x$.
+
+Điều kiện $f'(x_0) = -\dfrac{2}{5}$:
+
+$$\cos x_0 - 2\sin x_0 = -\frac{2}{5}$$
+
+Đặt $s = \sin x_0$, suy ra $\cos x_0 = 2s - \dfrac{2}{5}$. Thay vào $\sin^2 x_0 + \cos^2 x_0 = 1$:
+
+$$s^2 + \left(2s - \frac{2}{5}\right)^2 = 1 \implies 5s^2 - \frac{8}{5}s - \frac{21}{25} = 0$$
+
+Giải ra hai nghiệm: $s = \dfrac{3}{5}$ và $s = -\dfrac{7}{25}$.
+
+- Với $s = \dfrac{3}{5}$: $\cos x_0 = \dfrac{4}{5}$, $\tan x_0 = \dfrac{3}{4}$.
+- Với $s = -\dfrac{7}{25}$: $\cos x_0 = -\dfrac{24}{25}$, $\tan x_0 = \dfrac{7}{24}$.
+
+Trong hai giá trị này, chỉ $\dfrac{3}{4}$ có mặt trong bốn lựa chọn. Vậy đáp án là A.
+
+**Chú ý.** Kiểm tra lại nghiệm thứ nhất: $\cos x_0 - 2\sin x_0 = \dfrac{4}{5} - \dfrac{6}{5} = -\dfrac{2}{5}$, đúng bằng dữ kiện đề cho. Nghiệm thứ hai cũng thỏa mãn phương trình nhưng cho $\tan x_0 = \dfrac{7}{24}$, không nằm trong đáp án, nên đề chỉ nhắm vào nghiệm thứ nhất.
+
+---
+
+**Câu 12.** `CAE-M-CD4-LX2-E-121` — **Đáp án C**
+
+**Giải.** Hàm $y = \dfrac{1}{3}\sin 3x$ có dạng $\sin(\omega x)$ với $\omega = 3$. Chu kỳ:
+
+$$T = \frac{2\pi}{3}$$
+
+Tần số là nghịch đảo của chu kỳ:
+
+$$f = \frac{1}{T} = \frac{3}{2\pi}$$
+
+**Chú ý.** Biên độ $\dfrac{1}{3}$ không ảnh hưởng đến tần số. Chỉ hệ số của $x$ quyết định.
+
+---
+
+**Câu 13.** `CAE-M-CD4-LX2-M-124` — **Đáp án A**
+
+**Giải.** Đạo hàm của $y = \cos x$ là $y' = -\sin x$. Hệ số góc của tiếp tuyến tại $P\left(\dfrac{\pi}{3}, \dfrac{1}{2}\right)$:
+
+$$y'\!\left(\frac{\pi}{3}\right) = -\sin\frac{\pi}{3} = -\frac{\sqrt{3}}{2}$$
+
+Đường thẳng cần tìm **vuông góc** với tiếp tuyến nên hệ số góc của nó là nghịch đảo đối dấu:
+
+$$k = \frac{1}{\sqrt{3}/2} = \frac{2}{\sqrt{3}} = \frac{2\sqrt{3}}{3}$$
+
+Phương trình đường thẳng qua $P$:
+
+$$y - \frac{1}{2} = \frac{2\sqrt{3}}{3}\left(x - \frac{\pi}{3}\right)$$
+
+Biến đổi về dạng tổng quát, nhân cả hai vế với $\sqrt{3}$:
+
+$$\sqrt{3}y - \frac{\sqrt{3}}{2} = 2\left(x - \frac{\pi}{3}\right) = 2x - \frac{2\pi}{3}$$
+
+$$2x - \sqrt{3}y - \frac{2\pi}{3} + \frac{\sqrt{3}}{2} = 0$$
+
+**Chú ý.** Đáp án C sai dấu ở số hạng $\dfrac{\sqrt{3}}{2}$. Phải kiểm tra lại bằng cách thay tọa độ điểm $P$ vào phương trình.
+
+---
+
+**Câu 14.** `CAE-M-CD4-LX3-E-130` — **Đáp án B**
+
+**Giải.** Áp dụng công thức cung bù với $180^\circ = \pi$:
+
+$$\sin(180^\circ - \alpha) = \sin\alpha = \frac{1}{2}$$
+
+**Cách nhanh.** Cung bù giữ nguyên giá trị sin. Đây là hệ quả trực tiếp của $\sin(\pi - \alpha) = \sin\alpha$.
+
+---
+
+**Câu 15.** `CAE-M-CD4-LX3-M-134` — **Đáp án C**
+
+**Giải.** Gọi $R$ là bán kính đường tròn, góc ở tâm là $\alpha = 2$ rad, dây cung $AB = 2$.
+
+Hạ đường cao $OH$ từ tâm $O$ xuống dây $AB$. Khi đó $H$ là trung điểm $AB$ nên $AH = 1$, và $\angle AOH = \dfrac{\alpha}{2} = 1$ rad.
+
+Trong tam giác vuông $OHA$:
+
+$$\sin 1 = \frac{AH}{OA} = \frac{1}{R} \implies R = \frac{1}{\sin 1}$$
+
+Độ dài cung:
+
+$$l = \alpha R = 2 \cdot \frac{1}{\sin 1} = \frac{2}{\sin 1}$$
+
+**Chú ý.** Đáp án D ($2\sin 1$) là kết quả khi nhân thay vì chia. Đáp án B ($\sin 2$) là kết quả khi quên nhân với bán kính.
+
+---
+
+## TỔNG KẾT LỖI THƯỜNG GẶP
+
+Bảng chẩn đoán dùng khi chữa bài và khi soạn đề kiểm tra. Cột "Câu liên quan" trỏ tới `../hoc-sinh/03-bai-tap-ve-nha.md`.
+
+| Lỗi | Câu liên quan | Cách cảnh báo học sinh |
+|:----|:--------------|:-----------------------|
+| Quên dấu theo phần tư | Câu 3, 11 phần bắt buộc | Mỗi lần lấy căn từ bình phương, hỏi ngay: "Góc ở phần tư thứ mấy?" |
+| Nhầm dấu công thức cộng của cos | Câu 12 phần bắt buộc | Viết to công thức, khoanh tròn dấu: "cos cộng thì trong ngoặc trừ" |
+| Nhầm sin với cos trong công thức cộng | Câu 12 phần bắt buộc | Quy tắc: "sin thì sin trước, cos thì cos trước" |
+| Quên nhân đạo hàm hàm hợp | Câu 6 phần bắt buộc | Đạo hàm $\sin u$ phải nhân thêm $u'$ |
+| Lẫn lãi đơn với lãi kép | Câu 17 phần bắt buộc | "Phần trăm của giá trị hiện có" là lũy thừa, không phải nhân tuyến tính |
+| Nhầm $\tan 2\alpha$ với $\cot 2\alpha$ | Câu 10 phần bắt buộc | Đọc kỹ tên hàm trong đề trước khi chọn công thức |
+| Thay sai biến vào hàm hợp | Câu 23 phần bắt buộc | Giải phương trình trong ngoặc để tìm $x$ trước, rồi mới thay |
+| Quên điều kiện cơ số logarit | Câu 14 phần bắt buộc | Cơ số phải dương và khác $1$, loại nghiệm âm |
+| Nhầm cung phụ với cung bù | Câu 14 phần tự chọn | "Thấy $\dfrac{\pi}{2}$ thì đổi tên hàm, thấy $\pi$ thì giữ nguyên" |
+| Quên rằng $|\sin\alpha| \le 1$ | Câu 9 phần tự chọn | Thấy giá trị lớn hơn $1$ là loại ngay |
+| Nhầm chu kỳ với tần số | Câu 12 phần tự chọn | Tần số là nghịch đảo của chu kỳ, không phải chính chu kỳ |
+| Quên đổi dấu khi lấy hệ số góc vuông góc | Câu 13 phần tự chọn | Đường vuông góc có hệ số góc là nghịch đảo đối dấu |
+| Quên điều kiện hàm lẻ phải xác định trên tập đối xứng | Câu 20 phần bắt buộc | Hàm lẻ phải xác định tại cả $x$ và $-x$ |
+
+---
+
+*Tài liệu nội bộ, CAE SHANGHAI.*

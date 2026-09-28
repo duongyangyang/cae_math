@@ -1,0 +1,201 @@
+# BUỔI 12 — ĐÁP ÁN BÀI TẬP CHUẨN BỊ
+
+> **Vector và số phức （向量与复数）**
+>
+> Mở file này **sau khi đã tự tra từ vựng và làm 10 câu bài tập chuẩn bị**. Dùng để đối chiếu trước khi vào buổi học.
+
+---
+
+## BẢNG ĐÁP ÁN 10 CÂU CHUẨN BỊ
+
+### Bài tập chuẩn bị
+
+| Câu | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|:----|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
+| Đáp án | B | A | D | B | A | C | A | B | C | B |
+
+---
+
+## PHẦN A — BẢNG TỪ VỮNG
+
+### Nhóm 1 — Vector và các phép toán
+
+| STT | Thuật ngữ | Nghĩa |
+|:---:|:----------|:------|
+| 1 | 向量 | vector |
+| 2 | 模 | môđun (độ dài vector) |
+| 3 | 坐标表示 | biểu diễn bằng tọa độ |
+| 4 | 数量积 | tích vô hướng |
+| 5 | 夹角 | góc (giữa hai vector) |
+| 6 | 投影 | hình chiếu |
+| 7 | 垂直 | vuông góc |
+| 8 | 平行 | song song |
+
+### Nhóm 2 — Số phức
+
+| STT | Thuật ngữ | Nghĩa |
+|:---:|:----------|:------|
+| 9 | 复数 | số phức |
+| 10 | 实部 | phần thực |
+| 11 | 虚部 | phần ảo |
+| 12 | 虚数单位 | đơn vị ảo |
+| 13 | 共轭复数 | số phức liên hợp |
+| 14 | 纯虚数 | số thuần ảo |
+| 15 | 复数的模 | môđun của số phức |
+| 16 | 复平面 | mặt phẳng phức |
+
+### Nhóm 3 — Phép toán và mở rộng
+
+| STT | Thuật ngữ | Nghĩa |
+|:---:|:----------|:------|
+| 17 | 向量的加法 | phép cộng vector |
+| 18 | 数乘向量 | phép nhân vector với một số |
+| 19 | 共线向量 | các vector cùng phương |
+| 20 | 单位向量 | vector đơn vị |
+| 21 | 复数的四则运算 | bốn phép toán trên số phức |
+| 22 | 分母实数化 | khử ảo ở mẫu |
+| 23 | 中点坐标 | tọa độ trung điểm |
+| 24 | 共轭 | liên hợp |
+
+---
+
+## PHẦN B — HOÀN THIỆN BẢN DỊCH
+
+**Câu 2.** 复数 $(3-i)\cdot i-(1+2i)$ 等于（ ）
+
+> **Dịch:** Số phức $(3-i) \cdot i - (1+2i)$ bằng ( )
+
+**Từ khóa cần nhận ra:** 复数 (số phức) · 等于 (bằng). Đề không có từ khóa dài, chỉ cần đọc đúng ký hiệu.
+
+**Câu 3.** 已知 $\overrightarrow{AB}=(3,-6)$，点 $A(-1,2)$，则点 $B$ 的坐标为（ ）
+
+> **Dịch:** Cho $\overrightarrow{AB} = (3,-6)$ và điểm $A(-1,2)$, khi đó tọa độ của điểm $B$ là ( )
+
+**Từ khóa cần nhận ra:** 已知 (cho, biết) · 点 (điểm) · 坐标 (tọa độ) · 则 (khi đó).
+
+> **Nhận xét.** 已知 $\overrightarrow{AB}$ và điểm $A$, hỏi điểm $B$: đây là dạng bài dùng công thức điểm cuối bằng điểm đầu cộng vector. Đọc được cặp 点 và 坐标 là biết ngay phải cộng chứ không trừ, tiết kiệm khoảng 15 giây.
+
+---
+
+## PHẦN C — BÀI TẬP CHUẨN BỊ
+
+**Câu 1.** `CAE-M-CD7-08.7-M-026` — **Đáp án B**
+
+**Giải.** Công thức tích vô hướng theo độ dài và góc là:
+
+$$\vec{a} \cdot \vec{b} = \lvert\vec{a}\rvert\lvert\vec{b}\rvert\cos\alpha$$
+
+Biểu thức cần tính chính là vế phải, nên kết quả bằng $\lvert\vec{a}\rvert\lvert\vec{b}\rvert\cos\alpha$.
+
+**Chú ý.** Ba phương án nhiễu tương ứng với ba công thức khác: $\sin\alpha$ là công thức diện tích hình bình hành, $\lvert\vec{a}\rvert + \lvert\vec{b}\rvert$ là tổng độ dài, và $\lvert\vec{a}\rvert\lvert\vec{b}\rvert$ là tích vô hướng khi hai vector cùng hướng.
+
+---
+
+**Câu 2.** `CAE-M-CD7-08.4-H-017` — **Đáp án A**
+
+**Giải.** Số thuần ảo là số phức có phần thực bằng $0$ và phần ảo khác $0$. Với $z = a + bi$:
+
+$$a = 0 \quad \text{và} \quad b \ne 0$$
+
+**Bẫy.** Phương án C ($a = 0$ và $b = 0$) cho $z = 0$, mà số $0$ là số thực. Thiếu điều kiện $b \ne 0$ là mất điểm.
+
+---
+
+**Câu 3.** `CAE-M-CD7-08.2-M-003` — **Đáp án D**
+
+**Giải.** Tính từng vector trước:
+
+$$a + b = (1 + 2,\ -5 + 4) = (3, -1)$$
+
+$$a - b = (1 - 2,\ -5 - 4) = (-1, -9)$$
+
+Tích vô hướng:
+
+$$(a+b) \cdot (a-b) = 3 \cdot (-1) + (-1) \cdot (-9) = -3 + 9 = 6$$
+
+**Cách nhanh.** Dùng đẳng thức $(a+b) \cdot (a-b) = \lvert a \rvert^2 - \lvert b \rvert^2$. Ta có $\lvert a \rvert^2 = 1 + 25 = 26$ và $\lvert b \rvert^2 = 4 + 16 = 20$, nên kết quả là $26 - 20 = 6$. Cách này bỏ được hai phép cộng trừ vector.
+
+---
+
+**Câu 4.** `CAE-M-CD7-08.3-M-009` — **Đáp án B**
+
+**Giải.** Hình chiếu của $u$ lên phương $v$ bằng:
+
+$$\frac{u \cdot v}{\lvert v \rvert} = \frac{3 \cdot 1 + 4 \cdot 0}{\sqrt{1^2 + 0^2}} = \frac{3}{1} = 3$$
+
+**Nhận xét.** Vì $v = (1,0)$ là vector đơn vị trên trục hoành, hình chiếu lên phương $v$ chính là hoành độ của $u$, tức $3$. Nhận ra $v$ là vector đơn vị thì đọc đáp án ngay.
+
+---
+
+**Câu 5.** `CAE-M-CD7-08.8-M-030` — **Đáp án A**
+
+**Giải.** Điều kiện song song $x_1y_2 - x_2y_1 = 0$:
+
+$$x \cdot (-3) - 5 \cdot 15 = 0 \iff -3x = 75 \iff x = -25$$
+
+**Bẫy.** Đáp án B ($25$) là kết quả khi quên dấu trừ. Đáp án C và D là kết quả khi lẫn công thức song song với công thức vuông góc.
+
+---
+
+**Câu 6.** `CAE-M-CD7-08.3-H-010` — **Đáp án C**
+
+**Giải.** Chia số mũ cho $4$: $2025 = 4 \times 506 + 1$. Vậy $i^{2025} = i^{1} = i$.
+
+**Cách nhanh.** Chỉ cần lấy $2025$ chia $4$ lấy dư. Số dư $0$ cho $1$, dư $1$ cho $i$, dư $2$ cho $-1$, dư $3$ cho $-i$. Không cần khai triển chu kì.
+
+---
+
+**Câu 7.** `CAE-M-CD7-08.2-M-005` — **Đáp án A**
+
+**Giải.** Tích vô hướng: $u \cdot v = 1 \cdot \sqrt{3} + \sqrt{3} \cdot 1 = 2\sqrt{3}$.
+
+Môđun: $\lvert u \rvert = \sqrt{1 + 3} = 2$ và $\lvert v \rvert = \sqrt{3 + 1} = 2$.
+
+$$\cos\theta = \frac{2\sqrt{3}}{2 \cdot 2} = \frac{\sqrt{3}}{2} \implies \theta = 30^\circ$$
+
+**Chú ý.** Đáp án C ($60^\circ$) là phương án nhiễu cho học sinh nhớ nhầm $\cos 60^\circ = \dfrac{\sqrt{3}}{2}$. Giá trị $\dfrac{\sqrt{3}}{2}$ ứng với $30^\circ$, còn $\dfrac{1}{2}$ mới ứng với $60^\circ$.
+
+---
+
+**Câu 8.** `CAE-M-CD7-08.6-M-020` — **Đáp án B**
+
+**Giải.** Hai vector cùng phương khi tỉ số các thành phần tương ứng bằng nhau. Xét từng phương án:
+
+| Phương án | Tỉ số | Kết luận |
+|:----------|:------|:---------|
+| A. $(1,2)$ và $(4,4)$ | $\dfrac{4}{1} = 4$ nhưng $\dfrac{4}{2} = 2$ | Không cùng phương |
+| B. $(1,2)$ và $(2,4)$ | $\dfrac{2}{1} = \dfrac{4}{2} = 2$ | Cùng phương |
+| C. $(3,0)$ và $(0,1)$ | $\dfrac{0}{3} = 0$ nhưng $\dfrac{1}{0}$ không xác định | Không cùng phương |
+| D. $(1,1)$ và $(-1,1)$ | $\dfrac{-1}{1} = -1$ nhưng $\dfrac{1}{1} = 1$ | Không cùng phương |
+
+---
+
+**Câu 9.** `CAE-M-CD7-08.6-M-021` — **Đáp án C**
+
+**Giải.** Rút gọn $z_2$ trước:
+
+$$z_2 = (2 + 5i)i = 2i + 5i^2 = 2i - 5 = -5 + 2i$$
+
+$$z_1 - z_2 = (4 - i) - (-5 + 2i) = (4 + 5) + (-1 - 2)i = 9 - 3i$$
+
+**Chú ý.** Quên rút gọn $z_2$ trước sẽ dẫn tới phải nhân hai lần và dễ sai dấu ở $i^2 = -1$.
+
+---
+
+**Câu 10.** `CAE-M-CD7-08.2-H-006` — **Đáp án B**
+
+**Giải.** Nhân tử và mẫu với số phức liên hợp của mẫu là $1 + i$:
+
+$$z = \frac{(2+i)(1+i)}{(1-i)(1+i)} = \frac{2 + 2i + i + i^2}{1 - i^2}$$
+
+Vì $i^2 = -1$ nên tử bằng $2 + 3i - 1 = 1 + 3i$ và mẫu bằng $1 + 1 = 2$:
+
+$$z = \frac{1}{2} + \frac{3}{2}i$$
+
+Số phức liên hợp đổi dấu phần ảo:
+
+$$\overline{z} = \frac{1}{2} - \frac{3}{2}i$$
+
+**Bẫy.** Đáp án A chính là $z$, không phải $\overline{z}$. Đề hỏi 共轭复数 thì phải đổi dấu phần ảo ở bước cuối cùng.
+
+---
