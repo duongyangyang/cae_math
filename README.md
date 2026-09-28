@@ -47,7 +47,7 @@ Mã câu hỏi theo format `CAE-M-CD{n}-{source}-{L}-{NNN}`. Chi tiết xem tạ
 | Chuyên đề | Trạng thái | Ghi chú |
 |---|---|---|
 | Tổng quan về Toán trong CSCA | 🟡 Đang soạn | — |
-| CĐ1: Tập hợp (集合) | ✅ Đã chuyển `.tex` + PDF | — |
+| CĐ1: Tập hợp (集合) | ⬜ Chưa bắt đầu | Bản cũ đã xóa, soạn lại theo cấu trúc mới |
 | CĐ2: Bất đẳng thức (不等式) | ⬜ Chưa bắt đầu | — |
 | CĐ3: Dãy số (数列) | ⬜ Chưa bắt đầu | — |
 | CĐ4: Hàm số (函数) | ⬜ Chưa bắt đầu | — |

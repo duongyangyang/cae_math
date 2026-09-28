@@ -1,8 +1,8 @@
 % =====================================================================
-%  CAE VIỆT NAM — TEMPLATE GIÁO TRÌNH TOÁN (LUYỆN THI CSCA)
+%  CAE SHANGHAI — TEMPLATE GIÁO TRÌNH TOÁN (LUYỆN THI CSCA)
 %  Biên dịch bằng XeLaTeX (khuyến nghị) hoặc LuaLaTeX.
 %  Cách dùng: sao chép file này, đổi \chuyende, \modulename, \modulepercent
-%  và thêm nội dung vào các mục "NỘI DUNG CHUYÊN ĐỀ".
+%  và thay nội dung mẫu trong bốn section bằng nội dung chuyên đề thật.
 % =====================================================================
 \documentclass[12pt, a4paper]{report}
 
@@ -57,7 +57,7 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.2pt}
 \fancyhead[L]{\small\color{cae_blue}\leftmark}
-\fancyhead[R]{\small\color{cae_blue}CAE VIỆT NAM — Luyện thi CSCA}
+\fancyhead[R]{\small\color{cae_blue}CAE SHANGHAI — Luyện thi CSCA}
 \fancyfoot[C]{\small\thepage}
 
 % ---------- MÔI TRƯỜNG ĐỊNH LÝ / VÍ DỤ ----------
@@ -88,7 +88,7 @@
 \begin{titlepage}
   \centering
   \vspace*{1.5cm}
-  {\Large\bfseries\color{cae_blue} CAE VIỆT NAM}\\[0.3cm]
+  {\Large\bfseries\color{cae_blue} CAE SHANGHAI}\\[0.3cm]
   {\small Tài liệu luyện thi CSCA — Môn Toán}\\[2.5cm]
 
   {\color{cae_gold}\rule{0.5\linewidth}{0.8pt}}\\[0.8cm]
@@ -97,12 +97,12 @@
   {\large Module: \emph{Tên module đề thi} \quad—\quad Tỉ trọng: \emph{XX\%}}\\[0.8cm]
   {\color{cae_gold}\rule{0.5\linewidth}{0.8pt}}\\[2.5cm]
 
-  {\normalsize Biên soạn: Hoàng Dương — CAE Việt Nam}\\
-  {\small info@caevietnam.vn}\\[0.3cm]
+  {\normalsize Biên soạn: Hoàng Dương — CAE Shanghai}\\
+  {\small www.csca.caeshanghai.com \quad·\quad (+86)15618558359 \quad·\quad cae.shanghai@gmail.com}\\[0.3cm]
   {\small \today}
 
   \vfill
-  {\footnotesize © CAE Việt Nam. Tài liệu lưu hành nội bộ, không sao chép dưới mọi hình thức khi chưa được phép.}
+  {\footnotesize © CAE Shanghai. Tài liệu lưu hành nội bộ, không sao chép dưới mọi hình thức khi chưa được phép.}
 \end{titlepage}
 
 \tableofcontents
@@ -112,8 +112,14 @@
 \chapter{Tên chuyên đề \cjk{（中文名）}}
 \label{ch:mau}
 
-\section{Kiến thức trọng tâm}
-% NỘI DUNG CHUYÊN ĐỀ — thay bằng kiến thức thật
+\section{Từ vựng và từ khóa nhận dạng đề}
+% NỘI DUNG CHUYÊN ĐỀ — thay bằng nội dung thật
+
+\textbf{Từ vựng.} Thuật ngữ Hán kèm nghĩa tiếng Việt, ví dụ \cjk{交集} (giao), \cjk{并集} (hợp), \cjk{补集} (phần bù).
+
+\textbf{Từ khóa nhận dạng.} Gặp \cjk{恒成立} (đúng với mọi giá trị của biến) → bài toán tìm khoảng tham số.
+
+\section{Hệ thống hóa kiến thức trọng tâm}
 
 \begin{dinhnghia}[1 — Tập hợp]
   Phát biểu định nghĩa. Ký hiệu toán học đặt trong dấu đô-la, ví dụ \(A \cup B\), \(A \cap B\).
@@ -127,20 +133,25 @@
   Chứng minh chi tiết được viết \emph{bên dưới} định lý và \emph{ngoài} viền của khung \texttt{dinhly}. Dấu $\blacksquare$ được chèn tự động.
 \end{proof}
 
-\textbf{Chú ý.} Lưu ý, lỗi thường gặp, hoặc mẹo giải nhanh — viết thẳng thành đoạn văn, \emph{không} cần khung.
+\textbf{Chú ý.} Lỗi thường gặp hoặc kỹ thuật xử lý nhanh — viết thẳng thành đoạn văn, \emph{không} cần khung.
 
-\section{Ví dụ minh họa}
+\section{Các dạng bài}
+
+\subsection*{Dạng 1 — Phép toán trên tập hợp}
+Mô tả dạng bài. \textbf{Cách nhận dạng.} Dấu hiệu nhận biết từ đề.
 
 \begin{vidu}[1]
   \textbf{Đề bài.} Nội dung ví dụ.
 
-  \textbf{Lời giải.} Trình bày lời giải từng bước, có căn chỉnh công thức bằng \texttt{align}.
+  \textbf{Giải.} Trình bày lời giải từng bước, có căn chỉnh công thức bằng \texttt{align}.
   \[
     x^2 + 2x - 3 = 0 \iff (x-1)(x+3) = 0 \iff x = 1 \ \text{hoặc}\ x = -3.
   \]
 \end{vidu}
 
-\section{Bài tập tự luyện}
+\section{Bài tập về nhà}
+
+\textbf{Bắt buộc.}
 
 \begin{baitap}[Câu 1]
   Đề bài câu 1.
@@ -150,17 +161,10 @@
   Đề bài câu 2.
 \end{baitap}
 
-% ---- BẢNG PHÂN LOẠI CÂU HỎI THEO ĐỘ KHÓ (tùy chọn, đặt cuối chuyên đề) ----
-\section*{Phân bố độ khó trong đề thi}
-\addcontentsline{toc}{section}{Phân bố độ khó trong đề thi}
-\begin{center}
-\begin{tabular}{@{}lccc@{}}
-  \toprule
-  \textbf{Mức độ} & \textbf{Dễ} & \textbf{Trung bình} & \textbf{Khó} \\
-  \midrule
-  Số câu & XX & XX & XX \\
-  \bottomrule
-\end{tabular}
-\end{center}
+\textbf{Tự chọn.}
+
+\begin{baitap}[Câu 1]
+  Đề bài câu tự chọn.
+\end{baitap}
 
 \end{document}
