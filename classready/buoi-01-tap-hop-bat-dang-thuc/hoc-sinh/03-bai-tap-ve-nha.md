@@ -3,7 +3,7 @@
 > **Tập hợp & Bất đẳng thức （集合与不等式）**
 > **Khối lượng:** 25 câu bắt buộc + 15 câu tự chọn
 > **Hạn nộp:** trước buổi 2, qua hệ thống học trực tuyến
-> **Phiên bản:** 1.0.0 — 28.09.2026
+> **Phiên bản:** 1.0.0, cập nhật 28.09.2026
 
 ---
 
@@ -593,4 +593,4 @@ D. 4个
 
 ---
 
-*Đáp án để tự chấm: `05-dap-an-bai-tap-ve-nha.md` — chỉ mở sau khi đã làm xong toàn bộ 40 câu. Lời giải chi tiết giáo viên chữa trên lớp.*
+*Đáp án để tự chấm: `05-dap-an-bai-tap-ve-nha.md`, chỉ mở sau khi đã làm xong toàn bộ 40 câu. Lời giải chi tiết giáo viên chữa trên lớp.*

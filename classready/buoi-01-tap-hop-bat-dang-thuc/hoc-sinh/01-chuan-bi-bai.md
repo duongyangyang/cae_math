@@ -2,13 +2,13 @@
 
 > **Module:** M1
 > **Tỉ trọng đề thi:** ~10% · khoảng 4–6 câu
-> **Phiên bản:** 1.0.0 — 28.09.2026
+> **Phiên bản:** 1.0.0, cập nhật 28.09.2026
 
 ---
 
 ## PHẦN A — BẢNG TỪ VỰNG
 
-Tra nghĩa các thuật ngữ dưới đây và điền vào cột **Nghĩa**. Đây là những từ sẽ xuất hiện trực tiếp trong đề thi — không tra được nghĩa thì không đọc được đề.
+Tra nghĩa các thuật ngữ dưới đây và điền vào cột **Nghĩa**. Đây là những từ sẽ xuất hiện trực tiếp trong đề thi: không tra được nghĩa thì không đọc được đề.
 
 ### Nhóm 1 — Tập hợp và quan hệ
 
@@ -53,7 +53,7 @@ Tra nghĩa các thuật ngữ dưới đây và điền vào cột **Nghĩa**. �
 
 ## PHẦN B — HOÀN THIỆN BẢN DỊCH
 
-**Câu 1 đã có bản dịch mẫu** — đọc để nắm cách xử lý. Nhiệm vụ của em là dịch **Câu 2 và Câu 3**.
+**Câu 1 đã có bản dịch mẫu**. Đọc để nắm cách xử lý. Nhiệm vụ của em là dịch **Câu 2 và Câu 3**.
 
 Viết ra giấy trước khi tra từ điển. Mục đích là luyện phản xạ đọc đề, không phải luyện dịch thuật.
 
@@ -227,4 +227,4 @@ D. $\{-1,0,2\}$
 
 ---
 
-*Nộp bài trước buổi học qua hệ thống. Đáp án và lời giải: `04-dap-an-chuan-bi.md` — mở sau khi đã tự làm xong.*
+*Nộp bài trước buổi học qua hệ thống. Đáp án và lời giải: `04-dap-an-chuan-bi.md`, mở sau khi đã tự làm xong.*

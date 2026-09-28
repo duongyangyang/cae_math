@@ -18,7 +18,7 @@
 
 $$\overline{M} = (-\infty, -2] \cup (8, +\infty) = \{x \mid x \le -2 \ \text{hoặc} \ x > 8\}$$
 
-**Chú ý.** Đầu mút $-2$ **thuộc** phần bù (vì $-2 \notin M$), đầu mút $8$ **không thuộc** phần bù (vì $8 \in M$). Đây là chỗ dễ sai nhất — đảo hai đầu mút là mất điểm.
+**Chú ý.** Đầu mút $-2$ **thuộc** phần bù (vì $-2 \notin M$), đầu mút $8$ **không thuộc** phần bù (vì $8 \in M$). Đây là chỗ dễ sai nhất. Đảo hai đầu mút là mất điểm.
 
 ---
 
@@ -50,7 +50,7 @@ $$C_U(P \cup Q) = \{1, 5\}$$
 
 Số tập con (không phải tập con thực sự) là $2^2 = 4$.
 
-**Chú ý.** Phân biệt 子集 (tập con, gồm cả chính nó) và 真子集 (tập con thực sự, không gồm chính nó). Câu 2 và Câu 4 trong đề này là cặp đối chiếu trực tiếp — đọc kỹ đề hỏi loại nào.
+**Chú ý.** Phân biệt 子集 (tập con, gồm cả chính nó) và 真子集 (tập con thực sự, không gồm chính nó). Câu 2 và Câu 4 trong đề này là cặp đối chiếu trực tiếp. Đọc kỹ đề hỏi loại nào.
 
 ---
 
@@ -70,7 +70,7 @@ $$A \cup B = \{1, 3, 6, 7, 11, 13, 15\}$$
 
 $$A \cap B = \{x \mid x \ \text{là bội của} \ 6\}$$
 
-**Nhận xét.** Vì $2$ và $3$ nguyên tố cùng nhau nên bội chung nhỏ nhất là $2 \times 3 = 6$. Đáp án C mô tả **hợp** chứ không phải giao — đọc kỹ ký hiệu $\cap$ và $\cup$.
+**Nhận xét.** Vì $2$ và $3$ nguyên tố cùng nhau nên bội chung nhỏ nhất là $2 \times 3 = 6$. Đáp án C mô tả **hợp** chứ không phải giao. Đọc kỹ ký hiệu $\cap$ và $\cup$.
 
 ---
 
@@ -82,7 +82,7 @@ Giao với $B = \{-5, -3, -1, 2, 3, 4\}$ là các phần tử thuộc cả hai:
 
 $$A \cap B = \{2, 3, 4\}$$
 
-**Bẫy.** Đáp án A chứa $-1$ — nhưng $-1 \notin A$ vì điều kiện là $-1 < x$ (dấu nhỏ hơn nghiêm ngặt). Đáp án B chứa $-1$ và thiếu $3$.
+**Bẫy.** Đáp án A chứa $-1$, nhưng $-1 \notin A$ vì điều kiện là $-1 < x$ (dấu nhỏ hơn nghiêm ngặt). Đáp án B chứa $-1$ và thiếu $3$.
 
 ---
 
@@ -94,7 +94,7 @@ Giải $-4x + 6 = 5x - 3 \implies 9x = 9 \implies x = 1$. Thay vào: $y = -4(1) 
 
 Vậy $A \cap B = \{(1, 2)\}$.
 
-**Bẫy.** Đáp án B viết $(1,2)$ — ký hiệu này chỉ **một khoảng** trên trục số, không phải một điểm trong mặt phẳng. Đáp án C viết $x=1, y=2$ là hai phương trình, không phải một tập hợp. Giao điểm phải viết dưới dạng cặp tọa độ trong ngoặc nhọn.
+**Bẫy.** Đáp án B viết $(1,2)$: ký hiệu này chỉ **một khoảng** trên trục số, không phải một điểm trong mặt phẳng. Đáp án C viết $x=1, y=2$ là hai phương trình, không phải một tập hợp. Giao điểm phải viết dưới dạng cặp tọa độ trong ngoặc nhọn.
 
 ---
 
@@ -295,7 +295,7 @@ $$\Delta = 1 - 4m < 0 \implies m > \frac{1}{4}$$
 
 **Giải.** Xét từng đáp án với $a > b$ và $c > d$:
 
-- **A.** $ad > bc$? Không suy ra được — dấu của $a, b$ chưa biết.
+- **A.** $ad > bc$? Không suy ra được, vì dấu của $a, b$ chưa biết.
 - **B.** $ac > bc$? Sai khi $c < 0$.
 - **C.** $a - c > b - d$? Viết lại thành $(a-b) > (c-d)$. Ta biết $a - b > 0$ và $c - d > 0$ nhưng không so sánh được hai hiệu này.
 - **D.** $a + c > b + d$? Cộng hai bất đẳng thức cùng chiều: $a > b$ và $c > d$ cho $a + c > b + d$. ✓
@@ -354,7 +354,7 @@ Giao hai tập: vì $(4,9) \subset (-\infty, 10)$ nên giao chính là $P$.
 
 $$P \cap Q = (4, 9)$$
 
-**Nhận xét.** Khi một tập hợp là tập con của tập kia thì giao chính là tập nhỏ hơn — nhận ra điều này tiết kiệm thời gian vẽ trục số.
+**Nhận xét.** Khi một tập hợp là tập con của tập kia thì giao chính là tập nhỏ hơn. Nhận ra điều này tiết kiệm thời gian vẽ trục số.
 
 ---
 
@@ -380,7 +380,7 @@ $N$: tập xác định của $y = \sqrt{x^2-4}$ cần $x^2 - 4 \ge 0 \implies x
 
 $$N = (-\infty, -2] \cup [2, +\infty)$$
 
-Hợp: $M$ lấp đầy khoảng $(1,3)$, còn $N$ phủ hai đầu. Hợp của chúng là $(-\infty, -2]$ gộp với $(1, +\infty)$ — vì phần $[2, 3)$ đã nằm trong $M$, phần $(3, +\infty)$ nằm trong $N$, và phần $(1,2)$ nằm trong $M$.
+Hợp: $M$ lấp đầy khoảng $(1,3)$, còn $N$ phủ hai đầu. Hợp của chúng là $(-\infty, -2]$ gộp với $(1, +\infty)$, vì phần $[2, 3)$ đã nằm trong $M$, phần $(3, +\infty)$ nằm trong $N$, và phần $(1,2)$ nằm trong $M$.
 
 $$M \cup N = (-\infty, -2] \cup (1, +\infty)$$
 
@@ -540,4 +540,4 @@ Bảng chẩn đoán dùng khi chữa bài và khi soạn đề kiểm tra. Cộ
 
 ---
 
-*Tài liệu nội bộ — CAE SHANGHAI.*
+*Tài liệu nội bộ, CAE SHANGHAI.*

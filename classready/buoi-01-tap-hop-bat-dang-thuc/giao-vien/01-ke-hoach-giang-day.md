@@ -2,7 +2,7 @@
 
 > **Tập hợp & Bất đẳng thức （集合与不等式）**
 > **Module:** M1 · **Tỉ trọng đề thi:** ~10% · khoảng 4–6 câu
-> **Thời lượng:** 90 phút (40 + 10 nghỉ + 40) — thực học 80 phút
+> **Thời lượng:** 90 phút (40 + 10 nghỉ + 40), thực học 80 phút
 >
 > **Tài liệu này chỉ dành cho giáo viên.** Nội dung lý thuyết và bài tập đã có trong `../hoc-sinh/`, không lặp lại ở đây.
 
@@ -28,7 +28,7 @@ Học sinh hiểu ba điều trước khi vào bài: đề thi khó vì áp lự
 
 ### Kịch bản
 
-**Phút 1–4 · Đặt vấn đề về áp lực thời gian.** Chiếu bảng cấu trúc đề thi (có trong `../hoc-sinh/02-tai-lieu-buoi-hoc.md`, phần Phụ lục). Nhấn mạnh con số **75 giây mỗi câu** và hỏi cả lớp: "Trong 75 giây, các em kịp làm gì?" — để học sinh tự nhận ra rằng biến đổi dài dòng là bất khả thi. Đây là điểm neo cho toàn bộ khóa học.
+**Phút 1–4 · Đặt vấn đề về áp lực thời gian.** Chiếu bảng cấu trúc đề thi (có trong `../hoc-sinh/02-tai-lieu-buoi-hoc.md`, phần Phụ lục). Nhấn mạnh con số **75 giây mỗi câu** và hỏi cả lớp: "Trong 75 giây, các em kịp làm gì?". Để học sinh tự nhận ra rằng biến đổi dài dòng là bất khả thi. Đây là điểm neo cho toàn bộ khóa học.
 
 **Phút 5–9 · Ba nguyên tắc học.** Trình bày ngắn gọn:
 
@@ -38,7 +38,7 @@ Học sinh hiểu ba điều trước khi vào bài: đề thi khó vì áp lự
 
 **Phút 10–13 · Hướng dẫn dùng tài liệu.** Giới thiệu bốn file học sinh sẽ nhận mỗi buổi và quy tắc: file đáp án **chỉ mở sau khi đã làm xong**. Nói rõ đây là quy tắc bắt buộc, không phải gợi ý.
 
-**Phút 14–16 · Giới thiệu trọng số chuyên đề.** Chiếu bảng trọng số 8 nhóm nội dung. Nói rõ buổi hôm nay chỉ chiếm ~10% đề thi nhưng là nền tảng của mọi nhóm khác — học sinh hay chủ quan với phần này rồi mất điểm ở các câu dễ.
+**Phút 14–16 · Giới thiệu trọng số chuyên đề.** Chiếu bảng trọng số 8 nhóm nội dung. Nói rõ buổi hôm nay chỉ chiếm ~10% đề thi nhưng là nền tảng của mọi nhóm khác. Học sinh hay chủ quan với phần này rồi mất điểm ở các câu dễ.
 
 ### Điểm cần chốt
 
@@ -54,17 +54,17 @@ Học sinh nắm được 9 tính chất trong `../hoc-sinh/02-tai-lieu-buoi-hoc
 
 ### Kịch bản
 
-**Phút 1–6 · Từ khóa nhận dạng đề.** Đây là phần **quan trọng nhất của khối này**, không được cắt. Chiếu bảng 12 từ khóa. Với mỗi từ, yêu cầu học sinh đọc to phiên âm rồi nói nghĩa — mục đích là luyện phản xạ nhìn chữ Hán. Dừng lâu hơn ở cặp 恒成立 / 有解 để phân biệt hai hướng xử lý ngược nhau.
+**Phút 1–6 · Từ khóa nhận dạng đề.** Đây là phần **quan trọng nhất của khối này**, không được cắt. Chiếu bảng 12 từ khóa. Với mỗi từ, yêu cầu học sinh đọc to phiên âm rồi nói nghĩa, mục đích là luyện phản xạ nhìn chữ Hán. Dừng lâu hơn ở cặp 恒成立 / 有解 để phân biệt hai hướng xử lý ngược nhau.
 
-**Phút 7–11 · Tập hợp và quan hệ.** Trình bày Định nghĩa 1–5 và Tính chất 1–4. Không giảng lại khái niệm tập hợp — học sinh đã biết. Chỉ nêu nhanh ký hiệu và hai công thức đếm $2^n$, $2^n - 1$.
+**Phút 7–11 · Tập hợp và quan hệ.** Trình bày Định nghĩa 1–5 và Tính chất 1–4. Không giảng lại khái niệm tập hợp, học sinh đã biết. Chỉ nêu nhanh ký hiệu và hai công thức đếm $2^n$, $2^n - 1$.
 
 Dành 2 phút cho Tính chất 4 ($A \cap B = B \iff B \subseteq A$) và hỏi cả lớp vì sao đẳng thức này đúng. Đây là phép biến đổi học sinh phải tự nghĩ ra được trong phòng thi.
 
-**Phút 12–19 · Bất phương trình.** Trình bày Tính chất 5–8. **Vẽ bảng xét dấu tam thức lên bảng và để nguyên đến hết buổi** — học sinh sẽ tra lại nhiều lần khi làm dạng bài.
+**Phút 12–19 · Bất phương trình.** Trình bày Tính chất 5–8. **Vẽ bảng xét dấu tam thức lên bảng và để nguyên đến hết buổi**. Học sinh sẽ tra lại nhiều lần khi làm dạng bài.
 
 Với Tính chất 6 (giá trị tuyệt đối), giải thích bằng trục số thay vì đọc công thức: $|f(x)| < a$ nghĩa là $f(x)$ cách gốc không quá $a$, tức nằm trong khoảng $(-a, a)$.
 
-**Phút 20–24 · Bất đẳng thức Cauchy.** Trình bày Tính chất 9 và hai hệ quả. Nhấn mạnh hệ quả $a^2 + b^2 = R^2 \Rightarrow \max(pa + qb) = R\sqrt{p^2+q^2}$ — đây là công thức cho đáp án trong 5 giây, không cần biến đổi.
+**Phút 20–24 · Bất đẳng thức Cauchy.** Trình bày Tính chất 9 và hai hệ quả. Nhấn mạnh hệ quả $a^2 + b^2 = R^2 \Rightarrow \max(pa + qb) = R\sqrt{p^2+q^2}$, đây là công thức cho đáp án trong 5 giây, không cần biến đổi.
 
 ### Lỗi học sinh hay mắc — cần cảnh báo trước
 
@@ -80,17 +80,17 @@ Với Tính chất 6 (giá trị tuyệt đối), giải thích bằng trục s�
 
 ### Mục tiêu
 
-Học sinh làm được 7 dạng bài, mỗi dạng nắm được **cách nhận dạng** từ đề — đây mới là đích của khối, không phải thuộc lời giải.
+Học sinh làm được 7 dạng bài, mỗi dạng nắm được **cách nhận dạng** từ đề, đây mới là đích của khối, không phải thuộc lời giải.
 
 ### Kịch bản
 
 Bảy dạng bài có trong `../hoc-sinh/02-tai-lieu-buoi-hoc.md` mục 3. Phân bổ khoảng 5–6 phút mỗi dạng theo cấu trúc cố định:
 
-1. **Đọc đề mẫu** (30 giây) — giáo viên đọc to đề tiếng Trung, yêu cầu học sinh chỉ ra từ khóa.
-2. **Hỏi cách nhận dạng** (30 giây) — "Dấu hiệu nào cho biết đây là dạng này?"
-3. **Giảng phương pháp** (2 phút) — trình bày các bước, không giải chi tiết.
-4. **Học sinh làm tại chỗ** (2 phút) — cho một câu tương tự, học sinh tự làm.
-5. **Chữa nhanh** (1 phút) — chốt đáp án và lỗi nếu có.
+1. **Đọc đề mẫu** (30 giây): giáo viên đọc to đề tiếng Trung, yêu cầu học sinh chỉ ra từ khóa.
+2. **Hỏi cách nhận dạng** (30 giây): "Dấu hiệu nào cho biết đây là dạng này?"
+3. **Giảng phương pháp** (2 phút): trình bày các bước, không giải chi tiết.
+4. **Học sinh làm tại chỗ** (2 phút): cho một câu tương tự, học sinh tự làm.
+5. **Chữa nhanh** (1 phút): chốt đáp án và lỗi nếu có.
 
 ### Thứ tự ưu tiên
 
@@ -128,7 +128,7 @@ Chốt lại ba điểm, viết lên góc bảng và để nguyên khi học sin
 2. **Luôn xét tập rỗng khi có tham số.**
 3. **Nghiệm của mẫu luôn bị loại.**
 
-Dặn dò: BTVN gồm 25 câu bắt buộc + 15 câu tự chọn, nộp trước buổi 2. Phần tự chọn khó hơn rõ rệt — chỉ làm sau khi xong phần bắt buộc. Buổi 2 học về tính chất hàm số; BTVN buổi này đã có 15% nội dung ôn tập hàm số.
+Dặn dò: BTVN gồm 25 câu bắt buộc + 15 câu tự chọn, nộp trước buổi 2. Phần tự chọn khó hơn rõ rệt, chỉ làm sau khi xong phần bắt buộc. Buổi 2 học về tính chất hàm số; BTVN buổi này đã có 15% nội dung ôn tập hàm số.
 
 ---
 
@@ -142,14 +142,14 @@ Dùng để chữa nhanh nếu cần. Lời giải chi tiết có trong `../hoc-
 
 **Câu cần chữa kỹ nếu học sinh làm sai nhiều:** Câu 9 và Câu 10.
 
-- **Câu 9** (`CAE-M-CD1-08.5-E-016`) — học sinh hay quên giải bất phương trình chứa giá trị tuyệt đối trước khi giao.
-- **Câu 10** (`CAE-M-CD1-LX1-H-035`) — bẫy kinh điển: quên trường hợp $a = 0$. Học sinh chọn B thay vì C.
+- **Câu 9** (`CAE-M-CD1-08.5-E-016`): học sinh hay quên giải bất phương trình chứa giá trị tuyệt đối trước khi giao.
+- **Câu 10** (`CAE-M-CD1-LX1-H-035`): bẫy kinh điển: quên trường hợp $a = 0$. Học sinh chọn B thay vì C.
 
 ---
 
 ## GHI CHÚ SAU BUỔI HỌC
 
-*(Điền sau khi dạy xong — dùng để điều chỉnh buổi sau và các buổi lặp lại.)*
+*(Điền sau khi dạy xong, dùng để điều chỉnh buổi sau và các buổi lặp lại.)*
 
 | Nội dung | Ghi nhận |
 |:---------|:---------|
@@ -160,4 +160,4 @@ Dùng để chữa nhanh nếu cần. Lời giải chi tiết có trong `../hoc-
 
 ---
 
-*Tài liệu nội bộ — CAE SHANGHAI.*
+*Tài liệu nội bộ, CAE SHANGHAI.*

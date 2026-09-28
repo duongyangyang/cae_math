@@ -4,7 +4,7 @@
 >
 > **Chỉ mở sau khi đã làm xong toàn bộ 40 câu.** File này chỉ có đáp án để tự chấm. Lời giải chi tiết do giáo viên chữa trên lớp.
 >
-> Sau khi chấm, ghi lại những câu sai và **lý do sai** — đây là phần quan trọng nhất, giáo viên sẽ dùng để chữa ở buổi sau.
+> Sau khi chấm, ghi lại những câu sai và **lý do sai**. Đây là phần quan trọng nhất, giáo viên sẽ dùng để chữa ở buổi sau.
 
 ---
 

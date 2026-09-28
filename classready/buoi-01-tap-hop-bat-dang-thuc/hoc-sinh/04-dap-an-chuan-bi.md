@@ -89,7 +89,7 @@
 
 $$A \cap B = [2, 10) = \{x \mid 2 \le x < 10\}$$
 
-**Bẫy.** Đáp án B sai vì thiếu điều kiện $x < 10$ — lấy cả phần $x \ge 10$ không thuộc $A$. Đáp án D sai vì đảo ngược khoảng.
+**Bẫy.** Đáp án B sai vì thiếu điều kiện $x < 10$: lấy cả phần $x \ge 10$ không thuộc $A$. Đáp án D sai vì đảo ngược khoảng.
 
 ---
 
@@ -176,7 +176,7 @@ Ba điểm $\{-\sqrt{3}, \sqrt{3}, -2\}$ sắp theo thứ tự $-\sqrt{3} < -2 <
 
 Tập nghiệm: $(-2, -\sqrt{3}] \cup [\sqrt{3}, +\infty)$.
 
-**Chú ý.** Đề dùng dấu $\le$ nên hai nghiệm của tử được lấy (ngoặc vuông), còn nghiệm của mẫu $x = -2$ luôn bị loại. Thứ tự đúng trên trục số là $-\sqrt{3} \approx -1{,}73$ rồi mới đến $-2$ — sắp sai thứ tự là sai toàn bộ bảng xét dấu.
+**Chú ý.** Đề dùng dấu $\le$ nên hai nghiệm của tử được lấy (ngoặc vuông), còn nghiệm của mẫu $x = -2$ luôn bị loại. Thứ tự đúng trên trục số là $-\sqrt{3} \approx -1{,}73$ rồi mới đến $-2$. Sắp sai thứ tự là sai toàn bộ bảng xét dấu.
 
 ---
 
@@ -192,7 +192,7 @@ Giao hai tập: phần chung của $[-1, 3]$ với $(-\infty, 0] \cup [4, +\inft
 
 $$M \cap N = [-1, 0]$$
 
-**Nhận xét.** Nhánh $[4, +\infty)$ của $N$ không giao với $M$ vì $M$ dừng ở $3$. Đây là dạng kết hợp tập hợp với bất phương trình chứa dấu giá trị tuyệt đối — cả hai tập đều phải giải trước khi giao.
+**Nhận xét.** Nhánh $[4, +\infty)$ của $N$ không giao với $M$ vì $M$ dừng ở $3$. Đây là dạng kết hợp tập hợp với bất phương trình chứa dấu giá trị tuyệt đối, cả hai tập đều phải giải trước khi giao.
 
 ---
 

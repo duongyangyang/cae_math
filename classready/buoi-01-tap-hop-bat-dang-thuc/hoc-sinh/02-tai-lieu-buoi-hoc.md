@@ -1,7 +1,7 @@
 # BUỔI 1 — TẬP HỢP & BẤT ĐẲNG THỨC （集合与不等式）
 
 > **Module:** M1 · **Tỉ trọng đề thi:** ~10% · khoảng 4–6 câu
-> **Tài liệu học tập — dùng trên lớp và tra cứu khi làm bài**
+> **Tài liệu học tập, dùng trên lớp và tra cứu khi làm bài**
 
 ---
 
@@ -78,7 +78,7 @@ $$A \cap B = B \iff B \subseteq A, \qquad A \cup B = A \iff B \subseteq A$$
 | $\Delta = 0$, nghiệm kép $x_0$ | $x \neq x_0$ | vô nghiệm |
 | $\Delta < 0$ | mọi $x \in \mathbb{R}$ | vô nghiệm |
 
-**Chú ý.** Quy tắc ghi nhớ: **"trong trái, ngoài cùng"** — với $a > 0$, biểu thức cùng dấu với $a$ ở ngoài khoảng hai nghiệm, trái dấu ở trong khoảng hai nghiệm. Nếu $a < 0$, nhân cả hai vế với $-1$ và **đổi chiều bất đẳng thức** rồi áp dụng bảng trên.
+**Chú ý.** Quy tắc ghi nhớ: **"trong trái, ngoài cùng"**. Với $a > 0$, biểu thức cùng dấu với $a$ ở ngoài khoảng hai nghiệm, trái dấu ở trong khoảng hai nghiệm. Nếu $a < 0$, nhân cả hai vế với $-1$ và **đổi chiều bất đẳng thức** rồi áp dụng bảng trên.
 
 **Tính chất 6 — Bất phương trình chứa dấu giá trị tuyệt đối.** Với $a > 0$:
 
@@ -203,7 +203,7 @@ Tập nghiệm là $\left(-\infty, -\dfrac{1}{2}\right) \cup \left(\dfrac{1}{2},
 
 **Cách nhận dạng.** Đề có tham số $a$, $m$, $k$ và yêu cầu tìm giá trị để $A \subseteq B$, hoặc $A \cap B = B$, hoặc $A \cup B = A$.
 
-**Cách làm.** Dùng Tính chất 4 để đưa về điều kiện tập con, sau đó so sánh hai đầu mút của khoảng. **Luôn xét trường hợp tập hợp rỗng trước** — nhiều bài toán có đáp án đúng nằm ở trường hợp này.
+**Cách làm.** Dùng Tính chất 4 để đưa về điều kiện tập con, sau đó so sánh hai đầu mút của khoảng. **Luôn xét trường hợp tập hợp rỗng trước**: nhiều bài toán có đáp án đúng nằm ở trường hợp này.
 
 **Ví dụ 6.** Cho $A = \{-1, \tfrac{1}{2}\}$ và $B = \{x \mid ax + 1 = 0\}$. Tìm $a$ để $A \cap B = B$.
 
@@ -264,8 +264,8 @@ Thời gian trung bình mỗi câu là **1 phút 15 giây**. Mục tiêu của k
 | Vector & số phức | 2–4 | ~6% |
 | Xác suất & thống kê | 1–2 | ~3% |
 
-Chuyên đề hôm nay chiếm khoảng 10% đề thi — nhóm nội dung nhỏ, nhưng là **nền tảng của mọi nhóm khác**. Không đọc được ký hiệu tập hợp thì không giải được bất phương trình, tìm tập xác định hàm số, hay xét dấu biểu thức.
+Chuyên đề hôm nay chiếm khoảng 10% đề thi, nhóm nội dung nhỏ, nhưng là **nền tảng của mọi nhóm khác**. Không đọc được ký hiệu tập hợp thì không giải được bất phương trình, tìm tập xác định hàm số, hay xét dấu biểu thức.
 
 ---
 
-*Tài liệu nội bộ — CAE SHANGHAI.*
+*Tài liệu nội bộ, CAE SHANGHAI.*
