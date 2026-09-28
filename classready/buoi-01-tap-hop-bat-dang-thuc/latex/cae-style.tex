@@ -47,7 +47,11 @@
 \setmathfont{TeX Gyre Termes Math}
 
 % ---------- BỐ CỤC TRANG ----------
-\usepackage[a4paper, top=2.2cm, bottom=2.2cm, left=2.5cm, right=2.0cm]{geometry}
+% Lề phải chừa vùng an toàn của letterhead:
+%   banner trên chiếm 0–19mm  → top tối thiểu 2,2cm
+%   banner dưới chiếm 281–297mm → bottom tối thiểu 2,2cm
+% Lề trên 2,6cm (26mm) để tiêu đề đầu trang không đè banner (banner hết ở 19mm).
+\usepackage[a4paper, top=2.6cm, bottom=2.4cm, left=2.5cm, right=2.0cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \usepackage{enumitem}
@@ -64,6 +68,9 @@
 \definecolor{box_line}{RGB}{0, 51, 102}
 
 % ---------- TIÊU ĐỀ MỤC ----------
+% Đệm đầu trang: banner letterhead chiếm 0–19mm, mà lề trên là 22mm.
+% \section* đầu trang (sau \clearpage) sát lề nên phải chừa thêm, nếu không
+% sẽ đè lên banner.
 \titleformat{\section}
   {\normalfont\large\bfseries\sffamily\color{cae_blue}}{\thesection.}{0.6em}{}
 \titleformat{\subsection}
@@ -71,19 +78,36 @@
 \titlespacing*{\section}{0pt}{14pt}{6pt}
 \titlespacing*{\subsection}{0pt}{10pt}{4pt}
 
+% Tiêu đề không đánh số ở đầu trang: \section* sau \clearpage nằm sát lề trên
+% nên đè lên banner letterhead. Dùng \vspace* ngay TRƯỚC \section* không đủ,
+% vì titlesec chèn khoảng cách riêng. Cách chắc chắn là đệm bằng \null.
+\newcommand{\sectiondautrang}[1]{\section*{#1}}
+
 % Dạng bài dùng \subsection*{} nên cần định dạng riêng, đậm và có gạch chân màu
 \titleformat{\subsubsection}
   {\normalfont\normalsize\bfseries\sffamily\color{cae_blue!85!black}}{\thesubsubsection}{0.6em}{}
 
+% ---------- LETTERHEAD (ảnh nền toàn trang) ----------
+% Ảnh letterhead của CAE Shanghai: banner xanh trên/dưới kèm logo chìm giữa.
+% Tỉ lệ ảnh 1414x2000 = 0.7070, khớp A4 (0.7071) nên chèn thẳng không méo.
+% Đặt ở lớp nền dưới cùng để chữ không bị ảnh che.
+% Dùng \AddToShipoutPictureBG (không có dấu *) để áp dụng cho MỌI trang.
+\usepackage{eso-pic}
+\AddToShipoutPictureBG{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]{images/letterhead.png}%
+  }%
+}
+
 % ---------- ĐẦU / CHÂN TRANG ----------
+% Letterhead đã có banner trên và dưới, nên bỏ dòng chạy để tránh chồng chữ.
+% Số trang đặt trong vùng nội dung, sát trên banner dưới, lề phải.
 \pagestyle{fancy}
-\setlength{\headheight}{15pt}
+\setlength{\headheight}{0pt}
 \fancyhf{}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.2pt}
-\fancyhead[L]{\small\color{cae_blue}\leftmark}
-\fancyhead[R]{\small\color{cae_blue}CAE SHANGHAI · Luyện thi CSCA}
-\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[R]{\raisebox{0.9cm}{\small\color{cae_blue}\thepage}}
 
 % ---------- MÔI TRƯỜNG NỘI DUNG ----------
 \newtcolorbox{dinhnghia}[1][]{
