@@ -2,7 +2,7 @@
 
 Kho tài liệu biên soạn bởi **CAE SHANGHAI**, phục vụ công tác giảng dạy và ôn luyện môn Toán cho kỳ thi **CSCA (China Scholastic Competency Assessment)**.
 
-> **Phạm vi repo:** môn Toán. Kỳ thi CSCA còn có Vật lý, 理科中文 và 文科中文 — đề thi của ba môn này nằm trong `references/de-thi-chinh-thuc/` nhưng **chưa có chương trình giảng dạy** trong repo. Xem mục *Nguồn đề* bên dưới.
+> **Phạm vi repo:** chương trình giảng dạy hiện có **môn Toán** (20 buổi hoàn chỉnh). Kỳ thi CSCA còn có Vật lý, 理科中文 và 文科中文 — ba môn này đã có đề kiểm tra đầu vào và đề thi chính thức lưu trong `references/`, nhưng **chưa có chương trình giảng dạy** trong repo. Xem mục *Nguồn đề* bên dưới.
 
 ## Giới thiệu
 
@@ -13,10 +13,9 @@ Kho tài liệu biên soạn bởi **CAE SHANGHAI**, phục vụ công tác gi�
 | Thư mục / File | Nội dung |
 |---|---|
 | `docs/` | Tài liệu chương trình: syllabus, tổng quan, phân tích đề cương |
-| `source/` | Tài liệu giảng dạy dạng `.md` theo từng chuyên đề (đã chuyển sang `classready/`) |
 | `latex/` | Template LaTeX chuẩn giáo trình và system prompt chuyển đổi `.md → .tex` |
 | `classready/` | Tài liệu giảng dạy hoàn chỉnh theo từng buổi, tách riêng bản học sinh và bản giáo viên |
-| `test-placement/` | Đề kiểm tra đầu vào rút gọn từ đề thi thật |
+| `test-placement/` | Đề kiểm tra đầu vào rút gọn từ đề thi thật, ba môn Toán, Vật lý, 理科中文 |
 | `question-bank/` | Kho đề markdown chuẩn hóa, phân theo 9 chuyên đề |
 | `references/` | Đề thi chính thức bốn môn và đề luyện tập môn Toán |
 | `.claude/skills/csca-tai-lieu/` | Quy trình soạn tài liệu, dùng cho các buổi tiếp theo |
@@ -37,6 +36,18 @@ Kho đề gồm 9 chuyên đề, mỗi câu hỏi được gán nhãn chuyên đ
 
 Mã câu hỏi theo format `CAE-M-CD{n}-{source}-{L}-{NNN}`. Chi tiết xem tại [`question-bank/README.md`](question-bank/README.md).
 
+## Đề kiểm tra đầu vào (`test-placement/`)
+
+Bộ đề xếp lớp cho học sinh mới, rút gọn từ đề thi chính thức theo tỉ lệ **48 câu / 60 phút → 20 câu / 30 phút**. Mỗi môn giữ nguyên tỉ lệ phân bố theo nhóm nội dung của đề thật, đáp án phân bố đều A 5 · B 5 · C 5 · D 5.
+
+| Môn | Nguồn | Trạng thái |
+|:----|:------|:-----------|
+| [Toán](test-placement/toan/) | CSCA 15.03.2026 | ✅ Đã có PDF |
+| [Vật lý](test-placement/vat-ly/) | CSCA 12.2025 | ✅ Đã có PDF |
+| [理科中文](test-placement/li-ke-zhongwen/) | CSCA 25.04.2026 | ✅ Đã có PDF |
+
+Chi tiết thang đánh giá và cấu trúc thư mục xem tại [`test-placement/README.md`](test-placement/README.md).
+
 ## Nguồn đề (`references/`)
 
 | Thư mục | Nội dung |
@@ -48,21 +59,26 @@ Mã câu hỏi theo format `CAE-M-CD{n}-{source}-{L}-{NNN}`. Chi tiết xem tạ
 | `references/de-luyen-tap/` | Đề luyện tập và đề mô phỏng môn Toán |
 | `references/[0.2]CSCA数学备考指南.pdf` | Cẩm nang ôn tập môn Toán |
 
-Repo này hiện chỉ biên soạn **môn Toán**. Ba môn còn lại (Vật lý, 理科中文, 文科中文) có đề trong `references/` nhưng chưa có chương trình giảng dạy tương ứng.
+Chương trình giảng dạy hiện chỉ biên soạn **môn Toán**. Ba môn còn lại (Vật lý, 理科中文, 文科中文) đã có đề kiểm tra đầu vào trong `test-placement/` và đề thi chính thức trong `references/`, nhưng chưa có chương trình giảng dạy tương ứng.
 
 ## Tiến độ cập nhật
 
-| Chuyên đề | Trạng thái | Ghi chú |
-|---|---|---|
-| Tổng quan về Toán trong CSCA | 🟡 Đang soạn | — |
-| CĐ1: Tập hợp (集合) | ⬜ Chưa bắt đầu | Bản cũ đã xóa, soạn lại theo cấu trúc mới |
-| CĐ2: Bất đẳng thức (不等式) | ⬜ Chưa bắt đầu | — |
-| CĐ3: Dãy số (数列) | ⬜ Chưa bắt đầu | — |
-| CĐ4: Hàm số (函数) | ⬜ Chưa bắt đầu | — |
-| CĐ5: Hình học (几何) (1) | ⬜ Chưa bắt đầu | — |
-| CĐ6: Hình học (几何) (2) | ⬜ Chưa bắt đầu | — |
-| CĐ7: Đại số (代数) | ⬜ Chưa bắt đầu | — |
-| CĐ8: Xác suất (概率) | ⬜ Chưa bắt đầu | — |
-| CĐ9: Thống kê (统计) | ⬜ Chưa bắt đầu | — |
+**Chương trình giảng dạy: hoàn thành 20/20 buổi.** Mỗi buổi có đủ tài liệu học sinh và tài liệu giáo viên, đã chuyển sang `.tex` và biên dịch thành PDF. Chi tiết từng buổi xem tại [`classready/README.md`](classready/README.md).
 
-*Chú thích: ⬜ Chưa bắt đầu · 🟡 Đang soạn · 🟢 Hoàn thiện `.md` · ✅ Đã chuyển `.tex` + PDF*
+| Loại buổi | Số buổi | Buổi |
+|---|:---:|---|
+| Nội dung | 12 | 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 14, 15 |
+| Chữa đề | 6 | 7, 11, 13, 16, 18, 19 |
+| Kỹ năng thi và ôn tập | 2 | 17, 20 |
+
+Buổi 5, 6, 12, 15 có thêm đề kiểm tra cuối chuyên đề. Tổng cộng **118 PDF**.
+
+| Hạng mục | Trạng thái |
+|---|---|
+| Chương trình 20 buổi (`classready/`) | ✅ Hoàn thành |
+| Kho đề 9 chuyên đề (`question-bank/`) | ✅ Hoàn thành |
+| Đề kiểm tra đầu vào — Toán | ✅ Đã có PDF |
+| Đề kiểm tra đầu vào — Vật lý | ✅ Đã có PDF |
+| Đề kiểm tra đầu vào — 理科中文 | ✅ Đã có PDF |
+| Đề kiểm tra đầu vào — 文科中文 | ⬜ Chưa soạn |
+| Chương trình giảng dạy Vật lý, 理科中文, 文科中文 | ⬜ Chưa soạn |

@@ -135,17 +135,34 @@ File `.md` dùng đúng bộ tín hiệu quy định trong `latex/template.md`, 
 | `**Chú ý.**` | Lỗi thường gặp, không khung |
 | `**Bài tập Câu X.**` | Mỗi câu một block riêng |
 
-Hai script chuyển đổi (`md2tex-baitap.py`, `md2tex-luoigiai.py`) đọc **số buổi từ dòng `# BUỔI N — ...`** và **tên buổi từ dòng blockquote `> **Tên Việt （中文）**`**. Hai dòng này phải đúng định dạng ở mọi buổi, nếu không script báo lỗi và dừng.
+Có **sáu script chuyển đổi**, mỗi script phụ trách một loại file. Cả sáu đọc **số buổi từ dòng `# BUỔI N — ...`** và **tên buổi từ dòng blockquote `> **Tên Việt （中文）**`**. Hai dòng này phải đúng định dạng ở mọi buổi, nếu không script báo lỗi và dừng.
+
+| Script | File nguồn | Ghi chú |
+|:-------|:-----------|:--------|
+| `md2tex-chung.py` | 01, 02, 04, 06 kế hoạch | Bốn file cấu trúc thường, chọn loại qua tham số thứ ba |
+| `md2tex-baitap.py` | 03 bài tập về nhà | 40 câu, cấu trúc lặp |
+| `md2tex-luoigiai.py` | lời giải bài tập về nhà | 40 lời giải + bảng lỗi |
+| `md2tex-dapan.py` | 05 đáp án bài tập về nhà | Chỉ bảng chữ cái |
+| `md2tex-kiemtra.py` | 06 đề kiểm tra | 24 câu, không có mã câu |
+| `md2tex-chuade.py` | đề bài và đáp án buổi chữa đề | Hai chế độ: `de-bai` và `dap-an` |
+
+Thứ tự gọi nằm trong `latex/build.sh`. Script tự bỏ qua nếu file nguồn không tồn tại, nên `build.sh` dùng chung được cho cả ba loại buổi.
 
 ### Bề ngang bảng
 
-Bảng trong `.tex` dùng `tabular*{\linewidth}` để giãn hết vùng in, không dùng `tabular` thường (chỉ rộng bằng nội dung, trông lọt thỏm giữa trang). Sau khi sửa tay bảng trong file `.tex`, chạy lại:
+Bảng trong `.tex` phải giãn hết vùng in, không dùng `tabular` thường (chỉ rộng bằng nội dung, trông lọt thỏm giữa trang). Script `rong-bang.py` tự chọn cách giãn:
+
+- **Bảng có cột dài** hoặc **có cột để học sinh điền**: chuyển sang `tabularx{\linewidth}`, cho cột đó thành cột co giãn `X`.
+- **Bảng 5–9 cột mà ô nào cũng ngắn** (bảng giá trị lượng giác): dùng `tabular*` với `\extracolsep{\fill}` để rải đều khoảng trống.
+- **Bảng đáp án 11–16 cột** toàn số và chữ cái: giữ nguyên, giãn ra chỉ làm các ô xa nhau.
+
+Sau khi sửa tay bảng trong file `.tex`, chạy lại:
 
 ```bash
 python3 latex/scripts/rong-bang.py latex/*.tex
 ```
 
-Script bỏ qua bảng đã đúng dạng nên chạy lại an toàn.
+Script bỏ qua bảng đã đúng dạng nên chạy lại an toàn. Lưu ý: `.tex` được **sinh lại từ `.md`** mỗi lần build, nên sửa tay trong `.tex` sẽ bị ghi đè — muốn sửa lâu dài thì sửa `.md` hoặc sửa script.
 
 ### Khối lượng bài tập
 
@@ -193,6 +210,8 @@ Câu do giáo viên tự soạn ghi mã `CAE-M-CD{n}-GV-{L}-{NNN}`.
 | 20 | Ôn tập trước kiểm tra cuối kỳ | Ôn tập | ✅ Đã chuyển .tex + PDF |
 
 *Chú thích: ⬜ Chưa bắt đầu · 🟡 Đang soạn · 🟢 Hoàn thiện `.md` · ✅ Đã chuyển `.tex` + PDF*
+
+**Tổng kết: 20/20 buổi hoàn thành, 118 PDF.** Kiểm tra lần cuối ngày 29.09.2026: cả ba lớp kiểm tra đều sạch, không buổi nào thiếu file.
 
 ---
 
