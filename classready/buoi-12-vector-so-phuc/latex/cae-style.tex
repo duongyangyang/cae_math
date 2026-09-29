@@ -109,6 +109,14 @@
 \renewcommand{\footrulewidth}{0pt}
 \fancyfoot[R]{\raisebox{0.9cm}{\small\color{cae_blue}\thepage}}
 
+% ---------- THỤT LỀ ĐOẠN ----------
+% Mặc định LaTeX thụt lề 15pt nhưng bỏ qua đoạn ngay sau tiêu đề mục, nên
+% trong cùng một mục có đoạn thụt đoạn không, nhìn lệch hàng. Tài liệu này
+% ngắt đoạn bằng khoảng trắng chứ không bằng thụt lề, nên đặt parindent = 0
+% và cho parskip giãn ra để vẫn phân biệt được các đoạn.
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+
 % ---------- MÔI TRƯỜNG NỘI DUNG ----------
 % Trong tcolorbox, LaTeX đặt parindent = parskip = 0, nên các đoạn văn trong
 % khung dính liền nhau. Đặt lại khoảng cách đoạn cho mọi khung.
@@ -191,5 +199,7 @@
 \newcommand{\bang}[1]{%
   \begin{center}#1\end{center}}
 
-% Đánh dấu ô trống cho học sinh điền
-\newcommand{\chotrong}{\makebox[3.2cm]{\dotfill}}
+% Đánh dấu ô trống cho học sinh điền. Dùng \dotfill để đường chấm giãn hết
+% bề ngang ô: ô "Nghĩa" trong bảng từ vựng rộng hơn 200pt, để 3.2cm cố định
+% thì phần còn lại trống trơn, nhìn như cột bị bóp.
+\newcommand{\chotrong}{\dotfill}
