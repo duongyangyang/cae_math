@@ -6,12 +6,29 @@ Mỗi môn giữ nguyên tỉ lệ phân bố theo nhóm nội dung của đề 
 
 ## Các môn
 
-| Môn | Nguồn đề gốc | Trạng thái |
-|:----|:-------------|:-----------|
-| [Toán](toan/) | CSCA 15.03.2026 | ✅ Đã có PDF |
-| [Vật lý](vat-ly/) | CSCA 12.2025 | ✅ Đã có PDF |
-| [理科中文](li-ke-zhongwen/) | CSCA 25.04.2026 | ✅ Đã có PDF |
-| 文科中文 | CSCA 06.2026 | ⬜ Chưa soạn |
+| Môn | Mã | Nguồn đề gốc | Trạng thái |
+|:----|:--:|:-------------|:-----------|
+| [Toán](toan/) | `TOAN` | CSCA 15.03.2026 | ✅ Đã có PDF |
+| [Vật lý](vat-ly/) | `VATLY` | CSCA 12.2025 | ✅ Đã có PDF |
+| [Tiếng Trung khoa học](tieng-trung-khoa-hoc/) | `TTKH` | CSCA 25.04.2026 | ✅ Đã có PDF |
+| Tiếng Trung xã hội | `TTXH` | CSCA 06.2026 | ⬜ Chưa soạn |
+
+## Mã tài liệu
+
+Tên PDF mang mã để phân biệt môn và loại tài liệu:
+
+```
+CAE-PT-<MÔN>-<SỐ>-<loại>.pdf
+```
+
+- `CAE` — CAE Shanghai
+- `PT` — Placement Test (đề kiểm tra đầu vào)
+- `<MÔN>` — `TOAN`, `VATLY`, `TTKH`, `TTXH`
+- `<SỐ>` — `01` đề bài · `02` đáp án
+
+Ví dụ: `CAE-PT-VATLY-01-de-bai.pdf` là đề bài kiểm tra đầu vào môn Vật lý.
+
+`build.sh` sinh tên này tự động từ tên thư mục môn, không cần sửa tay.
 
 ## Thang đánh giá dùng chung
 
@@ -28,12 +45,12 @@ Mỗi môn giữ nguyên tỉ lệ phân bố theo nhóm nội dung của đề 
 test-placement/
 ├── toan/                     môn Toán
 ├── vat-ly/                   môn Vật lý
-├── li-ke-zhongwen/           môn 理科中文 (khoa học tự nhiên – tiếng Trung)
+├── tieng-trung-khoa-hoc/     môn tiếng Trung khoa học (理科中文)
 └── <môn>/                    mỗi môn một thư mục, cấu trúc giống nhau:
     ├── README.md             thông số đề, phân bố, lưu ý về đề gốc
     ├── de-bai.md, dap-an.md  nguồn markdown
     ├── latex/                cae-style.tex, de-bai.tex, dap-an.tex, build.sh, images/
-    └── pdf/                  de-bai.pdf, dap-an.pdf
+    └── pdf/                  CAE-PT-<MÔN>-01-de-bai.pdf, CAE-PT-<MÔN>-02-dap-an.pdf
 ```
 
 Biên dịch một môn: `cd <môn> && ./latex/build.sh`

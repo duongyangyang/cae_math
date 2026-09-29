@@ -40,26 +40,36 @@ Mã câu hỏi theo format `CAE-M-CD{n}-{source}-{L}-{NNN}`. Chi tiết xem tạ
 
 Bộ đề xếp lớp cho học sinh mới, rút gọn từ đề thi chính thức theo tỉ lệ **48 câu / 60 phút → 20 câu / 30 phút**. Mỗi môn giữ nguyên tỉ lệ phân bố theo nhóm nội dung của đề thật, đáp án phân bố đều A 5 · B 5 · C 5 · D 5.
 
-| Môn | Nguồn | Trạng thái |
-|:----|:------|:-----------|
-| [Toán](test-placement/toan/) | CSCA 15.03.2026 | ✅ Đã có PDF |
-| [Vật lý](test-placement/vat-ly/) | CSCA 12.2025 | ✅ Đã có PDF |
-| [理科中文](test-placement/li-ke-zhongwen/) | CSCA 25.04.2026 | ✅ Đã có PDF |
+| Môn | Mã | Nguồn | Trạng thái |
+|:----|:--:|:------|:-----------|
+| [Toán](test-placement/toan/) | `TOAN` | CSCA 15.03.2026 | ✅ Đã có PDF |
+| [Vật lý](test-placement/vat-ly/) | `VATLY` | CSCA 12.2025 | ✅ Đã có PDF |
+| [Tiếng Trung khoa học](test-placement/tieng-trung-khoa-hoc/) | `TTKH` | CSCA 25.04.2026 | ✅ Đã có PDF |
 
-Chi tiết thang đánh giá và cấu trúc thư mục xem tại [`test-placement/README.md`](test-placement/README.md).
+Tên PDF mang mã tài liệu dạng `CAE-PT-<MÔN>-<SỐ>-<loại>.pdf`. Chi tiết thang đánh giá và cấu trúc thư mục xem tại [`test-placement/README.md`](test-placement/README.md).
 
 ## Nguồn đề (`references/`)
 
+Đề thi chính thức sắp theo **môn**, trong mỗi môn chia theo **ngày thi**. Tên file dùng tiếng Việt/Anh, thống nhất `de-bai`, `dap-an`, `de-bai-va-dap-an`; hậu tố `-en` là bản tiếng Anh, `-sach` là bản đã xóa watermark.
+
+```
+references/de-thi-chinh-thuc/
+├── toan/                    Toán
+├── vat-ly/                  Vật lý
+├── tieng-trung-khoa-hoc/    Tiếng Trung khoa học (理科中文)
+└── tieng-trung-xa-hoi/      Tiếng Trung xã hội (文科中文)
+```
+
+Mỗi thư mục môn chia theo ngày thi, ví dụ `vat-ly/2026-03-15/de-bai.pdf`. Thư mục chỉ có một file thì để thẳng trong thư mục ngày.
+
 | Thư mục | Nội dung |
 |---|---|
-| `references/de-thi-chinh-thuc/12-6月数学/` | Đề thi CSCA **môn Toán** chính thức, sắp theo tháng thi |
-| `references/de-thi-chinh-thuc/12-4月物理/` | Đề thi CSCA **môn Vật lý** chính thức |
-| `references/de-thi-chinh-thuc/12-4月理科中文/` | Đề thi CSCA **理科中文** (Khoa học tự nhiên – tiếng Trung) |
-| `references/de-thi-chinh-thuc/12-6月文科中文/` | Đề thi CSCA **文科中文** (Khoa học xã hội – tiếng Trung) |
-| `references/de-luyen-tap/` | Đề luyện tập và đề mô phỏng môn Toán |
-| `references/[0.2]CSCA数学备考指南.pdf` | Cẩm nang ôn tập môn Toán |
+| `references/de-thi-chinh-thuc/` | Đề thi chính thức bốn môn, sắp theo môn và ngày thi |
+| `references/de-luyen-tap/toan/` | Đề luyện tập và đề mô phỏng môn Toán |
+| `references/csca-toan-cam-nang-on-tap.pdf` | Cẩm nang ôn tập môn Toán |
+| `references/cae-letterhead.docx`, `references/cae-logo.jpg` | Mẫu letterhead và logo dùng in tài liệu |
 
-Chương trình giảng dạy hiện chỉ biên soạn **môn Toán**. Ba môn còn lại (Vật lý, 理科中文, 文科中文) đã có đề kiểm tra đầu vào trong `test-placement/` và đề thi chính thức trong `references/`, nhưng chưa có chương trình giảng dạy tương ứng.
+Chương trình giảng dạy hiện chỉ biên soạn **môn Toán**. Ba môn còn lại đã có đề kiểm tra đầu vào trong `test-placement/` và đề thi chính thức trong `references/`, nhưng chưa có chương trình giảng dạy tương ứng.
 
 ## Tiến độ cập nhật
 

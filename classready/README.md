@@ -1,6 +1,6 @@
 # TÀI LIỆU GIẢNG DẠY — CHƯƠNG TRÌNH LUYỆN THI CSCA TOÁN
 
-Thư mục chứa tài liệu hoàn chỉnh của từng buổi học, sẵn sàng đưa vào giảng dạy. Nội dung biên soạn theo `docs/syllabus.md` và tham chiếu `references/[0.2]CSCA数学备考指南.pdf`.
+Thư mục chứa tài liệu hoàn chỉnh của từng buổi học, sẵn sàng đưa vào giảng dạy. Nội dung biên soạn theo `docs/syllabus.md` và tham chiếu `references/csca-toan-cam-nang-on-tap.pdf`.
 
 ---
 
@@ -217,7 +217,7 @@ Câu do giáo viên tự soạn ghi mã `CAE-M-CD{n}-GV-{L}-{NNN}`.
 
 ## Thay đổi so với syllabus hiện hành
 
-**Buổi 8** được mở rộng thành *Hình học phẳng & không gian*, bổ sung phần diện tích mặt và thể tích của hình hộp, hình trụ, hình nón, hình cầu. Nội dung này có trong `references/[0.2]CSCA数学备考指南.pdf` (chương 9) nhưng chưa được đưa vào syllabus. Cần cập nhật lại `docs/syllabus.md` cho khớp.
+**Buổi 8** được mở rộng thành *Hình học phẳng & không gian*, bổ sung phần diện tích mặt và thể tích của hình hộp, hình trụ, hình nón, hình cầu. Nội dung này có trong `references/csca-toan-cam-nang-on-tap.pdf` (chương 9) nhưng chưa được đưa vào syllabus. Cần cập nhật lại `docs/syllabus.md` cho khớp.
 
 ## Kiểm tra trước khi bàn giao
 

@@ -1,4 +1,4 @@
-# ĐỀ KIỂM TRA ĐẦU VÀO — CSCA 理科中文
+# ĐỀ KIỂM TRA ĐẦU VÀO — CSCA TIẾNG TRUNG KHOA HỌC (理科中文)
 
 Đề xếp lớp cho học sinh mới, rút gọn từ đề thi chính thức CSCA 25.04.2026: 80 câu → **20 câu trong 30 phút**.
 
@@ -35,18 +35,18 @@ Toàn bộ ngữ liệu thuộc **lĩnh vực khoa học tự nhiên**: vật l�
 ## Cấu trúc thư mục
 
 ```
-li-ke-zhongwen/
+tieng-trung-khoa-hoc/
 ├── README.md               file này
 ├── de-bai.md, dap-an.md    nguồn markdown
 ├── latex/                  cae-style.tex, de-bai.tex, dap-an.tex, build.sh, images/
 └── pdf/                    de-bai.pdf, dap-an.pdf
 ```
 
-Biên dịch: `cd li-ke-zhongwen && ./latex/build.sh`
+Biên dịch: `cd tieng-trung-khoa-hoc && ./latex/build.sh`
 
 ## Ghi chú kỹ thuật
 
-`cae-style.tex` phải **giống hệt** ở cả ba môn (`toan/`, `vat-ly/`, `li-ke-zhongwen/`) và giống bản trong `classready/`. Khi sửa gói lệnh, chép cho cả ba rồi build lại từng môn.
+`cae-style.tex` phải **giống hệt** ở cả ba môn (`toan/`, `vat-ly/`, `tieng-trung-khoa-hoc/`) và giống bản trong `classready/`. Khi sửa gói lệnh, chép cho cả ba rồi build lại từng môn.
 
 Trang bìa lấy tên môn từ lệnh `\def\monhoc{...}` khai báo ở đầu mỗi file `.tex`. Thiếu dòng này thì bìa in nhầm "Môn Toán" — đây là lỗi đã từng xảy ra với môn Vật lý.
 
