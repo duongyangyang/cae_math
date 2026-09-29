@@ -18,6 +18,11 @@ latex/*.pdf
 __pycache__/
 *.pyc
 
+# Script sinh tài liệu — giữ trên máy để build, không đẩy lên remote.
+# Repo chỉ chứa tài liệu: .md, .tex, .pdf, ảnh, README.
+*.py
+*.sh
+
 # macOS
 .DS_Store
 CLAUDE.md
