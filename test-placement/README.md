@@ -10,7 +10,7 @@ Mỗi môn giữ nguyên tỉ lệ phân bố theo nhóm nội dung của đề 
 |:----|:-------------|:-----------|
 | [Toán](toan/) | CSCA 15.03.2026 | ✅ Đã có PDF |
 | [Vật lý](vat-ly/) | CSCA 12.2025 | ✅ Đã có PDF |
-| 理科中文 | CSCA 04.2026 | ⬜ Chưa soạn |
+| [理科中文](li-ke-zhongwen/) | CSCA 25.04.2026 | ✅ Đã có PDF |
 | 文科中文 | CSCA 06.2026 | ⬜ Chưa soạn |
 
 ## Thang đánh giá dùng chung
@@ -28,6 +28,7 @@ Mỗi môn giữ nguyên tỉ lệ phân bố theo nhóm nội dung của đề 
 test-placement/
 ├── toan/                     môn Toán
 ├── vat-ly/                   môn Vật lý
+├── li-ke-zhongwen/           môn 理科中文 (khoa học tự nhiên – tiếng Trung)
 └── <môn>/                    mỗi môn một thư mục, cấu trúc giống nhau:
     ├── README.md             thông số đề, phân bố, lưu ý về đề gốc
     ├── de-bai.md, dap-an.md  nguồn markdown
